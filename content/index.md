@@ -1,6 +1,8 @@
 ---
-title: My Frontmatter Title
-description: Covid-19 response
+path: "/content/index"
+title: "My Frontmatter Title"
+date: "2019-05-04"
+description: "Covid-19 response"
 ---
 
 ## This is the first test file
