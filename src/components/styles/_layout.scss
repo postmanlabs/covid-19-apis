@@ -1,1 +1,75 @@
 @import '../styles/variables';
+
+
+// Footer has font Open Sans
+* {
+  font-family: 'Roboto';
+}
+
+/* Landing Page 
+/* *******************************************/
+
+/* Hero */
+
+div.container-fluid.hero {
+  padding: 0px 0px;
+  background-image: url(../../images/hero_BG-asset.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  // object-fit: cover;
+  background-size: cover;
+  height: 522px;
+
+  // make image max-width to prevent overflow
+  img {
+    max-width: 400px;
+    height: auto;
+    @media (max-width: 990px) {
+      display: none;
+    }
+  }
+
+  .hero_title {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 86px 123px;
+
+    h1 {
+      font-weight: 500;
+      font-size: 60px;
+      line-height: 70px;
+    }
+    @media (max-width: 990px) {
+      padding: 0px 24px; 
+    }
+  }
+}
+
+/* Welcome component */
+
+.col-md-12.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  p {
+    padding: 66px 0px;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    padding: 0px 80px;
+  } 
+  // @media (min-width: 990px) {
+  //   padding: 0px 80px;
+  // }
+
+  // @media (min-width: 1200px) {
+  //   padding: 0px 80px;
+  // }
+}
