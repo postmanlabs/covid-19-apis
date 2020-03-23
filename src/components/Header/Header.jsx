@@ -4,7 +4,7 @@ import './Header.scss';
 
 
 import DynamicLink from '../Shared/DynamicLink';
-import postmanLogo from '../../images/postman-logo-horizontal-orange.svg';
+// import postmanLogo from '../../images/postman-logo-horizontal-orange.svg';
 
 // changes button in navbar based on cookie presence
 const LoginCheck = (props) => {
