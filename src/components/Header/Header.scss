@@ -1,7 +1,8 @@
-@import '../Shared/_variables.scss';
+@import '../styles/_variables.scss';
 
 .header {
-  box-shadow: 0 5px 16px 0 rgba(0,0,0,.11);
+  // box-shadow: 0 5px 16px 0 rgba(0,0,0,.11);
+  background-color: $deep-space-blue;
   z-index: 1;
   .header__logo {
     margin: auto;
@@ -11,7 +12,8 @@
   .header__title {
     vertical-align: middle;
     margin-left: 20px;
-    color: $gray-3;
+    // color: $gray-3;
+    color: white;
     text-decoration: none;
   }
 
@@ -19,7 +21,8 @@
     .nav-item {
       .nav-link {
         text-decoration: none;
-        color: $gray-3;
+        // color: $gray-3;
+        color: white; 
         font-size: 13px;
         font-weight: 600;
         text-transform: uppercase;

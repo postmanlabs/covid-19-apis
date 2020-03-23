@@ -29,8 +29,6 @@ class HeaderComponent extends React.Component {
     this.state = {
       data: JSON.parse(data),
       isToggledOn: 'unset',
-      hasInput: false,
-      refresh: false,
     };
   }
 
@@ -58,7 +56,7 @@ class HeaderComponent extends React.Component {
 
   render() {
     const {
-      isToggledOn, refresh, hasInput, data,
+      isToggledOn, data,
     } = this.state;
     return (
       <header className="header text-center navbar navbar-expand-xl navbar-light">
@@ -67,7 +65,12 @@ class HeaderComponent extends React.Component {
             className="header__homelink"
             to="/"
           >
-            <img className="header__logo" src={postmanLogo} alt="postman logo" />
+            {/* <img className="header__logo" src={postmanLogo} alt="postman logo" /> */}
+            <img
+              className="header__logo"
+              src="https://assets.getpostman.com/common-share/postman-logo-horizontal-white.svg"
+              alt="Postman"
+            />
             <span className="header__title">{data.title}</span>
           </Link>
         </div>

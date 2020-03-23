@@ -1,6 +1,6 @@
 const uuidv4 = require('uuid/v4');
 const path = require('path');
-// const HeaderJson = require('./src/components/Header/Header.data.json');
+const HeaderJson = require('./src/components/Header/Header.data.json');
 const FooterJson = require('./src/components/Footer/Footer.data.json');
 
 
@@ -33,12 +33,10 @@ exports.sourceNodes = async ({
 
   const { createNode } = actions;
 
-  // createNode(prepareNode(HeaderJson, 'headerLinks'));
+  createNode(prepareNode(HeaderJson, 'headerLinks'));
   createNode(prepareNode(FooterJson, 'FooterLinks'));
 };
 
-
-// const path = require('path');
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
