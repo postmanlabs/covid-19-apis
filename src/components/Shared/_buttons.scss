@@ -215,7 +215,7 @@ a {
     background-position-y: 2px;
     background-position-x: 4px;
     background-repeat: no-repeat;
-    text-decoration: none;
+    text-decoration: none !important;
 
 
     &:hover {
