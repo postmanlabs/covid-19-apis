@@ -1,13 +1,63 @@
 {
   "links": [
     {
-      "title": "World Health Organization",
-      "description": "Twitter and YouTube API feeds for WHO, and their RSS feeds for pulling information", 
+      "title": "World Health Organization (WHO)",
+      "description": "Twitter and YouTube API feeds for WHO, and their RSS feeds", 
       "urlDoc": "https://twitter.com",
       "urlPost": "https://twitter.com"
     },{
-      "title": "World Health Organization",
-      "description": "Twitter and YouTube API feeds for WHO, and their RSS feeds for pulling information", 
+      "title": "Centers for Disease Control and Prevention (CDC)",
+      "description": "Twitter and YouTube API feeds for CDC, and their RSS feeds for pulling information", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "European Centre for Disease Prevention and Control (ECDC)",
+      "description": "Twitter and YouTube API feeds for ECDC, and their RSS feeds for pulling information", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "Covid19API",
+      "description": "A free API for data related to the novel coronavirus pandemic", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "NovelCOVID API",
+      "description": "An API for current cases and more information about COVID-19", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "COVID-19 GraphQL API",
+      "description": "A GraphQL implementation of current COVID-19 data sets", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "CDC Cases & Deaths (ScrAPI)",
+      "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "CDC Testing (ScrAPI)",
+      "description": "Scraping the number of specimens tested for SARS CoV-2 by CDC labs and U.S. public health laboratories from the CDC website", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "US Digital Registry API",
+      "description": "An API for pulling federal government agencies and social media accounts", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "News API",
+      "description": " An aggregate news API for pulling news from across multiple news sources", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "COVID-19 Twitter Searches",
+      "description": "Twitter API search, with a handful of the common search terms added", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
+    },{
+      "title": "State Government Twitter",
+      "description": "State government Twitter accounts for all 50 states in the United States", 
       "urlDoc": "https://twitter.com",
       "urlPost": "https://twitter.com"
     }

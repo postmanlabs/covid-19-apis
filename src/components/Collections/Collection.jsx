@@ -17,7 +17,7 @@ const Collection = () => {
         title, urlDoc, urlPost, description,
       } = link;
       return (
-        <div className="row collection">
+        <div key={Math.random()} className="row collection">
           <div className="col-md-7">
             <div className="row collection__meta">
               <div className="col-12 collection__title">

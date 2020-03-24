@@ -7,10 +7,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  p {
+    padding: 16px 80px;
+    font-size: 20px;
+    line-height: 38px;
+  }
 }
 
 .collection__meta {
-  padding-left: 80px;
+  @media (min-width: 990px) {
+    padding-left: 80px;
+  }
 }
 
 .collection__title {
@@ -24,6 +31,7 @@
   font-family: 'Open Sans';
   font-size: 16px;
   line-height: 24px;
+  padding-top: 10px;
 }
 
 .collection {
@@ -31,16 +39,20 @@
   .btn.btn__secondary-light, .btn.btn__primary {
     margin: 8px 9px;
   }
+  @media (min-width: 768px) {
+    padding: 20px 80px;
+  }
 }
 
+
 .collection__end {
-  font-family: Open Sans;
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: start;
-  padding: 64px 100px;
+  padding: 40px;
+  @media (min-width: 768px) {
+    padding: 64px 175px;
+  }
 }

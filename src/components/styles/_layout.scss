@@ -40,7 +40,11 @@ div.container-fluid.hero {
       font-weight: 500;
       font-size: 60px;
       line-height: 70px;
+      @media (max-width: 451px) {
+        padding: 80px 20px !important;
+      }
     }
+    
     @media (max-width: 990px) {
       padding: 0px 24px; 
     }

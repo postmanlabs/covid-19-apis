@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -7,6 +7,7 @@ import Hero from '../components/Shared/Hero';
 import Welcome from '../components/Shared/Welcome';
 import Collection from '../components/Collections/Collection';
 import Apis from '../components/Apis/Apis';
+import Nonprofit from '../components/NonProfits/Nonprofits';
 
 const IndexPage = () => (
   <Layout>
@@ -28,7 +29,11 @@ const IndexPage = () => (
       <div className="row">
         <div className="col-md-12">
           <p className="collection__end">
-            To submit an API to add to the list, please email us at COVID-19@postman.com.
+            To submit an API to add to the list, please email us at
+            <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
+            or
+            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
+            .
           </p>
         </div>
       </div>
@@ -41,9 +46,7 @@ const IndexPage = () => (
         </div>
         <div className="col-md-12">
           <p>
-            In addtion to the fast-growing list of existing APIs and
-            API resources listed above, the Postman team is also working
-            around the clock to create new....
+            In addition to the fast-growing list of existing APIs and API resources listed above, the Postman team is also working around the clock to create new API collections which will provide you with access to vital data sets that aren’t presently served by any existing APIs, using the following blueprints for quickly deploying new APIs from existing data sets:
           </p>
         </div>
       </div>
@@ -53,15 +56,23 @@ const IndexPage = () => (
       <div className="row">
         <div className="col-md-10">
           <p className="collection__end">
-            If you have a pandemic-related project you would like deployed as an API,
-            please email us at COVID-19@postman.com.
-            {' '}
-            If you would like additional help or guidance on using APIs to retrieve or expose...
+            If you have a pandemic-related project you’d like deployed as an API, please email us at
+            <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
+            or
+            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
+            .
+            <br />
+            <br />
+            If you’d like additional help or guidance on using APIs to retrieve or expose critical data about the pandemic, the Postman developer relations team can provide consultations to get you going in the right direction. Contact us anytime at
+            <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
+            .
           </p>
         </div>
       </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+    <Nonprofit />
+    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 );
 
