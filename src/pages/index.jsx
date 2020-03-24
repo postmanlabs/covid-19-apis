@@ -7,6 +7,8 @@ import Hero from '../components/Shared/Hero';
 import Welcome from '../components/Shared/Welcome';
 import Collection from '../components/Collections/Collection';
 import Apis from '../components/Apis/Apis';
+import Nonprofits from '../components/NonProfits/Nonprofits';
+import Nonprofit from '../components/NonProfits/Nonprofits';
 
 const IndexPage = () => (
   <Layout>
@@ -61,6 +63,8 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
+
+    <Nonprofit />
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 );
