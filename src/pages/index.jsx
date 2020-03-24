@@ -30,6 +30,7 @@ const IndexPage = () => (
         <div className="col-md-12">
           <p className="collection__end">
             To submit an API to add to the list, please email us at
+            <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
             <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
