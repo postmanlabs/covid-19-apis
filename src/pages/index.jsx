@@ -55,9 +55,10 @@ const IndexPage = () => (
         <Apis />
       </div>
       <div className="row">
-        <div className="col-md-10">
+        <div className="col-md-12">
           <p className="collection__end">
             If you have a pandemic-related project you’d like deployed as an API, please email us at
+            <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
             <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
