@@ -65,7 +65,9 @@ const IndexPage = () => (
             .
             <br />
             <br />
-            If you’d like additional help or guidance on using APIs to retrieve or expose critical data about the pandemic, the Postman developer relations team can provide consultations to get you going in the right direction. Contact us anytime at
+          </p>
+          <p className="collection__end_p">
+            If you&apos;d like additional help or guidance on using APIs to retrieve or expose critical data about the pandemic, the Postman developer relations team can provide consultations to get you going in the right direction. Contact us anytime at
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             .
           </p>
