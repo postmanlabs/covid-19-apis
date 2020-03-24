@@ -1,22 +1,22 @@
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 // import './Header.scss';
 
-import DynamicLink from '../Shared/DynamicLink';
+// import DynamicLink from '../Shared/DynamicLink';
 // import postmanLogo from '../../images/postman-logo-horizontal-orange.svg';
 
 // changes button in navbar based on cookie presence
-const LoginCheck = (props) => {
-  const { cookie } = props;
-  if (cookie !== 'yes') {
-    return (
-      <a href="https://identity.getpostman.com/login" className="btn btn__primary">Sign In</a>
-    );
-  }
-  return (
-    <a href="https://app.getpostman.com" className="btn btn__primary">Dashboard</a>
-  );
-};
+// const LoginCheck = (props) => {
+//   const { cookie } = props;
+//   if (cookie !== 'yes') {
+//     return (
+//       <a href="https://identity.getpostman.com/login" className="btn btn__primary">Sign In</a>
+//     );
+//   }
+//   return (
+//     <a href="https://app.getpostman.com" className="btn btn__primary">Dashboard</a>
+//   );
+// };
 
 class HeaderComponent extends React.Component {
   constructor(props) {
@@ -60,9 +60,9 @@ class HeaderComponent extends React.Component {
     return (
       <header className="header text-center navbar navbar-expand-xl navbar-light">
         <div className="navbar-brand header__brand">
-          <Link
+          <a
             className="header__homelink"
-            to="/"
+            href="https://www.postman.com"
           >
             {/* <img className="header__logo" src={postmanLogo} alt="postman logo" /> */}
             <img
@@ -71,7 +71,7 @@ class HeaderComponent extends React.Component {
               alt="Postman"
             />
             <span className="header__title">{data.title}</span>
-          </Link>
+          </a>
         </div>
 
         {/* hamburger toggle */}
@@ -87,11 +87,11 @@ class HeaderComponent extends React.Component {
             `}
           id="navbarSupportedContent"
         >
-          {data.links.map((link) => (
+          {/* {data.links.map((link) => (
             <div className="nav-item" key={Math.random()}>
               {link.cta ? <LoginCheck cookie={this.getCookie('getpostmanlogin')} /> : <DynamicLink className="nav-link" url={link.url} name={link.name} />}
             </div>
-          ))}
+          ))} */}
         </div>
       </header>
     );
