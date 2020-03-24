@@ -76,7 +76,7 @@ const IndexPage = () => (
     </div>
 
     <Nonprofit />
-    {/* <Link to="/thankyou/">Go to page 2</Link> */}
+    {/* <Link to="/postman-for-good/covid-19-apis/thankyou/">Go to page 2</Link> */}
   </Layout>
 );
 
