@@ -11,9 +11,53 @@
 
 /* Hero */
 
+// starfields
+
+$starfield-small: url('data:image/svg+xml;charset=utf8,%3Csvg width="1351" height="443" viewBox="0 0 1351 443" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M4.00002 155L2.92832 157.928L0 158.999L2.92832 160.071L4.00002 163L5.0709 160.071L8.00003 159V158.999L5.0709 157.928L4.00083 155H4.00002Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M224 196L222.66 199.66L219 200.999L222.66 202.339L224 206L225.339 202.339L229 201V200.999L225.339 199.66L224.001 196H224Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1346 398L1344.66 401.66L1341 402.999L1344.66 404.339L1346 408L1347.34 404.339L1351 403V402.999L1347.34 401.66L1346 398H1346Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1219.5 -6.10352e-05L1217.49 5.49054L1212 7.49845L1217.49 9.50788L1219.5 15L1221.51 9.50788L1227 7.49997V7.49845L1221.51 5.49054L1219.5 -6.10352e-05H1219.5Z" fill="%23CDDCE6"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1240.5 428L1238.49 433.491L1233 435.499L1238.49 437.508L1240.5 443L1242.51 437.508L1248 435.5V435.499L1242.51 433.491L1240.5 428H1240.5Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1330 96L1328.93 98.9283L1326 99.9992L1328.93 101.071L1330 104L1331.07 101.071L1334 100V99.9992L1331.07 98.9283L1330 96H1330Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M592 358L590.66 361.66L587 362.999L590.66 364.339L592 368L593.339 364.339L597 363V362.999L593.339 361.66L592.001 358H592Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M935 0L933.66 3.6604L930 4.99901L933.66 6.33862L935 10L936.339 6.33862L940 5.00002V4.99901L936.339 3.6604L935.001 0H935Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M786 81L785.196 83.1962L783 83.9994L785.196 84.8032L786 87L786.803 84.8032L789 84V83.9994L786.803 83.1962L786.001 81H786Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M487 21L485.928 23.9283L483 24.9992L485.928 26.0709L487 29L488.071 26.0709L491 25V24.9992L488.071 23.9283L487.001 21H487Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1175 261L1173.66 264.66L1170 265.999L1173.66 267.339L1175 271L1176.34 267.339L1180 266V265.999L1176.34 264.66L1175 261H1175Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M819 196L817.66 199.66L814 200.999L817.66 202.339L819 206L820.339 202.339L824 201V200.999L820.339 199.66L819.001 196H819Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M25.5 336L23.4906 341.491L18 343.499L23.4906 345.508L25.5 351L27.5079 345.508L33.0001 343.5V343.499L27.5079 341.491L25.5015 336H25.5Z" fill="%237D728E"/%3E%3C/svg%3E');
+
+$starfield-large: url('data:image/svg+xml;charset=utf8,%3Csvg fill="none" height="282" viewBox="0 0 1278 282" width="1278" xmlns="http://www.w3.org/2000/svg"%3E%3Cg clip-rule="evenodd" fill-rule="evenodd"%3E%3Cpath d="m1110.56 22.7026 2.81-7.9872 7.75-2.9045-7.75-2.90445-2.81-7.987261-2.82 7.987261-7.74 2.90445 7.74 2.9045z" fill="%23f99d78" opacity=".5"/%3E%3Cpath d="m211.121 187.945 2.957-8.423 8.165-3.049-8.165-3.05-2.957-8.423-2.956 8.423-8.165 3.05 8.165 3.049z" fill="%23cddce6" opacity=".5"/%3E%3Cpath d="m17.4563 112.394 4.6456-13.2154 12.8107-4.7924-12.8107-4.9375-4.6456-13.2153-4.6456 13.2153-12.8107 4.7923 12.8107 4.7924z" fill="%23cddce6"/%3E%3Cpath d="m818.854 281.239 2.675-7.406 7.18-2.76-7.18-2.759-2.675-7.406-2.674 7.406-7.18 2.759 7.18 2.76z" fill="%237d728e"/%3E%3Cpath d="m65.5583 260.783 2.8155-7.987 7.7427-2.904-7.7427-2.905-2.8155-7.987-2.8156 7.987-7.7427 2.905 7.7427 2.904z" fill="%23f99d78"/%3E%3Cpath d="m1183.56 271.342 2.81-7.987 7.75-2.904-7.75-2.905-2.81-7.987-2.82 7.987-7.74 2.905 7.74 2.904z" fill="%23f99d78"/%3E%3Cpath d="m1132.12 150.764 2.96-8.423 8.16-3.05-8.16-3.05-2.96-8.423-2.95 8.423-8.17 3.05 8.17 3.05z" fill="%23cddce6" opacity=".5"/%3E%3Cpath d="m994.456 221.609 4.646-13.215 12.808-4.793-12.808-4.792-4.646-13.215-4.645 13.215-12.811 4.792 12.811 4.793z" fill="%23cddce6" opacity=".5"/%3E%3Cg fill="%23f99d78"%3E%3Cpath d="m212.432 20.3791 2.534-7.116 6.898-2.614-6.898-2.61397-2.534-7.115941-2.534 7.115941-6.898 2.61397 6.898 2.614z"/%3E%3Cpath d="m394.432 247.353 2.534-7.116 6.898-2.614-6.898-2.614-2.534-7.115-2.534 7.115-6.898 2.614 6.898 2.614z" opacity=".4"/%3E%3Cpath d="m1268.43 108.074 2.54-7.116 6.89-2.6143-6.89-2.614-2.54-7.1159-2.53 7.1159-6.9 2.614 6.9 2.6143z" opacity=".4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+
+$starfield-dense: url('data:image/svg+xml;charset=utf8,%3Csvg width="1362" height="614" viewBox="0 0 1362 614" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M270.5 95L267.961 101.948L261 104.5L267.961 107.039L270.5 114L273.052 107.039L280 104.5L273.052 101.948L270.5 95Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M440 194L438.127 199.127L433 201L438.127 202.89L440 208L441.89 202.89L447 201L441.89 199.127L440.017 194H440Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M67 26L65.1275 31.1275L60 33L65.1275 34.89L67 40L68.89 34.89L74 33L68.89 31.1275L67.0175 26H67Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M345.98 0L342.488 9.51512L333 12.9933L342.515 16.4849L346.007 26L349.485 16.4849L359 12.9933L349.485 9.51512L346.007 0H345.98Z" fill="%236D7F91"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M120 158L117.33 165.33L110 168L117.33 170.67L120 178L122.67 170.67L130 168L122.67 165.33L120 158Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M985 12L981.255 22.255L971 26L981.255 29.7801L985 40L988.78 29.7801L999 26L988.78 22.255L985.035 12H985Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1215 12L1213.13 17.1275L1208 19L1213.13 20.89L1215 26L1216.89 20.89L1222 19L1216.89 17.1275L1215.02 12H1215Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1215 177L1213.13 182.127L1208 184L1213.13 185.89L1215 191L1216.89 185.89L1222 184L1216.89 182.127L1215.02 177H1215Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M944.98 178L941.489 187.515L932 190.993L941.515 194.485L945.007 204L948.485 194.485L958 190.993L948.485 187.515L945.007 178H944.98Z" fill="%236D7F91"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1132 54L1129.33 61.3298L1122 64L1129.33 66.6702L1132 74L1134.67 66.6702L1142 64L1134.67 61.3298L1132 54Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1332.5 533L1329.96 539.948L1323 542.5L1329.96 545.039L1332.5 552L1335.05 545.039L1342 542.5L1335.05 539.948L1332.5 533Z" fill="%23F99D78"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M720 600L718.127 605.127L713 607L718.127 608.89L720 614L721.89 608.89L727 607L721.89 605.127L720.017 600H720Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M7 272L5.12749 277.127L0 279L5.12749 280.89L7 286L8.88998 280.89L14 279L8.88998 277.127L7.01746 272H7Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M20 454L17.3298 461.33L10 464L17.3298 466.67L20 474L22.6702 466.67L30 464L22.6702 461.33L20 454Z" fill="%237D728E"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1325 218L1323.13 223.127L1318 225L1323.13 226.89L1325 232L1326.89 226.89L1332 225L1326.89 223.127L1325.02 218H1325Z" fill="%23CFDBE4"/%3E%3Cpath fill-rule="evenodd" clip-rule="evenodd" d="M1352 300L1349.33 307.33L1342 310L1349.33 312.67L1352 320L1354.67 312.67L1362 310L1354.67 307.33L1352 300Z" fill="%237D728E"/%3E%3C/svg%3E');
+
+$v5_night-sky: #2B3B41;
+@mixin backdrop-for-starfield {
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin background-starfield ($background-color, $star-size) {
+  @if $star-size=='small' {
+    @include backdrop-for-starfield;
+    background-image: $starfield-small;
+    background-color: $background-color !important;
+  } @else if $star-size=='large' {
+    @include backdrop-for-starfield;
+    background-image: $starfield-large;
+    background-color: $background-color !important;
+  } @else if $star-size=='large-and-small' {
+    @include backdrop-for-starfield;
+    background-image: $starfield-small, $starfield-large;
+    background-color: $background-color !important;
+  } @else if $star-size=='dense' {
+    @include backdrop-for-starfield;
+    background-image: $starfield-dense;
+    background-color: $background-color !important; 
+  } @else {
+    @include backdrop-for-starfield;
+    background-image: $starfield-large;
+    background-color: $background-color !important;
+  }
+}
+
+
+
+
 div.container-fluid.hero {
   padding: 0px 0px;
-  background-image: url(../../images/hero_BG-asset.svg);
+  // background-image: url(../../images/hero_BG-asset.svg);
+
+  .v5_starfield-small-night-sky {
+    @include background-starfield ($v5_night-sky, small);
+  }
   background-position: center;
   background-repeat: no-repeat;
   // object-fit: cover;
