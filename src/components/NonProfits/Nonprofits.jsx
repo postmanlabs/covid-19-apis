@@ -8,15 +8,9 @@ const Nonprofit = () => (
       </div>
       <div className="col-12 nonprofit__description">
         <p>
-          If you are a nonprofit organization working on COVID-related
-          activities that involve APIs, Postman has created special discounts
-          to help you further your work. Qualifying nonprofits
-          (see eligibility guidelines below)
-          will receive ten
+          If you&apos;re a nonprofit organization working on COVID-related activities that involve APIs, Postman has created special discounts to help you further your work. Qualifying nonprofits (see eligibility guidelines below) will receive ten
           <span><a className="link-style" href="https://www.postman.com/pricing"> Postman Business Plan </a></span>
-          licenses for free, and a 75% discount for each additional license thereafter.
-          If you are interested in participating, fill out form bleow
-          and we will get you started ASAP.
+          licenses for free, and a 75% discount for each additional license thereafter. If you’re interested in participating, fill out the form below and we’ll get you started ASAP.
         </p>
       </div>
     </div>
@@ -52,7 +46,14 @@ const Nonprofit = () => (
             <span className="bold">US:</span>
             Only 501(c)(3) and 501(c)(4) nonprofits are eligible. This means that organizations that are designated as nonprofit under IRS Subsections other than 501(c)(3) or 501(c)(4) are not eligible.
           </li>
-          <li>Terms of service: Organizations that request Postman products must agree to the Postman EULA along with any applicable Postman terms of service prior to obtaining access to the products.</li>
+        </ul>
+        <h5 className="nonprofits__heading">Terms of Service:</h5>
+        <ul className="nonprofits__li">
+          <li>
+            Organizations that request Postman products must agree to the
+            <span><a className="link-style" href="https://www.postman.com/licenses/postman-eula"> Postman EULA</a></span>
+            along with any applicable Postman terms of service prior to obtaining access to the products.
+          </li>
           <li>Postman reserves the right to supplement or amend these eligibility guidelines at any time without notice.</li>
           <li>Products will be distributed to qualifying organizations only, not to individuals.</li>
           <li>Postman reserves the right to grant or deny an organization&apos;s request at any time, for any reason.</li>

@@ -5,22 +5,21 @@ import heroPostmanaut from '../../images/covid19-image-2.png';
 
 
 const Hero = () => (
-  <div className="container-fluid hero">
+  <div className="container-fluid hero v5_starfield-small-night-sky">
     <div className="row">
       <div className="col-xs-6 col-lg-6 hero_title">
         <h1>
           Postman
           <br />
-          Resources
+          COVID-19 API
           <br />
-          for COVID-19
+          Resource Center
         </h1>
       </div>
       <div className="col-xs-6 col-lg-6">
         <img src={heroPostmanaut} alt="postman hero" />
       </div>
     </div>
-
   </div>
 );
 

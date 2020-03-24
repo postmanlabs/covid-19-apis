@@ -72,7 +72,7 @@ const IndexPage = () => (
     </div>
 
     <Nonprofit />
-    <Link to="/ThankYou/">Go to page 2</Link>
+    <Link to="/thankyou/">Go to page 2</Link>
   </Layout>
 );
 
