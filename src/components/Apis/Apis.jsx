@@ -2,17 +2,17 @@ import { useStaticQuery, graphql, Link } from 'gatsby';
 import React from 'react';
 
 
-const Collection = () => {
+const Apis = () => {
   const data = useStaticQuery(graphql`
     query {
-      collectionLinks {
+      apiLinks {
         value
       }
     }
   `);
 
   return (
-    JSON.parse(data.collectionLinks.value).links.map((link) => {
+    JSON.parse(data.apiLinks.value).links.map((link) => {
       const {
         title, urlDoc, urlPost, description,
       } = link;
@@ -38,4 +38,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default Apis;

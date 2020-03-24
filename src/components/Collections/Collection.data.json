@@ -2,12 +2,14 @@
   "links": [
     {
       "title": "World Health Organization",
-      "description": "", 
-      "url": ""
+      "description": "Twitter and YouTube API feeds for WHO, and their RSS feeds for pulling information", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
     },{
-      "title": "",
-      "description": "",
-      "url": ""
+      "title": "World Health Organization",
+      "description": "Twitter and YouTube API feeds for WHO, and their RSS feeds for pulling information", 
+      "urlDoc": "https://twitter.com",
+      "urlPost": "https://twitter.com"
     }
   ]
 }
