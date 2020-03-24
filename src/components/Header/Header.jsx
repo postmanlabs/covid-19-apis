@@ -1,7 +1,6 @@
 import { useStaticQuery, graphql, Link } from 'gatsby';
 import React from 'react';
-import './Header.scss';
-
+// import './Header.scss';
 
 import DynamicLink from '../Shared/DynamicLink';
 // import postmanLogo from '../../images/postman-logo-horizontal-orange.svg';
@@ -89,7 +88,7 @@ class HeaderComponent extends React.Component {
           id="navbarSupportedContent"
         >
           {data.links.map((link) => (
-            <div className="nav-item" key={link.name}>
+            <div className="nav-item" key={Math.random()}>
               {link.cta ? <LoginCheck cookie={this.getCookie('getpostmanlogin')} /> : <DynamicLink className="nav-link" url={link.url} name={link.name} />}
             </div>
           ))}

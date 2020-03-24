@@ -2,6 +2,8 @@ const uuidv4 = require('uuid/v4');
 const path = require('path');
 const HeaderJson = require('./src/components/Header/Header.data.json');
 const FooterJson = require('./src/components/Footer/Footer.data.json');
+const CollectionJson = require('./src/components/Collections/Collection.data.json');
+const ApiJson = require('./src/components/Apis/Apis.data.json');
 
 
 exports.sourceNodes = async ({
@@ -35,6 +37,8 @@ exports.sourceNodes = async ({
 
   createNode(prepareNode(HeaderJson, 'headerLinks'));
   createNode(prepareNode(FooterJson, 'FooterLinks'));
+  createNode(prepareNode(CollectionJson, 'CollectionLinks'));
+  createNode(prepareNode(ApiJson, 'ApiLinks'));
 };
 
 
