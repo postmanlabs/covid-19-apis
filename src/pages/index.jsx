@@ -30,7 +30,7 @@ const IndexPage = () => (
         <div className="col-md-12">
           <p className="collection__end">
             To submit an API to add to the list, please email us at
-            <span><a className="link-style" href="mailto:covid-19@postman.com">COVID-19@postman.com</a></span>
+            <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
             <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
             .
@@ -61,7 +61,8 @@ const IndexPage = () => (
             or
             <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
             .
-            {' '}
+            <br />
+            <br />
             If you’d like additional help or guidance on using APIs to retrieve or expose critical data about the pandemic, the Postman developer relations team can provide consultations to get you going in the right direction. Contact us anytime at
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             .
