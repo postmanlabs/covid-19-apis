@@ -1,19 +1,19 @@
 import React from 'react';
 
 const Nonprofit = () => (
-  <div className="container">
+  <div className="container-fluid nonprofit__wrapper">
     <div className="row">
-      <div className="col-12">
+      <div className="col-12 nonprofit__title">
         <h1>For Nonprofits Working on the Pandemic</h1>
       </div>
-      <div className="col-12">
+      <div className="col-12 nonprofit__description">
         <p>
           If you are a nonprofit organization working on COVID-related
           activities that involve APIs, Postman has created special discounts
           to help you further your work. Qualifying nonprofits
           (see eligibility guidelines below)
           will receive ten
-          <span className="v5__link">Postman Business Plan</span>
+          <span><a className="link-style" href="https://www.postman.com/pricing"> Postman Business Plan </a></span>
           licenses for free, and a 75% discount for each additional license thereafter.
           If you are interested in participating, fill out form bleow
           and we will get you started ASAP.
@@ -21,12 +21,12 @@ const Nonprofit = () => (
       </div>
     </div>
     <div className="row">
-      <div className="col-sm-6">
-        <h2>Eligibility Guidelines for Nonprofits</h2>
-        <p>
+      <div className="col-sm-6 nonprofit__col-left">
+        <h5 className="nonprofits__heading">Eligibility Guidelines for Nonprofits</h5>
+        <p className="nonprofit__text">
           To be eligible for Postman’s COVID-related nonprofit discount program, a nonprofit and non-governmental organization in the United States must be qualified with tax-exempt status under 501(c)(3) or 501(c)(4) of the U.S. Internal Revenue Code.  Eligible organizations must also operate on a not-for-profit basis and have a mission to benefit the local community that could include, but is not limited to:
         </p>
-        <ul>
+        <ul className="nonprofits__li">
           <li>Providing relief to the poor</li>
           <li>Advancing education</li>
           <li>Improving social and community welfare</li>
@@ -37,11 +37,11 @@ const Nonprofit = () => (
           <li>Nonprofit sports body</li>
           <li>Religious, charitable, scientific, or literary</li>
         </ul>
-        <h2>Ineligible organization types</h2>
-        <p>
+        <h5 className="nonprofits__heading">Ineligible organization types</h5>
+        <p className="nonprofit__text">
           Not all 501(c)(3) and 501(c)(4) nonprofit organizations are eligible for donated Postman products. Ineligible organizations include the following:
         </p>
-        <ul>
+        <ul className="nonprofits__li">
           <li>Hospitals, organizations involved with health insurance or group health plans, and related organizations</li>
           <li>Legislative and political activity organizations, or advocacy groups</li>
           <li>Trade, business or professional organizations; fraternal beneficiary societies, orders, or associations; providers of other services or benefits to members or employees</li>
@@ -60,15 +60,7 @@ const Nonprofit = () => (
           <li>Recipient organizations may not transfer or resell Postman products.</li>
         </ul>
       </div>
-      <div className="col-sm-6 Form">
-      <script dangerouslySetInnerHTML= {{ __html: ` 
-     <script src="//pages.getpostman.com/js/forms2/js/forms2.min.js" />
-     <form id="mktoForm_1376" />
-     <script>MktoForms2.loadForm("//pages.getpostman.com", "067-UMD-991", 1376);</script> `}} />`  
-        {/* <script src="//pages.getpostman.com/js/forms2/js/forms2.min.js" />
-        <form id="mktoForm_1376" />
-        <script>MktoForms2.loadForm("//pages.getpostman.com", "067-UMD-991", 1376);</script> */}
-      </div>
+      <div className="col-sm-6 Form" />
     </div>
   </div> // container
 );

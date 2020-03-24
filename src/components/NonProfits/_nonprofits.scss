@@ -1,0 +1,40 @@
+.nonprofit__wrapper {
+  background-color: $lighter-blue;
+  padding: 70px 0px 90px 0px;
+}
+
+.nonprofit__title {
+  text-align: center;
+}
+
+.nonprofits__heading{
+  font-size: 24px;
+  line-height: 64px;
+}
+
+.nonprofit__description {
+  font-size: 20px;
+  line-height: 38px; 
+  text-align: center;
+  padding: 20px 180px !important;
+}
+
+.nonprofits__li {
+  font-size: 20px;
+  line-height: 38px;
+  list-style-position: outside;
+  padding-inline-start: 16px;
+  li {
+    padding: 3px 0px 3px 16px;
+  }
+}
+
+.nonprofit__text {
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.nonprofit__col-left {
+  padding-top: 48px;
+  padding-left: 180px !important;
+}
