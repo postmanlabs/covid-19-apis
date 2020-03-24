@@ -40,7 +40,11 @@ const IndexPage = () => (
           <h1>Helping You Publish New COVID-Related APIs </h1>
         </div>
         <div className="col-md-12">
-          <p>In addtion to the fast-growing list of existing APIs and API resources listed above, the Postman team is also working around the clock to create new....</p>
+          <p>
+            In addtion to the fast-growing list of existing APIs and
+            API resources listed above, the Postman team is also working
+            around the clock to create new....
+          </p>
         </div>
       </div>
       <div>
@@ -49,7 +53,8 @@ const IndexPage = () => (
       <div className="row">
         <div className="col-md-10">
           <p className="collection__end">
-            If you have a pandemic-related project you would like deployed as an API, please email us at COVID-19@postman.com.
+            If you have a pandemic-related project you would like deployed as an API,
+            please email us at COVID-19@postman.com.
             {' '}
             If you would like additional help or guidance on using APIs to retrieve or expose...
           </p>
