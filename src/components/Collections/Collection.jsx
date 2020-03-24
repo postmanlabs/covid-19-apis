@@ -29,9 +29,11 @@ const Collection = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <Link className="btn btn__secondary-light" to={urlDoc}>Documentation</Link>
-            <Link className="btn btn__primary" to={urlPost}>Run in Postman</Link>
+            <a className="btn btn__secondary-light" href={urlDoc}>Documentation</a>
+            <a className="btn btn__primary" href={urlPost}>Run in Postman</a>
+         
           </div>
+          <div class="postman-run-button" data-postman-action="collection/import" data-postman-var-1="926a4b4da8318c9c9581"></div>
         </div>
       );
     })
