@@ -20,7 +20,7 @@ const IndexPage = () => (
           <h1>API Collections to Help in the COVID-19 Fight</h1>
         </div>
         <div className="col-md-12">
-          <p>Below is a list curated by Postman s developer relations team....</p>
+          <p />
         </div>
       </div>
       <div>
@@ -47,7 +47,7 @@ const IndexPage = () => (
         </div>
         <div className="col-md-12">
           <p>
-            In addition to the fast-growing list of existing APIs and API resources listed above, the Postman team is also working around the clock to create new API collections which will provide you with access to vital data sets that aren’t presently served by any existing APIs, using the following blueprints for quickly deploying new APIs from existing data sets:
+            In addition to the fast-growing list of existing APIs and API resources listed above, the Postman team is also working around the clock to create new API collections which will provide you with access to vital data sets that aren&apos;t presently served by any existing APIs, using the following blueprints for quickly deploying new APIs from existing data sets:
           </p>
         </div>
       </div>
