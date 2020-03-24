@@ -43,7 +43,7 @@ const Nonprofit = () => (
           <li>Foundations</li>
           <li>Religious organizations without a secular community designation. To have a secular designation, an organization must provide services to people regardless of their religious beliefs and must not propagate a belief in a specific faith. It must also have a tax ID (EIN) separate from that of the church or religious organization.</li>
           <li>
-            <span className="bold">US:</span>
+            <span className="bold">US: </span>
             Only 501(c)(3) and 501(c)(4) nonprofits are eligible. This means that organizations that are designated as nonprofit under IRS Subsections other than 501(c)(3) or 501(c)(4) are not eligible.
           </li>
         </ul>

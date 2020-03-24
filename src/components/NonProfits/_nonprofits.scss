@@ -30,6 +30,9 @@
   padding-inline-start: 16px;
   li {
     padding: 3px 0px 3px 16px;
+    .bold {
+      font-weight: 700px !important;
+    }
   }
   
 }
