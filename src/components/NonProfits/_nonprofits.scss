@@ -17,6 +17,10 @@
   line-height: 38px; 
   text-align: center;
   padding: 20px 180px !important;
+
+  @media (max-width: 920px) {
+    padding: 20px !important;
+  }
 }
 
 .nonprofits__li {
@@ -27,6 +31,7 @@
   li {
     padding: 3px 0px 3px 16px;
   }
+  
 }
 
 .nonprofit__text {
@@ -37,4 +42,7 @@
 .nonprofit__col-left {
   padding-top: 48px;
   padding-left: 180px !important;
+  @media (max-width: 920px) {
+    padding-left: 20px !important;
+  }
 }

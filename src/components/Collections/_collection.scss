@@ -15,7 +15,9 @@
 }
 
 .collection__meta {
-  padding-left: 80px;
+  @media (min-width: 990px) {
+    padding-left: 80px;
+  }
 }
 
 .collection__title {
@@ -41,6 +43,7 @@
     padding: 20px 80px;
   }
 }
+
 
 .collection__end {
   font-family: 'Open Sans';
