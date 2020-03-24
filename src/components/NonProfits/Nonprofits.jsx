@@ -57,7 +57,7 @@ const Nonprofit = () => (
           <h5 className="nonprofits__heading">Terms of service:</h5>
           <ul className="nonprofits__li">
             <li>
-              Organizations that request Postman products must agree to the 
+              Organizations that request Postman products must agree to the
               <span><a className="link-style" href="https://www.postman.com/pricing"> Postman EULA </a></span>
               along with any applicable Postman terms of service prior to obtaining access to the products.
             </li>
