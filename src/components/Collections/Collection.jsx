@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 
 
@@ -31,9 +31,7 @@ const Collection = () => {
           <div className="col-md-4">
             <a className="btn btn__secondary-light" href={urlDoc}>Documentation</a>
             <a className="btn btn__primary" href={urlPost}>Run in Postman</a>
-         
           </div>
-          <div class="postman-run-button" data-postman-action="collection/import" data-postman-var-1="926a4b4da8318c9c9581"></div>
         </div>
       );
     })
