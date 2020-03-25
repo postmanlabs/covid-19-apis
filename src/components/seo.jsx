@@ -98,8 +98,8 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
-  socialCardMedia: null,
-  twitterHandle: '',
+  // socialCardMedia: null,
+  // twitterHandle: '',
 };
 
 SEO.propTypes = {
@@ -107,8 +107,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-  socialCardMedia: PropTypes.string,
-  twitterHandle: PropTypes.string,
+  // socialCardMedia: PropTypes.string,
+  // twitterHandle: PropTypes.string,
 };
 
 export default SEO;
