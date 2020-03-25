@@ -5,18 +5,25 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.2.44",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
+    "gatsby-plugin-sass": "^2.2.0",
     "gatsby-plugin-sharp": "^2.5.1",
-    "gatsby-source-filesystem": "^2.1.56",
+    "gatsby-source-filesystem": "^2.2.1",
+    "gatsby-transformer-remark": "^2.7.0",
     "gatsby-transformer-sharp": "^2.4.1",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "s3-deploy": "^1.4.0",
+    "uuid": "^7.0.2"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
@@ -27,11 +34,14 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
+    "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "test:lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/",
+    "test:lint-fix": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/ --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {

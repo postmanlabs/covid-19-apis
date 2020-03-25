@@ -1,0 +1,240 @@
+@import '../styles/_variables.scss';
+
+// Base button styles
+.btn {
+  appearance: none; // Corrects inability to style clickable `input` types in iOS.
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700!important;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+  position: relative;
+  transition: 0.2s ease-in-out;
+  user-select: none;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.15);
+
+  // @include for-phone-only {
+  //   display: block;
+  // }
+
+  // Primary Button
+  &.btn__primary {
+    color: #fff !important;
+    background-color: #FF6C37 !important;
+    border-color: #FF6C37 !important;
+    padding: 13px 32px;
+    text-align: center;
+    white-space: nowrap;
+    &:hover,
+    &.hover {
+      opacity: 0.7;
+    }
+
+    &:disabled,
+    &.isDisabled {
+      color: #666666 !important;
+      cursor: not-allowed;
+      background-image: none !important;
+      background: #F4F4F4 !important;
+      border-color: transparent;
+    }
+  }
+
+  // Secondary Button (Dark)
+  &.btn__secondary-dark {
+    color: #fff;
+    background-color: #1C272B;
+    background-image: none;
+    border: 1px solid #1C272B;
+    border-radius: 3px;
+    outline: 0;
+    padding: 13px 24px;
+    text-align: center;
+
+    &:hover,
+    &:active,
+    &.selected {
+      border-color: #6D7F91;
+      color: #fff;
+      background-color: #6D7F91;
+    }
+
+    &:focus {
+      border-color: #1C272B;
+      box-shadow: 0 0 0 0.2em rgba(#1C272B, 0.3);
+    }
+
+    &:disabled,
+    &.isDisabled {
+      background-color: #F4F4F4;
+      border-color: #F4F4F4;
+      color: #666666;
+      cursor: not-allowed;
+    }
+  }
+
+  // Secondary Button (Light)
+  &.btn__secondary-light {
+    color: #1C272B;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    outline: 0;
+    padding: 13px 24px;
+    text-align: center;
+
+    &:hover,
+    &:active,
+    &.selected {
+      border-color: #F4F4F4;
+      color: #1C272B;
+      background-color: #F4F4F4;
+    }
+
+    &:focus {
+      border-color: #1C272B;
+      box-shadow: 0 0 0 0.2em rgba(#1C272B, 0.3);
+    }
+
+    &:disabled,
+    &.isDisabled {
+      background-color: #F4F4F4;
+      border-color: #F4F4F4;
+      color: #666666;
+      cursor: not-allowed;
+    }
+  }
+
+  //  Tertiary Button
+  &.btn__tertiary {
+    color: #FF6C37 !important;
+    padding: 13px 24px;
+    box-shadow: none;
+    text-align: center;
+
+    &:hover>.btn__link-hover {
+      color: #F99B78;
+      padding-bottom: 2px;
+      border-bottom: 1px solid #F99B78;
+    }
+
+    // Inline Link disabled not available
+  }
+
+  &.btn__small {
+    font-size: 14px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  &:hover {
+    background-repeat: repeat-x;
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:disabled,
+  &.isDisabled {
+    cursor: default;
+    // Repeat `background-position` because `:hover`
+    background-position: 0 0;
+  }
+
+  &:active,
+  &.selected {
+    background-image: none;
+  }
+
+  &.btn_exception-padding-removed {
+    padding: 0;
+  }
+
+  // ICONS
+  // class starting with `pm-icon-` get styled by _pm-icons.scss file.
+  // class .glyphicon gets styled by bootstrap.css file.
+  i {
+    margin-right: 8px;
+    // gets rid of weird background bug with our icons. We need to redo these.
+    background: 0 0;
+  }
+}
+
+.btn_group {
+  .btn__left {
+    margin-right: 16px;
+
+    // @include for-phone-only {
+    //   margin-right: 0;
+    // }
+  }
+}
+
+.btn__inline {
+  box-shadow: none;
+  color: #FF6C37 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover,
+  &:active,
+  &.selected {
+    color: #F99B78 !important;
+  }
+
+  &:focus {
+    border-color: #1C272B;
+    box-shadow: 0 0 0 0.2em rgba(#1C272B, 0.3);
+  }
+
+  &.btn__no-shadow {
+
+    &:focus {
+      box-shadow: 0 0 0 0;
+      border: 0;
+    }
+  }
+}
+
+a {
+  &.link-style {
+    height: 24px; // allows the shadow line to shrink to the designed location
+    color: #282828;
+    font-weight: 700;
+    background-image: linear-gradient(180deg, transparent 50%, rgba(249,157,120,.5) 0);
+    padding-right: 4px;
+    padding-bottom: 2px;
+    background-position-y: 2px;
+    background-position-x: 4px;
+    background-repeat: no-repeat;
+    text-decoration: none !important;
+
+
+    &:hover {
+      color: #282828;
+      background-position: top 18px right -4px;
+      padding-right: 4px;
+      padding-bottom: 2px;
+      background-image: linear-gradient(180deg, transparent 0%, rgba(249, 157, 120, 1) 0);
+    }
+
+    &.alternative {
+      color: #fff;
+    }
+
+    &.alternative:hover {
+      color: #fff;
+      background-position: top 22px right -4px;
+      padding-right: 4px;
+      padding-bottom: 2px;
+      text-decoration: none;
+    }
+  }
+}

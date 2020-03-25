@@ -1,0 +1,35 @@
+{
+  "links": [
+    {
+      "title": "Google Sheets to API",
+      "description": "Developing a Postman Collection that pulls data from a Google Sheet and then makes it available as an API, allowing the data to be seamlessly integrated into other websites and applications", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRXM?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-6a9e5acc-6eec-4eb8-9840-216bf577440e-SzS8uRXM"
+    },{
+      "title": "Website scraping to API",
+      "description": "Developing a Postman Collection that scrapes data from an existing website and then makes it available as an API for integration into other websites and applications", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRXN?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-98ad64a0-9ced-41ce-ac02-0b766c8b05a8-SzS8uRXN"
+    },{
+      "title": "AWS Database to API",
+      "description": "Deploying APIs from Aurora, MySQL, PostgreSQL, and SQL Server databases using Postman.", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRSy?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-9f639759-007a-406a-8143-e1124acdebcd-SzS8uRSy"
+    },{
+      "title": "Azure Database to API",
+      "description": "Deploying APIs from Cosmos DB, MySQL, PostgreSQL, and SQL Server databases using Postman", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRT2?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-8e55b693-1b71-417e-8288-04b7fb777f8c-SzS8uRT2"
+    },{
+      "title": "Google Database to API",
+      "description": "Deploying APIs from Cloud DataStore, MySQL, PostgreSQL, and SQL Server databases using Postman", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRT3?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-cbe8475c-57c0-4bb2-8811-53bd90a44e40-SzS8uRT3"
+    },{
+      "title": "Heroku Database to API",
+      "description": "Deploying APIs from PostgreSQL databases using Postman", 
+      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8uRT4?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-ba8e00a8-fe70-4172-84bd-8dd9a980e1e1-SzS8uRT4"
+    }
+  ]
+}
