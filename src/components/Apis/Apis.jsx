@@ -1,4 +1,4 @@
-import { useStaticQuery, graphql, Link } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 
 
@@ -29,8 +29,8 @@ const Apis = () => {
             </div>
           </div>
           <div className="col-md-4">
-            <Link className="btn btn__secondary-light" to={urlDoc}>Documentation</Link>
-            <Link className="btn btn__primary" to={urlPost}>Run in Postman</Link>
+            <a className="btn btn__secondary-light" href={urlDoc}>Documentation</a>
+            <a className="btn btn__primary" href={urlPost}>Run in Postman</a>
           </div>
         </div>
       );
