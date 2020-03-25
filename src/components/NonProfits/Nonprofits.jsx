@@ -15,9 +15,7 @@ const Nonprofit = () => (
             (see eligibility guidelines below)
             will receive ten
             <span><a className="link-style" href="https://www.postman.com/pricing"> Postman Business Plan </a></span>
-            licenses for free, and a 75% discount for each additional license thereafter.
-            If you are interested in participating, fill out form bleow
-            and we will get you started ASAP.
+            licenses for free, and a 75% discount for each additional license thereafter. If you’re interested in participating, fill out the form below and we’ll get you started ASAP.
           </p>
         </div>
       </div>
