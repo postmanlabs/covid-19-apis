@@ -11,7 +11,7 @@ import Nonprofit from '../components/NonProfits/Nonprofits';
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="List of APIs and Blueprints" />
     <Hero />
     <Welcome />
     <div className="collection__wrapper">
@@ -33,8 +33,10 @@ const IndexPage = () => (
             <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
-            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
-            .
+            <span>
+              <a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>
+              .
+            </span>
           </p>
         </div>
       </div>
@@ -61,8 +63,10 @@ const IndexPage = () => (
             <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
-            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit a an issue on Github</a></span>
-            .
+            <span>
+              <a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>
+              .
+            </span>
             <br />
             <br />
           </p>
@@ -76,7 +80,7 @@ const IndexPage = () => (
     </div>
 
     <Nonprofit />
-    {/* <Link to="/postman-for-good/covid-19-apis/thankyou/">Go to page 2</Link> */}
+    {/* <Link to="/thankyou">Go to page 2</Link> */}
   </Layout>
 );
 

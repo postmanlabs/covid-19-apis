@@ -21,6 +21,8 @@ function SEO({
             title
             description
             author
+            social_card_media
+            twitter_handle
           }
         }
       }
@@ -35,7 +37,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} | %s`}
       meta={[
         {
           name: 'description',
@@ -50,12 +52,20 @@ function SEO({
           content: metaDescription,
         },
         {
+          property: 'og:image',
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
         {
           name: 'twitter:card',
-          content: 'summary',
+          content: 'summary_large_image',
+        },
+        {
+          property: 'twitter:image',
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
           name: 'twitter:creator',
@@ -68,6 +78,10 @@ function SEO({
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:site',
+          content: '@getpostman',
         },
       ].concat(meta)}
     >

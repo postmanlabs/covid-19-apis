@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Postman Covid-19',
-    description: 'Covid-19 description.',
+    title: 'Postman COVID-19 API Resource Center',
+    description: 'View our growing list of novel coronavirus (COVID-19) API collections to help fight this pandemic. And learn how to use our blueprints for quickly deploying new APIs from existing data sets.',
     author: 'Postman',
+    social_card_media: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
+    twitter_handle: '@getpostman',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
