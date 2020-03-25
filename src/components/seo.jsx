@@ -21,6 +21,8 @@ function SEO({
             title
             description
             author
+            social_card_media
+            twitter_handle
           }
         }
       }
@@ -35,7 +37,7 @@ function SEO({
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={`${site.siteMetadata.title} | %s`}
       meta={[
         {
           name: 'description',
@@ -50,12 +52,20 @@ function SEO({
           content: metaDescription,
         },
         {
+          property: 'og:image',
+          content: site.siteMetadata.social_card_media,
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
         {
           name: 'twitter:card',
           content: 'summary',
+        },
+        {
+          property: 'twitter:image',
+          content: site.siteMetadata.social_card_media,
         },
         {
           name: 'twitter:creator',
@@ -68,6 +78,10 @@ function SEO({
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:site',
+          content: site.siteMetadata.twitter_handle,
         },
       ].concat(meta)}
     >
@@ -84,12 +98,14 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
+  image: null,
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  image: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
