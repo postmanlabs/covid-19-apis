@@ -1,0 +1,23 @@
+name: Prod
+
+on: 
+  push:
+    branches:
+    - master
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@master
+    - name: set AWS Keys to environment and push to beta bucket
+      env:
+        AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
+        AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
+      run: |
+        npm install
+        npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-prod --private --deleteRemoved
+    
