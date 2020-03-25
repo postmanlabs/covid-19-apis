@@ -56,7 +56,7 @@ const Nonprofit = () => (
           <ul className="nonprofits__li">
             <li>
               Organizations that request Postman products must agree to the
-              <span><a className="link-style" href="https://www.postman.com/pricing"> Postman EULA </a></span>
+              <span><a className="link-style" href="https://www.postman.com/licenses/postman-eula"> Postman EULA </a></span>
               along with any applicable Postman terms of service prior to obtaining access to the products.
             </li>
             <li>Postman reserves the right to supplement or amend these eligibility guidelines at any time without notice.</li>
