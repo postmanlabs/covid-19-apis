@@ -22,6 +22,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "s3-deploy": "^1.4.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
