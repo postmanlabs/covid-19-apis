@@ -33,7 +33,10 @@ const IndexPage = () => (
             <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
-            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>.</span>
+            <span>
+              <a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>
+              .
+            </span>
           </p>
         </div>
       </div>
@@ -60,7 +63,10 @@ const IndexPage = () => (
             <br />
             <span><a className="link-style" href="mailto:covid-19@postman.com"> COVID-19@postman.com</a></span>
             or
-            <span><a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>.</span>
+            <span>
+              <a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>
+              .
+            </span>
             <br />
             <br />
           </p>

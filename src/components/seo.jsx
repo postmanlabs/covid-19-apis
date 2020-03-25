@@ -98,14 +98,12 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
-  image: null,
 };
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  image: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
