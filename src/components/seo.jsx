@@ -53,7 +53,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: site.siteMetadata.social_card_media,
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
           property: 'og:type',
@@ -65,7 +65,7 @@ function SEO({
         },
         {
           property: 'twitter:image',
-          content: site.siteMetadata.social_card_media,
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
           name: 'twitter:creator',
@@ -81,7 +81,7 @@ function SEO({
         },
         {
           name: 'twitter:site',
-          content: site.siteMetadata.twitter_handle,
+          content: '@getpostman',
         },
       ].concat(meta)}
     >
