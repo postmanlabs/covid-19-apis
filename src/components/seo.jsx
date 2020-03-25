@@ -45,7 +45,7 @@ function SEO({
         },
         {
           property: 'og:title',
-          content: title,
+          content: 'Postman COVID-19 API Resource Center | List of APIs and Blueprints',
         },
         {
           property: 'og:description',
@@ -73,7 +73,7 @@ function SEO({
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: 'Postman COVID-19 API Resource Center | List of APIs and Blueprints',
         },
         {
           name: 'twitter:description',
