@@ -1,0 +1,10 @@
+.contact-form { 
+  padding: 48px 0px;
+  text-align: center;
+}
+
+.contact-us {
+  @media (min-width: 990px) {
+    padding: 0px 200px 48px 120px !important;
+  }
+}

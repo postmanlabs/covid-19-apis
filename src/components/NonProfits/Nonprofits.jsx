@@ -20,7 +20,7 @@ const Nonprofit = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-7">
+        <div className="col-md-6 nonprofits__space">
           <h5 className="nonprofits__heading">Eligibility Guidelines for Nonprofits</h5>
           <p className="nonprofit__text">
             To be eligible for Postman’s COVID-related nonprofit discount program, a nonprofit and non-governmental organization in the United States must be qualified with tax-exempt status under 501(c)(3) or 501(c)(4) of the U.S. Internal Revenue Code.  Eligible organizations must also operate on a not-for-profit basis and have a mission to benefit the local community that could include, but is not limited to:
@@ -36,6 +36,8 @@ const Nonprofit = () => (
             <li>Nonprofit sports body</li>
             <li>Religious, charitable, scientific, or literary</li>
           </ul>
+        </div>
+        <div className="col-md-6 nonprofits__space">
           <h5 className="nonprofits__heading">Ineligible organization types</h5>
           <p className="nonprofit__text">
             Not all 501(c)(3) and 501(c)(4) nonprofit organizations are eligible for donated Postman products. Ineligible organizations include the following:
@@ -52,6 +54,8 @@ const Nonprofit = () => (
               Only 501(c)(3) and 501(c)(4) nonprofits are eligible. This means that organizations that are designated as nonprofit under IRS Subsections other than 501(c)(3) or 501(c)(4) are not eligible.
             </li>
           </ul>
+        </div>
+        <div className="col-md-12">
           <h5 className="nonprofits__heading">Terms of service:</h5>
           <ul className="nonprofits__li">
             <li>
@@ -65,11 +69,12 @@ const Nonprofit = () => (
             <li>For organizations that possess multiple IRS designations, the product donation licenses and discounts may only be used by the 501(c)(3) or 501(c)(4) organization.</li>
             <li>Recipient organizations may not transfer or resell Postman products.</li>
           </ul>
+          <a className="btn btn__primary" href="/form">Contact us</a>
         </div>
-        <div className="col-md-5 Form">
+        {/* <div className="col-md-5 Form">
           <h2 className="h3">Tell us about your organization</h2>
           <form id="mktoForm_1376" className="nonprofit__form" />
-        </div>
+        </div> */}
       </div>
     </div>
   </div> // container

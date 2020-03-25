@@ -1,6 +1,7 @@
 .nonprofit__wrapper {
   background-color: $lighter-blue;
   padding: 70px 0px 90px 0px;
+  margin-top: 48px;
 }
 
 .nonprofit__title {
@@ -40,6 +41,11 @@
 .nonprofit__text {
   font-size: 20px;
   line-height: 38px;
+}
+
+.nonprofits__space {
+  padding-right: 36px !important;
+  margin-top: 24px;
 }
 
 .nonprofit__col-left {
