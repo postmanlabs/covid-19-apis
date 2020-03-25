@@ -21,8 +21,8 @@ function SEO({
             title
             description
             author
-            social_card_media
-            twitter_handle
+            socialCardMedia
+            twitterHandle
           }
         }
       }
@@ -53,7 +53,7 @@ function SEO({
         },
         {
           property: 'og:image',
-          content: site.siteMetadata.social_card_media,
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
           property: 'og:type',
@@ -65,7 +65,7 @@ function SEO({
         },
         {
           property: 'twitter:image',
-          content: site.siteMetadata.social_card_media,
+          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
           name: 'twitter:creator',
@@ -81,7 +81,7 @@ function SEO({
         },
         {
           name: 'twitter:site',
-          content: site.siteMetadata.twitter_handle,
+          content: '@getpostman',
         },
       ].concat(meta)}
     >
@@ -98,6 +98,8 @@ SEO.defaultProps = {
   lang: 'en',
   meta: [],
   description: '',
+  socialCardMedia: null,
+  twitterHandle: '',
 };
 
 SEO.propTypes = {
@@ -105,6 +107,8 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  socialCardMedia: PropTypes.string,
+  twitterHandle: PropTypes.string,
 };
 
 export default SEO;
