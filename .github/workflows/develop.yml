@@ -19,6 +19,6 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{secrets.DEV_AWS_SECRET_ACCESS_KEY}}
       run: |
         npm install
-        npm run build:dev && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved
+        npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved
     
 
