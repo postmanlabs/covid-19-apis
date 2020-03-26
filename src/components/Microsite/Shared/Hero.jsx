@@ -1,7 +1,7 @@
 import React from 'react';
 // import heroImage from '../../images/hero_BG-asset.svg';
 // import heroPostmanaut from '../../images/hero-postmanaut.svg';
-import heroPostmanaut from '../../images/covid19-image-2.png';
+import heroPostmanaut from '../../../images/covid19-image-2.png';
 
 
 const Hero = () => (
