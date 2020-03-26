@@ -20,6 +20,6 @@ jobs:
         DIST_ID: ${{secrets.DEV_DIST_ID}}
       run: |
         npm install
-        npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved --distId $DIST_ID --invalidate '/*'
+        npm run build:dev && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved --distId $DIST_ID --invalidate '/*'
     
 
