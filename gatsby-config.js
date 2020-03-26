@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.GATSBY_ACTIVE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: 'Postman COVID-19 API Resource Center',
@@ -5,8 +9,22 @@ module.exports = {
     author: 'Postman',
     social_card_media: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
     twitter_handle: '@getpostman',
+    siteUrl: 'https://covid-19-apis.postman.com/',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: 'UA-43979731-18',
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        alwaysSendReferrer: true,
+        forceSSL: true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
@@ -35,6 +53,28 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve:  'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/thankyou/', '/frontmatter', '/content/*']
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://covid-19-apis.postman.com/',
+        sitemap: 'https://covid-19-apis.postman.com/sitemap.xml',
+        resolveEnv: () => process.env.GATSBY_ACTIVE_ENV,
+        env: {
+          development: {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+          },
+          production: {
+            policy: [{ userAgent: '*', allow: '/' }],
+          },
+        },
       },
     },
     'gatsby-plugin-sass',
