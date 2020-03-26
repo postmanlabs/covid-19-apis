@@ -6,4 +6,7 @@
 @import './_variables.scss';
 @import './_layout.scss';
 @import '../Shared/_buttons.scss';
-@import '../../pages/_thankyou.scss';
+@import '../Shared/_grid_overrides.scss';
+@import '../../../pages/_404.scss';
+
+@import '../../../pages/_thankyou.scss';

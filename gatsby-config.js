@@ -56,9 +56,9 @@ module.exports = {
       },
     },
     {
-      resolve:  'gatsby-plugin-sitemap',
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/thankyou/', '/frontmatter', '/content/*']
+        exclude: ['/thankyou/', '/frontmatter', '/content/*'],
       },
     },
     {
