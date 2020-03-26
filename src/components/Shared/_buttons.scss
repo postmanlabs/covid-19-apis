@@ -1,5 +1,6 @@
 @import '../styles/_variables.scss';
 
+
 // Base button styles
 .btn {
   appearance: none; // Corrects inability to style clickable `input` types in iOS.
@@ -20,6 +21,7 @@
   // @include for-phone-only {
   //   display: block;
   // }
+
 
   // Primary Button
   &.btn__primary {
@@ -108,7 +110,7 @@
       color: #666666;
       cursor: not-allowed;
     }
-  }
+  }   
 
   //  Tertiary Button
   &.btn__tertiary {
@@ -236,5 +238,13 @@ a {
       padding-bottom: 2px;
       text-decoration: none;
     }
+  }
+}
+
+
+
+  @media (min-width: 768px) and (max-width: 1343px) {
+    .landing {
+    padding: 13px 32px !important;
   }
 }
