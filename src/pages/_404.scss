@@ -1,0 +1,22 @@
+.error-row {
+  margin-top: 20px;
+  padding: 40px;
+  .error-img {
+    max-height: 450px;
+  }
+  .text-col {
+    display: flex;
+    align-items: center;
+    color: $gray-2;
+    button {
+      background: none;
+      color: $postman-orange;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+  }
+}
+
