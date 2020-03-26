@@ -1,9 +1,10 @@
 const uuid = require('uuid');
 const path = require('path');
-const HeaderJson = require('./src/components/Header/Header.data.json');
-const FooterJson = require('./src/components/Footer/Footer.data.json');
-const CollectionJson = require('./src/components/Collections/Collection.data.json');
-const ApiJson = require('./src/components/Apis/Apis.data.json');
+const HeaderJson = require('./src/components/Microsite/Header/Header.data.json');
+const FooterJson = require('./src/components/Microsite/Footer/Footer.data.json');
+const CollectionJson = require('./src/components/Microsite/Collections/Collection.data.json');
+const ApiJson = require('./src/components/Microsite/Apis/Apis.data.json');
+
 const { v4 } = uuid;
 
 

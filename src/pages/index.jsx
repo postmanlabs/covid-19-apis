@@ -1,13 +1,13 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 
-import Layout from '../components/layout';
+import Layout from '../components/Microsite/layout';
 import SEO from '../components/seo';
-import Hero from '../components/Shared/Hero';
-import Welcome from '../components/Shared/Welcome';
-import Collection from '../components/Collections/Collection';
-import Apis from '../components/Apis/Apis';
-import Nonprofit from '../components/NonProfits/Nonprofits';
+import Hero from '../components/Microsite/Shared/Hero';
+import Welcome from '../components/Microsite/Shared/Welcome';
+import Collection from '../components/Microsite/Collections/Collection';
+import Apis from '../components/Microsite/Apis/Apis';
+import Nonprofit from '../components/Microsite/NonProfits/Nonprofits';
 
 const IndexPage = () => (
   <Layout>
