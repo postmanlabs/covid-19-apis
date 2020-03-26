@@ -5,6 +5,7 @@ module.exports = {
     author: 'Postman',
     social_card_media: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
     twitter_handle: '@getpostman',
+    siteUrl: 'https://covid-19-apis.postman.com/',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
