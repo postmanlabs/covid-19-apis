@@ -4,9 +4,9 @@
 }
 
 .collection__header {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
   p {
     padding: 16px 80px;
     font-size: 20px;
@@ -14,11 +14,11 @@
   }
 }
 
-.collection__meta {
-  @media (min-width: 990px) {
-    padding-left: 80px;
-  }
-}
+// .collection__meta {
+//   @media (min-width: 990px) {
+//     padding-left: 80px;
+//   }
+// }
 
 .collection__title {
   font-family: 'Open Sans';
@@ -39,8 +39,18 @@
   .btn.btn__secondary-light, .btn.btn__primary {
     margin: 8px 9px;
   }
+  &:hover {
+    background-color: rgba(0,0,0, .1);
+    border-radius: 5px;
+  }
+  .collection_cta {
+    text-align: right;
+    @media (max-width: 768px) {
+      text-align: left;
+    }
+  }
   @media (min-width: 768px) {
-    padding: 20px 80px;
+    padding: 20px 0;
   }
 }
 

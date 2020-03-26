@@ -28,7 +28,7 @@ const Collection = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-5 collection_cta">
             <a className="landing btn btn__secondary-light" href={urlDoc}>Documentation</a>
             <a className="btn btn__primary" href={urlPost}>Run in Postman</a>
           </div>
