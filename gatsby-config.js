@@ -11,6 +11,19 @@ module.exports = {
     twitter_handle: '@getpostman',
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "UA-43979731-18",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+        alwaysSendReferrer: true,
+        forceSSL: true,
+      },
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
