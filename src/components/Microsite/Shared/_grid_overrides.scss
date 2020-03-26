@@ -1,0 +1,15 @@
+@import '../styles/_variables.scss';
+
+
+// Bootstrap overrides for grid layout
+.container {
+  // width: 1440px !important;
+  max-width: 1440px !important;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 100% !important;
+    padding: 0 82px !important;
+    max-width: 1440px !important;
+  }
+}

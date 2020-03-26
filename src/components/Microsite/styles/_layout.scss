@@ -63,15 +63,14 @@ div.container-fluid.hero {
   background-repeat: no-repeat;
   // object-fit: cover;
   background-size: cover;
-  height: 522px;
+  // height: 522px;
 
   // make image max-width to prevent overflow
   img {
-    // max-width: 400px;
-    // height: auto;
-    padding-top: 40px;
+    max-width: 100%;
+    height: auto;
     @media (max-width: 990px) {
-      display: none;
+      // display: none;
     }
   }
 
@@ -80,30 +79,31 @@ div.container-fluid.hero {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 86px 123px;
 
     h1 {
       font-weight: 500;
       font-size: 60px;
       line-height: 70px;
-      @media (max-width: 451px) {
-        padding: 80px 20px !important;
+      @media (max-width: 600px) {
+        // padding: 80px 20px !important;
+        font-size: 40px;
+        line-height: 1.4;
       }
     }
     @media (max-width: 990px) {
-      padding: 60px 24px; 
+      padding: 30px 24px; 
     }
+  }
+  .hero_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 /* Welcome component */
 
-.col-md-12.welcome {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-
+.welcome {
   p {
     padding: 66px 0px;
     font-weight: 500;
