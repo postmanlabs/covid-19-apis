@@ -4,6 +4,15 @@ import { graphql } from 'gatsby';
 // import SEO from '../components/seo';
 // import Layout from '../components/layout';
 
+/* eslint-disable */
+const blogContent = html => (
+  <div
+    className="blog-post-content"
+    dangerouslySetInnerHTML={{ __html: html }}
+  />
+);
+/* eslint-enable */
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -14,10 +23,7 @@ export default function Template({
       <div className="blog-post">
         <h1>{frontmatter.title}</h1>
         <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        {blogContent(html)}
       </div>
     </div>
   );
