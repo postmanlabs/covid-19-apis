@@ -9,13 +9,14 @@ module.exports = {
     author: 'Postman',
     social_card_media: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
     twitter_handle: '@getpostman',
+    siteUrl: 'https://covid-19-apis.postman.com/',
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         // The property ID; the tracking code won't be generated without it
-        trackingId: "UA-43979731-18",
+        trackingId: 'UA-43979731-18',
         // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: true,
         // Setting this parameter is also optional
@@ -52,6 +53,12 @@ module.exports = {
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/favicon.png', // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve:  'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/thankyou/', '/frontmatter', '/content/*']
       },
     },
     {
