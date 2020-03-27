@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const FAQs = () => (
   <div className="container-fluid ts-faqs ts-section">

@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const About = () => (
   <div className="ts-section text-center">

@@ -1,6 +1,4 @@
 import React from 'react';
-import Disclaimer from '../../components/TestingSites/disclaimer';
-
 
 const Hero = () => (
   <div className="container-fluid ts-hero ts-section">
