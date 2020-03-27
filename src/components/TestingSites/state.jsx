@@ -1,3 +1,4 @@
+// on index (main) page
 import React from 'react';
 import { Link } from 'gatsby';
 
