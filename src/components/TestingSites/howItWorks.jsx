@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const About = () => (
-  <div className="about">
-    <h1>About</h1>
+const HowItWorks = () => (
+  <div className="how-it-works">
+    <h1>HowItWorks</h1>
     <p>
       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eos facilis velit sunt blanditiis numquam, obcaecati cumque illum officia voluptatem, provident dolore nihil distinctio ut cum sapiente expedita! Optio, cumque!
     </p>
@@ -11,4 +11,4 @@ const About = () => (
   </div>
 );
 
-export default About;
+export default HowItWorks;
