@@ -34,7 +34,7 @@
       "title": "US Digital Registry API",
       "description": "An API for pulling federal government agencies and social media accounts", 
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkEm?version=latest",
-      "urlPost": "https://app.getpostman.com/run-collection/[data-postman-var-1]"
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-6dc5390c-0f79-4295-a38f-61fa3ec00460-SzS7NkEm"
     },{
       "title": "News API",
       "description": " An aggregate news API for pulling news from across multiple news sources", 
