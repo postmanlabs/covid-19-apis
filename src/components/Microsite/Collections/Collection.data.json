@@ -19,7 +19,7 @@
       "title": "NovelCOVID API",
       "description": "An API for current cases and more information about COVID-19", 
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R6uu?version=latest",
-      "urlPost": "https://app.getpostman.com/run-collection/8854915-ea599e13-12ab-4cfc-b389-5673ae4e5794-SzS7R6uuc"
+      "urlPost": "https://app.getpostman.com/run-collection/8854915-ea599e13-12ab-4cfc-b389-5673ae4e5794-SzS7R6uu"
     },{
       "title": "CDC Cases & Deaths (ScrAPI)",
       "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment", 
