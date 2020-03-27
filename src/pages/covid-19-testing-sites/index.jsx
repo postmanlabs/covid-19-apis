@@ -16,43 +16,23 @@ import State from '../../components/TestingSites/state';
 const IndexPage = () => (
   <Layout>
     <SEO title="List of APIs and Blueprints" />
-    <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-12">
-          <Hero />
+    <div className="">
+      <Hero />
+      <Disclaimer />
+      <State />
+      <CallToAction />
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-6 ts-about">
+            <About />
+          </div>
+          <div className="col-sm-6 ts-how-it-works">
+            <HowItWorks />
+          </div>
         </div>
       </div>
-      <div className="row">
-        <div className="col-12">
-          <Disclaimer />
-        </div>
-      </div>
-      <div className="row">
-        <State />
-      </div>
-      <div className="row">
-        <div className="col-12">
-          <CallToAction />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-sm-6">
-          <About />
-        </div>
-        <div className="col-sm-6">
-          <HowItWorks />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12">
-          <FAQs />
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12">
-          <GoogleSheets />
-        </div>
-      </div>
+      <FAQs />
+      <GoogleSheets />
     </div>
   </Layout>
 );

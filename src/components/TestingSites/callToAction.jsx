@@ -1,13 +1,16 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const CallToAction = () => (
-  <div className="call-to-action">
-    <h1>Call To Action</h1>
-    <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error natus vero a tempora harum in, omnis necessitatibus perspiciatis consequuntur libero, ea nam alias asperiores iusto hic accusamus consequatur perferendis?
-    </p>
-    <Link to="/" className="btn">Contribute</Link>
+  <div className="container-fluid ts-call-to-action ts-section">
+    <div className="row">
+      <div className="col-md-10 offset-md-1 text-center">
+        <h2>Call To Action</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut error natus vero a tempora harum in, omnis necessitatibus perspiciatis consequuntur libero, ea nam alias asperiores iusto hic accusamus consequatur perferendis?
+        </p>
+        <button type="button" className="btn btn-light">contribute</button>
+      </div>
+    </div>
   </div>
 );
 

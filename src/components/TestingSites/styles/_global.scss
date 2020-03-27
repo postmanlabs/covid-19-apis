@@ -1,0 +1,17 @@
+.ts-section a {
+    color: #F76C6C;
+    font-weight: 600;
+}
+.ts-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    
+    & li a {
+        padding: .5rem 0;
+        display: block;
+    }
+}
+.ts-cards {
+    margin-bottom: 32px;
+    background-color: rgba(255,255,255,.6) !important;
+}
