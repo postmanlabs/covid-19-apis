@@ -64,3 +64,22 @@ If you are building an COVID-19 related APIs we recommend using some existing AP
 - **311 for Non-Emergency Requests** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKC?version=latest) - An open schema and API standard for defining non-emergency requests.
 
 To submit an API to add to the list, please email us at [COVID-19@postman.com)[mailto:COVID-19@postman.com] or submit a GitHub issue on this repository.
+
+## Work To Be Done
+We are tracking all submissions to be added to our list of COVID-19 resources using GitHub issues, and organizing any work to be done via the [api-tasks tag](https://github.com/postmanlabs/covid-19-apis/issues?q=is%3Aissue+is%3Aopen+label%3Aapi-tasks) -- feel free to jump in on an issue and help out. Here is a current list of tasks that need some work.
+
+Work to be Done
+
+- [Updating the NovelCOVID API Collection #84](https://github.com/postmanlabs/covid-19-apis/issues/84)
+- [Evaluate ESRI Datasources #83](https://github.com/postmanlabs/covid-19-apis/issues/83)
+- [Official API for ECDC world wide cases #78](daily updates](https://github.com/postmanlabs/covid-19-apis/issues/78)
+- [Data API for Indian States #75](https://github.com/postmanlabs/covid-19-apis/issues/75)
+- [Create Postman Collection for US Energy Data #70](https://github.com/postmanlabs/covid-19-apis/issues/70)
+- [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
+- [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)
+- [Create Postman Collection for Aldebaran COVID API #89](https://github.com/postmanlabs/covid-19-apis/issues/89)
+- [Create Collection for COVID-19 Finnhub API #90](https://github.com/postmanlabs/covid-19-apis/issues/90)
+- [Create Postman Collection for Philippines Coronavirus API #91](https://github.com/postmanlabs/covid-19-apis/issues/91)
+- [Create Postman Collection for Elsevier API #92](https://github.com/postmanlabs/covid-19-apis/issues/92)
+- [Upgrade Twitter Postman Collections to use v2 Recent Search endpoint #93](https://github.com/postmanlabs/covid-19-apis/issues/93)
+- [Generate Postman Collections for Department of Veteran Affairs API resources #94](https://github.com/postmanlabs/covid-19-apis/issues/94)
