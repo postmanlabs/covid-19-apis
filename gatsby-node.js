@@ -4,6 +4,7 @@ const HeaderJson = require('./src/components/Microsite/Header/Header.data.json')
 const FooterJson = require('./src/components/Microsite/Footer/Footer.data.json');
 const CollectionJson = require('./src/components/Microsite/Collections/Collection.data.json');
 const ApiJson = require('./src/components/Microsite/Apis/Apis.data.json');
+const CaliforniaJson = require('./src/components/TestingSites/json/California.data.json');
 
 const { v4 } = uuid;
 
@@ -41,6 +42,7 @@ exports.sourceNodes = async ({
   createNode(prepareNode(FooterJson, 'FooterLinks'));
   createNode(prepareNode(CollectionJson, 'CollectionLinks'));
   createNode(prepareNode(ApiJson, 'ApiLinks'));
+  createNode(prepareNode(CaliforniaJson, 'CaliforniaLinks'));
 };
 
 

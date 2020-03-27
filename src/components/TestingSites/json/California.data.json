@@ -1,0 +1,787 @@
+{
+  "states": [
+  {
+    "alternate_name": "UC Davis Medical Center",
+    "description": "Our hospital is taking steps to greatly expand its testing capabilities on-site, with the goal of running tests inside our hospital within the next few weeks. We are doing this in full collaboration with Sacramento County Public Health and other public health agencies, in order to take pressure off other testing labs",
+    "id": "1",
+    "name": "UC Davis Medical Center",
+    "organization_id": "1",
+    "phones": [
+      {
+        "description": "description",
+        "extension": "None",
+        "id": "1",
+        "language": "EN, ES-MX",
+        "location_id": "1",
+        "number": "(916) 734-2011",
+        "type": "Office"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "1",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "1"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "2",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "2"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "3",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "3"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "4",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "4"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "5",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "5"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "6",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "6"
+      },
+      {
+        "closes_at": "12:00:00 PM",
+        "id": "7",
+        "location_id": "1",
+        "opens_at": "12:00:00 AM",
+        "weekday": "7"
+      }
+    ],
+    "transportation": "Bus, Uber, Car"
+  },
+  {
+    "alternate_name": "UCSF",
+    "description": "UCSF Health has been actively working to develop on-site testing capacity for patients who are suspected of having the novel coronavirus disease, COVID-19. We do not have the capacity to test the general community at this time.",
+    "id": "2",
+    "name": "UC San Francisco Medical Center",
+    "organization_id": "2",
+    "phones": [
+      {
+        "description": "Primary number pulled from Google Maps listing.",
+        "extension": "None",
+        "id": "2",
+        "language": "EN",
+        "location_id": "2",
+        "number": "(415) 476-1000",
+        "type": "Office"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [],
+    "transportation": "Shuttle, Bus, Train, Uber, Car"
+  },
+  {
+    "alternate_name": "UCSF",
+    "description": "Yes, we are testing people who meet certain conditions. Our ability to test patients is improving, but testing remains limited so we cannot test all individuals. Your health care provider will determine if you meet the criteria for testing.",
+    "id": "3",
+    "name": "UC San Diego Medical Center",
+    "organization_id": "3",
+    "phones": [
+      {
+        "description": "Primary number pulled from Google Maps listing.",
+        "extension": "None",
+        "id": "3",
+        "language": "EN",
+        "location_id": "3",
+        "number": "858-657-7000",
+        "type": "Office"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [],
+    "transportation": "Bus, Car, Uber"
+  },
+  {
+    "alternate_name": "Stanford Express Care Clinic",
+    "description": "Stanford Health Care’s same-day primary care program is offering drive-through testing, by appointment, for SARS-CoV-2, the coronavirus that causes COVID-19. The service is being provided to patients who are referred for testing by a health care provider based on their symptoms and exposure.",
+    "id": "4",
+    "name": "Stanford Health Care",
+    "organization_id": "4",
+    "phones": [
+      {
+        "description": "Primary number pulled from Google Maps listing.",
+        "extension": "None",
+        "id": "4",
+        "language": "EN",
+        "location_id": "4",
+        "number": "650-736-5211",
+        "type": "Hotline"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "8",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "1"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "9",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "2"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "10",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "3"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "11",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "4"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "12",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "5"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "13",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "6"
+      },
+      {
+        "closes_at": "6:00:00 PM",
+        "id": "14",
+        "location_id": "4",
+        "opens_at": "9:00:00 AM",
+        "weekday": "7"
+      }
+    ],
+    "transportation": "Drive Through"
+  },
+  {
+    "alternate_name": "Kaiser",
+    "description": "COVID-19 tests are available only by a doctor's order for hisk-risk patients who meet specific criteria. If you are concerned that you or a family member are exhibiting symptoms of COVID-19, please contact us first before coming in, as you need a referral and appointment to get tested",
+    "id": "5",
+    "name": "Kaiser Permanente",
+    "organization_id": "5",
+    "phones": [
+      {
+        "description": "Covid-19 Hotline Number",
+        "extension": "None",
+        "id": "5",
+        "language": "EN, ES",
+        "location_id": "5",
+        "number": "510-752-1000",
+        "type": "Office"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [],
+    "transportation": "Depends"
+  },
+  {
+    "alternate_name": "John Muir Health",
+    "description": "Testing is done by doctor’s order only, following an in-person or phone evaluation. If you are told that you are not eligible to be tested, this means that your health care provider has determined that your risk-status and symptoms indicate that you will do best with at-home care.",
+    "id": "6",
+    "name": "John Muir Health",
+    "organization_id": "6",
+    "phones": [],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [],
+    "transportation": "Car, Uber"
+  },
+  {
+    "alternate_name": "City of Hayward",
+    "description": "To qualify, they had to have a fever of 100.4 degrees Fahrenheit or higher, officials said, but that appeared to be the main hurdle. The tests were free, and people didn’t need a doctor’s slip to take them.\n\n“It’s for anybody, regardless of residency. You don’t have to live in the city of Hayward, you don’t have to be a citizen,” Capt. Don Nichelson of the Hayward Fire Department said. “We’ll take anybody from anywhere,” he added.\n\nThe city of Hayward set up the testing site across from the fire station at 28270 Huntwood Ave. in partnership with Avellino Labs, a private biotechnology firm based in Menlo Park.",
+    "id": "7",
+    "name": "City of Hayward",
+    "organization_id": "7",
+    "phones": [
+      {
+        "description": "Primary number pulled from Google Maps listing.",
+        "extension": "None",
+        "id": "7",
+        "language": "EN",
+        "location_id": "7",
+        "number": "(510) 583-4000",
+        "type": "Office"
+      }
+    ],
+    "physical_address": [
+      {
+        "address_1": "2315 Stockton Blvd",
+        "city": "Sacramento",
+        "country": "US",
+        "id": "1",
+        "location_id": "1",
+        "postal_code": "95817",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "505 Parnassus Drive",
+        "city": "San Francisco",
+        "country": "US",
+        "id": "2",
+        "location_id": "2",
+        "postal_code": "94143",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "200 West Arbor Drive",
+        "city": "San Diego",
+        "country": "US",
+        "id": "3",
+        "location_id": "3",
+        "postal_code": "92103",
+        "region": "Southern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "211 Quarry Road",
+        "city": "Palto Alto",
+        "country": "US",
+        "id": "4",
+        "location_id": "4",
+        "postal_code": "94304",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "3600 Broadway",
+        "city": "Oakland",
+        "country": "US",
+        "id": "5",
+        "location_id": "5",
+        "postal_code": "94611",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "1601 Ygnacio Valley Rd",
+        "city": "Walnut Creek",
+        "country": "US",
+        "id": "6",
+        "location_id": "6",
+        "postal_code": "94598",
+        "region": "Northern California",
+        "state_province": "CA"
+      },
+      {
+        "address_1": "28270 Huntwood Ave.",
+        "city": "Hayward",
+        "country": "US",
+        "id": "7",
+        "location_id": "7",
+        "postal_code": "94544",
+        "region": "Northern California",
+        "state_province": "CA"
+      }
+    ],
+    "regular_schedule": [
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "15",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "1"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "16",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "2"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "17",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "3"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "18",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "4"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "19",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "5"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "20",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "6"
+      },
+      {
+        "closes_at": "5:00:00 PM",
+        "id": "21",
+        "location_id": "7",
+        "opens_at": "9:00:00 AM",
+        "weekday": "7"
+      }
+    ],
+    "transportation": "Car"
+  }
+]}

@@ -28,7 +28,7 @@ class Header extends React.Component {
       isToggledOn,
     } = this.state;
     return (
-      <header className="header text-center navbar navbar-expand-xl navbar-light">
+      <header className="header text-center navbar navbar-expand-xl navbar-light ts-topnav">
         <div className="navbar-brand header__brand">
           <a
             className="header__homelink"
