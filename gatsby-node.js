@@ -8,7 +8,6 @@ const CaliforniaJson = require('./src/components/TestingSites/json/California.da
 
 const { v4 } = uuid;
 
-
 exports.sourceNodes = async ({
   actions,
   createNodeId,
@@ -46,6 +45,9 @@ exports.sourceNodes = async ({
 };
 
 
+/* create blog posts with template from Markdown
+/************************************************************************************************* */
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
@@ -79,6 +81,30 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {}, // additional data can be passed via context
+    });
+  });
+};
+
+
+/* Create testing sites
+/******************************************************************************************** */
+
+exports.createPages = async ({ actions: { createPage } }) => {
+  const allState = ['California', 'Washington'];
+
+  // create a page that lists all States. call once for every state
+  createPage({
+    path: '/covid-19-testing-sites/state/list/',
+    component: require.resolve('./src/templates/stateTemplate.jsx'),
+    context: { allState },
+  });
+
+  // create individual states page
+  allState.forEach((state) => {
+    createPage({
+      path: `/covid-19-testing-sites/state/${state}/`,
+      component: require.resolve('./src/templates/stateSiteTemplate.jsx'),
+      context: { state },
     });
   });
 };
