@@ -55,6 +55,12 @@
       "description": "Get real-time updates on the number of COVID-19 (Corona virus) cases in the US with a state-by-state breakdown. Data is sourced from CDC and reputable sources.", 
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest",
       "urlPost": ""
+    },{
+      "title": "COVID-19 Elsevier Research API",
+      "description": "A research dataset search engine API (indexing datasets from 60+ scientific data repositories worldwide).", 
+      "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest",
+      "urlPost": ""
     }
   ]
 }
+
