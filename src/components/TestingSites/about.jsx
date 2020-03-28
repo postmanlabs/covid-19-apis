@@ -4,9 +4,9 @@ const About = () => (
   <div className="ts-section text-center">
     <h2>About</h2>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eos facilis velit sunt blanditiis numquam, obcaecati cumque!
+      View the story of this crowdsourced project.
     </p>
-    <button type="button" className="btn btn-dark">read more</button>
+    <button type="button" className="btn btn-dark">Read more</button>
   </div>
 );
 
