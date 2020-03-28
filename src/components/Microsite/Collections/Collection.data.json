@@ -50,6 +50,11 @@
       "description": "State government Twitter accounts for all 50 states in the United States", 
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkKA?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/071e59ec25b4bec4fdc0"
+    },{
+      "title": "COVID-19 Finnhub API",
+      "description": "Get real-time updates on the number of COVID-19 (Corona virus) cases in the US with a state-by-state breakdown. Data is sourced from CDC and reputable sources.", 
+      "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest",
+      "urlPost": ""
     }
   ]
 }

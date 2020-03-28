@@ -28,6 +28,7 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **Health API - COVID-19** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74s?version=latest)) - Global Coronavirus statistics by country and state.
 - **Coronavirus Smartable** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74q?version=latest)) - The coronavirus stats and news API offers latest and historic COVID-19 stats and news information per country or state.
 - **New South Wales Coronavirus Cases** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74r?version=latest)) - New South Wales Coronavirus disease 2019 (COVID-19) cases.
+- **Finnhub COVID-19 API for US cases** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest)) - US Coronavirus disease 2019 (COVID-19) cases.
 
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.
@@ -78,7 +79,6 @@ Work to be Done
 - [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
 - [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)
 - [Create Postman Collection for Aldebaran COVID API #89](https://github.com/postmanlabs/covid-19-apis/issues/89)
-- [Create Collection for COVID-19 Finnhub API #90](https://github.com/postmanlabs/covid-19-apis/issues/90)
 - [Create Postman Collection for Philippines Coronavirus API #91](https://github.com/postmanlabs/covid-19-apis/issues/91)
 - [Create Postman Collection for Elsevier API #92](https://github.com/postmanlabs/covid-19-apis/issues/92)
 - [Upgrade Twitter Postman Collections to use v2 Recent Search endpoint #93](https://github.com/postmanlabs/covid-19-apis/issues/93)
