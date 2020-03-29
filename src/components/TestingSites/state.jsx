@@ -7,9 +7,9 @@ const State = () => (
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
         <div className="row">
-          <div className="col-md-10 offset-md-1 text-center">
+          <div className="col-md-10 offset-md-1 text-center mb-4">
             <h2>Find By State</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, neque? Sapiente, quod. Quaerat, vel libero sit maiores et dicta iusto excepturi saepe nam, sapiente itaque perferendis inventore illum odio obcaecati?</p>
+            <p>Click on any testing site name to see the full details of that site, or click the “View All” button to see all testing locations in that state.</p>
           </div>
         </div>
 

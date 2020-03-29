@@ -34,13 +34,11 @@ class Header extends React.Component {
             className="header__homelink"
             href="https://www.postman.com"
           >
-            <img
-              className="header__logo"
-              src="https://assets.getpostman.com/common-share/postman-logo-horizontal-white.svg"
-              alt="Postman"
-            />
-            <span className="header__title">Nav item </span>
+            COVID-19 Testing Sites
           </a>
+          <a className="navlink" href="/">About</a>
+          <a className="navlink" href="/">FAQs</a>
+          <a className="navlink" href="/">How it Works</a>
         </div>
 
         {/* hamburger toggle */}
