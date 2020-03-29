@@ -1,10 +1,30 @@
-# COVID-19
+# Postman COVID-19 API Resource Center
 This is a set of Postman collections that might help in the COVID-19 pandemic--click on the docs link for more information about each set of APIs, as well as a Run in Postman Button and environment so you can begin making API calls using each one.
 
 The website for this project can be found at: https://covid-19-apis.postman.com/
 
+## Contribution guidelines
+
+We would love for you to contribute to the Postman COVID-19 API Resource Center! To contribute to this project, please read:
+
+* The [Code of Conduct](https://www.postman.com/code-of-conduct)
+* The [Contribution Guidelines](CONTRIBUTING.md)
+* The "Work To Be Done" section at the bottom of this README.
+
+**NOTE:** We have added a new Markdown linter with GitHub Actions. When making a pull request, it will run against this linter. Your changed files are required to pass linting before they will be merged. More information on this can be found in the [contribution guidelines](CONTRIBUTING.md).
+
+## Build locally
+This assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm) installed.
+```
+   $ git clone https://github.com/postmanlabs/covid-19-apis.git
+   $ cd postman-docs
+   $ npm install
+   $ npm install -g gatsby-cli
+   $ npm run dev
+```
+
 ## COVID-19 Information
-Collections that make easier to pull, aggregate, and work with COVID-19 information.
+Postman Collections that make easier to pull, aggregate, and work with COVID-19 information. (New to Postman Collections? See our [Introduction to Postman Collections](https://learning.postman.com/docs/postman/collections/intro-to-collections/) documentation.)
 
 - **Center for Disease Control (CDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAL?version=latest)) - Twitter and YouTube API feeds for CDC, ad their RSS feeds for pulling information.
 - **European Centre for Disease Prevention and Control (ECDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAQ?version=latest)) - Twitter and YouTube API feeds for ECDC, ad their RSS feeds for pulling information.
