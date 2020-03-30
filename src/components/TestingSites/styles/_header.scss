@@ -1,3 +1,13 @@
 .ts-topnav {
-    background-color: #24305E;
+    background-color: #FFFFFF;
+    color: #24305E;
+    font-weight: 700;
+    font-size: 16px;
+    & a.navlink {
+        color: #F76C6C;
+        margin-right: 1rem;
+    }
+}
+a.header__homelink {
+    color: #333;
 }

@@ -20,19 +20,23 @@ const IndexPage = () => (
       <Hero />
       <Disclaimer />
       <State />
-      <CallToAction />
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-6 ts-about">
-            <About />
-          </div>
-          <div className="col-sm-6 ts-how-it-works">
-            <HowItWorks />
+      <div className="youmayalsolike">
+        <CallToAction />
+        <div className="container-fluid ts-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6 ts-about">
+                <About />
+              </div>
+              <div className="col-sm-6">
+                <HowItWorks />
+              </div>
+            </div>
           </div>
         </div>
+        <FAQs />
+        <GoogleSheets />
       </div>
-      <FAQs />
-      <GoogleSheets />
     </div>
   </Layout>
 );

@@ -1,10 +1,30 @@
-# COVID-19
+# Postman COVID-19 API Resource Center
 This is a set of Postman collections that might help in the COVID-19 pandemic--click on the docs link for more information about each set of APIs, as well as a Run in Postman Button and environment so you can begin making API calls using each one.
 
 The website for this project can be found at: https://covid-19-apis.postman.com/
 
+## Contribution guidelines
+
+We would love for you to contribute to the Postman COVID-19 API Resource Center! To contribute to this project, please read:
+
+* The [Code of Conduct](https://www.postman.com/code-of-conduct)
+* The [Contribution Guidelines](CONTRIBUTING.md)
+* The "Work To Be Done" section at the bottom of this README.
+
+**NOTE:** We have added a new Markdown linter with GitHub Actions. When making a pull request, it will run against this linter. Your changed files are required to pass linting before they will be merged. More information on this can be found in the [contribution guidelines](CONTRIBUTING.md).
+
+## Build locally
+This assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm) installed.
+```
+   $ git clone https://github.com/postmanlabs/covid-19-apis.git
+   $ cd postman-docs
+   $ npm install
+   $ npm install -g gatsby-cli
+   $ npm run dev
+```
+
 ## COVID-19 Information
-Collections that make easier to pull, aggregate, and work with COVID-19 information.
+Postman Collections that make easier to pull, aggregate, and work with COVID-19 information. (New to Postman Collections? See our [Introduction to Postman Collections](https://learning.postman.com/docs/postman/collections/intro-to-collections/) documentation.)
 
 - **Center for Disease Control (CDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAL?version=latest)) - Twitter and YouTube API feeds for CDC, ad their RSS feeds for pulling information.
 - **European Centre for Disease Prevention and Control (ECDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAQ?version=latest)) - Twitter and YouTube API feeds for ECDC, ad their RSS feeds for pulling information.
@@ -64,3 +84,22 @@ If you are building an COVID-19 related APIs we recommend using some existing AP
 - **311 for Non-Emergency Requests** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKC?version=latest) - An open schema and API standard for defining non-emergency requests.
 
 To submit an API to add to the list, please email us at [COVID-19@postman.com)[mailto:COVID-19@postman.com] or submit a GitHub issue on this repository.
+
+## Work To Be Done
+We are tracking all submissions to be added to our list of COVID-19 resources using GitHub issues, and organizing any work to be done via the [api-tasks tag](https://github.com/postmanlabs/covid-19-apis/issues?q=is%3Aissue+is%3Aopen+label%3Aapi-tasks) -- feel free to jump in on an issue and help out. Here is a current list of tasks that need some work.
+
+Work to be Done
+
+- [Updating the NovelCOVID API Collection #84](https://github.com/postmanlabs/covid-19-apis/issues/84)
+- [Evaluate ESRI Datasources #83](https://github.com/postmanlabs/covid-19-apis/issues/83)
+- [Official API for ECDC world wide cases #78](daily updates](https://github.com/postmanlabs/covid-19-apis/issues/78)
+- [Data API for Indian States #75](https://github.com/postmanlabs/covid-19-apis/issues/75)
+- [Create Postman Collection for US Energy Data #70](https://github.com/postmanlabs/covid-19-apis/issues/70)
+- [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
+- [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)
+- [Create Postman Collection for Aldebaran COVID API #89](https://github.com/postmanlabs/covid-19-apis/issues/89)
+- [Create Collection for COVID-19 Finnhub API #90](https://github.com/postmanlabs/covid-19-apis/issues/90)
+- [Create Postman Collection for Philippines Coronavirus API #91](https://github.com/postmanlabs/covid-19-apis/issues/91)
+- [Create Postman Collection for Elsevier API #92](https://github.com/postmanlabs/covid-19-apis/issues/92)
+- [Upgrade Twitter Postman Collections to use v2 Recent Search endpoint #93](https://github.com/postmanlabs/covid-19-apis/issues/93)
+- [Generate Postman Collections for Department of Veteran Affairs API resources #94](https://github.com/postmanlabs/covid-19-apis/issues/94)

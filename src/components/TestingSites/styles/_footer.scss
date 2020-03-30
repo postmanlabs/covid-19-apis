@@ -1,4 +1,9 @@
 .ts-footer {
   background-color: #24305E;
-  color: #ddd;
+  padding: 40px 0;
+  & a.navlink {
+    color: #ddd;
+    margin-right: 1rem;
+  }
+  
 }
