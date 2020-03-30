@@ -102,7 +102,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   // creates Page that lists all site of a particular state
   allState.forEach((state) => {
     createPage({
-      path: `/covid-19-testing-sites/testing-sites/${state}/`,
+      path: `/covid-19-testing-sites/${state}/`,
       component: require.resolve('./src/templates/stateSiteTemplate.jsx'),
       context: { state },
     });

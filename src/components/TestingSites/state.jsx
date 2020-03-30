@@ -29,7 +29,7 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/testing-sites/california/" className="card-link">view all CA sites &#x2192;</Link>
+                <Link to="/covid-19-testing-sites/california/" className="card-link">view all CA sites &#x2192;</Link>
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/testing-sites/massachusetts/" className="card-link">view all MA sites &#x2192;</Link>
+                <Link to="/covid-19-testing-sites/massachusetts/" className="card-link">view all MA sites &#x2192;</Link>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/testing-sites/new-york/" className="card-link">view all NY sites &#x2192;</Link>
+                <Link to="/covid-19-testing-sites/new-york/" className="card-link">view all NY sites &#x2192;</Link>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ const State = ({ state }) => (
                     <li><Link to="/">Testing Site Name</Link></li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/testing-sites/washington/" className="card-link">view all WA sites &#x2192;</Link>
+                <Link to="/covid-19-testing-sites/washington/" className="card-link">view all WA sites &#x2192;</Link>
               </div>
             </div>
           </div>
