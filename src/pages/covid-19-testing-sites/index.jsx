@@ -13,9 +13,10 @@ import About from '../../components/TestingSites/about';
 import HowItWorks from '../../components/TestingSites/howItWorks';
 import Disclaimer from '../../components/TestingSites/disclaimer';
 import FAQs from '../../components/TestingSites/faqs';
-import CallToAction from '../../components/TestingSites/callToAction';
-import GoogleSheets from '../../components/TestingSites/googleSheets';
+import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
+import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
+
 
 class IndexPageComponent extends React.Component {
   constructor(props) {
@@ -32,11 +33,11 @@ class IndexPageComponent extends React.Component {
     const { usState } = this.props;
 
     usState.map((node) => {
-      if (node.node.context.state !== null) {
+      if (node.node.context && node.node.context.state !== null) {
+        // eslint-disable-next-line prefer-const
         let { state } = node.node.context;
 
         axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
-
           this.setState({ data: response.data });
 
           if (state === 'california') {
@@ -51,39 +52,42 @@ class IndexPageComponent extends React.Component {
     });
   }
 
-
   render() {
-    // const { data } = this.state;
-    // const { washington } = this.state;
-    // const { california } = this.state;
-
     return (
       <Layout>
-        {/* {console.log('axios data 3 on data: ', data)}
-        {console.log('axios data 3 on california: ', california)}
-        {console.log('axios data 3 on washington: ', washington)} */}
-
         <SEO title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
           <Disclaimer />
           <State state={this.state} />
           <div className="youmayalsolike">
-            <CallToAction />
             <div className="container-fluid ts-section">
               <div className="container">
                 <div className="row">
-                  <div className="col-sm-6 ts-about">
-                    <About />
+                  <div className="col-sm-6">
+                    <CallToActionConsumers />
                   </div>
                   <div className="col-sm-6">
-                    <HowItWorks />
+                    <CallToActionDevs />
                   </div>
                 </div>
               </div>
             </div>
-            <FAQs />
-            <GoogleSheets />
+            <div className="container-fluid ts-section">
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-4">
+                    <About />
+                  </div>
+                  <div className="col-sm-4">
+                    <HowItWorks />
+                  </div>
+                  <div className="col-sm-4">
+                    <FAQs />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>

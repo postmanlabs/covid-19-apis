@@ -1,7 +1,6 @@
 // lists all States
 import React from 'react';
 import axios from 'axios';
-import PropTypes from 'prop-types';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -16,11 +15,10 @@ class StateListComponent extends React.Component {
     // eslint-disable-next-line react/destructuring-assignment
     const state = this.props.usState;
 
-    // if (typeof document === 'object') {
     axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
       this.setState({ data: response.data });
     });
-    // }
+
     return this.state;
   }
 
@@ -42,16 +40,6 @@ class StateListComponent extends React.Component {
 }
 
 
-const StatePage = ({ pageContext: { state } }) => (
+export default ({ pageContext: { state } }) => (
   <StateListComponent usState={state} />
 );
-
-StatePage.defaultProps = {
-  state: '',
-};
-
-StatePage.propTypes = {
-  state: PropTypes.arrayOf(PropTypes.object),
-};
-
-export default StatePage;

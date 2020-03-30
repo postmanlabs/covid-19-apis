@@ -26,3 +26,18 @@
     background-color: #374785 !important;
     border-color: #374785 !important;
 }
+.ts-definition-list {
+    & dt {
+        margin-bottom: .5rem;
+        font-size: 1.125rem
+    }
+    & dd {
+        margin-bottom: 2rem;
+        border-left: 4px solid #F76C6C;
+        padding-left: 1rem;
+    }
+}
+.ts-icon svg {
+    height: 25px;
+    margin-right: .25rem;
+}
