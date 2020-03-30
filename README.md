@@ -54,6 +54,7 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **COVID19-India API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest)) - A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).
 - **Covid India API** ([Docs](https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest)) - REST API to track Coronavirus cases in India on state level.
 - **COVID-19 Statistics API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest)) - Based on public data by Johns Hopkins CSSE
+- **COVID19 -India- API** ([Docs](https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest)) -  The data is used from the official website of the Ministry of Health and Family Welfare of India.
 
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.

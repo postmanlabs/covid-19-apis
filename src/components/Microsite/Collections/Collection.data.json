@@ -80,6 +80,11 @@
       "description": "Based on public data by Johns Hopkins CSSE", 
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest",
       "urlPost": ""
+    },{
+      "title": "COVID19 -India- API",
+      "description": "The data is used from the official website of the Ministry of Health and Family Welfare of India.", 
+      "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest",
+      "urlPost": ""
     }
   ]
 }
