@@ -2,12 +2,14 @@
 import React from 'react';
 // import { Link } from 'gatsby';
 
-export default ({ pageContext: { state } }) => (
+// problem is taht I only pass in the page context. we need all the data
+export default (data) => (
   <div>
     <h1>State Site Template</h1>
     <div>
-      <p>{state}</p>
-      {console.log('state', state)}
+      <p>{data}</p>
+      {/* {console.log('state', state)} */}
+      {console.log('state', data)}
     </div>
   </div>
 );

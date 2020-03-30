@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 /******************************************************************************************** */
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  const allState = ['California', 'Washington'];
+  const allState = ['california', 'washington'];
 
   // create a page that lists all States. call once for every state
   createPage({
