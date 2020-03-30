@@ -17,7 +17,7 @@ We would love for you to contribute to the Postman COVID-19 API Resource Center!
 This assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm) installed.
 ```
    $ git clone https://github.com/postmanlabs/covid-19-apis.git
-   $ cd postman-docs
+   $ cd covid-19-apis
    $ npm install
    $ npm install -g gatsby-cli
    $ npm run dev
