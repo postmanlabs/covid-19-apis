@@ -86,23 +86,23 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 };
 
 
-/* Create testing sites
+/* Create testing sites pages with defined slug
 /******************************************************************************************** */
 
 exports.createPages = async ({ actions: { createPage } }) => {
   const allState = ['california', 'washington'];
 
-  // create a page that lists all States. call once for every state
-  createPage({
-    path: '/covid-19-testing-sites/state/list/',
-    component: require.resolve('./src/templates/stateTemplate.jsx'),
-    context: { allState },
-  });
+  // Our index page lists, all page. Keep for future reference for site specific page
+  // createPage({
+  //   path: '/covid-19-testing-sites/state/list/',
+  //   component: require.resolve('./src/templates/stateTemplate.jsx'),
+  //   context: { allState },
+  // });
 
-  // create individual states page
+  // creates Page that lists all site of a particular state
   allState.forEach((state) => {
     createPage({
-      path: `/covid-19-testing-sites/state/${state}/`,
+      path: `/covid-19-testing-sites/testing-sites/${state}/`,
       component: require.resolve('./src/templates/stateSiteTemplate.jsx'),
       context: { state },
     });

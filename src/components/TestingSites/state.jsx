@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-const State = () => (
+const State = ({ state }) => (
   <>
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
@@ -18,11 +18,19 @@ const State = () => (
             <div className="card ts-cards">
               <div className="card-body">
                 <h3 className="card-title">CA</h3>
-                <ul>
-                  <li><Link to="/">Testing Site with a really long Name that seems to go on forever and ever</Link></li>
-                  <li><Link to="/">Testing Site Name</Link></li>
-                </ul>
-                <a href="/" className="card-link">view all CA sites &#x2192;</a>
+                {state.california.map((site) => (
+                  <ul>
+                    <li key={Math.random()}>
+                      <Link to="/">
+                        name:
+                        {' '}
+                        {site.name}
+                      </Link>
+                    </li>
+                    {/* <li><Link to="/">Testing Site Name</Link></li> */}
+                  </ul>
+                ))}
+                <Link to="/covid-19-testing-sites/testing-sites/california/" className="card-link">view all CA sites &#x2192;</Link>
               </div>
             </div>
           </div>
@@ -54,11 +62,18 @@ const State = () => (
             <div className="card ts-cards">
               <div className="card-body">
                 <h3 className="card-title">WA</h3>
-                <ul>
-                  <li><Link to="/">Testing Site with a really long Name that seems to go on forever and ever</Link></li>
-                  <li><Link to="/">Testing Site Name</Link></li>
-                </ul>
-                <a href="/" className="card-link">view all WA sites &#x2192;</a>
+                {state.washington.map((site) => (
+                  <ul>
+                    <li>
+                      <Link to="/">
+                        name:
+                        {site.name}
+                      </Link>
+                    </li>
+                    <li><Link to="/">Testing Site Name</Link></li>
+                  </ul>
+                ))}
+                <Link to="/covid-19-testing-sites/testing-sites/washington/" className="card-link">view all WA sites &#x2192;</Link>
               </div>
             </div>
           </div>
