@@ -36,9 +36,9 @@ class Header extends React.Component {
           >
             COVID-19 Testing Sites
           </a>
-          <a className="navlink" href="/">About</a>
-          <a className="navlink" href="/">FAQs</a>
-          <a className="navlink" href="/">How it Works</a>
+          <a className="navlink" href="/covid-19-testing-sites/about/">About</a>
+          <a className="navlink" href="/covid-19-testing-sites/faqs/">FAQs</a>
+          <a className="navlink" href="/covid-19-testing-sites/how-it-works/">How it Works</a>
         </div>
 
         {/* hamburger toggle */}
