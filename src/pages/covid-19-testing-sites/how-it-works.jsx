@@ -5,11 +5,10 @@ import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
 
 import About from '../../components/TestingSites/about';
-import HowItWorks from '../../components/TestingSites/howItWorks';
 import Disclaimer from '../../components/TestingSites/disclaimer';
 import FAQs from '../../components/TestingSites/faqs';
-import CallToAction from '../../components/TestingSites/callToAction';
-import GoogleSheets from '../../components/TestingSites/googleSheets';
+import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
+import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 
 const HowPage = () => (
   <Layout>
@@ -61,21 +60,30 @@ const HowPage = () => (
         </div>
       </div>
       <div className="youmayalsolike">
-        <CallToAction />
         <div className="container-fluid ts-section">
           <div className="container">
             <div className="row">
-              <div className="col-sm-6 ts-about">
-                <About />
+              <div className="col-sm-6">
+                <CallToActionConsumers />
               </div>
               <div className="col-sm-6">
-                <HowItWorks />
+                <CallToActionDevs />
               </div>
             </div>
           </div>
         </div>
-        <FAQs />
-        <GoogleSheets />
+        <div className="container-fluid ts-section">
+          <div className="container">
+            <div className="row">
+              <div className="col-sm-6">
+                <About />
+              </div>
+              <div className="col-sm-6">
+                <FAQs />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </Layout>

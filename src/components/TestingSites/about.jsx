@@ -1,7 +1,7 @@
 import React from 'react';
 
 const About = () => (
-  <div className="ts-section text-center">
+  <div className="ts-section text-center ts-about">
     <h2>About</h2>
     <p>
       View the story of this crowdsourced project.
