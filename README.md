@@ -51,7 +51,9 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **Finnhub COVID-19 API for US cases** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest)) - US Coronavirus disease 2019 (COVID-19) cases.
 - **Elsevier API for generating research datasets** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest)) - Query large amount of datasets.
 - **Coronavirus-PH API** ([Docs](https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest)) - Philippines Coronavirus disease 2019 (COVID-19) cases.
-
+- **COVID19-India API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest)) - A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).
+- **Covid India API** ([Docs](https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest)) - REST API to track Coronavirus cases in India on state level.
+- **COVID-19 Statistics API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest)) - Based on public data by Johns Hopkins CSSE
 
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.
@@ -96,8 +98,7 @@ Work to be Done
 
 - [Updating the NovelCOVID API Collection #84](https://github.com/postmanlabs/covid-19-apis/issues/84)
 - [Evaluate ESRI Datasources #83](https://github.com/postmanlabs/covid-19-apis/issues/83)
-- [Official API for ECDC world wide cases #78](daily updates)(https://github.com/postmanlabs/covid-19-apis/issues/78)
-- [Data API for Indian States #75](https://github.com/postmanlabs/covid-19-apis/issues/75)
+- [Official API for ECDC world wide cases #78(daily updates)](https://github.com/postmanlabs/covid-19-apis/issues/78)
 - [Create Postman Collection for US Energy Data #70](https://github.com/postmanlabs/covid-19-apis/issues/70)
 - [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
 - [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)

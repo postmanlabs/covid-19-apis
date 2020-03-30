@@ -65,6 +65,21 @@
       "description": "A simple and fast (< 200ms) api for tracking the coronavirus (COVID-19, SARS-CoV-2) outbreak in the Philippines.", 
       "urlDoc": "https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest",
       "urlPost": ""
+    },{
+      "title": "COVID19-India API",
+      "description": "A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).", 
+      "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest",
+      "urlPost": ""
+    },{
+      "title": "Covid India API",
+      "description": "REST API to track Coronavirus cases in India on state level.", 
+      "urlDoc": "https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest",
+      "urlPost": ""
+    },{
+      "title": "COVID-19 Statistics API",
+      "description": "Based on public data by Johns Hopkins CSSE", 
+      "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest",
+      "urlPost": ""
     }
   ]
 }
