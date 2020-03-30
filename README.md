@@ -30,6 +30,9 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **New South Wales Coronavirus Cases** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74r?version=latest)) - New South Wales Coronavirus disease 2019 (COVID-19) cases.
 - **Finnhub COVID-19 API for US cases** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest)) - US Coronavirus disease 2019 (COVID-19) cases.
 - **Elsevier API for generating research datasets** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest)) - Query large amount of datasets.
+- **Coronavirus-PH API** ([Docs](https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest)) - Philippines Coronavirus disease 2019 (COVID-19) cases.
+
+
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.
 
@@ -79,6 +82,5 @@ Work to be Done
 - [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
 - [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)
 - [Create Postman Collection for Aldebaran COVID API #89](https://github.com/postmanlabs/covid-19-apis/issues/89)
-- [Create Postman Collection for Philippines Coronavirus API #91](https://github.com/postmanlabs/covid-19-apis/issues/91)
 - [Upgrade Twitter Postman Collections to use v2 Recent Search endpoint #93](https://github.com/postmanlabs/covid-19-apis/issues/93)
 - [Generate Postman Collections for Department of Veteran Affairs API resources #94](https://github.com/postmanlabs/covid-19-apis/issues/94)
