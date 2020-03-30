@@ -60,6 +60,11 @@
       "description": "A research dataset search engine API (indexing datasets from 60+ scientific data repositories worldwide).", 
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest",
       "urlPost": ""
+    },{
+      "title": "Coronavirus-PH API",
+      "description": "A simple and fast (< 200ms) api for tracking the coronavirus (COVID-19, SARS-CoV-2) outbreak in the Philippines.", 
+      "urlDoc": "https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest",
+      "urlPost": ""
     }
   ]
 }
