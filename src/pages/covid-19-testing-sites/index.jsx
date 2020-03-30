@@ -27,6 +27,7 @@ class IndexPageComponent extends React.Component {
       california: [],
       washington: [],
       massachusetts: [],
+      'new-york': [],
     };
   }
 
