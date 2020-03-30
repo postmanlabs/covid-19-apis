@@ -45,10 +45,12 @@ Upon approval your PR will be merged into develop for further verification and t
 
 ## Adding/Editing Images
 
-If you would like to add, edit or replace images you are welcome to do so. There are two ways in which you can achieve this:
+If you would like to add, edit or replace images you are welcome to do so. There are a couple optimization steps we require:
+* make sure the image is scales down to an appropriate physical size
+* Only images that require a transparent background (alpha channel) should be PNGs, all others should be JPGs
+° optimize images using ImageOptim before you upload
 
-* You can upload the image to your GitHub Pull-Request and link the image
-* You can host the image and link to your own hosted image
+You can host the image in the [`/src` folder](https://github.com/postmanlabs/covid-19-apis/tree/develop/src/images) of this project.
 
 **Note**:
 
