@@ -42,7 +42,7 @@ const State = ({ state }) => (
                   <li><Link to="/">Testing Site with a really long Name that seems to go on forever and ever</Link></li>
                   <li><Link to="/">Testing Site Name</Link></li>
                 </ul>
-                <a href="/" className="card-link">view all MA sites &#x2192;</a>
+                <Link to="/covid-19-testing-sites/testing-sites/massachusetts/" className="card-link">view all MA sites &#x2192;</Link>
               </div>
             </div>
           </div>
