@@ -34,7 +34,11 @@ Postman Collections that make easier to pull, aggregate, and work with COVID-19 
 Postman collection specifically designed to work with the Twitter API.
 
 - **COVID-19 Twitter Searches** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkEt?version=latest) - Twitter API search, with a handful of the common search terms added.
-- **State Government Twitter** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKA?version=latest) - State government Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Government in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzV?version=latest) - State government Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Governors in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzU?version=latest) - State governor Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Health Departments in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzW?version=latest) - State health department Twitter accounts for all 50 states in the United States.
+- **County Health Departments for All 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYXVdyQ?version=latest) - A single collection with a request for each of the 50 states, pulling a listing of name, website, address, phone, email, twitter, and facebook for all county health departments.
+- **Twitter Accounts for County Health Departments in all 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYXVdyR?version=latest) - The Twitter accounts for over 300 county health departments across 50 US States.
 
 ## Covid-19 APIs
 New APIs that have emerged to specifically address the COVID-19 pandemic.
@@ -51,7 +55,10 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **Finnhub COVID-19 API for US cases** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest)) - US Coronavirus disease 2019 (COVID-19) cases.
 - **Elsevier API for generating research datasets** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest)) - Query large amount of datasets.
 - **Coronavirus-PH API** ([Docs](https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest)) - Philippines Coronavirus disease 2019 (COVID-19) cases.
-
+- **COVID19-India API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest)) - A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).
+- **Covid India API** ([Docs](https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest)) - REST API to track Coronavirus cases in India on state level.
+- **COVID-19 Statistics API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest)) - Based on public data by Johns Hopkins CSSE
+- **COVID19 -India- API** ([Docs](https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest)) -  The data is used from the official website of the Ministry of Health and Family Welfare of India.
 
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.
@@ -91,16 +98,3 @@ To submit an API to add to the list, please email us at [COVID-19@postman.com)[m
 
 ## Work To Be Done
 We are tracking all submissions to be added to our list of COVID-19 resources using GitHub issues, and organizing any work to be done via the [api-tasks tag](https://github.com/postmanlabs/covid-19-apis/issues?q=is%3Aissue+is%3Aopen+label%3Aapi-tasks) -- feel free to jump in on an issue and help out. Here is a current list of tasks that need some work.
-
-Work to be Done
-
-- [Updating the NovelCOVID API Collection #84](https://github.com/postmanlabs/covid-19-apis/issues/84)
-- [Evaluate ESRI Datasources #83](https://github.com/postmanlabs/covid-19-apis/issues/83)
-- [Official API for ECDC world wide cases #78](daily updates)(https://github.com/postmanlabs/covid-19-apis/issues/78)
-- [Data API for Indian States #75](https://github.com/postmanlabs/covid-19-apis/issues/75)
-- [Create Postman Collection for US Energy Data #70](https://github.com/postmanlabs/covid-19-apis/issues/70)
-- [Create API for NY Times Data #87](https://github.com/postmanlabs/covid-19-apis/issues/87)
-- [Create Postman Collection for BitQuery COVID-19 GraphQL API #88](https://github.com/postmanlabs/covid-19-apis/issues/88)
-- [Create Postman Collection for Aldebaran COVID API #89](https://github.com/postmanlabs/covid-19-apis/issues/89)
-- [Upgrade Twitter Postman Collections to use v2 Recent Search endpoint #93](https://github.com/postmanlabs/covid-19-apis/issues/93)
-- [Generate Postman Collections for Department of Veteran Affairs API resources #94](https://github.com/postmanlabs/covid-19-apis/issues/94)
