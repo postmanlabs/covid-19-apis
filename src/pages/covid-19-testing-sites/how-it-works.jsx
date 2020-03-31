@@ -9,6 +9,7 @@ import Disclaimer from '../../components/TestingSites/disclaimer';
 import FAQs from '../../components/TestingSites/faqs';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
+import blueprintImage from '../../images/data-api-blueprint-multiple.jpg';
 
 const HowPage = () => (
   <Layout>
@@ -26,18 +27,9 @@ const HowPage = () => (
         <div className="container">
           <div className="row mb-4">
             <div className="col-sm-12">
-              <p>This crowdsourced, regularly-updated listing of COVID-19 testing locations leverages three common services to make data more manageable and accessible:</p>
+              <p>This crowdsourced, regularly-updated listing of COVID-19 testing locations leverages two common services to make data more manageable and accessible:</p>
             </div>
-            <div className="col-sm-4">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Google Sheets</h3>
-                  <p className="card-text">The core data for this project is stored in a single Google Sheet for each US state, providing a central data source that can be managed by multiple trusted stakeholders.</p>
-                  <a href="/" className="card-link">Another link</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-4">
+            <div className="col-sm-6">
               <div className="card">
                 <div className="card-body">
                   <h3 className="card-title">Postman Collections</h3>
@@ -47,7 +39,7 @@ const HowPage = () => (
                 </div>
               </div>
             </div>
-            <div className="col-sm-4">
+            <div className="col-sm-6">
               <div className="card">
                 <div className="card-body">
                   <h3 className="card-title">GitHub</h3>
@@ -55,6 +47,16 @@ const HowPage = () => (
                   <a href="https://github.com/postmanlabs/covid-19-apis" className="card-link">View project on GitHub</a>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="row mb-4">
+            <div className="col-sm-12 text-center">
+              <img src={blueprintImage} alt="Diagram of the API blueprint. Illustration." />
+            </div>
+          </div>
+          <div className="row mb-4">
+            <div className="col-sm-12 text-center">
+              <p>This approach to delivering a data API is a low-cost way to easily make data available across multiple applications using services that anyone can put to work without coding or much training, thereby allowing non-developers to easily publish APIs from small, more manageable data sets stored within spreadsheets.</p>
             </div>
           </div>
         </div>
