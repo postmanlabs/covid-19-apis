@@ -30,20 +30,11 @@ const AboutPage = () => (
                 This is an effort to crowdsource and centralize the availability of
                 <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" rel="noopener noreferrer">COVID-19</a>
                 {' '}
-                testing locations across all 50 US states using two freely available online tools while using APIs to make sure the location data can be syndicated and distributed as widely as possible. The two tools are:
+                testing locations across all 50 US states using two freely available online tools while using APIs to make sure the location data can be syndicated and distributed as widely as possible. The preferred method is:
               </p>
             </div>
-            <div className="col-sm-6">
-              <div className="card">
-                <div className="card-body">
-                  <h3 className="card-title">Google Sheets</h3>
-                  <p className="card-text">The core data for this project is stored in a single Google Sheet for each US state, providing a central data source that can be managed by multiple trusted stakeholders.</p>
-                  <a href="/" className="card-link">Another link</a>
-                </div>
-              </div>
-            </div>
-            <div className="col-sm-6">
-              <div className="card">
+            <div className="col-md-8 offset-md-2">
+              <div className="card ts-cards">
                 <div className="card-body">
                   <h3 className="card-title">Postman Collections</h3>
                   <p className="card-text">Using a Postman collection, data is pulled from Google using the Google Sheets API and then updates an API, documentation, and publishes data to GitHub for display to end users.</p>

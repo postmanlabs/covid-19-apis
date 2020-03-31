@@ -30,7 +30,7 @@ const HowPage = () => (
               <p>This crowdsourced, regularly-updated listing of COVID-19 testing locations leverages two common services to make data more manageable and accessible:</p>
             </div>
             <div className="col-sm-6">
-              <div className="card">
+              <div className="card ts-cards">
                 <div className="card-body">
                   <h3 className="card-title">Postman Collections</h3>
                   <p className="card-text">Using a Postman collection, data is pulled from Google using the Google Sheets API and then updates an API, documentation, and publishes data to GitHub for display to end users.</p>
@@ -40,7 +40,7 @@ const HowPage = () => (
               </div>
             </div>
             <div className="col-sm-6">
-              <div className="card">
+              <div className="card ts-cards">
                 <div className="card-body">
                   <h3 className="card-title">GitHub</h3>
                   <p className="card-text">GitHub is used to publish machine-readable open data for wider consumption, and is also used for the hosting of web and mobile applications.</p>
