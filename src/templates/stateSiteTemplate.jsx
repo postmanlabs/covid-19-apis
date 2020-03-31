@@ -40,7 +40,6 @@ class StateListComponent extends React.Component {
             {data.map((site) => (
               <div className="row">
                 <div className="col-12 ts-state">
-                  {console.log(site)}
                   <h1 key={Math.random()}>
                     {site.name}
                   </h1>
@@ -71,7 +70,6 @@ class StateListComponent extends React.Component {
                       ))}
                       {site.phones.map((tel) => (
                         <>
-                          <p>{console.log('tel', tel)}</p>
                           <p className="address">
                             Telephone number:
                             {' '}
