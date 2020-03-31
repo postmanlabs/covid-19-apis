@@ -44,6 +44,12 @@ class IndexPageComponent extends React.Component {
           if (state === 'washington') {
             this.setState({ washington: response.data });
           }
+          if (state === 'new-york') {
+            this.setState({ 'new-york': response.data });
+          }
+          if (state === 'massachusetts') {
+            this.setState({ massachusetts: response.data });
+          }
         });
       }
       return this.state;

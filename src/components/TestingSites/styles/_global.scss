@@ -13,10 +13,10 @@
 }
 .ts-cards {
     margin-bottom: 32px;
-    border: none;
-    border: none !important;
-    border-radius: 0 !important;
     border-top: 4px solid #A8D0E6 !important;
+    box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 5px 8px rgba(0,0,0,.15);
 }
 .youmayalsolike {
     background-color: rgba(168, 208, 230, .25);
