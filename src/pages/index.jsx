@@ -18,10 +18,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row collection__header text-center">
           <div className="col-md-12">
-            <h1>API Collections to Help in the COVID-19 Fight</h1>
-          </div>
-          <div className="col-md-12">
-            <p />
+            <h2 className="h1">API Collections to Help in the COVID-19 Fight</h2>
           </div>
         </div>
         <div>
@@ -48,7 +45,7 @@ const IndexPage = () => (
       <div className="container">
         <div className="row collection__header">
           <div className="col-md-12 text-center">
-            <h1>Helping You Publish New COVID-Related APIs </h1>
+            <h2 className="h1">Helping You Publish New COVID-Related APIs </h2>
           </div>
           <div className="col-md-10 offset-md-1">
             <p>
