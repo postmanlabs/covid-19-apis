@@ -3,7 +3,7 @@ import React from 'react';
 import axios from 'axios';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
-import Hero from '../components/TestingSites/hero';
+import HeroLight from '../components/TestingSites/heroLight';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -28,11 +28,11 @@ class StateListComponent extends React.Component {
 
   render() {
     const { data } = this.state;
-
+    const { usState } = this.props;
     return (
       <Layout>
         <SEO title="State Specific List of testing sites" />
-        <Hero />
+        <HeroLight usState={usState} />
         <div className="container-fluid">
           <div className="container">
             {data.map((site) => (
