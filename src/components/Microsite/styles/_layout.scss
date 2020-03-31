@@ -51,11 +51,9 @@ $background-color: #1C272B;
 }
 
 
-div.container-fluid.hero {
-  overflow: hidden;
+.hero {
   padding: 0px 0px;
-  // background-image: url(../../images/hero_BG-asset.svg);
-
+  margin-bottom: 40px;
   // .v5_starfield-small-night-sky {
     @include background-starfield ($v5_night-sky, small);
   // }
@@ -76,9 +74,10 @@ div.container-fluid.hero {
 
   .hero_title {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding-top: 6rem;
+    @media (max-width: 1146px) {
+      padding-top: 1rem;
+    }
 
     h1 {
       font-weight: 500;

@@ -3,7 +3,6 @@ import React from 'react';
 import axios from 'axios';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
-import Disclaimer from '../components/TestingSites/disclaimer';
 import Hero from '../components/TestingSites/hero';
 
 class StateListComponent extends React.Component {
