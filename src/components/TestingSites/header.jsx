@@ -5,7 +5,7 @@ const Header = () => (
     <div className="navbar-brand header__brand">
       <a
         className="header__homelink"
-        href="https://www.postman.com"
+        href="/covid-19-testing-sites/"
       >
         COVID-19 Testing Sites
       </a>
