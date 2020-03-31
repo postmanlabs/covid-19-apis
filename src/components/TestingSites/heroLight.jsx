@@ -7,7 +7,7 @@ const HeroLight = ({ usState }) => {
   const capitalize = place.charAt(0).toUpperCase() + place.slice(1);
 
   return (
-    <div className="container-fluid hero v5_starfield-small-night-sky pb-4">
+    <div className="container-fluid ts-hero-background pb-4">
       <div className="container">
         <div className="row">
           <div className="col-md-9 hero_title offset-md-1">
