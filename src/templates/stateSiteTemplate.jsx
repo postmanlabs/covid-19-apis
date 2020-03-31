@@ -3,7 +3,6 @@ import React from 'react';
 import axios from 'axios';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
-import Disclaimer from '../components/TestingSites/disclaimer';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -32,7 +31,6 @@ class StateListComponent extends React.Component {
     return (
       <Layout>
         <SEO title="State Specific List of testing sites" />
-        <Disclaimer />
         <div>
           {data.map((site) => (
             <>

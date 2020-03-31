@@ -1,17 +1,10 @@
-.ts-hero {
-    background: linear-gradient(-45deg, #F76C6C, #A8D0E6,#F8E9A1);
-	background-size: 400% 400%;
-    animation: gradient 35s ease infinite;
-    padding: 80px 0;
-    @keyframes gradient {
-        0% {
-            background-position: 0% 50%;
-        }
-        50% {
-            background-position: 100% 50%;
-        }
-        100% {
-            background-position: 0% 50%;
-        }
+a.herolink {
+color: #FFFFFF;
+    border-bottom: 1px solid;
+  }
+a.herolink {
+    &:hover {
+      text-decoration: none;
+      color: #FF6C37;
     }
-}
+  }

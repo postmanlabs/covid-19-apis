@@ -4,7 +4,6 @@ import React from 'react';
 import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
 
-import Disclaimer from '../../components/TestingSites/disclaimer';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import blueprintImage from '../../images/data-api-blueprint-multiple.jpg';
@@ -20,7 +19,6 @@ const HowPage = () => (
           </div>
         </div>
       </div>
-      <Disclaimer />
       <div className="container-fluid ts-main-area ts-section">
         <div className="container">
           <div className="row mb-4">

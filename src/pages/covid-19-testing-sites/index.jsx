@@ -9,7 +9,6 @@ import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
 
 import Hero from '../../components/TestingSites/hero';
-import Disclaimer from '../../components/TestingSites/disclaimer';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
@@ -57,7 +56,6 @@ class IndexPageComponent extends React.Component {
         <SEO title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
-          <Disclaimer />
           <State state={this.state} />
           <div className="youmayalsolike">
             <div className="container-fluid ts-section">
