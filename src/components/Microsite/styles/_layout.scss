@@ -30,23 +30,23 @@ $background-color: #1C272B;
   @if $star-size=='small' {
     @include backdrop-for-starfield;
     background-image: $starfield-small;
-    background-color: $background-color !important;
+    background-color: $background-color;
   } @else if $star-size=='large' {
     @include backdrop-for-starfield;
     background-image: $starfield-large;
-    background-color: $background-color !important;
+    background-color: $background-color;
   } @else if $star-size=='large-and-small' {
     @include backdrop-for-starfield;
     background-image: $starfield-small, $starfield-large;
-    background-color: $background-color !important;
+    background-color: $background-color;
   } @else if $star-size=='dense' {
     @include backdrop-for-starfield;
     background-image: $starfield-dense;
-    background-color: $background-color !important; 
+    background-color: $background-color; 
   } @else {
     @include backdrop-for-starfield;
     background-image: $starfield-large;
-    background-color: $background-color !important;
+    background-color: $background-color;
   }
 }
 
@@ -84,7 +84,7 @@ $background-color: #1C272B;
       font-size: 60px;
       line-height: 70px;
       @media (max-width: 600px) {
-        // padding: 80px 20px !important;
+        // padding: 80px 20px;
         font-size: 40px;
         line-height: 1.4;
       }

@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import heroImage from '../../images/covid19-image-2.png';
 
 const Hero = () => (
-  <div className="container-fluid hero v5_starfield-small-night-sky pb-4">
+  <div className="container-fluid hero ts-hero-background pb-4">
     <div className="container">
       <div className="row">
         <div className="col-md-6 hero_title">
