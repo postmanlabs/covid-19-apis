@@ -60,6 +60,10 @@ function SEO({
           content: 'website',
         },
         {
+          property: 'og:url',
+          content: 'https://covid-19-apis.postman.com/',
+        },
+        {
           name: 'twitter:card',
           content: 'summary_large_image',
         },
