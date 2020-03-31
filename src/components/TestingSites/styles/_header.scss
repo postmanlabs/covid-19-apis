@@ -4,10 +4,13 @@
     font-weight: 700;
     font-size: 16px;
     & a.navlink {
-        color: #F76C6C;
+        color: #FF6C37;
         margin-right: 1rem;
     }
 }
 a.header__homelink {
-    color: #333;
+    color: #fff;
+    &:hover {
+        color: #fff;
+    }
 }
