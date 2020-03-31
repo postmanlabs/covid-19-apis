@@ -8,7 +8,10 @@ const Nonprofit = () => (
           <h2>For Nonprofits Working on the Pandemic</h2>
         </div>
         <div className="col-12 nonprofit__description">
-          <p>If you are a nonprofit organization working on COVID-related activities that involve APIs, Postman has created special discounts to help you further your work. Qualifying nonprofits (see eligibility guidelines below) will receive ten Postman Business Plan licenses for free, and a 75% discount for each additional license thereafter. (Note: There's also a free Postman plan which includes an impressive range of API lifecycle and collaboration capabilities that might be ideal for your project. <a className="link-style" href="https://www.postman.com/downloads/" target="_blank" rel="noopener noreferrer">Download the free app now.</a>) If you're interested in applying for the discount program, fill out the form below and we'll get you started ASAP.
+          <p>
+            If you are a nonprofit organization working on COVID-related activities that involve APIs, Postman has created special discounts to help you further your work. Qualifying nonprofits (see eligibility guidelines below) will receive ten Postman Business Plan licenses for free, and a 75% discount for each additional license thereafter. (Note: There&apos;s also a free Postman plan which includes an impressive range of API lifecycle and collaboration capabilities that might be ideal for your project.
+            <a className="link-style" href="https://www.postman.com/downloads/" target="_blank" rel="noopener noreferrer">Download the free app now.</a>
+            ) If you&apos;re interested in applying for the discount program, fill out the form below and we&apos;ll get you started ASAP.
           </p>
         </div>
       </div>
