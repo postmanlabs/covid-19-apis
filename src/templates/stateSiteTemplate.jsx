@@ -33,7 +33,6 @@ class StateListComponent extends React.Component {
       <Layout>
         <SEO title="State Specific List of testing sites" />
         <Hero />
-        <Disclaimer />
         <div className="container-fluid">
           <div className="container">
             {data.map((site) => (
