@@ -4,8 +4,6 @@ import React from 'react';
 import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
 
-import About from '../../components/TestingSites/about';
-import HowItWorks from '../../components/TestingSites/howItWorks';
 import Disclaimer from '../../components/TestingSites/disclaimer';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
@@ -64,18 +62,6 @@ const FaqPage = () => (
               </div>
               <div className="col-sm-6">
                 <CallToActionDevs />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container-fluid ts-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6">
-                <About />
-              </div>
-              <div className="col-sm-6">
-                <HowItWorks />
               </div>
             </div>
           </div>

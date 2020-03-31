@@ -4,9 +4,7 @@ import React from 'react';
 import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
 
-import About from '../../components/TestingSites/about';
 import Disclaimer from '../../components/TestingSites/disclaimer';
-import FAQs from '../../components/TestingSites/faqs';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import blueprintImage from '../../images/data-api-blueprint-multiple.jpg';
@@ -70,18 +68,6 @@ const HowPage = () => (
               </div>
               <div className="col-sm-6">
                 <CallToActionDevs />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="container-fluid ts-section">
-          <div className="container">
-            <div className="row">
-              <div className="col-sm-6">
-                <About />
-              </div>
-              <div className="col-sm-6">
-                <FAQs />
               </div>
             </div>
           </div>
