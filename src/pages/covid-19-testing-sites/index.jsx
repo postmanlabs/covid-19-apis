@@ -12,7 +12,7 @@ import Hero from '../../components/TestingSites/hero';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
-import LegalCopy from '../../components/TestingSites/resource';
+import Resource from '../../components/TestingSites/resource';
 
 
 class IndexPageComponent extends React.Component {
@@ -97,7 +97,7 @@ class IndexPageComponent extends React.Component {
               </div>
             </div>
           </div>
-          <LegalCopy />
+          <Resource />
         </div>
       </Layout>
     );

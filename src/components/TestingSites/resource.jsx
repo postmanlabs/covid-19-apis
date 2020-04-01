@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-const LegalCopy = () => (
+const Resource = () => (
   <div className="ts-callout">
     <div className="container-fluid ts-section">
       <div className="container">
@@ -17,4 +17,4 @@ const LegalCopy = () => (
   </div>
 );
 
-export default LegalCopy;
+export default Resource;

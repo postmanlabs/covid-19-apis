@@ -8,7 +8,7 @@ import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
-import LegalCopy from '../../components/TestingSites/resource';
+import Resource from '../../components/TestingSites/resource';
 
 const AboutPage = () => (
   <Layout>
@@ -53,7 +53,7 @@ const AboutPage = () => (
         </div>
       </div>
     </div>
-    <LegalCopy />
+    <Resource />
   </Layout>
 );
 
