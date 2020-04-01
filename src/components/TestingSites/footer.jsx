@@ -16,7 +16,7 @@ const Footer = () => (
       </div>
       <div className="row attribution">
         <div className="col-sm-12">
-          <img className="pm-logo" src="https://assets.getpostman.com/common-share/postman-logo-horizontal-white.svg" alt="Postman" />
+          <a href="https://www.postman.com/" target="_blank" rel="noopener noreferrer"><img className="pm-logo" src="https://assets.getpostman.com/common-share/postman-logo-horizontal-white.svg" alt="Postman" /></a>
           <p>
             A project developed by the
             {' '}
