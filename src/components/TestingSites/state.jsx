@@ -84,7 +84,7 @@ const State = ({ state }) => {
 
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Delaware</h3>
+                  <h3 className="card-title">Delaware</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -111,7 +111,7 @@ const State = ({ state }) => {
 
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Florida</h3>
+                  <h3 className="card-title">Florida</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -142,7 +142,7 @@ const State = ({ state }) => {
             <div className="card-deck">
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Massachusetts</h3>
+                  <h3 className="card-title">Massachusetts</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -170,7 +170,7 @@ const State = ({ state }) => {
 
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Nevada</h3>
+                  <h3 className="card-title">Nevada</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -197,7 +197,7 @@ const State = ({ state }) => {
               </div>
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">New Jersey</h3>
+                  <h3 className="card-title">New Jersey</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -229,7 +229,7 @@ const State = ({ state }) => {
             <div className="card-deck">
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">New York</h3>
+                  <h3 className="card-title">New York</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -256,7 +256,7 @@ const State = ({ state }) => {
               </div>
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Texas</h3>
+                  <h3 className="card-title">Texas</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
@@ -284,7 +284,7 @@ const State = ({ state }) => {
 
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
-                <h3 className="card-title">Washington</h3>
+                  <h3 className="card-title">Washington</h3>
                   <p className="lastUpdated">
                     Last updated:
                     {' '}
