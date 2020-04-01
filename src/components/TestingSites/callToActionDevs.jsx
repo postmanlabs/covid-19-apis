@@ -8,7 +8,7 @@ const CallToActionDevs = () => (
         <p>
           This is a crowdsourced project. If you’re an API developer and you’d like to contribute your expertise, visit the GitHub page below.
         </p>
-        <a href="https://github.com/postmanlabs/covid-19-apis" className="btn btn-dark ts-button">
+        <a href="https://github.com/postmanlabs/covid-19-apis" className="btn btn-outline-dark ts-button">
           <span className="ts-icon">
             <svg className="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
               <title>GitHub</title>
