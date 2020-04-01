@@ -19,11 +19,13 @@ class IndexPageComponent extends React.Component {
     super(props);
 
     this.state = {
-      data: [],
       california: [],
       washington: [],
       massachusetts: [],
-      'new-york': [],
+      newyork: [],
+      florida: [],
+      texas: [],
+      newjersey: [],
     };
   }
 
@@ -36,7 +38,7 @@ class IndexPageComponent extends React.Component {
         let { state } = node.node.context;
 
         axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
-          this.setState({ data: response.data });
+          // this.setState({ data: response.data });
 
           if (state === 'california') {
             this.setState({ california: response.data });
@@ -45,10 +47,19 @@ class IndexPageComponent extends React.Component {
             this.setState({ washington: response.data });
           }
           if (state === 'new-york') {
-            this.setState({ 'new-york': response.data });
+            this.setState({ newyork: response.data });
           }
           if (state === 'massachusetts') {
             this.setState({ massachusetts: response.data });
+          }
+          if (state === 'florida') {
+            this.setState({ florida: response.data });
+          }
+          if (state === 'texas') {
+            this.setState({ texas: response.data });
+          }
+          if (state === 'new-jersey') {
+            this.setState({ newjersey: response.data });
           }
         });
       }

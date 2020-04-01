@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const HeroPage = ({ pageTitle }) => {
   const heroTitle = pageTitle;
@@ -15,9 +14,9 @@ const HeroPage = ({ pageTitle }) => {
             <p className="subtitle mb-0">
               This is a crowdsourced effort, and
               {' '}
-              <Link to="https://github.com/postmanlabs/covid-19-apis" className="herolink" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/postmanlabs/covid-19-apis" className="herolink" target="_blank" rel="noopener noreferrer">
                 anyone can contribute
-              </Link>
+              </a>
               . We do our best to verify all information, but standard indemnifications apply.
             </p>
           </div>
