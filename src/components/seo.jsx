@@ -56,6 +56,10 @@ function SEO({
           content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
         },
         {
+          property: 'og:url',
+          content: 'https://covid-19-apis.postman.com/',
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
