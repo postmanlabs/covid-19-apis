@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import heroImage from '../../images/covid19-image-2.png';
 
 const Hero = () => (
