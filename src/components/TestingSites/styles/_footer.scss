@@ -4,11 +4,15 @@
   color: #dddddd;
   & a.navlink {
     color: #dddddd;
-    margin-right: 1rem;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    display: inline-block;
   }
   & a.homelink {
     color: #dddddd;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+    display: inline-block;
   }
   & a.attributionlink {
     color: #dddddd;
@@ -23,7 +27,8 @@
     }
   }
 
-  & .attribution {
+  & .attribution,
+  .covid-19-callout {
     border-top: 4px solid #374785;
     margin-top: 1rem;
     padding-top: 1.5rem;
@@ -32,5 +37,8 @@
       width: auto;
       margin-bottom: 1rem;
     }
+  }
+  .ts-icon {
+    margin-right: 1rem;
   }
 }
