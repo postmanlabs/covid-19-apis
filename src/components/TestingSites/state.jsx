@@ -1,3 +1,5 @@
+/* eslint-disable consistent-return */
+/* eslint-disable array-callback-return */
 // on index (main) page
 import React from 'react';
 import { Link } from 'gatsby';
@@ -19,17 +21,20 @@ const State = ({ state }) => (
               <div className="card-body">
                 <h3 className="card-title">CA</h3>
                 <p>Last updated: Mar 31, 2020</p>
-                {state.california.map((site) => (
-                  <ul>
-                    <li key={Math.random()}>
-                      <Link to="/">
-                        name:
-                        {' '}
-                        {site.name}
-                      </Link>
-                    </li>
-                  </ul>
-                ))}
+                {state.california.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
+                    return (
+                      <ul>
+                        <li key={Math.random()}>
+                          <Link to="/covid-19-testing-sites/california/">
+                            {' '}
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
               </div>
               <div className="card-footer">
                 <Link to="/covid-19-testing-sites/california/" className="btn btn-dark ts-button">view all CA sites</Link>
@@ -40,17 +45,20 @@ const State = ({ state }) => (
               <div className="card-body">
                 <h3 className="card-title">MA</h3>
                 <p>Last updated: Mar 31, 2020</p>
-                {state.massachusetts.map((site) => (
-                  <ul>
-                    <li key={Math.random()}>
-                      <Link to="/">
-                        name:
-                        {' '}
-                        {site.name}
-                      </Link>
-                    </li>
-                  </ul>
-                ))}
+                {state.massachusetts.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
+                    return (
+                      <ul>
+                        <li key={Math.random()}>
+                          <Link to="/covid-19-testing-sites/massachusetts/">
+                            {' '}
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
               </div>
               <div className="card-footer">
                 <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark ts-button">view all MA sites</Link>
@@ -65,17 +73,20 @@ const State = ({ state }) => (
               <div className="card-body">
                 <h3 className="card-title">NY</h3>
                 <p>Last updated: Mar 31, 2020</p>
-                {state.massachusetts.map((site) => (
-                  <ul>
-                    <li key={Math.random()}>
-                      <Link to="/">
-                        name:
-                        {' '}
-                        {site.name}
-                      </Link>
-                    </li>
-                  </ul>
-                ))}
+                {state.massachusetts.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
+                    return (
+                      <ul>
+                        <li key={Math.random()}>
+                          <Link to="/covid-19-testing-sites/new-york/">
+                            {' '}
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
               </div>
               <div className="card-footer">
                 <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">view all NY sites</Link>
@@ -86,17 +97,19 @@ const State = ({ state }) => (
               <div className="card-body">
                 <h3 className="card-title">WA</h3>
                 <p>Last updated: Mar 31, 2020</p>
-                {state.washington.map((site) => (
-                  <ul>
-                    <li>
-                      <Link to="/">
-                        name:
-                        {site.name}
-                      </Link>
-                    </li>
-                    <li><Link to="/">Testing Site Name</Link></li>
-                  </ul>
-                ))}
+                {state.washington.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
+                    return (
+                      <ul>
+                        <li>
+                          <Link to="/covid-19-testing-sites/washington/">
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
               </div>
               <div className="card-footer">
                 <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark ts-button">view all WA sites</Link>
