@@ -78,10 +78,68 @@ const State = ({ state }) => {
                   </ul>
                 </div>
                 <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/california/" className="btn btn-dark ts-button">view all CA sites</Link>
+                  <Link to="/covid-19-testing-sites/california/" className="btn btn-dark ts-button">View all CA sites</Link>
                 </div>
               </div>
 
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">Delaware</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowDE}
+                  </p>
+                  <ul>
+                    {state.delaware.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li>
+                            <Link to="/covid-19-testing-sites/delaware/">
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark ts-button">View all MA sites</Link>
+                </div>
+              </div>
+
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">Florida</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowFL}
+                  </p>
+                  <ul>
+                    {state.florida.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li>
+                            <Link to="/covid-19-testing-sites/florida/">
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">View all NY sites</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="card-deck">
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Massachusetts</h3>
@@ -106,178 +164,7 @@ const State = ({ state }) => {
                   </ul>
                 </div>
                 <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark ts-button">view all MA sites</Link>
-                </div>
-              </div>
-
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">New York</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowNY}
-                  </p>
-                  <ul>
-                    {state.newyork.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li key={Math.random()}>
-                            <Link to="/covid-19-testing-sites/new-york/">
-                              {' '}
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">view all NY sites</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="card-deck">
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">Washington</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowWA}
-                  </p>
-                  <ul>
-                    {state.washington.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li>
-                            <Link to="/covid-19-testing-sites/washington/">
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark ts-button">view all WA sites</Link>
-                </div>
-              </div>
-
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">Texas</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowTX}
-                  </p>
-                  <ul>
-                    {state.texas.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li key={Math.random()}>
-                            <Link to="/covid-19-testing-sites/texas/">
-                              {' '}
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/texas/" className="btn btn-dark ts-button">view all TX sites</Link>
-                </div>
-              </div>
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">Florida</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowFL}
-                  </p>
-                  <ul>
-                    {state.florida.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li>
-                            <Link to="/covid-19-testing-sites/florida/">
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/florida/" className="btn btn-dark ts-button">view all FL sites</Link>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="card-deck">
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">New Jersey</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowNJ}
-                  </p>
-                  <ul>
-                    {state.newjersey.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li key={Math.random()}>
-                            <Link to="/covid-19-testing-sites/new-jersey/">
-                              {' '}
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/new-jersey/" className="btn btn-dark ts-button">view all NJ sites</Link>
-                </div>
-              </div>
-              <div className="card ts-cards col-sm-4">
-                <div className="card-body">
-                  <h3 className="card-title">Delaware</h3>
-                  <p className="lastUpdated">
-                    Last updated:
-                    {' '}
-                    {nowDE}
-                  </p>
-                  <ul>
-                    {state.delaware.map((site) => {
-                      if (site.id === '1' || site.id === '2' || site.id === '3') {
-                        return (
-                          <li>
-                            <Link to="/covid-19-testing-sites/delaware/">
-                              {site.name}
-                            </Link>
-                          </li>
-                        );
-                      }
-                    })}
-                  </ul>
-                </div>
-                <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/delaware/" className="btn btn-dark ts-button">view all DE sites</Link>
+                  <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark ts-button">View all WA sites</Link>
                 </div>
               </div>
 
@@ -305,7 +192,120 @@ const State = ({ state }) => {
                   </ul>
                 </div>
                 <div className="card-footer">
-                  <Link to="/covid-19-testing-sites/nevada/" className="btn btn-dark ts-button">view all NV sites</Link>
+                  <Link to="/covid-19-testing-sites/texas/" className="btn btn-dark ts-button">View all TX sites</Link>
+                </div>
+              </div>
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">New Jersey</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowNJ}
+                  </p>
+                  <ul>
+                    {state.newjersey.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li key={Math.random()}>
+                            <Link to="/covid-19-testing-sites/new-jersey/">
+                              {' '}
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/florida/" className="btn btn-dark ts-button">View all FL sites</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="card-deck">
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">New York</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowNY}
+                  </p>
+                  <ul>
+                    {state.newyork.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li key={Math.random()}>
+                            <Link to="/covid-19-testing-sites/new-york/">
+                              {' '}
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/new-jersey/" className="btn btn-dark ts-button">View all NJ sites</Link>
+                </div>
+              </div>
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">Texas</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowTX}
+                  </p>
+                  <ul>
+                    {state.texas.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li key={Math.random()}>
+                            <Link to="/covid-19-testing-sites/texas/">
+                              {' '}
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/delaware/" className="btn btn-dark ts-button">View all DE sites</Link>
+                </div>
+              </div>
+
+              <div className="card ts-cards col-sm-4">
+                <div className="card-body">
+                  <h3 className="card-title">Washington</h3>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {' '}
+                    {nowWA}
+                  </p>
+                  <ul>
+                    {state.washington.map((site) => {
+                      if (site.id === '1' || site.id === '2' || site.id === '3') {
+                        return (
+                          <li>
+                            <Link to="/covid-19-testing-sites/washington/">
+                              {site.name}
+                            </Link>
+                          </li>
+                        );
+                      }
+                    })}
+                  </ul>
+                </div>
+                <div className="card-footer">
+                  <Link to="/covid-19-testing-sites/nevada/" className="btn btn-dark ts-button">View all NV sites</Link>
                 </div>
               </div>
             </div>
