@@ -4,7 +4,12 @@ import Legal from './legal';
 
 const HeroLight = ({ usState }) => {
   const place = usState;
-  const capitalize = place.charAt(0).toUpperCase() + place.slice(1);
+  let capitalize = place.split('-');
+  capitalize = capitalize.map((caps) => (
+    caps.charAt(0).toUpperCase() + caps.slice(1)
+  ));
+  capitalize = capitalize.join(' ');
+
 
   return (
     <div className="container-fluid ts-hero-background pb-4">
