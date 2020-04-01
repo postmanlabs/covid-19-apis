@@ -3,11 +3,13 @@
 // lists all States
 import React from 'react';
 import axios from 'axios';
+import moment from 'moment';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
 import HeroLight from '../components/TestingSites/heroLight';
 import CallToActionConsumers from '../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../components/TestingSites/callToActionDevs';
+
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -47,7 +49,8 @@ class StateListComponent extends React.Component {
                   </h2>
                   <p className="lastUpdated">
                     Last updated:
-                    {site.updated}
+                    {' '}
+                    {moment(site.updated).fromNow()}
                   </p>
                   <div className="row">
                     <div className="col-12 ts-state-site__description">
