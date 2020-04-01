@@ -7,6 +7,7 @@ import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
+import Resource from '../../components/TestingSites/resource';
 
 const LegalPage = () => (
   <Layout>
@@ -37,6 +38,7 @@ const LegalPage = () => (
         </div>
       </div>
     </div>
+    <Resource />
   </Layout>
 );
 
