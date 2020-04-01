@@ -45,21 +45,18 @@ class StateListComponent extends React.Component {
                   <h2 key={Math.random()}>
                     {site.name}
                   </h2>
+                  <p className="lastUpdated">
+                    Last updated:
+                    {site.updated}
+                  </p>
                   <div className="row">
                     <div className="col-12 ts-state-site__description">
                       <div className="row">
                         <div className="col-sm-8">
-                          <p className="lastUpdated">
-                            Last updated:
-                            {site.updated}
-                          </p>
                           <p>{site.description}</p>
                         </div>
                         <div className="col-sm-4">
                           <p>
-                            Transportation:
-                            {' '}
-                            {site.transportation}
                             {site.physical_address.map((deets) => (
                               <div className="ts-state-site__address">
                                 <p className="address">
@@ -68,11 +65,12 @@ class StateListComponent extends React.Component {
                                 </p>
                                 <p className="address">
                                   {deets.city}
-                                  {' '}
+                                  {', '}
                                   {deets.state_province}
                                   {' '}
                                   {deets.postal_code}
                                 </p>
+                                <p><a href={`https://www.google.com/maps/place/${deets.address_1}${',+'}${deets.city}${',+'}${deets.state_province}${'+'}${deets.postal_code}`} target="_blank" rel="noopener noreferrer">View on map</a></p>
                               </div>
                             ))}
                             {site.phones.map((tel) => (
@@ -89,123 +87,123 @@ class StateListComponent extends React.Component {
                                 </p>
                               </>
                             ))}
-                            {/* {console.log('regular schedule', site.regular_schedule)} */}
-                            {site.regular_schedule.map((time) => {
-                              // Monday:
-                              if (time.weekday === '1') {
-                                return (
-                                  <>
-                                    <h5>Monday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Tuesday:
-                              if (time.weekday === '2') {
-                                return (
-                                  <>
-                                    <h5>Tueday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Wednesday:
-                              if (time.weekday === '3') {
-                                return (
-                                  <>
-                                    <h5>Wednesday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Thursday:
-                              if (time.weekday === '4') {
-                                return (
-                                  <>
-                                    <h5>Thursday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Friday:
-                              if (time.weekday === '5') {
-                                return (
-                                  <>
-                                    <h5>Friday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Saturday:
-                              if (time.weekday === '6') {
-                                return (
-                                  <>
-                                    <h5>Saturday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                              // Sunday:
-                              if (time.weekday === '7') {
-                                return (
-                                  <>
-                                    <h5>Sunday</h5>
-                                    <p>
-                                      Opens at
-                                      {time.opens_at}
-                                    </p>
-                                    <p>
-                                      Closes at
-                                      {time.closes_at}
-                                    </p>
-                                  </>
-                                );
-                              }
-                            })}
                           </p>
                         </div>
+                        {/* {console.log('regular schedule', site.regular_schedule)} */}
+                        {site.regular_schedule.map((time) => {
+                          // Monday:
+                          if (time.weekday === '1') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Monday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Tuesday:
+                          if (time.weekday === '2') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Tuesday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Wednesday:
+                          if (time.weekday === '3') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Wednesday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Thursday:
+                          if (time.weekday === '4') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Thursday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Friday:
+                          if (time.weekday === '5') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Friday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Saturday:
+                          if (time.weekday === '6') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Saturday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                          // Sunday:
+                          if (time.weekday === '7') {
+                            return (
+                              <>
+                                <div className="col">
+                                  <strong>Sunday</strong>
+                                  <p className="mb-0">
+                                    {time.opens_at}
+                                  </p>
+                                  <p>
+                                    {time.closes_at}
+                                  </p>
+                                </div>
+                              </>
+                            );
+                          }
+                        })}
                       </div>
                     </div>
                   </div>

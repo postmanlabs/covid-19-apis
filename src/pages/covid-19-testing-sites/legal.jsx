@@ -18,7 +18,7 @@ const LegalPage = () => (
           <div className="col-md-10">
             <p>The information provided using this website is only intended to be general information for the public and is not intended to take the place of written law or regulations. Please use it at your own discretion. Not everyone needs to be tested for COVID-19. This site provides some information that might help in making decisions about seeking care or testing.</p>
 
-            <p>By sending a written contribution to Postman, you grant a perpetual, royalty-free, unconditional license to Postman to publish your contribution in aggregate with other submissions on this website, as well as disseminate it to other parties, and to discuss or reference it in any publications related to or arising out of this website. You also agree that Postman has the right, but not the obligation, to edit or remove any contribution in Postman’s sole discretion. You also agree to the Postman Terms of Use.</p>
+            <p>By sending a written contribution to Postman, you grant a perpetual, royalty-free, unconditional license to Postman to publish your contribution in aggregate with other submissions on this website, as well as disseminate it to other parties, and to discuss or reference it in any publications related to or arising out of this website. You also agree that Postman has the right, but not the obligation, to edit or remove any contribution in Postman’s sole discretion.</p>
           </div>
         </div>
       </div>
