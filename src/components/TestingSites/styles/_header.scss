@@ -1,11 +1,11 @@
 .ts-topnav {
-    background-color: #493E5E !important;
+    background-color: #1C272B !important;
     color: #24305E;
     font-weight: 700;
     font-size: 16px;
     & a.navlink {
         color: #FF6C37;
-        margin-right: 1rem;
+        margin-right: 2rem;
     }
 }
 a.header__homelink {
@@ -13,4 +13,7 @@ a.header__homelink {
     &:hover {
         color: #fff;
     }
+}
+.navbar-brand {
+    margin-right: 2rem !important;
 }
