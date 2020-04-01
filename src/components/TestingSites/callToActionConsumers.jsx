@@ -8,7 +8,7 @@ const callToActionConsumers = () => (
         <p>
           This is a crowdsourced project. If you found a new or updated testing site and you’d like to submit it, email us.
         </p>
-        <a href="mailto:covid-19@postman.com" className="btn btn-dark ts-button">Email us</a>
+        <a href="mailto:covid-19@postman.com" className="btn btn-outline-dark ts-button">Email us</a>
       </div>
     </div>
   </div>

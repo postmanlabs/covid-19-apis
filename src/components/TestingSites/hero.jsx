@@ -1,5 +1,6 @@
 import React from 'react';
 import heroImage from '../../images/covid19-image-2.png';
+import Legal from './legal';
 
 const Hero = () => (
   <div className="container-fluid hero ts-hero-background pb-4">
@@ -9,14 +10,7 @@ const Hero = () => (
           <h1>
             COVID-19 Testing Locations
           </h1>
-          <p className="subtitle mb-0">
-            This is a crowdsourced effort, and
-            {' '}
-            <a href="https://github.com/postmanlabs/covid-19-apis" className="herolink" target="_blank" rel="noopener noreferrer">
-              anyone can contribute
-            </a>
-            . We do our best to verify all information, but standard indemnifications apply.
-          </p>
+          <Legal />
         </div>
         <div className="col-md-6 hero_image">
           <img src={heroImage} alt="Isolated COVID-19 virus in space. Illustration." />
