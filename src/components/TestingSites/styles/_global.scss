@@ -41,7 +41,12 @@
     &.ts-button{
         border-color: #374785 !important;
         color: #374785 !important;
-    }    
+    }
+    &:hover {
+        background-color: #374785 !important;
+        border-color: #374785 !important;
+        color: #FFFFFF !important;
+    }
 }
 .ts-definition-list {
     & dt {
