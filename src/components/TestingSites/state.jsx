@@ -3,9 +3,28 @@
 // on index (main) page
 import React from 'react';
 import { Link } from 'gatsby';
+import moment from 'moment';
 
-const State = ({ state }) => (
-  <>
+const State = ({ state }) => {
+  const dateCA = state.california;
+
+  dateCA.map((foo) => (
+      new Date(Math.max.apply(null, dateCA.map(function(e) {
+        return new Date(e.updated);
+      })))
+  ))
+  console.log(foo);
+  // for (var california in state) {
+  //   if (state.hasOwnProperty(california)) {
+  //     console.log('state mapping', california);
+  //     // new Date(Math.max.apply(null, a.map(function(e) {
+  //     //   return new Date(e.MeasureDate);
+  //     // })));
+  //   }
+  // }
+
+  return (
+    <>
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
         <div className="row">
@@ -14,13 +33,15 @@ const State = ({ state }) => (
             <p>Click on any testing site name to see the full details of that site, or click the “View All” button to see all testing locations in that state.</p>
           </div>
         </div>
-
         <div className="row">
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">California</h3>
-                <p>Last updated: Mar 31, 2020</p>
+                <p>
+                  Last updated:
+                  {moment('2020-03-31').fromNow()}
+                </p>
                 {state.california.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
                     return (
@@ -271,5 +292,5 @@ const State = ({ state }) => (
     </div>
   </>
 );
-
+              }
 export default State;
