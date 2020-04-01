@@ -19,18 +19,18 @@ const State = ({ state }) => (
               <div className="card-body">
                 <h3 className="card-title">CA</h3>
                 {state.california.map((site) => {
-                  console.log('site on state', site)
+                  console.log('site on state', site);
                   return (
-                  <ul>
-                    <li key={Math.random()}>
-                      <Link to="/">
-                        name:
-                        {' '}
-                        {site.name}
-                      </Link>
-                    </li>
-                  </ul>
-                ))}}
+                    <ul>
+                      <li key={Math.random()}>
+                        <Link to="/">
+                          name:
+                          {' '}
+                          {site.name}
+                        </Link>
+                      </li>
+                    </ul>
+                  )})}
                 <Link to="/covid-19-testing-sites/california/" className="btn btn-dark stateViewAll">view all CA sites</Link>
               </div>
             </div>
@@ -50,7 +50,7 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark stateViewAll">view all MA sites</Link>
+                <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark ts-button">view all MA sites</Link>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark stateViewAll">view all NY sites</Link>
+                <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">view all NY sites</Link>
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@ const State = ({ state }) => (
                     <li><Link to="/">Testing Site Name</Link></li>
                   </ul>
                 ))}
-                <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark stateViewAll">view all WA sites</Link>
+                <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark ts-button">view all WA sites</Link>
               </div>
             </div>
           </div>

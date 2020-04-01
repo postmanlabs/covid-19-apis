@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const About = () => (
   <div className="ts-section text-center ts-about">
@@ -6,7 +7,7 @@ const About = () => (
     <p>
       View the story of this crowdsourced project.
     </p>
-    <button type="button" className="btn btn-dark">Read more</button>
+    <Link to="/covid-19-testing-sites/about/" className="btn btn-dark">Read more</Link>
   </div>
 );
 
