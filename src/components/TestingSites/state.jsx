@@ -57,7 +57,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">California</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowCA}
@@ -85,7 +85,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Massachusetts</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowMA}
@@ -113,7 +113,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">New York</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowNY}
@@ -145,7 +145,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Washington</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowWA}
@@ -172,7 +172,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Texas</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowTX}
@@ -199,7 +199,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Florida</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowFL}
@@ -230,7 +230,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">New Jersey</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowNJ}
@@ -257,7 +257,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Delaware</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowDE}
@@ -284,7 +284,7 @@ const State = ({ state }) => {
               <div className="card ts-cards col-sm-4">
                 <div className="card-body">
                   <h3 className="card-title">Nevada</h3>
-                  <p>
+                  <p className="lastUpdated">
                     Last updated:
                     {' '}
                     {nowNV}
