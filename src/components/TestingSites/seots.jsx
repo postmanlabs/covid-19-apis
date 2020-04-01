@@ -36,7 +36,7 @@ function SEOTS({
         lang,
       }}
       title="COVID-19 Testing Locations"
-      titleTemplate={`%s`}
+      titleTemplate="%s"
       meta={[
         {
           name: 'description',
@@ -100,14 +100,11 @@ function SEOTS({
 SEOTS.defaultProps = {
   lang: 'en',
   meta: [],
-  description: '',
 };
 
 SEOTS.propTypes = {
-  description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default SEOTS;
