@@ -13,6 +13,8 @@ We would love for you to contribute to the Postman COVID-19 API Resource Center!
 
 **NOTE:** We have added a new Markdown linter with GitHub Actions. When making a pull request, it will run against this linter. Your changed files are required to pass linting before they will be merged. More information on this can be found in the [contribution guidelines](CONTRIBUTING.md).
 
+Looking to contribute to the COVID-19 Testing Sites website? You can find that project within this repo. [View README](https://github.com/postmanlabs/covid-19-apis/tree/develop/src/components/TestingSites).
+
 ## Build locally
 This assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm) installed.
 ```
