@@ -90,7 +90,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 /******************************************************************************************** */
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  const allState = ['california', 'washington', 'new-york', 'massachusetts', 'florida', 'texas', 'new-jersey'];
+  const allState = ['california', 'washington', 'new-york', 'massachusetts', 'florida', 'texas', 'new-jersey', 'delaware', 'nevada'];
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({
