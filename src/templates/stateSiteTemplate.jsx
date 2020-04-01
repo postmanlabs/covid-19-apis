@@ -38,7 +38,7 @@ class StateListComponent extends React.Component {
         <div className="container-fluid">
           <div className="container">
             {data.map((site) => (
-              <div className="row">
+              <div className="row" key={Math.random()}>
                 <div className="col-12 ts-state ts-cards">
                   <h2 key={Math.random()}>
                     {site.name}

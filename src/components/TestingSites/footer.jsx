@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
 const Footer = () => (
   <div className="container-fluid ts-footer ts-section">
@@ -20,13 +19,13 @@ const Footer = () => (
           <p>
             A project developed by the
             {' '}
-            <Link to="https://www.postman.com/" className="attributionlink" target="_blank" rel="noopener noreferrer">Postman team</Link>
+            <a href="https://www.postman.com/" className="attributionlink" target="_blank" rel="noopener noreferrer">Postman team</a>
             , using APIs from the
             {' '}
-            <Link to="https://covid-19-apis.postman.com/" className="attributionlink" target="_blank" rel="noopener noreferrer">Postman COVID-19 API Resource Center</Link>
+            <a href="https://covid-19-apis.postman.com/" className="attributionlink" target="_blank" rel="noopener noreferrer">Postman COVID-19 API Resource Center</a>
             , along with
             {' '}
-            <Link to="https://github.com/postmanlabs/covid-19-apis" className="attributionlink" target="_blank" rel="noopener noreferrer">community contributions</Link>
+            <a href="https://github.com/postmanlabs/covid-19-apis" className="attributionlink" target="_blank" rel="noopener noreferrer">community contributions</a>
             .
           </p>
         </div>
