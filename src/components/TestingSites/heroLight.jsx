@@ -10,13 +10,13 @@ const HeroLight = ({ usState }) => {
     <div className="container-fluid ts-hero-background pb-4">
       <div className="container">
         <div className="row">
-          <div className="col-md-9 hero_title offset-md-1">
+          <div className="col-md-9 heroLight_title offset-md-1">
             <h1>
               COVID-19 Testing Locations in
               {' '}
               {capitalize}
             </h1>
-            <p className="subtitle">
+            <p className="subtitle mb-0">
               This is a crowdsourced effort, and
               {' '}
               <Link to="https://github.com/postmanlabs/covid-19-apis" className="herolink" target="_blank" rel="noopener noreferrer">
