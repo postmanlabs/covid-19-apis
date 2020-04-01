@@ -4,6 +4,8 @@ import axios from 'axios';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
 import HeroLight from '../components/TestingSites/heroLight';
+import CallToActionConsumers from '../components/TestingSites/callToActionConsumers';
+import CallToActionDevs from '../components/TestingSites/callToActionDevs';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -90,6 +92,20 @@ class StateListComponent extends React.Component {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="youmayalsolike">
+          <div className="container-fluid ts-section">
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-6">
+                  <CallToActionConsumers />
+                </div>
+                <div className="col-sm-6">
+                  <CallToActionDevs />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>
