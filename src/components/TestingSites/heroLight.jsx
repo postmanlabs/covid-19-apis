@@ -10,7 +10,7 @@ const HeroLight = ({ usState }) => {
     <div className="container-fluid ts-hero-background pb-4">
       <div className="container">
         <div className="row">
-          <div className="col-md-9 heroLight_title offset-md-1">
+          <div className="col-sm-12 heroLight_title">
             <h1>
               COVID-19 Testing Locations in
               {' '}
