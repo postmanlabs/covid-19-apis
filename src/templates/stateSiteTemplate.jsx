@@ -4,12 +4,12 @@
 import React from 'react';
 import axios from 'axios';
 import moment from 'moment';
-import SEO from '../components/seo';
+import SEOTS from '../components/TestingSites/seots';
 import Layout from '../components/TestingSites/layout';
 import HeroLight from '../components/TestingSites/heroLight';
 import CallToActionConsumers from '../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../components/TestingSites/callToActionDevs';
-import Resource from '../../components/TestingSites/resource';
+import Resource from '../components/TestingSites/resource';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -37,7 +37,7 @@ class StateListComponent extends React.Component {
     const { usState } = this.props;
     return (
       <Layout>
-        <SEO title="State Specific List of testing sites" />
+        <SEOTS title="State Specific List of testing sites" />
         <HeroLight usState={usState} />
         <div className="container-fluid">
           <div className="container">

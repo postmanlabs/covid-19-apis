@@ -1,7 +1,7 @@
 // this is the main page
 
 import React from 'react';
-import SEO from '../../components/seo';
+import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 import HeroPage from '../../components/TestingSites/heroPage';
 
@@ -11,7 +11,7 @@ import Resource from '../../components/TestingSites/resource';
 
 const LegalPage = () => (
   <Layout>
-    <SEO title="Legal | COVID-19 Testing Locations" />
+    <SEOTS title="Legal | COVID-19 Testing Locations" />
     <HeroPage pageTitle="Legal" />
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">

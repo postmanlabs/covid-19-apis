@@ -1,7 +1,7 @@
 // this is the main page
 
 import React from 'react';
-import SEO from '../../components/seo';
+import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 import HeroPage from '../../components/TestingSites/heroPage';
 
@@ -11,7 +11,7 @@ import Resource from '../../components/TestingSites/resource';
 
 const FaqPage = () => (
   <Layout>
-    <SEO title="FAQs | COVID-19 Testing Locations" />
+    <SEOTS title="FAQs | COVID-19 Testing Locations" />
     <div className="">
       <HeroPage pageTitle="Frequently Asked Questions" />
       <div className="container-fluid ts-main-area ts-section">
