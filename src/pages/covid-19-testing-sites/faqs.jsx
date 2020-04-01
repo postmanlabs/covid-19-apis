@@ -7,6 +7,7 @@ import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
+import LegalCopy from '../../components/TestingSites/resource';
 
 const FaqPage = () => (
   <Layout>
@@ -68,6 +69,7 @@ const FaqPage = () => (
           </div>
         </div>
       </div>
+      <LegalCopy />
     </div>
   </Layout>
 );
