@@ -40,7 +40,6 @@ const State = ({ state }) => (
                 <Link to="/covid-19-testing-sites/california/" className="btn btn-dark ts-button">view all CA sites</Link>
               </div>
             </div>
-
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">MA</h3>
@@ -92,7 +91,6 @@ const State = ({ state }) => (
                 <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">view all NY sites</Link>
               </div>
             </div>
-
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">WA</h3>
@@ -143,7 +141,6 @@ const State = ({ state }) => (
                 <Link to="/covid-19-testing-sites/texas/" className="btn btn-dark ts-button">view all TX sites</Link>
               </div>
             </div>
-
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">FL</h3>
@@ -194,17 +191,16 @@ const State = ({ state }) => (
                 <Link to="/covid-19-testing-sites/new-jersey/" className="btn btn-dark ts-button">view all NJ sites</Link>
               </div>
             </div>
-
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">State</h3>
+                <h3 className="card-title">DE</h3>
                 <p>Last updated: Mar 31, 2020</p>
-                {state.florida.map((site) => {
-                  if (site.id === '100000') {
+                {state.delaware.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
                     return (
                       <ul>
                         <li>
-                          <Link to="/covid-19-testing-sites/florida/">
+                          <Link to="/covid-19-testing-sites/delaware/">
                             {site.name}
                           </Link>
                         </li>
@@ -214,7 +210,57 @@ const State = ({ state }) => (
                 })}
               </div>
               <div className="card-footer">
-                <Link to="/covid-19-testing-sites/florida/" className="btn btn-dark ts-button">view all sites</Link>
+                <Link to="/covid-19-testing-sites/delaware/" className="btn btn-dark ts-button">view all DE sites</Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="card-deck">
+            <div className="card ts-cards col-sm-6">
+              <div className="card-body">
+                <h3 className="card-title">NV</h3>
+                <p>Last updated: Mar 31, 2020</p>
+                {state.nevada.map((site) => {
+                  if (site.id === '1' || site.id === '2' || site.id === '3') {
+                    return (
+                      <ul>
+                        <li key={Math.random()}>
+                          <Link to="/covid-19-testing-sites/nevada/">
+                            {' '}
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
+              </div>
+              <div className="card-footer">
+                <Link to="/covid-19-testing-sites/nevada/" className="btn btn-dark ts-button">view all NV sites</Link>
+              </div>
+            </div>
+            <div className="card ts-cards col-sm-6">
+              <div className="card-body">
+                <h3 className="card-title">[ state ]</h3>
+                <p>Last updated: Mar 31, 2020</p>
+                {state.florida.map((site) => {
+                  if (site.id === '10000') {
+                    return (
+                      <ul>
+                        <li>
+                          <Link to="/covid-19-testing-sites/delaware/">
+                            {site.name}
+                          </Link>
+                        </li>
+                      </ul>
+                    );
+                  }
+                })}
+              </div>
+              <div className="card-footer">
+                <Link to="/covid-19-testing-sites/delaware/" className="btn btn-dark ts-button">view all [ state ] sites</Link>
               </div>
             </div>
           </div>

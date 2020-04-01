@@ -26,6 +26,8 @@ class IndexPageComponent extends React.Component {
       florida: [],
       texas: [],
       newjersey: [],
+      delaware: [],
+      nevada: [],
     };
   }
 
@@ -60,6 +62,12 @@ class IndexPageComponent extends React.Component {
           }
           if (state === 'new-jersey') {
             this.setState({ newjersey: response.data });
+          }
+          if (state === 'delaware') {
+            this.setState({ delaware: response.data });
+          }
+          if (state === 'nevada') {
+            this.setState({ nevada: response.data });
           }
         });
       }
