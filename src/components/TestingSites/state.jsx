@@ -19,7 +19,7 @@ const State = ({ state }) => (
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">CA</h3>
+                <h3 className="card-title">California</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.california.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -42,7 +42,7 @@ const State = ({ state }) => (
             </div>
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">MA</h3>
+                <h3 className="card-title">Massachusetts</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.massachusetts.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -70,7 +70,7 @@ const State = ({ state }) => (
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">NY</h3>
+                <h3 className="card-title">New York</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.newyork.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -93,7 +93,7 @@ const State = ({ state }) => (
             </div>
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">WA</h3>
+                <h3 className="card-title">Washington</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.washington.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -120,7 +120,7 @@ const State = ({ state }) => (
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">TX</h3>
+                <h3 className="card-title">Texas</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.texas.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -143,7 +143,7 @@ const State = ({ state }) => (
             </div>
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">FL</h3>
+                <h3 className="card-title">Florida</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.florida.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -170,7 +170,7 @@ const State = ({ state }) => (
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">NJ</h3>
+                <h3 className="card-title">New Jersey</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.newjersey.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -193,7 +193,7 @@ const State = ({ state }) => (
             </div>
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">DE</h3>
+                <h3 className="card-title">Delaware</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.delaware.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
@@ -220,7 +220,7 @@ const State = ({ state }) => (
           <div className="card-deck">
             <div className="card ts-cards col-sm-6">
               <div className="card-body">
-                <h3 className="card-title">NV</h3>
+                <h3 className="card-title">Nevada</h3>
                 <p>Last updated: Mar 31, 2020</p>
                 {state.nevada.map((site) => {
                   if (site.id === '1' || site.id === '2' || site.id === '3') {
