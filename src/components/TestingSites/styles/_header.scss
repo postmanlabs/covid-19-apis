@@ -10,10 +10,40 @@
 }
 a.header__homelink {
     color: #fff;
+    margin-right: 2rem;
     &:hover {
         color: #fff;
+    }
+    @media (max-width: 695px) {
+        display: block;
     }
 }
 .navbar-brand {
     margin-right: 2rem !important;
+    @media (max-width: 695px) {
+        margin-right: 0 !important;
+    }
+}
+.navbar-brand {
+    white-space: initial !important;
+}
+.ts-brought-to-you-by {
+    font-size: 15px;
+    font-weight: 400;
+    
+    @media (max-width: 855px) {
+        display: none;
+    }
+    & a:link,
+    a:visited {
+        color: #ffffff !important;
+    }
+    & a:hover,
+    a:active {
+        color: #FF6C37 !important;
+        text-decoration: none;
+    }
+    & a img {
+        height: 2rem;
+    }
 }
