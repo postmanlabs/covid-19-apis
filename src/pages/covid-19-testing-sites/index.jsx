@@ -5,7 +5,7 @@ import React from 'react';
 import axios from 'axios';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import SEO from '../../components/seo';
+import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 
 import Hero from '../../components/TestingSites/hero';
@@ -79,7 +79,7 @@ class IndexPageComponent extends React.Component {
   render() {
     return (
       <Layout>
-        <SEO title="List of APIs and Blueprints" />
+        <SEOTS title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
           <State state={this.state} />
