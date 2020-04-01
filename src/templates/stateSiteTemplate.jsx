@@ -9,7 +9,7 @@ import Layout from '../components/TestingSites/layout';
 import HeroLight from '../components/TestingSites/heroLight';
 import CallToActionConsumers from '../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../components/TestingSites/callToActionDevs';
-
+import Resource from '../../components/TestingSites/resource';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -229,6 +229,7 @@ class StateListComponent extends React.Component {
             </div>
           </div>
         </div>
+        <Resource />
       </Layout>
     );
   }
