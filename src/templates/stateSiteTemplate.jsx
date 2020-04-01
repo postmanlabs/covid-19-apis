@@ -4,6 +4,8 @@ import axios from 'axios';
 import SEO from '../components/seo';
 import Layout from '../components/TestingSites/layout';
 import HeroLight from '../components/TestingSites/heroLight';
+import CallToActionConsumers from '../components/TestingSites/callToActionConsumers';
+import CallToActionDevs from '../components/TestingSites/callToActionDevs';
 
 class StateListComponent extends React.Component {
   constructor(props) {
@@ -37,54 +39,73 @@ class StateListComponent extends React.Component {
           <div className="container">
             {data.map((site) => (
               <div className="row">
-                <div className="col-12 ts-state">
-                  <h1 key={Math.random()}>
+                <div className="col-12 ts-state ts-cards">
+                  <h2 key={Math.random()}>
                     {site.name}
-                  </h1>
+                  </h2>
                   <div className="row">
                     <div className="col-12 ts-state-site__description">
-                      <p>{site.description}</p>
-                      <p>
-                        Transportation:
-                        {' '}
-                        {site.transportation}
-                      </p>
-                    </div>
-                    <div className="col-12">
-                      {site.physical_address.map((deets) => (
-                        <div className="ts-state-site__address">
-                          <p className="address">
-                            {deets.address_1}
+                      <div className="row">
+                        <div className="col-sm-8">
+                          <p className="lastUpdated">Last updated: Mar 31, 2020</p>
+                          <p>{site.description}</p>
+                        </div>
+                        <div className="col-sm-4">
+                          <p>
+                            Transportation:
                             {' '}
-                          </p>
-                          <p className="address">
-                            {deets.city}
-                            {' '}
-                            {deets.state_province}
-                            {' '}
-                            {deets.postal_code}
+                            {site.transportation}
+                            {site.physical_address.map((deets) => (
+                              <div className="ts-state-site__address">
+                                <p className="address">
+                                  {deets.address_1}
+                                  {' '}
+                                </p>
+                                <p className="address">
+                                  {deets.city}
+                                  {' '}
+                                  {deets.state_province}
+                                  {' '}
+                                  {deets.postal_code}
+                                </p>
+                              </div>
+                            ))}
+                            {site.phones.map((tel) => (
+                              <>
+                                <p className="address">
+                                  Telephone number:
+                                  {' '}
+                                  {tel.number}
+                                </p>
+                                <p className="address">
+                                  Language:
+                                  {' '}
+                                  {tel.language}
+                                </p>
+                              </>
+                            ))}
                           </p>
                         </div>
-                      ))}
-                      {site.phones.map((tel) => (
-                        <>
-                          <p className="address">
-                            Telephone number:
-                            {' '}
-                            {tel.number}
-                          </p>
-                          <p className="address">
-                            Language:
-                            {' '}
-                            {tel.language}
-                          </p>
-                        </>
-                      ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+        <div className="youmayalsolike">
+          <div className="container-fluid ts-section">
+            <div className="container">
+              <div className="row">
+                <div className="col-sm-6">
+                  <CallToActionConsumers />
+                </div>
+                <div className="col-sm-6">
+                  <CallToActionDevs />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </Layout>

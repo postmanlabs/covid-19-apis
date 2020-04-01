@@ -14,31 +14,32 @@ const State = ({ state }) => (
         </div>
 
         <div className="row">
-          <div className="col-sm-6">
-            <div className="card ts-cards">
+          <div className="card-deck">
+            <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">CA</h3>
-                {state.california.map((site) => {
-                  console.log('site on state', site);
-                  return (
-                    <ul>
-                      <li key={Math.random()}>
-                        <Link to="/">
-                          name:
-                          {' '}
-                          {site.name}
-                        </Link>
-                      </li>
-                    </ul>
-                  )})}
-                <Link to="/covid-19-testing-sites/california/" className="btn btn-dark stateViewAll">view all CA sites</Link>
+                <p>Last updated: Mar 31, 2020</p>
+                {state.california.map((site) => (
+                  <ul>
+                    <li key={Math.random()}>
+                      <Link to="/">
+                        name:
+                        {' '}
+                        {site.name}
+                      </Link>
+                    </li>
+                  </ul>
+                ))}
+              </div>
+              <div className="card-footer">
+                <Link to="/covid-19-testing-sites/california/" className="btn btn-dark ts-button">view all CA sites</Link>
               </div>
             </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card ts-cards">
+
+            <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">MA</h3>
+                <p>Last updated: Mar 31, 2020</p>
                 {state.massachusetts.map((site) => (
                   <ul>
                     <li key={Math.random()}>
@@ -50,14 +51,20 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
+              </div>
+              <div className="card-footer">
                 <Link to="/covid-19-testing-sites/massachusetts/" className="btn btn-dark ts-button">view all MA sites</Link>
               </div>
             </div>
           </div>
-          <div className="col-sm-6">
-            <div className="card ts-cards">
+        </div>
+
+        <div className="row">
+          <div className="card-deck">
+            <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">NY</h3>
+                <p>Last updated: Mar 31, 2020</p>
                 {state.massachusetts.map((site) => (
                   <ul>
                     <li key={Math.random()}>
@@ -69,14 +76,16 @@ const State = ({ state }) => (
                     </li>
                   </ul>
                 ))}
+              </div>
+              <div className="card-footer">
                 <Link to="/covid-19-testing-sites/new-york/" className="btn btn-dark ts-button">view all NY sites</Link>
               </div>
             </div>
-          </div>
-          <div className="col-sm-6">
-            <div className="card ts-cards">
+
+            <div className="card ts-cards col-sm-6">
               <div className="card-body">
                 <h3 className="card-title">WA</h3>
+                <p>Last updated: Mar 31, 2020</p>
                 {state.washington.map((site) => (
                   <ul>
                     <li>
@@ -88,6 +97,8 @@ const State = ({ state }) => (
                     <li><Link to="/">Testing Site Name</Link></li>
                   </ul>
                 ))}
+              </div>
+              <div className="card-footer">
                 <Link to="/covid-19-testing-sites/washington/" className="btn btn-dark ts-button">view all WA sites</Link>
               </div>
             </div>

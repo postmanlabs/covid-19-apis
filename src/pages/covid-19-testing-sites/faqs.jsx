@@ -3,6 +3,7 @@
 import React from 'react';
 import SEO from '../../components/seo';
 import Layout from '../../components/TestingSites/layout';
+import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
@@ -11,17 +12,11 @@ const FaqPage = () => (
   <Layout>
     <SEO title="FAQs | COVID-19 Testing Locations" />
     <div className="">
-      <div className="container-fluid ts-hero ts-section">
-        <div className="row">
-          <div className="col-sm-12 text-center">
-            <h1 className="mb-0">Frequently Asked Questions</h1>
-          </div>
-        </div>
-      </div>
+      <HeroPage pageTitle="Frequently Asked Questions" />
       <div className="container-fluid ts-main-area ts-section">
         <div className="container">
           <div className="row mb-4">
-            <div className="col-sm-12">
+            <div className="col-md-8 offset-md-2">
               <p>These are some of the most common questions about this project. Please review before submitting a question via issue or email.</p>
             </div>
             <div className="col-sm-12">
