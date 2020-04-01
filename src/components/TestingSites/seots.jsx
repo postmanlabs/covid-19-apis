@@ -40,7 +40,7 @@ function SEOTS({
       meta={[
         {
           name: 'description',
-          content: 'This is a crowdsourced effort and we welcome community contributions. Please read the legal fine print before proceeding.',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           property: 'og:title',
@@ -48,7 +48,7 @@ function SEOTS({
         },
         {
           property: 'og:description',
-          content: 'This is a crowdsourced effort and we welcome community contributions. Please read the legal fine print before proceeding.',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           property: 'og:image',
@@ -80,7 +80,7 @@ function SEOTS({
         },
         {
           name: 'twitter:description',
-          content: 'This is a crowdsourced effort and we welcome community contributions. Please read the legal fine print before proceeding.',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           name: 'twitter:site',
