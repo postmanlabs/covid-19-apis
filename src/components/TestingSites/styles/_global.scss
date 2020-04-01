@@ -12,11 +12,16 @@
     }
 }
 .ts-cards {
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
     border-top: 4px solid #A8D0E6 !important;
     box-shadow: 0 5px 8px rgba(0,0,0,.15);
     -webkit-box-shadow: 0 5px 8px rgba(0,0,0,.15);
     -moz-box-shadow: 0 5px 8px rgba(0,0,0,.15);
+}
+.card-footer {
+    padding: .75rem 1.25rem;
+    background-color: #FFFFFF !important;
+    border-top: none !important;
 }
 .youmayalsolike {
     background-color: rgba(168, 208, 230, .25);
@@ -44,4 +49,7 @@
 p.subtitle {
     font-size: 20px;
     line-height: 1.35;
+}
+.card-deck {
+    width: 100% !important;
 }
