@@ -18,7 +18,9 @@ const State = ({ state }) => (
             <div className="card ts-cards">
               <div className="card-body">
                 <h3 className="card-title">CA</h3>
-                {state.california.map((site) => (
+                {state.california.map((site) => {
+                  console.log('site on state', site)
+                  return (
                   <ul>
                     <li key={Math.random()}>
                       <Link to="/">
@@ -28,7 +30,7 @@ const State = ({ state }) => (
                       </Link>
                     </li>
                   </ul>
-                ))}
+                ))}}
                 <Link to="/covid-19-testing-sites/california/" className="btn btn-dark stateViewAll">view all CA sites</Link>
               </div>
             </div>
