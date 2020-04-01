@@ -24,7 +24,7 @@ const HowPage = () => (
               <div className="card-body">
                 <h3 className="card-title">Postman Collections</h3>
                 <p className="card-text">Using a Postman collection, data is pulled from Google using the Google Sheets API and then updates an API, documentation, and publishes data to GitHub for display to end users.</p>
-                <a href="/" target="_blank" className="card-link">View COVID-19 Collections</a>
+                <a href="https://covid-19-apis.postman.com/" target="_blank" rel="noopener noreferrer" className="card-link">View COVID-19 Collections</a>
                 <a href="https://learning.postman.com/docs/postman/collections/intro-to-collections/" target="_blank" rel="noopener noreferrer" className="card-link">Intro to Postman Collections</a>
               </div>
             </div>

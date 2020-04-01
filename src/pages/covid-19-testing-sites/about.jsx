@@ -16,7 +16,7 @@ const AboutPage = () => (
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
         <div className="row mb-4">
-          <div className="col-md-8 offset-md-2">
+          <div className="col-md-8">
             <p>
               This is an effort to crowdsource and centralize the availability of
               {' '}
@@ -25,7 +25,7 @@ const AboutPage = () => (
               testing locations across all 50 US states using two freely available online tools while using APIs to make sure the location data can be syndicated and distributed as widely as possible. The preferred method is:
             </p>
           </div>
-          <div className="col-md-8 offset-md-2">
+          <div className="col-md-8">
             <div className="card ts-cards">
               <div className="card-body">
                 <h3 className="card-title">Postman Collections</h3>
