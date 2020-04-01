@@ -1,5 +1,5 @@
 .ts-section a {
-    color: #F76C6C;
+    color: #374785;
     font-weight: 600;
 }
 .ts-section ul {
@@ -7,11 +7,70 @@
     padding-left: 0;
     
     & li a {
-        padding: .5rem 0;
+        padding: .75rem 0;
         display: block;
     }
 }
 .ts-cards {
-    margin-bottom: 32px;
-    background-color: rgba(255,255,255,.6) !important;
+    margin-bottom: 32px !important;
+    border-top: 4px solid #A8D0E6 !important;
+    box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    -webkit-box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 5px 8px rgba(0,0,0,.15);
+    padding: 0;
+}
+.card-footer {
+    padding: 0 1.25rem .75rem !important;
+    background-color: #FFFFFF !important;
+    border-top: none !important;
+}
+.youmayalsolike {
+    background-color: rgba(168, 208, 230, .25);
+    padding: 40px 0;
+}
+.ts-button {
+    color: #FFFFFF !important;
+}
+.btn-dark {
+    &.ts-button{
+        background-color: #374785 !important;
+        border-color: #374785 !important;
+    }
+}
+.btn-outline-dark {
+    &.ts-button{
+        border-color: #374785 !important;
+        color: #374785 !important;
+    }
+    &:hover {
+        background-color: #374785 !important;
+        border-color: #374785 !important;
+        color: #FFFFFF !important;
+    }
+}
+.ts-definition-list {
+    & dt {
+        margin-bottom: .5rem;
+        font-size: 1.125rem
+    }
+    & dd {
+        margin-bottom: 2rem;
+        border-left: 4px solid #F76C6C;
+        padding-left: 1rem;
+    }
+}
+.ts-icon svg {
+    height: 25px;
+    margin-right: .25rem;
+}
+p.subtitle {
+    font-size: 20px;
+    line-height: 1.35;
+}
+.card-deck {
+    width: 100% !important;
+}
+.ts-callout {
+    background-color: rgba(168, 208, 230, .75);
+    padding: 40px 0 !important;
 }

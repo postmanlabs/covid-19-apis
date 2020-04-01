@@ -1,10 +1,32 @@
-# COVID-19
+# Postman COVID-19 API Resource Center
 This is a set of Postman collections that might help in the COVID-19 pandemic--click on the docs link for more information about each set of APIs, as well as a Run in Postman Button and environment so you can begin making API calls using each one.
 
 The website for this project can be found at: https://covid-19-apis.postman.com/
 
+## Contribution guidelines
+
+We would love for you to contribute to the Postman COVID-19 API Resource Center! To contribute to this project, please read:
+
+* The [Code of Conduct](https://www.postman.com/code-of-conduct)
+* The [Contribution Guidelines](CONTRIBUTING.md)
+* The "Work To Be Done" section at the bottom of this README.
+
+**NOTE:** We have added a new Markdown linter with GitHub Actions. When making a pull request, it will run against this linter. Your changed files are required to pass linting before they will be merged. More information on this can be found in the [contribution guidelines](CONTRIBUTING.md).
+
+Looking to contribute to the COVID-19 Testing Sites website? You can find that project within this repo. [View README](https://github.com/postmanlabs/covid-19-apis/tree/develop/src/components/TestingSites).
+
+## Build locally
+This assumes you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [npm](https://www.npmjs.com/get-npm) installed.
+```
+   $ git clone https://github.com/postmanlabs/covid-19-apis.git
+   $ cd covid-19-apis
+   $ npm install
+   $ npm install -g gatsby-cli
+   $ npm run dev
+```
+
 ## COVID-19 Information
-Collections that make easier to pull, aggregate, and work with COVID-19 information.
+Postman Collections that make easier to pull, aggregate, and work with COVID-19 information. (New to Postman Collections? See our [Introduction to Postman Collections](https://learning.postman.com/docs/postman/collections/intro-to-collections/) documentation.)
 
 - **Center for Disease Control (CDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAL?version=latest)) - Twitter and YouTube API feeds for CDC, ad their RSS feeds for pulling information.
 - **European Centre for Disease Prevention and Control (ECDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAQ?version=latest)) - Twitter and YouTube API feeds for ECDC, ad their RSS feeds for pulling information.
@@ -14,7 +36,11 @@ Collections that make easier to pull, aggregate, and work with COVID-19 informat
 Postman collection specifically designed to work with the Twitter API.
 
 - **COVID-19 Twitter Searches** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkEt?version=latest) - Twitter API search, with a handful of the common search terms added.
-- **State Government Twitter** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKA?version=latest) - State government Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Government in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzV?version=latest) - State government Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Governors in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzU?version=latest) - State governor Twitter accounts for all 50 states in the United States.
+- **Twitter Accounts for State Health Departments in 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYT5MzW?version=latest) - State health department Twitter accounts for all 50 states in the United States.
+- **County Health Departments for All 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYXVdyQ?version=latest) - A single collection with a request for each of the 50 states, pulling a listing of name, website, address, phone, email, twitter, and facebook for all county health departments.
+- **Twitter Accounts for County Health Departments in all 50 US States** [Docs](https://documenter.getpostman.com/view/8854915/SzYXVdyR?version=latest) - The Twitter accounts for over 300 county health departments across 50 US States.
 
 ## Covid-19 APIs
 New APIs that have emerged to specifically address the COVID-19 pandemic.
@@ -28,6 +54,13 @@ New APIs that have emerged to specifically address the COVID-19 pandemic.
 - **Health API - COVID-19** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74s?version=latest)) - Global Coronavirus statistics by country and state.
 - **Coronavirus Smartable** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74q?version=latest)) - The coronavirus stats and news API offers latest and historic COVID-19 stats and news information per country or state.
 - **New South Wales Coronavirus Cases** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7R74r?version=latest)) - New South Wales Coronavirus disease 2019 (COVID-19) cases.
+- **Finnhub COVID-19 API for US cases** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest)) - US Coronavirus disease 2019 (COVID-19) cases.
+- **Elsevier API for generating research datasets** ([Docs](https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest)) - Query large amount of datasets.
+- **Coronavirus-PH API** ([Docs](https://documenter.getpostman.com/view/4314981/SzYW2fbH?version=latest)) - Philippines Coronavirus disease 2019 (COVID-19) cases.
+- **COVID19-India API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest)) - A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).
+- **Covid India API** ([Docs](https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest)) - REST API to track Coronavirus cases in India on state level.
+- **COVID-19 Statistics API** ([Docs](https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest)) - Based on public data by Johns Hopkins CSSE
+- **COVID19 -India- API** ([Docs](https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest)) -  The data is used from the official website of the Ministry of Health and Family Welfare of India.
 
 ## ScrAPIs
 API possibilities opened up by scraping of COVID-19 related data and making available as APIs.
@@ -64,3 +97,6 @@ If you are building an COVID-19 related APIs we recommend using some existing AP
 - **311 for Non-Emergency Requests** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKC?version=latest) - An open schema and API standard for defining non-emergency requests.
 
 To submit an API to add to the list, please email us at [COVID-19@postman.com)[mailto:COVID-19@postman.com] or submit a GitHub issue on this repository.
+
+## Work To Be Done
+We are tracking all submissions to be added to our list of COVID-19 resources using GitHub issues, and organizing any work to be done via the [api-tasks tag](https://github.com/postmanlabs/covid-19-apis/issues?q=is%3Aissue+is%3Aopen+label%3Aapi-tasks) -- feel free to jump in on an issue and help out. Here is a current list of tasks that need some work.

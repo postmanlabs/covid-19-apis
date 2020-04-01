@@ -1,40 +1,127 @@
+/* eslint-disable react/no-unused-state */
 // this is the main page
 
 import React from 'react';
-import SEO from '../../components/seo';
+import axios from 'axios';
+import { useStaticQuery, graphql } from 'gatsby';
+
+import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 
 import Hero from '../../components/TestingSites/hero';
-import About from '../../components/TestingSites/about';
-import HowItWorks from '../../components/TestingSites/howItWorks';
-import Disclaimer from '../../components/TestingSites/disclaimer';
-import FAQs from '../../components/TestingSites/faqs';
-import CallToAction from '../../components/TestingSites/callToAction';
-import GoogleSheets from '../../components/TestingSites/googleSheets';
+import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
+import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
+import Resource from '../../components/TestingSites/resource';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="List of APIs and Blueprints" />
-    <div className="">
-      <Hero />
-      <Disclaimer />
-      <State />
-      <CallToAction />
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-6 ts-about">
-            <About />
+
+class IndexPageComponent extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      california: [],
+      washington: [],
+      massachusetts: [],
+      newyork: [],
+      florida: [],
+      texas: [],
+      newjersey: [],
+      delaware: [],
+      nevada: [],
+    };
+  }
+
+  componentDidMount() {
+    const { usState } = this.props;
+
+    usState.map((node) => {
+      if (node.node.context && node.node.context.state !== null) {
+        // eslint-disable-next-line prefer-const
+        let { state } = node.node.context;
+
+        axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
+          // this.setState({ data: response.data });
+
+          if (state === 'california') {
+            this.setState({ california: response.data });
+          }
+          if (state === 'washington') {
+            this.setState({ washington: response.data });
+          }
+          if (state === 'new-york') {
+            this.setState({ newyork: response.data });
+          }
+          if (state === 'massachusetts') {
+            this.setState({ massachusetts: response.data });
+          }
+          if (state === 'florida') {
+            this.setState({ florida: response.data });
+          }
+          if (state === 'texas') {
+            this.setState({ texas: response.data });
+          }
+          if (state === 'new-jersey') {
+            this.setState({ newjersey: response.data });
+          }
+          if (state === 'delaware') {
+            this.setState({ delaware: response.data });
+          }
+          if (state === 'nevada') {
+            this.setState({ nevada: response.data });
+          }
+        });
+      }
+      return this.state;
+    });
+  }
+
+  render() {
+    return (
+      <Layout>
+        <SEOTS title="List of APIs and Blueprints" />
+        <div className="">
+          <Hero />
+          <State state={this.state} />
+          <div className="youmayalsolike">
+            <div className="container-fluid ts-section">
+              <div className="container">
+                <div className="row">
+                  <div className="col-sm-6">
+                    <CallToActionConsumers />
+                  </div>
+                  <div className="col-sm-6">
+                    <CallToActionDevs />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div className="col-sm-6 ts-how-it-works">
-            <HowItWorks />
-          </div>
+          <Resource />
         </div>
-      </div>
-      <FAQs />
-      <GoogleSheets />
-    </div>
-  </Layout>
-);
+      </Layout>
+    );
+  }
+}
+
+const IndexPage = () => {
+  const usState = useStaticQuery(graphql`
+  {
+    allSitePage {
+      edges {
+        node {
+          context {
+            state
+          }
+        }
+      }
+    }
+  }`);
+  return (
+    <>
+      <IndexPageComponent usState={usState.allSitePage.edges} />
+    </>
+  );
+};
 
 export default IndexPage;

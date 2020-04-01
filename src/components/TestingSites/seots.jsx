@@ -10,15 +10,14 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
-function SEO({
-  description, lang, meta, title,
+function SEOTS({
+  lang, meta,
 }) {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
-            title
             description
             author
             social_card_media
@@ -29,35 +28,35 @@ function SEO({
     `,
   );
 
-  const metaDescription = description || site.siteMetadata.description;
+  // const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`${site.siteMetadata.title} | %s`}
+      title="COVID-19 Testing Locations"
+      titleTemplate="%s"
       meta={[
         {
           name: 'description',
-          content: metaDescription,
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           property: 'og:title',
-          content: 'Postman COVID-19 API Resource Center | List of APIs and Blueprints',
+          content: 'COVID-19 Testing Locations',
         },
         {
           property: 'og:description',
-          content: metaDescription,
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           property: 'og:image',
-          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
+          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-sites-social-image.jpg',
         },
         {
           property: 'og:url',
-          content: 'https://covid-19-apis.postman.com/',
+          content: 'https://covid-19-apis.postman-beta.com/covid-19-testing-sites/',
         },
         {
           property: 'og:type',
@@ -69,7 +68,7 @@ function SEO({
         },
         {
           property: 'twitter:image',
-          content: 'https://assets.getpostman.com/covid-19/postman-covid-19-social-image.jpg',
+          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-sites-social-image.jpg',
         },
         {
           name: 'twitter:creator',
@@ -77,11 +76,11 @@ function SEO({
         },
         {
           name: 'twitter:title',
-          content: 'Postman COVID-19 API Resource Center | List of APIs and Blueprints',
+          content: 'COVID-19 Testing Locations',
         },
         {
           name: 'twitter:description',
-          content: metaDescription,
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
         },
         {
           name: 'twitter:site',
@@ -98,17 +97,14 @@ function SEO({
   );
 }
 
-SEO.defaultProps = {
+SEOTS.defaultProps = {
   lang: 'en',
   meta: [],
-  description: '',
 };
 
-SEO.propTypes = {
-  description: PropTypes.string,
+SEOTS.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
-export default SEO;
+export default SEOTS;

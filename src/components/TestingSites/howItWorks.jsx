@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const HowItWorks = () => (
-  <div className="ts-section text-center">
+  <div className="ts-section text-center ts-how-it-works">
     <h2>How it Works</h2>
     <p>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta eos facilis velit sunt blanditiis numquam, obcaecati cumque!
+      View the technical details of this crowdsourced project.
     </p>
-    <button type="button" className="btn btn-dark">read more</button>
+    <Link to="/covid-19-testing-sites/how-it-works/" className="btn btn-dark">Read more</Link>
   </div>
 );
 

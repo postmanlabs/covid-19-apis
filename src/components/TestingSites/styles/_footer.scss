@@ -1,4 +1,44 @@
 .ts-footer {
   background-color: #24305E;
-  color: #ddd;
+  padding: 40px 0;
+  color: #dddddd;
+  & a.navlink {
+    color: #dddddd;
+    margin-right: 2rem;
+    font-size: 1.25rem;
+    display: inline-block;
+  }
+  & a.homelink {
+    color: #dddddd;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+    display: inline-block;
+  }
+  & a.attributionlink {
+    color: #dddddd;
+    border-bottom: 1px solid;
+  }
+  & a.navlink,
+  a.homelink,
+  a.attributionlink {
+    &:hover {
+      text-decoration: none;
+      color: #FF6C37;
+    }
+  }
+
+  & .attribution,
+  .covid-19-callout {
+    border-top: 4px solid #374785;
+    margin-top: 1rem;
+    padding-top: 1.5rem;
+    & .pm-logo {
+      height: 2.5rem;
+      width: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  .ts-icon {
+    margin-right: 1rem;
+  }
 }

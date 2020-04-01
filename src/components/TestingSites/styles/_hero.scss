@@ -1,8 +1,21 @@
-.ts-hero {
-    background-color: #A8D0E6;
-  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg fill="none" height="282" viewBox="0 0 1278 282" width="1278" xmlns="http://www.w3.org/2000/svg"%3E%3Cg clip-rule="evenodd" fill-rule="evenodd"%3E%3Cpath d="m1110.56 22.7026 2.81-7.9872 7.75-2.9045-7.75-2.90445-2.81-7.987261-2.82 7.987261-7.74 2.90445 7.74 2.9045z" fill="%23f99d78" opacity=".5"/%3E%3Cpath d="m211.121 187.945 2.957-8.423 8.165-3.049-8.165-3.05-2.957-8.423-2.956 8.423-8.165 3.05 8.165 3.049z" fill="%23cddce6" opacity=".5"/%3E%3Cpath d="m17.4563 112.394 4.6456-13.2154 12.8107-4.7924-12.8107-4.9375-4.6456-13.2153-4.6456 13.2153-12.8107 4.7923 12.8107 4.7924z" fill="%23cddce6"/%3E%3Cpath d="m818.854 281.239 2.675-7.406 7.18-2.76-7.18-2.759-2.675-7.406-2.674 7.406-7.18 2.759 7.18 2.76z" fill="%237d728e"/%3E%3Cpath d="m65.5583 260.783 2.8155-7.987 7.7427-2.904-7.7427-2.905-2.8155-7.987-2.8156 7.987-7.7427 2.905 7.7427 2.904z" fill="%23f99d78"/%3E%3Cpath d="m1183.56 271.342 2.81-7.987 7.75-2.904-7.75-2.905-2.81-7.987-2.82 7.987-7.74 2.905 7.74 2.904z" fill="%23f99d78"/%3E%3Cpath d="m1132.12 150.764 2.96-8.423 8.16-3.05-8.16-3.05-2.96-8.423-2.95 8.423-8.17 3.05 8.17 3.05z" fill="%23cddce6" opacity=".5"/%3E%3Cpath d="m994.456 221.609 4.646-13.215 12.808-4.793-12.808-4.792-4.646-13.215-4.645 13.215-12.811 4.792 12.811 4.793z" fill="%23cddce6" opacity=".5"/%3E%3Cg fill="%23f99d78"%3E%3Cpath d="m212.432 20.3791 2.534-7.116 6.898-2.614-6.898-2.61397-2.534-7.115941-2.534 7.115941-6.898 2.61397 6.898 2.614z"/%3E%3Cpath d="m394.432 247.353 2.534-7.116 6.898-2.614-6.898-2.614-2.534-7.115-2.534 7.115-6.898 2.614 6.898 2.614z" opacity=".4"/%3E%3Cpath d="m1268.43 108.074 2.54-7.116 6.89-2.6143-6.89-2.614-2.54-7.1159-2.53 7.1159-6.9 2.614 6.9 2.6143z" opacity=".4"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
-    background-position: center;
-  background-repeat: no-repeat;
-  // object-fit: cover;
-  background-size: cover;
+a.herolink {
+color: #FFFFFF;
+    border-bottom: 1px solid;
+  }
+a.herolink {
+    &:hover {
+      text-decoration: none;
+      color: #FF6C37;
+    }
+  }
+
+.ts-hero-background {
+  background-color: #493E5E !important;
+  margin-bottom: 40px
 }
+
+.heroLight_title {
+  color: #fff !important;
+  padding: 40px;
+}
+
