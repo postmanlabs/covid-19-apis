@@ -234,7 +234,6 @@ class StateListComponent extends React.Component {
   }
 }
 
-
 export default ({ pageContext: { state } }) => (
   <StateListComponent usState={state} />
 );
