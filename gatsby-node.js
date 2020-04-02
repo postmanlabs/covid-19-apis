@@ -5,6 +5,7 @@ const FooterJson = require('./src/components/Microsite/Footer/Footer.data.json')
 const CollectionJson = require('./src/components/Microsite/Collections/Collection.data.json');
 const ApiJson = require('./src/components/Microsite/Apis/Apis.data.json');
 const CaliforniaJson = require('./src/components/TestingSites/json/California.data.json');
+const redirects = require('./redirects');
 
 const { v4 } = uuid;
 
@@ -89,8 +90,17 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 /* Create testing sites pages with defined slug
 /******************************************************************************************** */
 
-exports.createPages = async ({ actions: { createPage } }) => {
+exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
   const allState = ['arizona', 'california', 'delaware', 'florida', 'massachusetts', 'nevada', 'new-jersey', 'new-york', 'pennsylvania', 'texas', 'utah', 'washington'];
+
+  redirects.forEach(({ from, to }) => {
+    createRedirect({
+      fromPath: from,
+      isPermanent: true,
+      redirectInBrowser: true,
+      toPath: to,
+    });
+  });
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({

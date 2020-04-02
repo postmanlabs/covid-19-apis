@@ -41,6 +41,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    'gatsby-plugin-meta-redirect',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {

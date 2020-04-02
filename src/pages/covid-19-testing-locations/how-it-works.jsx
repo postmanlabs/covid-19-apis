@@ -42,7 +42,7 @@ const HowPage = () => (
         </div>
         <div className="row mb-4">
           <div className="col-sm-12 text-center">
-            <img src={blueprintImage} alt="Diagram of the API blueprint. Illustration." />
+            <img className="img-fluid" src={blueprintImage} alt="Diagram of the API blueprint. Illustration." />
           </div>
         </div>
         <div className="row mb-4">
