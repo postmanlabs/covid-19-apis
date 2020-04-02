@@ -7,7 +7,7 @@ import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
-import blueprintImage from '../../images/data-api-blueprint-multiple.jpg';
+import blueprintImage from '../../images/covid-19-data-api-blueprint.jpg';
 import Resource from '../../components/TestingSites/resource';
 
 const HowPage = () => (
@@ -42,7 +42,7 @@ const HowPage = () => (
         </div>
         <div className="row mb-4">
           <div className="col-sm-12 text-center">
-            <img src={blueprintImage} alt="Diagram of the API blueprint. Illustration." />
+            <img className="img-fluid" src={blueprintImage} alt="Diagram of the API blueprint. Illustration." />
           </div>
         </div>
         <div className="row mb-4">

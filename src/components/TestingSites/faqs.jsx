@@ -7,7 +7,7 @@ const FAQs = () => (
     <p>
       View the answers to freqeuntly asked questions about this project.
     </p>
-    <Link to="/covid-19-testing-sites/faqs/" className="btn btn-dark">View all FAQs</Link>
+    <Link to="/covid-19-testing-locations/faqs/" className="btn btn-dark">View all FAQs</Link>
   </div>
 );
 

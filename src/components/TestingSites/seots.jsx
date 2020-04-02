@@ -56,7 +56,7 @@ function SEOTS({
         },
         {
           property: 'og:url',
-          content: 'https://covid-19-apis.postman-beta.com/covid-19-testing-sites/',
+          content: 'https://covid-19-apis.postman-beta.com/covid-19-testing-locations/',
         },
         {
           property: 'og:type',

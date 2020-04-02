@@ -37,7 +37,7 @@ class StateListComponent extends React.Component {
     const { usState } = this.props;
     return (
       <Layout>
-        <SEOTS title="State Specific List of testing sites" />
+        <SEOTS title="State Specific List of testing locations" />
         <HeroLight usState={usState} />
         <div className="container-fluid">
           <div className="container">
@@ -81,7 +81,7 @@ class StateListComponent extends React.Component {
                                 <p className="address">
                                   Telephone number:
                                   {' '}
-                                  {tel.number}
+                                  <a href="tel:{tel.number}">{tel.number}</a>
                                 </p>
                                 <p className="address">
                                   Language:
@@ -92,7 +92,6 @@ class StateListComponent extends React.Component {
                             ))}
                           </p>
                         </div>
-                        {/* {console.log('regular schedule', site.regular_schedule)} */}
                         {site.regular_schedule.map((time) => {
                           // Monday:
                           if (time.weekday === '1') {
