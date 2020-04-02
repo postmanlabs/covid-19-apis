@@ -12,7 +12,7 @@ const HeroLight = ({ usState }) => {
 
 
   return (
-    <div className="container-fluid ts-hero-background pb-4">
+    <div className="container-fluid ts-hero-background">
       <div className="container">
         <div className="row">
           <div className="col-sm-12 heroLight_title">
