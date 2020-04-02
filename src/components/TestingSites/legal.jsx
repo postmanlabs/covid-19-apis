@@ -13,7 +13,7 @@ const legalCopy = () => (
     .
     You can read the fine print
     {' '}
-    <Link rel="noopener noreferrer" to="/covid-19-testing-locations/legal/" className="herolink">here</Link>
+    <Link to="/covid-19-testing-locations/legal/" className="herolink">here</Link>
     .
     {/* This is a crowdsourced effort and
     {' '}
