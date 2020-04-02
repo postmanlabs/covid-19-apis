@@ -1,5 +1,5 @@
 import React from 'react';
-import Legal from './legal';
+// import Legal from './legal';
 
 const HeroPage = ({ pageTitle }) => {
   const heroTitle = pageTitle;
@@ -12,7 +12,7 @@ const HeroPage = ({ pageTitle }) => {
             <h1 className="mb-4">
               {heroTitle}
             </h1>
-            <Legal />
+            {/* <Legal /> */}
           </div>
         </div>
       </div>
