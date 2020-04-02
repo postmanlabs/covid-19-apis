@@ -7,7 +7,7 @@ const Header = () => (
         className="header__homelink"
         href="/covid-19-testing-locations/"
       >
-        COVID-19 Testing Sites
+        COVID-19 Testing Locations
       </a>
       <a className="navlink" href="/covid-19-testing-locations/about/">About</a>
       <a className="navlink" href="/covid-19-testing-locations/faqs/">FAQs</a>
