@@ -41,7 +41,7 @@ const Site = ({
           {' '}
           {abbr}
           {' '}
-          sites
+          locations
         </Link>
       </div>
     </div>
