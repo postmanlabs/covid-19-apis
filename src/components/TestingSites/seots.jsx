@@ -40,7 +40,7 @@ function SEOTS({
       meta={[
         {
           name: 'description',
-          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations',
         },
         {
           property: 'og:title',
@@ -48,7 +48,7 @@ function SEOTS({
         },
         {
           property: 'og:description',
-          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations',
         },
         {
           property: 'og:image',
@@ -80,7 +80,7 @@ function SEOTS({
         },
         {
           name: 'twitter:description',
-          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations across all 50 US states',
+          content: 'This is an effort to crowdsource and centralize the availability of COVID-19 testing locations',
         },
         {
           name: 'twitter:site',
