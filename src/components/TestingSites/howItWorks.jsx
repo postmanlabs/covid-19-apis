@@ -7,7 +7,7 @@ const HowItWorks = () => (
     <p>
       View the technical details of this crowdsourced project.
     </p>
-    <Link to="/covid-19-testing-sites/how-it-works/" className="btn btn-dark">Read more</Link>
+    <Link to="/covid-19-testing-locations/how-it-works/" className="btn btn-dark">Read more</Link>
   </div>
 );
 

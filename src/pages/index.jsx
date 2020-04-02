@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'gatsby';
+import { Link } from 'gatsby';
 
 import Layout from '../components/Microsite/layout';
 import SEO from '../components/seo';
@@ -8,6 +8,7 @@ import Welcome from '../components/Microsite/Shared/Welcome';
 import Collection from '../components/Microsite/Collections/Collection';
 import Apis from '../components/Microsite/Apis/Apis';
 import Nonprofit from '../components/Microsite/NonProfits/Nonprofits';
+
 
 const IndexPage = () => (
   <Layout>
@@ -56,7 +57,7 @@ const IndexPage = () => (
         <div>
           <Apis />
         </div>
-        <div className="row">
+        <div className="row mb-4">
           <div className="col-md-12">
             <p className="collection__end">
               If you have a pandemic-related project you’d like deployed as an API, please email us at
@@ -76,6 +77,20 @@ const IndexPage = () => (
               .
             </p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div className="container-fluid">
+      <div className="row blurb text-center">
+        <div className="col-md-12">
+          <h2> COVID-19 Testing Locations</h2>
+          <p className="collection__end_p">
+            This project also includes a crowdsourced list of COVID-19 testing locations to centralize the availability of up-to-date information.
+          </p>
+        </div>
+        <div className="col-md-12 blurb_padding">
+          <Link className="btn btn__secondary-light" to="/covid-19-testing-locations/">See All Locations</Link>
         </div>
       </div>
     </div>

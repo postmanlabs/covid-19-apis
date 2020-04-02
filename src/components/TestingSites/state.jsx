@@ -8,7 +8,7 @@ const State = ({ state }) => (
         <div className="row">
           <div className="col-md-10 offset-md-1 text-center mb-4">
             <h2>Find By State</h2>
-            <p>Click on any testing site name to see the full details of that site, or click the “View All” button to see all testing locations in that state.</p>
+            {/* <p>Click on any testing site name to see the full details of that site, or click the “View All” button to see all testing locations in that state.</p> */}
           </div>
         </div>
         <div className="row">

@@ -5,13 +5,13 @@ const Header = () => (
     <div className="navbar-brand header__brand">
       <a
         className="header__homelink"
-        href="/covid-19-testing-sites/"
+        href="/covid-19-testing-locations/"
       >
-        COVID-19 Testing Sites
+        COVID-19 Testing Locations
       </a>
-      <a className="navlink" href="/covid-19-testing-sites/about/">About</a>
-      <a className="navlink" href="/covid-19-testing-sites/faqs/">FAQs</a>
-      <a className="navlink" href="/covid-19-testing-sites/how-it-works/">How it Works</a>
+      <a className="navlink" href="/covid-19-testing-locations/about/">About</a>
+      <a className="navlink" href="/covid-19-testing-locations/faqs/">FAQs</a>
+      <a className="navlink" href="/covid-19-testing-locations/how-it-works/">How it Works</a>
     </div>
     <div className="ts-brought-to-you-by">
       <a href="https://www.postman.com" target="_blank" rel="noopener noreferrer">

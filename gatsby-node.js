@@ -90,11 +90,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 /******************************************************************************************** */
 
 exports.createPages = async ({ actions: { createPage } }) => {
-  const allState = ['california', 'washington', 'new-york', 'massachusetts', 'florida', 'texas', 'new-jersey', 'delaware', 'nevada', 'pennsylvania', 'utah', 'arizona'];
+  const allState = ['arizona', 'california', 'delaware', 'florida', 'massachusetts', 'nevada', 'new-jersey', 'new-york', 'pennsylvania', 'texas', 'utah', 'washington'];
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({
-  //   path: '/covid-19-testing-sites/state/list/',
+  //   path: '/covid-19-testing-locations/state/list/',
   //   component: require.resolve('./src/templates/stateTemplate.jsx'),
   //   context: { allState },
   // });
@@ -102,7 +102,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   // creates Page that lists all site of a particular state
   allState.forEach((state) => {
     createPage({
-      path: `/covid-19-testing-sites/${state}/`,
+      path: `/covid-19-testing-locations/${state}/`,
       component: require.resolve('./src/templates/stateSiteTemplate.jsx'),
       context: { state },
     });

@@ -5,11 +5,11 @@ const Footer = () => (
     <div className="container">
       <div className="row">
         <div className="col-sm-12 mb-4">
-          <a className="homelink" href="/covid-19-testing-sites/">COVID-19 Testing Sites</a>
-          <a className="navlink" href="/covid-19-testing-sites/about/">About</a>
-          <a className="navlink" href="/covid-19-testing-sites/faqs/">FAQs</a>
-          <a className="navlink" href="/covid-19-testing-sites/how-it-works/">How it Works</a>
-          <a className="navlink" href="/covid-19-testing-sites/legal/">Legal</a>
+          <a className="homelink" href="/covid-19-testing-locations/">COVID-19 Testing Locations</a>
+          <a className="navlink" href="/covid-19-testing-locations/about/">About</a>
+          <a className="navlink" href="/covid-19-testing-locations/faqs/">FAQs</a>
+          <a className="navlink" href="/covid-19-testing-locations/how-it-works/">How it Works</a>
+          <a className="navlink" href="/covid-19-testing-locations/legal/">Legal</a>
           <a href="https://github.com/postmanlabs/covid-19-apis" className="align-middle">
             <span className="ts-icon">
               <svg className="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
