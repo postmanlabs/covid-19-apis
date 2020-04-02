@@ -4,64 +4,64 @@
     "to": "/covid-19-testing-locations/"
   },
   {
-    "from": "/covid-19-testing-sites/about",
-    "to": "/covid-19-testing-locations/about"
+    "from": "/covid-19-testing-sites/about/",
+    "to": "/covid-19-testing-locations/about/"
   },
   {
-    "from": "/covid-19-testing-sites/faqs",
-    "to": "/covid-19-testing-locations/faqs"
+    "from": "/covid-19-testing-sites/faqs/",
+    "to": "/covid-19-testing-locations/faqs/"
   },
   {
-    "from": "/covid-19-testing-sites/how-it-works",
-    "to": "/covid-19-testing-locations/how-it-works"
+    "from": "/covid-19-testing-sites/how-it-works/",
+    "to": "/covid-19-testing-locations/how-it-works/"
   },
   {
-    "from": "/covid-19-testing-sites/legal",
-    "to": "/covid-19-testing-locations/legal"
+    "from": "/covid-19-testing-sites/legal/",
+    "to": "/covid-19-testing-locations/legal/"
   },
   {
-    "from": "/covid-19-testing-sites/arizona",
-    "to": "/covid-19-testing-locations/arizona"
+    "from": "/covid-19-testing-sites/arizona/",
+    "to": "/covid-19-testing-locations/arizona/"
   },
   {
-    "from": "/covid-19-testing-sites/california",
-    "to": "/covid-19-testing-locations/california"
+    "from": "/covid-19-testing-sites/california/",
+    "to": "/covid-19-testing-locations/california/"
   },
   {
-    "from": "/covid-19-testing-sites/delaware",
-    "to": "/covid-19-testing-locations/delaware"
+    "from": "/covid-19-testing-sites/delaware/",
+    "to": "/covid-19-testing-locations/delaware/"
   },
   {
-    "from": "/covid-19-testing-sites/florida",
-    "to": "/covid-19-testing-locations/florida"
+    "from": "/covid-19-testing-sites/florida/",
+    "to": "/covid-19-testing-locations/florida/"
   },
   {
-    "from": "/covid-19-testing-sites/massachusetts",
-    "to": "/covid-19-testing-locations/massachusetts"
+    "from": "/covid-19-testing-sites/massachusetts/",
+    "to": "/covid-19-testing-locations/massachusetts/"
   },
   {
-    "from": "/covid-19-testing-sites/nevada",
-    "to": "/covid-19-testing-locations/nevada"
+    "from": "/covid-19-testing-sites/nevada/",
+    "to": "/covid-19-testing-locations/nevada/"
   },
   {
-    "from": "/covid-19-testing-sites/new-jersey",
-    "to": "/covid-19-testing-locations/new-jersey"
+    "from": "/covid-19-testing-sites/new-jersey/",
+    "to": "/covid-19-testing-locations/new-jersey/"
   },
   {
-    "from": "/covid-19-testing-sites/new-york",
-    "to": "/covid-19-testing-locations/new-york"
+    "from": "/covid-19-testing-sites/new-york/",
+    "to": "/covid-19-testing-locations/new-york/"
   },
   {
-    "from": "/covid-19-testing-sites/pennsylvania",
-    "to": "/covid-19-testing-locations/pennsylvania"
+    "from": "/covid-19-testing-sites/pennsylvania/",
+    "to": "/covid-19-testing-locations/pennsylvania/"
   },
   {
-    "from": "/covid-19-testing-sites/texas",
-    "to": "/covid-19-testing-locations/texas"
+    "from": "/covid-19-testing-sites/texas/",
+    "to": "/covid-19-testing-locations/texas/"
   },
   {
-    "from": "/covid-19-testing-sites/washington",
-    "to": "/covid-19-testing-locations/washington"
+    "from": "/covid-19-testing-sites/washington/",
+    "to": "/covid-19-testing-locations/washington/"
   }
 ]
     
