@@ -6,162 +6,196 @@
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkAS?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/ba0e8998f12c10175550",
       "featured": true
-    },{
+    },
+    {
       "title": "Centers for Disease Control and Prevention (CDC)",
       "description": "Twitter and YouTube API feeds for CDC, and their RSS feeds for pulling information",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkAL?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/926a4b4da8318c9c9581",
       "featured": true
-    },{
+    },
+    {
       "title": "European Centre for Disease Prevention and Control (ECDC)",
       "description": "Twitter and YouTube API feeds for ECDC, and their RSS feeds for pulling information",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkAQ?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/527e08e53b19a97cdd1f",
       "featured": true
-    },{
+    },
+    {
       "title": "The COVID Tracking Project",
       "description": "The COVID Tracking Project collects information from 50 US states, the District of Columbia, and 5 other US territories to provide the most comprehensive testing data we can collect for the novel coronavirus, SARS-CoV-2.",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS8rjHv?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-4431d2a1-2be3-469f-82b6-654b9b0dcfe3-SzS8rjHv",
       "featured": true
-    },{
+    },
+    {
       "title": "Coronavirus COVID19 API (covid19api.com)",
       "description": "An API for current cases and more information about COVID-19",
       "urlDoc": "https://documenter.getpostman.com/view/10808728/SzS8rjbc?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/10808728-1e29ed29-066c-4494-ae5d-a6174a8fc551-SzS8rjbc",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID19-Tracker-REST API",
       "description": "An API for current cases and more information about COVID-19",
       "urlDoc": "https://documenter.getpostman.com/view/4074074/SzS7Pkup?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/4074074-9889a5d4-6fd9-4168-ab42-085e2fe808b8-SzS7Pkup",
       "featured": false
-    },{
+    },
+    {
       "title": "NovelCOVID API",
       "description": "An API for current cases and more information about COVID-19",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R6uu?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-ea599e13-12ab-4cfc-b389-5673ae4e5794-SzS7R6uu",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID-19 API (nubentos.com)",
       "description": "The COVID-19 API provides information related with the case of pneumonia associated with the COVID-19 coronavirus",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R74j?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-9979d1db-8724-4e8b-8360-3ad6dfa5f1ef-SzS7R74j",
       "featured": false
-    },{
+    },
+    {
       "title": "Coronavirus Data API (thevirustracker.com)",
       "description": "Provides global stats, country stats, full timeline, and country timeline for the coronavirus",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R74n?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-4f5bea9c-5135-4781-801a-0c261b5047d6-SzS7R74n",
       "featured": false
-    },{
+    },
+    {
       "title": "Health API - COVID-19 (health-api.com)",
       "description": "Global Coronavirus statistics by country and state.",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R74s?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-6d624a61-2889-4aa4-8728-8f0ee95fd6e7-SzS7R74s",
       "featured": false
-    },{
+    },
+    {
       "title": "Coronavirus Smartable (smartable.ai)",
       "description": "The coronavirus stats and news API offers latest and historic COVID-19 stats and news information per country or state",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R74q?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-2925cc9b-9f6e-4496-9394-d630be7982aa-SzS7R74q",
       "featured": false
-    },{
+    },
+    {
       "title": "New South Wales Coronavirus Cases",
       "description": "New South Wales Coronavirus disease 2019 (COVID-19) cases",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R74r?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-0ba4087c-565b-4ff1-b547-ed49cb541254-SzS7R74r",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID-19 Finnhub API",
       "description": "Get real-time updates on the number of COVID-19 (Corona virus) cases in the US with a state-by-state breakdown. Data is sourced from CDC and reputable sources.",
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LFa?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/10724784-252f81ec-bc17-4f70-be53-d82e974f2a9d-SzYW3LFa",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID-19 Elsevier Research API",
       "description": "A research dataset search engine API (indexing datasets from 60+ scientific data repositories worldwide).",
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYW3LUn?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/10724784-d4dfdcc6-03c5-421e-9833-0a5a7f66ac5c-SzYW3LUn",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID19-India API",
       "description": "A volunteer-driven API for COVID-19 stats & patient tracing in India (Unofficial).",
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYXXKmA?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/10724784-c39a2a13-fc38-4429-ad99-36019773cf65-SzYXXKmA"
-    },{
+    },
+    {
       "title": "Covid India API",
       "description": "REST API to track Coronavirus cases in India on state level.",
       "urlDoc": "https://documenter.getpostman.com/view/5310017/SzYW4LYY?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/5310017-5f58b58e-7249-4666-a912-beada5a42cbd-SzYW4LYY",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID-19 Statistics API",
       "description": "Based on public data by Johns Hopkins CSSE",
       "urlDoc": "https://documenter.getpostman.com/view/10724784/SzYXWz3x?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/10724784-f5545e1e-a7c7-4f0c-b32d-4b233d15f7a4-SzYXWz3x",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID19 -India- API",
       "description": "The data is used from the official website of the Ministry of Health and Family Welfare of India.",
       "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/5665978-42f00a52-9a31-4cc9-a5b5-fe2cb963e65a-SzYXXedk",
       "featured": false
-    },{
+    },
+    {
+      "title": "COVID-19 Nigeria API",
+      "description": "Based on public data from Nigeria Centre for Disease Control",
+      "urlDoc": "https://documenter.getpostman.com/view/9282328/SzYaUxJy?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9282328-852b1278-4ba1-4c0e-beae-d1581d07f5f7-SzYaUxEZ",
+      "featured": false
+    },
+    {
       "title": "CDC Cases & Deaths (ScrAPI)",
       "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkTz?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-39d062d5-65d1-4b0f-9c1c-30e885200584-SzS7NkTz",
       "featured": false
-    },{
+    },
+    {
       "title": "CDC Testing (ScrAPI)",
       "description": "Scraping the number of specimens tested for SARS CoV-2 by CDC labs and U.S. public health laboratories from the CDC website",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R6gm?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-f02de2b1-ccef-4719-9af5-a48f6b3b27fe-SzS7R6gm",
       "featured": false
-    },{
+    },
+    {
       "title": "US Digital Registry API",
       "description": "An API for pulling federal government agencies and social media accounts",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkEm?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-6dc5390c-0f79-4295-a38f-61fa3ec00460-SzS7NkEm",
       "featured": false
-    },{
+    },
+    {
       "title": "News API",
       "description": " An aggregate news API for pulling news from across multiple news sources",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkEp?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-397a4c98-81ac-44c2-a99b-926f9d030dc2-SzS7NkEp",
       "featured": false
-    },{
+    },
+    {
       "title": "COVID-19 Twitter Searches",
       "description": "Twitter API search, with a handful of the common search COVID-19 search terms.",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkEt?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/ad5e8ff02c3997e517d5",
       "featured": true
-    },{
+    },
+    {
       "title": "Twitter Accounts for State Government in 50 US States",
       "description": "State government Twitter accounts for all 50 states in the United States",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYT5MzV?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/071e59ec25b4bec4fdc0",
       "featured": true
-    },{
+    },
+    {
       "title": "Twitter Accounts for State Governors in 50 US States",
       "description": "State governor Twitter accounts for all 50 states in the United States",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYT5MzU?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-84d3346a-23a1-474d-a829-ade4a9b9f5cb-SzYT5MzU",
       "featured": true
-    },{
+    },
+    {
       "title": "Twitter Accounts for State Health Departments in 50 US States",
       "description": "State health department Twitter accounts for all 50 states in the United States",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYT5MzW?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-869deb7b-cfa4-4483-987f-afeba4b9534b-SzYT5MzW",
       "featured": true
-    },{
+    },
+    {
       "title": "County Health Departments for All 50 US States",
       "description": "A single collection with a request for each of the 50 states, pulling a listing of name, website, address, phone, email, twitter, and facebook for all county health departments",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYXVdyQ?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-6eb095a2-337a-491f-927e-f3fac2478875-SzYXVdyQ",
       "featured": false
-    },{
+    },
+    {
       "title": "Twitter Accounts for County Health Departments in all 50 US States",
       "description": "The Twitter accounts for over 300 county health departments across 50 US States",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYXVdyR?version=latest",
