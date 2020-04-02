@@ -94,7 +94,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({
-  //   path: '/covid-19-testing-sites/state/list/',
+  //   path: '/covid-19-testing-location/state/list/',
   //   component: require.resolve('./src/templates/stateTemplate.jsx'),
   //   context: { allState },
   // });
@@ -102,7 +102,7 @@ exports.createPages = async ({ actions: { createPage } }) => {
   // creates Page that lists all site of a particular state
   allState.forEach((state) => {
     createPage({
-      path: `/covid-19-testing-sites/${state}/`,
+      path: `/covid-19-testing-location/${state}/`,
       component: require.resolve('./src/templates/stateSiteTemplate.jsx'),
       context: { state },
     });

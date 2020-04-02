@@ -57,7 +57,7 @@ const IndexPage = () => (
         <div>
           <Apis />
         </div>
-        <div className="row">
+        <div className="row mb-4">
           <div className="col-md-12">
             <p className="collection__end">
               If you have a pandemic-related project you’d like deployed as an API, please email us at
@@ -90,7 +90,7 @@ const IndexPage = () => (
           </p>
         </div>
         <div className="col-md-12 blurb_padding">
-          <Link className="btn btn__secondary-light" to="/covid-19-testing-sites/">See All Locations</Link>
+          <Link className="btn btn__secondary-light" to="/covid-19-testing-location/">See All Locations</Link>
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 # COVID-19 Testing Sites Website
 This is a website built by the Postman team to help crowd-source COVID-19 testing sites and locations. We do our best to verify all information, but standard indemnifications apply.
 
-The website for this project can be found at: https://covid-19-apis.postman.com/covid-19-testing-sites/
+The website for this project can be found at: https://covid-19-apis.postman.com/covid-19-testing-location/
 
 ## Contribution guidelines
 

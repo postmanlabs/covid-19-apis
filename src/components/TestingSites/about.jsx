@@ -7,7 +7,7 @@ const About = () => (
     <p>
       View the story of this crowdsourced project.
     </p>
-    <Link to="/covid-19-testing-sites/about/" className="btn btn-dark">Read more</Link>
+    <Link to="/covid-19-testing-location/about/" className="btn btn-dark">Read more</Link>
   </div>
 );
 
