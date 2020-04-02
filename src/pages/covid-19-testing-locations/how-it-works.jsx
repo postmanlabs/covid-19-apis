@@ -7,7 +7,7 @@ import HeroPage from '../../components/TestingSites/heroPage';
 
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
-import blueprintImage from '../../images/data-api-blueprint-multiple.jpg';
+import blueprintImage from '../../images/covid-19-data-api-blueprint.jpg';
 import Resource from '../../components/TestingSites/resource';
 
 const HowPage = () => (
