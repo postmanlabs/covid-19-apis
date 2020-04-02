@@ -52,11 +52,11 @@ function SEOTS({
         },
         {
           property: 'og:image',
-          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-location-social-image.jpg',
+          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-locations-social-image.jpg',
         },
         {
           property: 'og:url',
-          content: 'https://covid-19-apis.postman-beta.com/covid-19-testing-location/',
+          content: 'https://covid-19-apis.postman-beta.com/covid-19-testing-locations/',
         },
         {
           property: 'og:type',
@@ -68,7 +68,7 @@ function SEOTS({
         },
         {
           property: 'twitter:image',
-          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-location-social-image.jpg',
+          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-locations-social-image.jpg',
         },
         {
           name: 'twitter:creator',

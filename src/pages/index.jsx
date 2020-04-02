@@ -90,7 +90,7 @@ const IndexPage = () => (
           </p>
         </div>
         <div className="col-md-12 blurb_padding">
-          <Link className="btn btn__secondary-light" to="/covid-19-testing-location/">See All Locations</Link>
+          <Link className="btn btn__secondary-light" to="/covid-19-testing-locations/">See All Locations</Link>
         </div>
       </div>
     </div>

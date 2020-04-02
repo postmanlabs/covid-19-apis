@@ -32,7 +32,7 @@ const FaqPage = () => (
                 <div className="card-body">
                   <h3 className="card-title">Why does the project use Google Sheets?</h3>
                   <p className="card-text">Google Sheets provides a free, easy-to-use, broadly accessible medium for managing the centralized testing-location data.</p>
-                  <a href="/covid-19-testing-location/how-it-works/" className="card-link">How it Works</a>
+                  <a href="/covid-19-testing-locations/how-it-works/" className="card-link">How it Works</a>
                 </div>
               </div>
 

@@ -12,7 +12,7 @@ const legalCopy = () => (
     .
     You can read the fine print
     {' '}
-    <a href="https://covid-19-apis.postman.com/covid-19-testing-location/legal/" className="herolink">here</a>
+    <a href="https://covid-19-apis.postman.com/covid-19-testing-locations/legal/" className="herolink">here</a>
     .
     {/* This is a crowdsourced effort and
     {' '}
@@ -21,7 +21,7 @@ const legalCopy = () => (
     </a>
     .  Please read the
     {' '}
-    <a href="/covid-19-testing-location/legal/" className="herolink">legal fine print</a>
+    <a href="/covid-19-testing-locations/legal/" className="herolink">legal fine print</a>
     {' '}
     before proceeding. */}
     {/* This project also includes a crowdsourced list of COVID-19 testing locations to centralize the availability of up-to-date information */}

@@ -22,7 +22,7 @@ const StateTestingSites = () => {
           <div className="col-md-7">
             <div className="row collection__meta">
               <div className="col-12 collection__title">
-                <h1>All California Testing sites</h1>
+                <h1>All California Testing Locations</h1>
                 <h3>{name}</h3>
               </div>
               <div className="col-12 collection__description">

@@ -37,7 +37,7 @@ class StateListComponent extends React.Component {
     const { usState } = this.props;
     return (
       <Layout>
-        <SEOTS title="State Specific List of testing sites" />
+        <SEOTS title="State Specific List of testing locations" />
         <HeroLight usState={usState} />
         <div className="container-fluid">
           <div className="container">
