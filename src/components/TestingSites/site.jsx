@@ -12,7 +12,7 @@ const Site = ({
   const now = moment(updated).fromNow();
 
   return (
-    <div className="card ts-cards col-sm-4">
+    <div className="card ts-cards col-md-4">
       <div className="card-body">
         <h3 className="card-title">{title}</h3>
         <p className="lastUpdated">
@@ -25,7 +25,7 @@ const Site = ({
             if (site.featured === 'TRUE') {
               return (
                 <li key={Math.random()}>
-                  <Link to={`/covid-19-testing-locations/${endpoint}`}>
+                  <Link to={`/covid-19-testing-locations/${endpoint}/`}>
                     {' '}
                     {site.name}
                   </Link>
@@ -36,7 +36,7 @@ const Site = ({
         </ul>
       </div>
       <div className="card-footer">
-        <Link to={`/covid-19-testing-locations/${endpoint}`} className="btn btn-dark ts-button">
+        <Link to={`/covid-19-testing-locations/${endpoint}/`} className="btn btn-dark ts-button">
           View all
           {' '}
           {abbr}
