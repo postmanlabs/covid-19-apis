@@ -4,7 +4,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import moment from 'moment';
-import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const Site = ({
   state, title, abbr, endpoint,
