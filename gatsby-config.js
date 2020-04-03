@@ -40,6 +40,7 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    'gatsby-plugin-anchor-links',
     'gatsby-transformer-remark',
     'gatsby-plugin-meta-redirect',
     'gatsby-transformer-sharp',
