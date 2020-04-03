@@ -1,7 +1,6 @@
 // this is the main page
 
 import React from 'react';
-import { Link } from 'gatsby';
 import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 import HeroPage from '../../components/TestingSites/heroPage';
@@ -21,7 +20,7 @@ const AboutPage = () => (
             <p>
               This is an effort to crowdsource and centralize the availability of
               {' '}
-              <Link to="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19</Link>
+              <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">COVID-19</a>
               {' '}
               testing locations across all 50 US states using two freely available online tools while using APIs to make sure the location data can be syndicated and distributed as widely as possible. The preferred method is:
             </p>
