@@ -20,18 +20,18 @@ class IndexPageComponent extends React.Component {
     super(props);
 
     this.state = {
-      california: [],
-      washington: [],
-      massachusetts: [],
-      newyork: [],
-      florida: [],
-      texas: [],
-      newjersey: [],
-      delaware: [],
-      nevada: [],
-      pennsylvania: [],
-      utah: [],
       arizona: [],
+      california: [],
+      delaware: [],
+      florida: [],
+      massachusetts: [],
+      nevada: [],
+      newjersey: [],
+      newyork: [],
+      pennsylvania: [],
+      texas: [],
+      utah: [],
+      washington: [],
     };
   }
 

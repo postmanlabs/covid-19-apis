@@ -4,6 +4,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import moment from 'moment';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 const Site = ({
   state, title, abbr, endpoint,
@@ -25,10 +26,10 @@ const Site = ({
             if (site.featured === 'TRUE') {
               return (
                 <li key={Math.random()}>
-                  <Link to={`/covid-19-testing-locations/${endpoint}/`}>
+                  <AnchorLink to={`/covid-19-testing-locations/${endpoint}/#${site.name.replace(/\s/g, '')}`}>
                     {' '}
                     {site.name}
-                  </Link>
+                  </AnchorLink>
                 </li>
               );
             }
