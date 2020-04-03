@@ -46,41 +46,41 @@ class IndexPageComponent extends React.Component {
         axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
           // this.setState({ data: response.data });
 
+          if (state === 'arizona') {
+            this.setState({ arizona: response.data });
+          }
           if (state === 'california') {
             this.setState({ california: response.data });
-          }
-          if (state === 'washington') {
-            this.setState({ washington: response.data });
-          }
-          if (state === 'new-york') {
-            this.setState({ newyork: response.data });
-          }
-          if (state === 'massachusetts') {
-            this.setState({ massachusetts: response.data });
-          }
-          if (state === 'florida') {
-            this.setState({ florida: response.data });
-          }
-          if (state === 'texas') {
-            this.setState({ texas: response.data });
-          }
-          if (state === 'new-jersey') {
-            this.setState({ newjersey: response.data });
           }
           if (state === 'delaware') {
             this.setState({ delaware: response.data });
           }
+          if (state === 'florida') {
+            this.setState({ florida: response.data });
+          }
+          if (state === 'massachusetts') {
+            this.setState({ massachusetts: response.data });
+          }
           if (state === 'nevada') {
             this.setState({ nevada: response.data });
+          }
+          if (state === 'new-jersey') {
+            this.setState({ newjersey: response.data });
+          }
+          if (state === 'new-york') {
+            this.setState({ newyork: response.data });
           }
           if (state === 'pennsylvania') {
             this.setState({ pennsylvania: response.data });
           }
+          if (state === 'texas') {
+            this.setState({ texas: response.data });
+          }
           if (state === 'utah') {
             this.setState({ utah: response.data });
           }
-          if (state === 'arizona') {
-            this.setState({ arizona: response.data });
+          if (state === 'washington') {
+            this.setState({ washington: response.data });
           }
         });
       }
