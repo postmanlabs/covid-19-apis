@@ -167,6 +167,18 @@
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzYXVdyR?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/8854915-4e4a17a9-f372-4143-aff1-83f078be57a6-SzYXVdyR",
       "featured": true
+    },{
+      "title": "UK Coronavirus Data API",
+      "description": "A live COVID-19 data scraper API that provides endpoints with history, and confirmed cases geo-location",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYZ2Jss?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/5b048fc953bbeb2544ed",
+      "featured": false
+    },{
+      "title": "COVID-19 Japan Web API",
+      "description": "Web API to get COVID-19(coronavirus) information of each prefecture in Japan",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/5b048fc953bbeb2544ed",
+      "featured": false
     }
   ]
 }
