@@ -34,7 +34,7 @@ Postman Collections that make easier to pull, aggregate, and work with COVID-19 
 
 - **Center for Disease Control (CDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAL?version=latest)) - Twitter and YouTube API feeds for CDC, ad their RSS feeds for pulling information.
 - **European Centre for Disease Prevention and Control (ECDC)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAQ?version=latest)) - Twitter and YouTube API feeds for ECDC, ad their RSS feeds for pulling information.
-- **World Health Organization (WHO)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAS?version=latest)) - - Twitter and YouTube API feeds for WHO, ad their RSS feeds for pulling information.
+- **World Health Organization (WHO)** ([Docs](https://documenter.getpostman.com/view/8854915/SzS7NkAS?version=latest)) - Twitter and YouTube API feeds for WHO, ad their RSS feeds for pulling information.
 
 ## Twitter
 
