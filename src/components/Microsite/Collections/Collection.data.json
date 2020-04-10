@@ -200,7 +200,7 @@
       "description": "A single collection with a request for a list of coronavirus testing locations in Australia",
       "urlDoc": "https://documenter.getpostman.com/view/6669254/SzYgQZxQ?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/f2684f4456e8bbfba334",
-      "featured": true
+      "featured": false
     }
   ]
 }
