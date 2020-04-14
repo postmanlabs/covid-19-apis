@@ -91,7 +91,7 @@ These are some proof of concepts being worked on when it comes to COVID-19, show
 - **COVID-19 Testing Locations** ([GitHub](https://github.com/covid-19-testing/locations)) ([Website](https://covid-19-testing.github.io/locations/)) - An API and listing page of COVID-19 testing location across all 50 states.
 
 ## Existing API Standards
-If you are building an COVID-19 related APIs we recommend using some existing API and schema standards.
+If you are building a COVID-19 related APIs we recommend using some existing API and schema standards.
 
 - **211 for Health and Human Services** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKB?version=latest) - An open schema and API standard for defining health and human service organizations, locations, and services.
 - **311 for Non-Emergency Requests** [Docs](https://documenter.getpostman.com/view/8854915/SzS7NkKC?version=latest) - An open schema and API standard for defining non-emergency requests.
