@@ -45,7 +45,7 @@ class IndexPageComponent extends React.Component {
         // eslint-disable-next-line prefer-const
         let { state } = node.node.context;
 
-        axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
+        axios.get(`https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
           // this.setState({ data: response.data });
 
           if (state === 'arizona') {
