@@ -10,6 +10,7 @@ const State = ({ state }) => (
             <h2>Find By State</h2>
           </div>
         </div>
+
         <div className="row">
           <div className="card-deck">
             <Site
@@ -32,6 +33,7 @@ const State = ({ state }) => (
             />
           </div>
         </div>
+
         <div className="row">
           <div className="card-deck">
             <Site
@@ -54,6 +56,7 @@ const State = ({ state }) => (
             />
           </div>
         </div>
+
         <div className="row">
           <div className="card-deck">
             <Site
@@ -76,6 +79,7 @@ const State = ({ state }) => (
             />
           </div>
         </div>
+
         <div className="row">
           <div className="card-deck">
             <Site
@@ -98,6 +102,7 @@ const State = ({ state }) => (
             />
           </div>
         </div>
+
         <div className="row">
           <div className="card-deck">
             <Site
@@ -105,6 +110,12 @@ const State = ({ state }) => (
               title="Utah"
               abbr="UT"
               endpoint="utah"
+            />
+            <Site
+              state={state.washington}
+              title="Washington"
+              abbr="WA"
+              endpoint="washington"
             />
             <Site
               state={state.washington}
