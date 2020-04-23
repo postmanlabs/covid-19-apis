@@ -28,7 +28,7 @@ const State = ({ state }) => (
             <Site
               state={state.colorado}
               title="Colorado"
-              abbr="CA"
+              abbr="CO"
               endpoint="colorado"
             />
           </div>
@@ -51,7 +51,7 @@ const State = ({ state }) => (
             <Site
               state={state.illinois}
               title="Illinois"
-              abbr="FL"
+              abbr="IL"
               endpoint="illinois"
             />
           </div>
