@@ -22,8 +22,10 @@ class IndexPageComponent extends React.Component {
     this.state = {
       arizona: [],
       california: [],
+      colorado: [],
       delaware: [],
       florida: [],
+      illinois: [],
       massachusetts: [],
       nevada: [],
       newjersey: [],
@@ -52,11 +54,17 @@ class IndexPageComponent extends React.Component {
           if (state === 'california') {
             this.setState({ california: response.data });
           }
+          if (state === 'colorado') {
+            this.setState({ colorado: response.data });
+          }
           if (state === 'delaware') {
             this.setState({ delaware: response.data });
           }
           if (state === 'florida') {
             this.setState({ florida: response.data });
+          }
+          if (state === 'illinois') {
+            this.setState({ illinois: response.data });
           }
           if (state === 'massachusetts') {
             this.setState({ massachusetts: response.data });
