@@ -22,8 +22,10 @@ class IndexPageComponent extends React.Component {
     this.state = {
       arizona: [],
       california: [],
+      colorade: [],
       delaware: [],
       florida: [],
+      illinois: [],
       massachusetts: [],
       nevada: [],
       newjersey: [],
@@ -43,7 +45,7 @@ class IndexPageComponent extends React.Component {
         // eslint-disable-next-line prefer-const
         let { state } = node.node.context;
 
-        axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
+        axios.get(`https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
           // this.setState({ data: response.data });
 
           if (state === 'arizona') {
@@ -52,11 +54,17 @@ class IndexPageComponent extends React.Component {
           if (state === 'california') {
             this.setState({ california: response.data });
           }
+          if (state === 'colorado') {
+            this.setState({ colorado: response.data });
+          }
           if (state === 'delaware') {
             this.setState({ delaware: response.data });
           }
           if (state === 'florida') {
             this.setState({ florida: response.data });
+          }
+          if (state === 'illinois') {
+            this.setState({ illinois: response.data });
           }
           if (state === 'massachusetts') {
             this.setState({ massachusetts: response.data });
