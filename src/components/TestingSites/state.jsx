@@ -29,7 +29,7 @@ const State = ({ state }) => (
               state={state.colorado}
               title="Colorado"
               abbr="CO"
-              endpoint="colardo"
+              endpoint="colorado"
             />
           </div>
         </div>
@@ -110,12 +110,6 @@ const State = ({ state }) => (
               title="Utah"
               abbr="UT"
               endpoint="utah"
-            />
-            <Site
-              state={state.washington}
-              title="Washington"
-              abbr="WA"
-              endpoint="washington"
             />
             <Site
               state={state.washington}
