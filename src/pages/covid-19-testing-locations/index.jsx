@@ -125,7 +125,6 @@ class IndexPageComponent extends React.Component {
         <div className="">
           <Hero />
           <State state={this.state} />
-          {console.log(this.state)}
           <div className="youmayalsolike">
             <div className="container-fluid ts-section">
               <div className="container">
