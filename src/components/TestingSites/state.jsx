@@ -102,7 +102,6 @@ const State = ({ state }) => (
             />
           </div>
         </div>
-
         <div className="row">
           <div className="card-deck">
             <Site

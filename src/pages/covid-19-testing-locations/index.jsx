@@ -22,7 +22,7 @@ class IndexPageComponent extends React.Component {
     this.state = {
       arizona: [],
       california: [],
-      colorade: [],
+      colorado: [],
       delaware: [],
       florida: [],
       illinois: [],
