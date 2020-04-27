@@ -107,7 +107,49 @@
       "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/5665978-42f00a52-9a31-4cc9-a5b5-fe2cb963e65a-SzYXXedk",
       "featured": false
-    },{
+      },{
+        "title": "Chili Corona API",
+        "description": "API to obtain data about coronavirus infections (COVID-19) in Chile. ",
+        "urlDoc": "https://documenter.getpostman.com/view/10855464/Szf25VmX?version=latest#intro",
+        "urlPost": "https://app.getpostman.com/run-collection/10855464-6f9a2308-008f-4b04-b41f-7602d35d450e-Szf25VmX",
+        "featured": false
+      },{
+        "title": "COVID19 India Data API",
+        "description": "COVID19India API provides you with the details of the Country Cases and the State Cases as per the data updated in the MyGOV website.",
+        "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25qKt?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/9215231-e78a8267-3721-436f-81a8-b6a68157cb07-Szf25qKt",
+        "featured": false
+      },{
+        "title": "Novel Coronavirus COVID-19 API",
+        "description": "This is an API for the Novel Coronavirus (COVID-19) Statistics. Source of data for this API is Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) Github Repository.",
+        "urlDoc": "https://documenter.getpostman.com/view/5352730/SzYbyxR5?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/5352730-b2b8fa0a-2494-44d0-8c9a-3916b33a45a4-SzYbyxR5",
+        "featured": false
+      },{
+        "title": "COVID-19 India Cases API",
+        "description": "COVID-19 India cases - statewise (source - Ministry Of Health and Family Welfare, India).",
+        "urlDoc": "https://documenter.getpostman.com/view/7245444/SzYewbGb?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/7245444-479a984d-b807-4e86-b318-bf0503bba3e3-SzYewbGb",
+        "featured": false
+      },{
+        "title": "COVID-19 India Cases API",
+        "description": "COVID-19 India cases - statewise (source - Ministry Of Health and Family Welfare, India).",
+        "urlDoc": "https://documenter.getpostman.com/view/7245444/SzYewbGb?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/7245444-479a984d-b807-4e86-b318-bf0503bba3e3-SzYewbGb",
+        "featured": false
+      },{
+        "title": "Coronavirus (COVID-19) Outbreak API for Developers",
+        "description": "Provides confirmed cases by country and region, province and state, from CDC, ECDC, WHO, Wikipedia and NOVELCovid.",
+        "urlDoc": "https://documenter.getpostman.com/view/922646/SzYbyci2?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/922646-87353690-9281-419c-a6fe-6ec0c03516eb-SzYbyci2",
+        "featured": false
+      },{
+        "title": "Librairy API",
+        "description": "An open web service to identify drugs mentioned in a text and classify them according to the Anatomical Therapeutic Chemical (ATC) classification system and the Concept Unique Identifiers (CUI) described in the Unified Medical Language System (UMLS).",
+        "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25VvG?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/9215231-c5842629-e5b9-461e-a6de-61e054fe9538-Szf25VvG",
+        "featured": false
+      },{
       "title": "CDC Cases & Deaths (ScrAPI)",
       "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkTz?version=latest",
