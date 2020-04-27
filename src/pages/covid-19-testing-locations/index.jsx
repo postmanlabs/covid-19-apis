@@ -120,7 +120,7 @@ class IndexPageComponent extends React.Component {
   render() {
     return (
       <Layout>
-       
+
         <SEOTS title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
