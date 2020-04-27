@@ -39,8 +39,8 @@
     },{
       "title": "NovelCOVID API",
       "description": "An API for current cases and more information about COVID-19",
-      "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7R6uu?version=latest",
-      "urlPost": "https://app.getpostman.com/run-collection/8854915-ea599e13-12ab-4cfc-b389-5673ae4e5794-SzS7R6uu",
+      "urlDoc": "https://documenter.getpostman.com/view/11144369/Szf6Z9B3?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11144369-e27366d6-7699-46f4-b58e-2b2b2e637be5-Szf6Z9B3",
       "featured": false
     },{
       "title": "COVID-19 API (nubentos.com)",
@@ -102,10 +102,10 @@
       "urlPost": "https://app.getpostman.com/run-collection/10724784-f5545e1e-a7c7-4f0c-b32d-4b233d15f7a4-SzYXWz3x",
       "featured": false
     },{
-      "title": "COVID19 -India- API",
-      "description": "The data is used from the official website of the Ministry of Health and Family Welfare of India.",
-      "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYXXedk?version=latest",
-      "urlPost": "https://app.getpostman.com/run-collection/5665978-42f00a52-9a31-4cc9-a5b5-fe2cb963e65a-SzYXXedk",
+      "title": "COVID19 -India- API(By Adhikansh Mittal)",
+      "description": "The data is used from the official website of the Ministry of Health and Family Welfare of India.[official website]",
+      "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYaVdaW?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/5665978-96c3830d-4302-4bc7-bdf0-88499d43169c",
       "featured": false
     },{
       "title": "CDC Cases & Deaths (ScrAPI)",
