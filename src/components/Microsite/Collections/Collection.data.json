@@ -108,7 +108,7 @@
       "urlPost": "https://app.getpostman.com/run-collection/5665978-42f00a52-9a31-4cc9-a5b5-fe2cb963e65a-SzYXXedk",
       "featured": false
       },{
-        "title": "Chili Corona API",
+        "title": "Chile Corona API",
         "description": "API to obtain data about coronavirus infections (COVID-19) in Chile. ",
         "urlDoc": "https://documenter.getpostman.com/view/10855464/Szf25VmX?version=latest#intro",
         "urlPost": "https://app.getpostman.com/run-collection/10855464-6f9a2308-008f-4b04-b41f-7602d35d450e-Szf25VmX",
@@ -124,12 +124,6 @@
         "description": "This is an API for the Novel Coronavirus (COVID-19) Statistics. Source of data for this API is Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) Github Repository.",
         "urlDoc": "https://documenter.getpostman.com/view/5352730/SzYbyxR5?version=latest",
         "urlPost": "https://app.getpostman.com/run-collection/5352730-b2b8fa0a-2494-44d0-8c9a-3916b33a45a4-SzYbyxR5",
-        "featured": false
-      },{
-        "title": "COVID-19 India Cases API",
-        "description": "COVID-19 India cases - statewise (source - Ministry Of Health and Family Welfare, India).",
-        "urlDoc": "https://documenter.getpostman.com/view/7245444/SzYewbGb?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/7245444-479a984d-b807-4e86-b318-bf0503bba3e3-SzYewbGb",
         "featured": false
       },{
         "title": "COVID-19 India Cases API",
