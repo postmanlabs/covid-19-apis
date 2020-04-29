@@ -49,10 +49,10 @@ const State = ({ state }) => (
               endpoint="florida"
             />
             <Site
-              state={state.illinois}
-              title="Illinois"
-              abbr="IL"
-              endpoint="illinois"
+              state={state.idaho}
+              title="Idaho"
+              abbr="ID"
+              endpoint="idaho"
             />
           </div>
         </div>
@@ -60,10 +60,33 @@ const State = ({ state }) => (
         <div className="row">
           <div className="card-deck">
             <Site
+              state={state.illinois}
+              title="Illinois"
+              abbr="IL"
+              endpoint="illinois"
+            />
+            <Site
               state={state.massachusetts}
               title="Massachusetts"
               abbr="MA"
               endpoint="massachusetts"
+            />
+            <Site
+              state={state.minnesota}
+              title="Minnesota"
+              abbr="MN"
+              endpoint="minnesota"
+            />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="card-deck">
+            <Site
+              state={state.missouri}
+              title="Missouri"
+              abbr="MO"
+              endpoint="missouri"
             />
             <Site
               state={state.nevada}
@@ -83,6 +106,12 @@ const State = ({ state }) => (
         <div className="row">
           <div className="card-deck">
             <Site
+              state={state.newmexico}
+              title="New Mexico"
+              abbr="NM"
+              endpoint="new-mexico"
+            />
+            <Site
               state={state.newyork}
               title="New York"
               abbr="NY"
@@ -94,16 +123,17 @@ const State = ({ state }) => (
               abbr="PA"
               endpoint="pennsylvania"
             />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="card-deck">
             <Site
               state={state.texas}
               title="Texas"
               abbr="TX"
               endpoint="texas"
             />
-          </div>
-        </div>
-        <div className="row">
-          <div className="card-deck">
             <Site
               state={state.utah}
               title="Utah"

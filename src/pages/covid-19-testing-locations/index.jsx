@@ -23,14 +23,23 @@ class IndexPageComponent extends React.Component {
       arizona: [],
       california: [],
       colorado: [],
+
       delaware: [],
       florida: [],
+      idaho: [],
+
       illinois: [],
       massachusetts: [],
+      minnesota: [],
+
+      missouri: [],
       nevada: [],
       newjersey: [],
+
+      newmexico: [],
       newyork: [],
       pennsylvania: [],
+
       texas: [],
       utah: [],
       washington: [],
@@ -63,17 +72,29 @@ class IndexPageComponent extends React.Component {
           if (state === 'florida') {
             this.setState({ florida: response.data });
           }
+          if (state === 'idaho') {
+            this.setState({ idaho: response.data });
+          }
           if (state === 'illinois') {
             this.setState({ illinois: response.data });
           }
           if (state === 'massachusetts') {
             this.setState({ massachusetts: response.data });
           }
+          if (state === 'minnesota') {
+            this.setState({ minnesota: response.data });
+          }
+          if (state === 'missouri') {
+            this.setState({ missouri: response.data });
+          }
           if (state === 'nevada') {
             this.setState({ nevada: response.data });
           }
           if (state === 'new-jersey') {
             this.setState({ newjersey: response.data });
+          }
+          if (state === 'new-mexico') {
+            this.setState({ newmexico: response.data });
           }
           if (state === 'new-york') {
             this.setState({ newyork: response.data });
@@ -99,6 +120,7 @@ class IndexPageComponent extends React.Component {
   render() {
     return (
       <Layout>
+
         <SEOTS title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
