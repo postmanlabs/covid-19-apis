@@ -137,6 +137,9 @@ class IndexPageComponent extends React.Component {
           if (state === 'missouri') {
             this.setState({ missouri: response.data });
           }
+          if (state === 'montana') {
+            this.setState({ montana: response.data });
+          }
           if (state === 'nevada') {
             this.setState({ nevada: response.data });
           }

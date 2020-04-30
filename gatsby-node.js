@@ -100,7 +100,7 @@ exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
     'colorado',
     'connecticut',
     'delaware',
-    'florida',s
+    'florida',
     'georgia',
     'hawaii',
     'idaho',
