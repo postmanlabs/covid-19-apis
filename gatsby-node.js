@@ -91,7 +91,42 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 /******************************************************************************************** */
 
 exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
-  const allState = ['arizona', 'california', 'colorado', 'delaware', 'florida', 'illinois', 'massachusetts', 'nevada', 'new-jersey', 'new-york', 'pennsylvania', 'texas', 'utah', 'washington'];
+  const allState = [
+    'alabama',
+    'alaska',
+    'arizona',
+    'arkansas',
+    'california',
+    'colorado',
+    'connecticut',
+    'delaware',
+    'florida',
+    'georgia',
+    'hawaii',
+    'idaho',
+    'illinois',
+    'indiana',
+    'kansas',
+    'kentucky',
+    'louisiana',
+    'maine',
+    'massachusetts',
+    'michigan',
+    'minnesota',
+    'mississippi',
+    'missouri',
+    'montana',
+    'nevada',
+    'new-jersey',
+    'new-mexico',
+    'new-york',
+    'north-carolina',
+    'oklahoma',
+    'pennsylvania',
+    'texas',
+    'utah',
+    'washington',
+  ];
 
   redirects.forEach(({ from, to }) => {
     createRedirect({
