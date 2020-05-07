@@ -209,6 +209,12 @@
       "urlDoc": "https://documenter.getpostman.com/view/1034536/SzfCV6TH?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/1034536-c8e70d90-c6ff-4536-a16c-509bda547aa4",
       "featured": true
+    },{
+      "title": "US Energy Information Administration",
+      "description": "EIA API accesses open data for energy sources and consumption in the US.",
+      "urlDoc": "https://documenter.getpostman.com/view/1034536/Szme4dco?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/1034536-d2be8bae-0395-4302-afac-a41e1e6a239d",
+      "featured": true
     }
   ]
 }
