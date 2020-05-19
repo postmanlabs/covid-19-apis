@@ -8,7 +8,7 @@ Please note we have a [code of conduct](https://www.postman.com/code-of-conduct)
 
 We follow [Git Flow](https://guides.github.com/introduction/flow/) for changes to this repository.
 
-* Fork this repo to create a copy hosted on your github account. The Fork button is in the top right of the page.
+* Fork this repo to create a copy hosted on your Github account. The Fork button is in the top right of the page.
     * If you're a collaborator on the repo you can instead just create a branch.
 * Clone down your copy of this repo onto your local machine: `git clone <YOUR GITHUB REPO URL>`
 * Navigate to the new directory git created. `cd covid-19-apis`
