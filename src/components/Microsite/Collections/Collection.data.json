@@ -269,6 +269,30 @@
       "urlDoc": "https://documenter.getpostman.com/view/1034536/SzfCV6TH?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/1034536-c8e70d90-c6ff-4536-a16c-509bda547aa4",
       "featured": true
-    }
+    },{
+        "title": "ECDC World Wide Cases",
+        "description": "Website: ECDC COVID-19 main page: https://www.ecdc.europa.eu/en/novel-coronavirus-china",
+        "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5equ9?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/11073859-fbe80f36-e29d-4923-9f40-ea35d96d2871-Szt5equ9",
+        "featured": true
+      },{
+        "title": "Coronatracker API",
+        "description": "Website: https://www.coronatracker.com/",
+        "urlDoc": "https://documenter.getpostman.com/view/11073859/Szmcbeho?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/11073859-4eed3f8c-a219-46a2-8a44-0f9c889c783f-Szmcbeho",
+        "featured": true
+      },{
+        "title": "Canadian COVID-19 API",
+        "description": "Data for Canadian provinces",
+        "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5fAr3?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/11073859-fadc17f6-a393-457d-bb65-752d87173006-Szt5fAr3",
+        "featured": true
+      },{
+        "title": "COVID-19 Global Tracker - Wikipedia data",
+        "description": "This free API exposes all available regional data housed on Wikipedia.",
+        "urlDoc": "https://documenter.getpostman.com/view/11532614/SzzheeL7?version=latest",
+        "urlPost": "https://app.getpostman.com/run-collection/11532614-821d9def-4222-4f98-99c8-03863781f79c-SzzheeL7",
+        "featured": true
+      }
   ]
 }
