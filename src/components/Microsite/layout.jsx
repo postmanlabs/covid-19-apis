@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 // import Header from './header';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
+import ReferrerCookie from '../ReferrerCookie';
 import './styles/_all.scss';
 
 const Layout = ({ children }) => (
@@ -29,6 +30,7 @@ const Layout = ({ children }) => (
   <div>
     <Header />
     <main>{children}</main>
+    <ReferrerCookie />
     <Footer />
   </div>
 );

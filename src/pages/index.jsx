@@ -68,8 +68,6 @@ const IndexPage = () => (
                 <a href="https://github.com/postmanlabs/covid-19-apis/issues" className="link-style"> submit an issue on Github</a>
                 .
               </span>
-              <br />
-              <br />
             </p>
             <p className="collection__end_p">
               If you&apos;d like additional help or guidance on using APIs to retrieve or expose critical data about the pandemic, the Postman developer relations team can provide consultations to get you going in the right direction. Contact us anytime at
@@ -84,13 +82,13 @@ const IndexPage = () => (
     <div className="container-fluid">
       <div className="row blurb text-center">
         <div className="col-md-12">
-          <h2> COVID-19 Testing Locations</h2>
+          <h2> COVID-19 Testing Locations (Example Project)</h2>
           <p className="collection__end_p">
-            This project also includes a crowdsourced list of COVID-19 testing locations to centralize the availability of up-to-date information.
+            An example implementation showing how Google Sheets, Postman, and GitHub can be used to crowdsource public data.
           </p>
         </div>
         <div className="col-md-12 blurb_padding">
-          <Link className="btn btn__secondary-light" to="/covid-19-testing-locations/">See All Locations</Link>
+          <Link className="btn btn__secondary-light" to="/covid-19-testing-locations/">See Reference Implementation</Link>
         </div>
       </div>
     </div>

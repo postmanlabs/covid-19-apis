@@ -107,103 +107,139 @@
       "urlDoc": "https://documenter.getpostman.com/view/5665978/SzYaVdaW?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/5665978-96c3830d-4302-4bc7-bdf0-88499d43169c",
       "featured": true
-      },{
-        "title": "Chile Corona API",
-        "description": "API to obtain data about coronavirus infections (COVID-19) in Chile. ",
-        "urlDoc": "https://documenter.getpostman.com/view/10855464/Szf25VmX?version=latest#intro",
-        "urlPost": "https://app.getpostman.com/run-collection/10855464-6f9a2308-008f-4b04-b41f-7602d35d450e-Szf25VmX",
-        "featured": true
-      },{
-        "title": "COVID19 India Data API",
-        "description": "COVID19India API provides you with the details of the Country Cases and the State Cases as per the data updated in the MyGOV website.",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25qKt?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/9215231-e78a8267-3721-436f-81a8-b6a68157cb07-Szf25qKt",
-        "featured": true
-      },{
-        "title": "Novel Coronavirus COVID-19 API",
-        "description": "This is an API for the Novel Coronavirus (COVID-19) Statistics. Source of data for this API is Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) Github Repository.",
-        "urlDoc": "https://documenter.getpostman.com/view/5352730/SzYbyxR5?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/5352730-b2b8fa0a-2494-44d0-8c9a-3916b33a45a4-SzYbyxR5",
-        "featured": true
-      },{
-        "title": "COVID-19 India Cases API",
-        "description": "COVID-19 India cases - statewise (source - Ministry Of Health and Family Welfare, India).",
-        "urlDoc": "https://documenter.getpostman.com/view/7245444/SzYewbGb?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/7245444-479a984d-b807-4e86-b318-bf0503bba3e3-SzYewbGb",
-        "featured": true
-      },{
-        "title": "Coronavirus (COVID-19) Outbreak API for Developers",
-        "description": "Provides confirmed cases by country and region, province and state, from CDC, ECDC, WHO, Wikipedia and NOVELCovid.",
-        "urlDoc": "https://documenter.getpostman.com/view/922646/SzYbyci2?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/922646-87353690-9281-419c-a6fe-6ec0c03516eb-SzYbyci2",
-        "featured": true
-      },{
-        "title": "Librairy API",
-        "description": "An open web service to identify drugs mentioned in a text and classify them according to the Anatomical Therapeutic Chemical (ATC) classification system and the Concept Unique Identifiers (CUI) described in the Unified Medical Language System (UMLS).",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25VvG?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/9215231-c5842629-e5b9-461e-a6de-61e054fe9538-Szf25VvG",
-        "featured": true
-      },{
-        "title": "COVID-19 Nigeria API",
-        "description": "Based on public data from Nigeria Centre for Disease Control.",
-        "urlDoc": "https://documenter.getpostman.com/view/9282328/SzYaUxJy?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/9282328-0dd5c071-c172-4f6d-9af5-0c83b86378a7-SzYaUxJy",
-        "featured": true
-      },{
-        "title": "UK Coronavirus Data API",
-        "description": "A live COVID-19 data scraper API provide function with history, and confirmed cases geolocation.",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYZ2Jss?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/9215231-401de174-6b70-4563-8f8f-3048e0009948-SzYZ2Jss",
-        "featured": true
-      },{
-        "title": "COVID-19 Japan Web API",
-        "description": "Web API to get COVID-19(coronavirus) information of each prefecture in Japan.",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/9215231-3d19cdb7-a306-413d-8d9f-dcc7a50f2993-SzYaWe6h",
-        "featured": true
-      },{
-        "title": "COVID-19 testing locations in Australia",
-        "description": "A single collection with a request for a list of coronavirus testing locations in Australia.",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/6669254-03a6a20f-63c1-41ad-acbb-bf7b54151347-SzYgQZxQ",
-        "featured": true
-      },{
-        "title": "US Energy Information Administration",
-        "description": "EIA API accesses open data for energy sources and consumption in the US.",
-        "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/1034536-d2be8bae-0395-4302-afac-a41e1e6a239d-Szme4dco",
-        "featured": true
-      },{
-        "title": "ncov19.us API",
-        "description": "News, Twitter, county, and statistics for COVID-19 aroundn the world.",
-        "urlDoc": "https://documenter.getpostman.com/view/10962932/SzYevF7i?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/10962932-7061dfac-de49-40a9-9b00-92c4d4647726-SzYevF7i",
-        "featured": true
-      },{
-        "title": "COVID-19 India Tracker",
-        "description": "This API gives you the latest COVID-19 State wise and District wise data in India. This API is very simple to use and create awesome Portal.",
-        "urlDoc": "https://documenter.getpostman.com/view/11238297/SzfDwQdd?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/10962932-7061dfac-de49-40a9-9b00-92c4d4647726-SzYevF7i",
-        "featured": true
-      },{
-        "title": "Infection Alert System",
-        "description": "Provides a personal risk score and international and multi-level suspicious contact tracking without sending any personal data to the servers.",
-        "urlDoc": "https://documenter.getpostman.com/view/4282443/SzfAymFD?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/4282443-29c778ce-07ea-4c97-939b-d1b9dd306bc9-SzfAymFD",
-        "featured": true
-      },{
-        "title": "COVID-19 API with Machine Learning Prediction",
-        "description": "The COVID-19 statistics collected from multiple sources and provided as an easy to use API. The data is then processed by Machine Learning algorithms to build disease spread prediction that is updated daily based on the recent data.",
-        "urlDoc": "https://documenter.getpostman.com/view/10877427/SzYW2f8n?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/10877427-2852d25e-8d1a-4783-9ede-0147f25ee7dd-SzYW2f8n",
-        "featured": true
-      },{
-        "title": "Coronavirus (COVID19) Tracker",
-        "description": "This Free API tracks actual Coronavirus (COVID-19) information about tested and infected people in multiple countries.",
-        "urlDoc": "https://documenter.getpostman.com/view/11203393/SzfAz776?version=latest",
-        "urlPost": "https://app.getpostman.com/run-collection/11203393-844cb536-facd-4a4f-a4eb-8884e4a7397b-SzfAz776",
-        "featured": true
-      },{
+    },{
+      "title": "Chile Corona API",
+      "description": "API to obtain data about coronavirus infections (COVID-19) in Chile. ",
+      "urlDoc": "https://documenter.getpostman.com/view/10855464/Szf25VmX?version=latest#intro",
+      "urlPost": "https://app.getpostman.com/run-collection/10855464-6f9a2308-008f-4b04-b41f-7602d35d450e-Szf25VmX",
+      "featured": true
+    },{
+      "title": "COVID19 India Data API",
+      "description": "COVID19India API provides you with the details of the Country Cases and the State Cases as per the data updated in the MyGOV website.",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25qKt?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9215231-e78a8267-3721-436f-81a8-b6a68157cb07-Szf25qKt",
+      "featured": true
+    },{
+      "title": "Novel Coronavirus COVID-19 API",
+      "description": "This is an API for the Novel Coronavirus (COVID-19) Statistics. Source of data for this API is Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) Github Repository.",
+      "urlDoc": "https://documenter.getpostman.com/view/5352730/SzYbyxR5?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/5352730-b2b8fa0a-2494-44d0-8c9a-3916b33a45a4-SzYbyxR5",
+      "featured": true
+    },{
+      "title": "COVID-19 India Cases API",
+      "description": "COVID-19 India cases - statewise (source - Ministry Of Health and Family Welfare, India).",
+      "urlDoc": "https://documenter.getpostman.com/view/7245444/SzYewbGb?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/7245444-479a984d-b807-4e86-b318-bf0503bba3e3-SzYewbGb",
+      "featured": true
+    },{
+      "title": "Coronavirus (COVID-19) Outbreak API for Developers",
+      "description": "Provides confirmed cases by country and region, province and state, from CDC, ECDC, WHO, Wikipedia and NOVELCovid.",
+      "urlDoc": "https://documenter.getpostman.com/view/922646/SzYbyci2?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/922646-87353690-9281-419c-a6fe-6ec0c03516eb-SzYbyci2",
+      "featured": true
+    },{
+      "title": "Librairy API",
+      "description": "An open web service to identify drugs mentioned in a text and classify them according to the Anatomical Therapeutic Chemical (ATC) classification system and the Concept Unique Identifiers (CUI) described in the Unified Medical Language System (UMLS).",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/Szf25VvG?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9215231-c5842629-e5b9-461e-a6de-61e054fe9538-Szf25VvG",
+      "featured": true
+    },{
+      "title": "COVID-19 Nigeria API",
+      "description": "Based on public data from Nigeria Centre for Disease Control.",
+      "urlDoc": "https://documenter.getpostman.com/view/9282328/SzYaUxJy?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9282328-0dd5c071-c172-4f6d-9af5-0c83b86378a7-SzYaUxJy",
+      "featured": true
+    },{
+      "title": "UK Coronavirus Data API",
+      "description": "A live COVID-19 data scraper API provide function with history, and confirmed cases geolocation.",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYZ2Jss?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9215231-401de174-6b70-4563-8f8f-3048e0009948-SzYZ2Jss",
+      "featured": true
+    },{
+      "title": "COVID-19 Japan Web API",
+      "description": "Web API to get COVID-19(coronavirus) information of each prefecture in Japan.",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/9215231-3d19cdb7-a306-413d-8d9f-dcc7a50f2993-SzYaWe6h",
+      "featured": true
+    },{
+      "title": "COVID-19 testing locations in Australia",
+      "description": "A single collection with a request for a list of coronavirus testing locations in Australia.",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/6669254-03a6a20f-63c1-41ad-acbb-bf7b54151347-SzYgQZxQ",
+      "featured": true
+    },{
+      "title": "US Energy Information Administration",
+      "description": "EIA API accesses open data for energy sources and consumption in the US.",
+      "urlDoc": "https://documenter.getpostman.com/view/9215231/SzYaWe6h?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/1034536-d2be8bae-0395-4302-afac-a41e1e6a239d-Szme4dco",
+      "featured": true
+    },{
+      "title": "ncov19.us API",
+      "description": "News, Twitter, county, and statistics for COVID-19 aroundn the world.",
+      "urlDoc": "https://documenter.getpostman.com/view/10962932/SzYevF7i?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/10962932-7061dfac-de49-40a9-9b00-92c4d4647726-SzYevF7i",
+      "featured": true
+    },{
+      "title": "COVID-19 India Tracker",
+      "description": "This API gives you the latest COVID-19 State wise and District wise data in India. This API is very simple to use and create awesome Portal.",
+      "urlDoc": "https://documenter.getpostman.com/view/11238297/SzfDwQdd?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/10962932-7061dfac-de49-40a9-9b00-92c4d4647726-SzYevF7i",
+      "featured": true
+    },{
+      "title": "Infection Alert System",
+      "description": "Provides a personal risk score and international and multi-level suspicious contact tracking without sending any personal data to the servers.",
+      "urlDoc": "https://documenter.getpostman.com/view/4282443/SzfAymFD?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/4282443-29c778ce-07ea-4c97-939b-d1b9dd306bc9-SzfAymFD",
+      "featured": true
+    },{
+      "title": "COVID-19 API with Machine Learning Prediction",
+      "description": "The COVID-19 statistics collected from multiple sources and provided as an easy to use API. The data is then processed by Machine Learning algorithms to build disease spread prediction that is updated daily based on the recent data.",
+      "urlDoc": "https://documenter.getpostman.com/view/10877427/SzYW2f8n?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/10877427-2852d25e-8d1a-4783-9ede-0147f25ee7dd-SzYW2f8n",
+      "featured": true
+    },{
+      "title": "Coronavirus (COVID19) Tracker",
+      "description": "This Free API tracks actual Coronavirus (COVID-19) information about tested and infected people in multiple countries.",
+      "urlDoc": "https://documenter.getpostman.com/view/11203393/SzfAz776?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11203393-844cb536-facd-4a4f-a4eb-8884e4a7397b-SzfAz776",
+      "featured": true
+    },{
+      "title": "API & GRAPHQL COVID-19",
+      "description": "Access data on COVID19 through an easy API for free. Build dashboards, mobile apps or integrate in to other applications. Data is sourced from Johns Hopkins CSSE.",
+      "urlDoc": "https://documenter.getpostman.com/view/11787033/SzzoYuSa?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11787033-21c822c9-b2dc-436b-9362-c4f47bcb008a-SzzoYuSa",
+      "featured": true
+    },{
+      "title": "COVID-19 Rich Data Services",
+      "description": "Given the critical need for timely access to high quality data around COVID-19, MTNA is making our Rich Data Service platform publicly and freely available for the publication of primary and contextual COVID-19 related data, to support researchers, data analysts, developers, and public users.",
+      "urlDoc": "https://documenter.getpostman.com/view/2220438/SzYevv9u?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/2220438-d3ac9594-1c67-4176-b103-0c8238ad7aba-SzYevv9u",
+      "featured": true
+    },{
+      "title": "COVID-19 Global Tracker",
+      "description": "This free API exposes all available regional data housed on Wikipedia. This collections serves data for these use-cases: Realtime global counts; total cases, recovered & deceased, Realtime counts across countries; total cases, recovered & deceased, Weekly (historical) data counts; total cases, recovered & deceased, Drill-down of regional data for a country by states, provinces, other.",
+      "urlDoc": "https://documenter.getpostman.com/view/11532614/SzzheeL7?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11532614-821d9def-4222-4f98-99c8-03863781f79c-SzzheeL7",
+      "featured": true
+    },{
+      "title": "Canadian COVID-19 API",
+      "description": "This is the API service for the COVID-19 Tracker Canada project. The goal is to provide fast access to the dataset maintained by the COVID-19 Tracker Canada team.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5fAr3?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-fadc17f6-a393-457d-bb65-752d87173006-Szt5fAr3",
+      "featured": true
+    },{
+      "title": "Coronatracker API",
+      "description": "CORONATRACKER.com is a community-based project powered by over 460 volunteers from across the globe, ranging from data scientists, medical professionals, UI/UX designers, fullstack developers, to the general public.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szmcbeho?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-4eed3f8c-a219-46a2-8a44-0f9c889c783f-Szmcbeho",
+      "featured": true
+    },{
+      "title": "ECDC World Wide Cases",
+      "description": "The downloadable data file is updated daily and contains the latest available public data on COVID-19. Public-use data files allows users to manipulate the data in a format appropriate for their analyses. Users of ECDC public-use data files must comply with data use restrictions to ensure that the information will be used solely for statistical analysis or reporting purposes.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5equ9?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-fbe80f36-e29d-4923-9f40-ea35d96d2871-Szt5equ9",
+      "featured": true
+    },{
       "title": "CDC Cases & Deaths (ScrAPI)",
       "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkTz?version=latest",
@@ -264,7 +300,7 @@
       "urlPost": "https://app.getpostman.com/run-collection/8854915-4e4a17a9-f372-4143-aff1-83f078be57a6-SzYXVdyR",
       "featured": true
     },{
-      "title": "Office of Veteran Affairs",
+      "title": "Department of Veteran Affairs (VA)",
       "description": "A Veteran-centered API platform for securely accessing Veteran Affairs data.",
       "urlDoc": "https://documenter.getpostman.com/view/1034536/SzfCV6TH?version=latest",
       "urlPost": "https://app.getpostman.com/run-collection/1034536-c8e70d90-c6ff-4536-a16c-509bda547aa4",
