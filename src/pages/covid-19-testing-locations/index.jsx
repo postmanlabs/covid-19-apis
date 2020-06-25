@@ -183,6 +183,7 @@ class IndexPageComponent extends React.Component {
         <SEOTS title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
+          <div className="alert_banner">This is an Example Implementation -- Does Not Contain Live Data!</div>
           <State state={this.state} />
           <div className="youmayalsolike">
             <div className="container-fluid ts-section">
