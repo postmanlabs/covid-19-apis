@@ -80,6 +80,16 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    {
+      resolve: 'gatsby-plugin-gdpr-cookies',
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-43979731-4',
+          anonymize: true,
+        },
+        environments: ['production', 'development'],
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // 'gatsby-plugin-offline',
