@@ -1,7 +1,7 @@
 {
-  "name": "Postman-covid-19-apis",
+  "name": "postman-covid-19-apis",
   "private": true,
-  "description": "Postman Covid-19 APIs example",
+  "description": "Postman Covid-19 APIs Example",
   "version": "0.1.0",
   "author": "Postman",
   "dependencies": {
