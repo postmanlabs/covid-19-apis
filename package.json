@@ -3,7 +3,7 @@
   "private": true,
   "description": "Postman Covid-19 APIs Example",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Postman",
   "dependencies": {
     "axios": "^0.19.2",
     "dotenv": "^8.2.0",
