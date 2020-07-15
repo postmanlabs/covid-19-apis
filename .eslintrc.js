@@ -26,7 +26,8 @@ module.exports = {
     "react/prop-types": "off",
     "jsx-a11y/media-has-caption": "off",
     "no-underscore-dangle": "off",
-    "max-len": "off"
+    "max-len": "off",
+    "no-multiple-empty-lines": "warn",
   },
 
  };

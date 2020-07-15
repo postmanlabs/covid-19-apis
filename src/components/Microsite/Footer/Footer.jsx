@@ -133,7 +133,28 @@ const Footer = () => (
                   </svg>
                 </a>
               </li>
-
+              <li className="list-inline-item">
+                <a
+                  id="youtube_icon"
+                  href="https://www.youtube.com/channel/UCocudCGVb3MmhWQ1aoIgUQw"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-icon"
+                >
+                  <svg
+                    enableBackground="new 0 0 30 21.14"
+                    viewBox="0 0 30 21.14"
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="25"
+                    width="25"
+                  >
+                    <path
+                      d="m29.37 3.3c-.35-1.3-1.36-2.32-2.65-2.67-2.34-.63-11.72-.63-11.72-.63s-9.38 0-11.72.63c-1.29.35-2.31 1.37-2.65 2.67-.63 2.36-.63 7.27-.63 7.27s0 4.91.63 7.27c.35 1.3 1.36 2.32 2.65 2.67 2.34.63 11.72.63 11.72.63s9.38 0 11.72-.63c1.29-.35 2.31-1.37 2.65-2.67.63-2.36.63-7.27.63-7.27s0-4.91-.63-7.27zm-17.44 11.73v-8.92l7.84 4.46z"
+                      fill="#fff"
+                    />
+                  </svg>
+                </a>
+              </li>
             </ul>
           </section>
         </div>
@@ -156,7 +177,7 @@ const Footer = () => (
               </li>
               <li className="list-inline-item">
                 <a
-                  href="https://www.getpostman.com/security"
+                  href="https://www.postman.com/security"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -165,7 +186,7 @@ const Footer = () => (
               </li>
               <li className="list-inline-item">
                 <a
-                  href="https://www.getpostman.com/licenses/privacy"
+                  href="https://www.postman.com/legal/privacy-policy/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -174,11 +195,11 @@ const Footer = () => (
               </li>
               <li className="list-inline-item">
                 <a
-                  href="https://www.getpostman.com/licenses/postman_eula"
+                  href="https://www.postman.com/legal/eula/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="footer-column__link">EULA</span>
+                  <span className="footer-column__link">Terms</span>
                 </a>
               </li>
             </ul>
