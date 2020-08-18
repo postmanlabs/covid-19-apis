@@ -240,6 +240,48 @@
       "urlPost": "https://app.getpostman.com/run-collection/11073859-fbe80f36-e29d-4923-9f40-ea35d96d2871-Szt5equ9",
       "featured": true
     },{
+      "title": "Covidti API",
+      "description": "We want to provide a reliable and accurate API of coronavirus data. The data source are John Hopkins CSSE data for World and US and Wikipedia data for the US with county level cases Information. This API includes county level time-series for the U.S. and country level time-series for the World.",
+      "urlDoc": "https://documenter.getpostman.com/view/5537313/T17Q6k6D?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/5537313-6154733b-78ef-44ce-b601-d2fff153fa90-T17Q6k6D",
+      "featured": true
+    },{
+      "title": "COVID-19 REST & GraphQL API",
+      "description": "Access data on COVID19 through an easy API for free. Build dashboards, mobile apps or integrate in to other applications. Data is sourced from Johns Hopkins CSSE.",
+      "urlDoc": "https://documenter.getpostman.com/view/11787033/SzzoYuSa?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11787033-21c822c9-b2dc-436b-9362-c4f47bcb008a-SzzoYuSa",
+      "featured": true
+    },{
+      "title": "Curated COVID-19 Data and Metadata",
+      "description": "The COVID-19 Rich Data Services API from MTNA offers curated, high-quality data and metadata from statistics and contextual datasets from around the world. The catalog is updated daily and constantly growing.",
+      "urlDoc": "https://documenter.getpostman.com/view/2220438/SzYevv9u?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/2220438-d3ac9594-1c67-4176-b103-0c8238ad7aba-SzYevv9u",
+      "featured": true
+    },{
+      "title": "Curated COVID-19 Data and Metadata",
+      "description": "The COVID-19 Rich Data Services API from MTNA offers curated, high-quality data and metadata from statistics and contextual datasets from around the world. The catalog is updated daily and constantly growing.",
+      "urlDoc": "https://documenter.getpostman.com/view/2220438/SzYevv9u?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/2220438-d3ac9594-1c67-4176-b103-0c8238ad7aba-SzYevv9u",
+      "featured": true
+    },{
+      "title": "Canadian COVID-19 API",
+      "description": "This is the API service for the COVID-19 Tracker Canada project. The goal is to provide fast access to the dataset maintained by the COVID-19 Tracker Canada team.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5fAr3?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-fadc17f6-a393-457d-bb65-752d87173006-Szt5fAr3",
+      "featured": true
+    },{
+      "title": "Coronatracker API",
+      "description": "CORONATRACKER.com is a community-based project powered by over 460 volunteers from across the globe, ranging from data scientists, medical professionals, UI/UX designers, fullstack developers, to the general public.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szmcbeho?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-4eed3f8c-a219-46a2-8a44-0f9c889c783f-Szmcbeho",
+      "featured": true
+    },{
+      "title": "ECDC World Wide Cases",
+      "description": "The downloadable data file is updated daily and contains the latest available public data on COVID-19. Public-use data files allows users to manipulate the data in a format appropriate for their analyses. Users of ECDC public-use data files must comply with data use restrictions to ensure that the information will be used solely for statistical analysis or reporting purposes.",
+      "urlDoc": "https://documenter.getpostman.com/view/11073859/Szt5equ9?version=latest",
+      "urlPost": "https://app.getpostman.com/run-collection/11073859-fbe80f36-e29d-4923-9f40-ea35d96d2871-Szt5equ9",
+      "featured": true
+    },{
       "title": "CDC Cases & Deaths (ScrAPI)",
       "description": "Scraping the COVID-19 cases and deaths from the CDC home page, converting the data to JSON, and saving it within an environment",
       "urlDoc": "https://documenter.getpostman.com/view/8854915/SzS7NkTz?version=latest",
