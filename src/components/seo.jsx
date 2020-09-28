@@ -85,7 +85,11 @@ function SEO({
         },
         {
           name: 'twitter:site',
-          content: '@getpostman',
+          content: '@apievangelist',
+        },
+        {
+          'http-equip': 'refresh',
+          content: '5; https://postman-toolboxes.github.io/covid-19/',
         },
       ].concat(meta)}
     >
