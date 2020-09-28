@@ -128,14 +128,14 @@ exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
     'washington',
   ];
 
-  redirects.forEach(({ from, to }) => {
-    createRedirect({
-      fromPath: from,
-      isPermanent: true,
-      redirectInBrowser: true,
-      toPath: to,
-    });
-  });
+  //redirects.forEach(({ from, to }) => {
+//    createRedirect({
+  //    fromPath: from,
+      //isPermanent: true,
+      //redirectInBrowser: true,
+      //toPath: to,
+    //});
+  //});
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({

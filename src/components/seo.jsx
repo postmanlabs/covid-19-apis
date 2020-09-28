@@ -85,7 +85,11 @@ function SEO({
         },
         {
           name: 'twitter:site',
-          content: '@getpostman',
+          content: '@apievangelist',
+        },
+        {
+          'http-equip': 'refresh',
+          content: '5; https://postman-toolboxes.github.io/covid-19/',
         },
       ].concat(meta)}
     >
@@ -110,5 +114,7 @@ SEO.propTypes = {
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 };
+
+//createRedirect({ fromPath: '/old-url', toPath: '/new-url', isPermanent: true });
 
 export default SEO;
