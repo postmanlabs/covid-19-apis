@@ -14,7 +14,7 @@ const Collection = () => {
   return (
     JSON.parse(data.collectionLinks.value).links.map((link) => {
       const {
-        title, urlDoc, urlPost, description,
+        title, urlDoc, description,
       } = link;
       return (
         <div key={Math.random()} className="row collection">
@@ -29,8 +29,7 @@ const Collection = () => {
             </div>
           </div>
           <div className="col-md-5 collection_cta">
-            <a className="landing btn btn__secondary-light" href={urlDoc}>Documentation</a>
-            <a className="btn btn__primary" href={urlPost}>Run in Postman</a>
+            <a className="landing btn btn__secondary-light" href={urlDoc}>View Collections</a>
           </div>
         </div>
       );
