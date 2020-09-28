@@ -115,6 +115,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 };
 
-//createRedirect({ fromPath: '/old-url', toPath: '/new-url', isPermanent: true });
-
 export default SEO;

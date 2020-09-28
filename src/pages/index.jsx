@@ -6,9 +6,7 @@ import SEO from '../components/seo';
 import Hero from '../components/Microsite/Shared/Hero';
 import Welcome from '../components/Microsite/Shared/Welcome';
 import Collection from '../components/Microsite/Collections/Collection';
-import Apis from '../components/Microsite/Apis/Apis';
 import Nonprofit from '../components/Microsite/NonProfits/Nonprofits';
-
 
 const IndexPage = () => (
   <Layout>

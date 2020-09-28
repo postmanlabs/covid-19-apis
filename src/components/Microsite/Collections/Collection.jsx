@@ -14,7 +14,7 @@ const Collection = () => {
   return (
     JSON.parse(data.collectionLinks.value).links.map((link) => {
       const {
-        title, urlDoc, urlPost, description,
+        title, urlDoc, description,
       } = link;
       return (
         <div key={Math.random()} className="row collection">
