@@ -12,7 +12,6 @@ import PropTypes from 'prop-types';
 // import Header from './header';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
-import CookieAlert from './Shared/CookieAlert';
 import ReferrerCookie from '../ReferrerCookie';
 import './styles/_all.scss';
 
@@ -33,7 +32,6 @@ const Layout = ({ children }) => (
     <main>{children}</main>
     <ReferrerCookie />
     <Footer />
-    <CookieAlert />
   </div>
 );
 // };
