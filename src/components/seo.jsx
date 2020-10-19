@@ -93,6 +93,8 @@ function SEO({
         },
       ].concat(meta)}
     >
+      {/* OneTrust */}
+      <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="d5a53f21-97d1-40a5-b868-20af3e248d07" />
       {/* fonts */}
       <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet" />
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet" />

@@ -1,5 +1,6 @@
 exports.onClientEntry = () => {
   (() => {
+    function OptanonWrapper() { } // eslint-disable-line no-unused-vars
     let initializedForm = false;
 
     const loadForm = () => {
