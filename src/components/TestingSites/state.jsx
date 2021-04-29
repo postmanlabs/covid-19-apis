@@ -207,13 +207,13 @@ const State = ({ state }) => (
               state={state.newjersey}
               title="New Jersey"
               abbr="NJ"
-              endpoint="newjersey"
+              endpoint="new-jersey"
             />
             <Site
               state={state.newmexico}
               title="New Mexico"
               abbr="NM"
-              endpoint="newmexico"
+              endpoint="new-mexico"
             />
           </div>
         </div>
@@ -224,13 +224,13 @@ const State = ({ state }) => (
               state={state.newyork}
               title="New York"
               abbr="NY"
-              endpoint="newyork"
+              endpoint="new-york"
             />
             <Site
               state={state.northcarolina}
               title="North Carolina"
               abbr="NC"
-              endpoint="northcarolina"
+              endpoint="north-carolina"
             />
             <Site
               state={state.oklahoma}
