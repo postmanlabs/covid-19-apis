@@ -280,5 +280,4 @@ const State = ({ state }) => (
   </>
 );
 
-
 export default State;

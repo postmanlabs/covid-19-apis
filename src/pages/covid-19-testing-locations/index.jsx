@@ -14,7 +14,6 @@ import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
 import Resource from '../../components/TestingSites/resource';
 
-
 class IndexPageComponent extends React.Component {
   constructor(props) {
     super(props);

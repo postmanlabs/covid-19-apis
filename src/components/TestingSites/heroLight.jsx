@@ -10,7 +10,6 @@ const HeroLight = ({ usState }) => {
   ));
   capitalize = capitalize.join(' ');
 
-
   return (
     <div className="container-fluid ts-hero-background">
       <div className="container">
