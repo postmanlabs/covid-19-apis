@@ -1,8 +1,6 @@
 // on state page
-
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
-
 
 const StateTestingSites = () => {
   const data = useStaticQuery(graphql`

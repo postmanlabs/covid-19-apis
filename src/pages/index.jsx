@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-
 import Layout from '../components/Microsite/layout';
 import SEO from '../components/seo';
 import Hero from '../components/Microsite/Shared/Hero';
@@ -39,7 +38,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-
     <div className="container-fluid">
       <div className="row blurb text-center">
         <div className="col-md-12">
@@ -53,7 +51,6 @@ const IndexPage = () => (
         </div>
       </div>
     </div>
-
     <Nonprofit />
     {/* <Link to="/thankyou">Go to page 2</Link> */}
   </Layout>

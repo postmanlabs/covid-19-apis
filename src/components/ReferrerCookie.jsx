@@ -62,5 +62,4 @@ class ReferrerCookie extends React.Component {
   }
 }
 
-
 export default ReferrerCookie;

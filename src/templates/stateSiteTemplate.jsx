@@ -11,7 +11,6 @@ import CallToActionConsumers from '../components/TestingSites/callToActionConsum
 import CallToActionDevs from '../components/TestingSites/callToActionDevs';
 import Resource from '../components/TestingSites/resource';
 
-
 class StateListComponent extends React.Component {
   constructor(props) {
     super(props);
@@ -31,7 +30,6 @@ class StateListComponent extends React.Component {
 
     return this.state;
   }
-
 
   render() {
     const { data } = this.state;

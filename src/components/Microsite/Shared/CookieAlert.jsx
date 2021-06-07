@@ -56,7 +56,7 @@ class CookieAlert extends React.Component {
           and assist in our marketing efforts. Our Cookie Notice provides more
           information and explains how to amend your cookie settings.
           {' '}
-          <strong><a href="https://www.postman.com/legal/cookies/" target="_blank" rel="noreferrer" rel="noopener" style={{ color: 'black', textDecoration: 'underline' }}>Learn more</a></strong>
+          <strong><a href="https://www.postman.com/legal/cookies/" target="_blank" rel="noopener noreferrer" style={{ color: 'black', textDecoration: 'underline' }}>Learn more</a></strong>
         </CookieConsent>
       </div>
     );

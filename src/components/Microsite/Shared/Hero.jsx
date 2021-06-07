@@ -3,7 +3,6 @@ import React from 'react';
 // import heroPostmanaut from '../../images/hero-postmanaut.svg';
 import heroImage from '../../../images/covid19-image-2.png';
 
-
 const Hero = () => (
   <div className="container-fluid hero v5_starfield-small-night-sky pb-4">
     <div className="container">
@@ -20,6 +19,5 @@ const Hero = () => (
     </div>
   </div>
 );
-
 
 export default Hero;
