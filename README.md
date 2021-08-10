@@ -3,6 +3,19 @@ This is a set of Postman collections that might help in the COVID-19 pandemic--c
 
 The website for this project can be found at: https://covid-19-apis.postman.com/
 
+## 🚀 Quick start
+
+Requires `nvm`
+
+```
+  git clone git@github.com:postmanlabs/covid-19-apis.git
+  cd covid-19-apis
+  npm run nvmrc
+  nvm use
+  npm install
+  npm run dev
+```
+
 ## Contribution guidelines
 
 We would love for you to contribute to the Postman COVID-19 API Resource Center! To contribute to this project, please read:
