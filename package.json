@@ -37,13 +37,17 @@
     "uuid": "^7.0.2"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "@postman/pm-tech": "^1.0.1",
+    "jquery": "^3.6.0",
+    "prettier": "^1.19.1",
+    "shelljs": "^0.8.4"
   },
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "scripts": {
+    "bff": "node bff.js",
     "build": "GATSBY_NEWRELIC_ENV=dev GATSBY_ACTIVE_ENV=development gatsby build",
     "build:dev": "npm run build",
     "build:prod": "GATSBY_NEWRELIC_ENV=production GATSBY_ACTIVE_ENV=production gatsby build",
@@ -54,6 +58,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "nvmrc": "echo $(node -p -e 'require(\"./package\").engines.node.split(\">=\").join(\"\")') > .nvmrc",
+    "postinstall": "npm run bff",
     "test:lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/",
     "test:lint-fix": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/ --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
