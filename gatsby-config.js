@@ -64,6 +64,33 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-newrelic',
+      options: {
+        configs: {
+          dev: {
+            instrumentationType: 'proAndSPA',
+            accountId: process.env.RELIC_ACCOUNT_ID,
+            trustKey: process.env.RELIC_TRUST_KEY,
+            agentID: process.env.RELIC_AGENT_ID,
+            licenseKey: process.env.RELIC_LICENSE_KEY,
+            applicationID: process.env.RELIC_APPLICATION_ID,
+            beacon: 'bam.nr-data.net',
+            errorBeacon: 'bam.nr-data.net'
+          },
+          production: {
+            instrumentationType: 'proAndSPA',
+            accountId: process.env.RELIC_ACCOUNT_ID,
+            trustKey: process.env.RELIC_TRUST_KEY,
+            agentID: process.env.RELIC_AGENT_ID,
+            licenseKey: process.env.RELIC_LICENSE_KEY,
+            applicationID: process.env.RELIC_APPLICATION_ID,
+            beacon: 'bam.nr-data.net',
+            errorBeacon: 'bam.nr-data.net'
+          }
+        }
+      }
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://covid-19-apis.postman.com/',

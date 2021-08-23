@@ -16,6 +16,7 @@
     "gatsby-plugin-google-analytics": "^2.2.2",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-meta-redirect": "^1.1.1",
+    "gatsby-plugin-newrelic": "^2.0.2",
     "gatsby-plugin-offline": "^3.0.41",
     "gatsby-plugin-react-helmet": "^3.1.24",
     "gatsby-plugin-robots-txt": "^1.5.6",
@@ -32,10 +33,14 @@
     "react-cookie-consent": "^5.1.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
+    "shelljs": "^0.8.4",
     "s3-deploy": "^1.4.0",
     "uuid": "^7.0.2"
   },
   "devDependencies": {
+    "@postman/pm-tech": "^1.0.1",
+    "crypto": "^1.0.1",
+    "jquery": "^3.6.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -43,15 +48,18 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "GATSBY_ACTIVE_ENV=development gatsby build",
+    "bff": "node bff.js",
+    "build": "GATSBY_NEWRELIC_ENV=dev GATSBY_ACTIVE_ENV=development gatsby build",
     "build:dev": "npm run build",
-    "build:prod": "GATSBY_ACTIVE_ENV=production gatsby build",
+    "build:prod": "GATSBY_NEWRELIC_ENV=production GATSBY_ACTIVE_ENV=production gatsby build",
     "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "nvmrc": "echo $(node -p -e 'require(\"./package\").engines.node.split(\">=\").join(\"\")') > .nvmrc",
+    "postinstall": "npm run bff",
     "test:lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/",
     "test:lint-fix": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/ --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
@@ -62,5 +70,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "engines": {
+    "node": "12.13.0"
   }
 }
