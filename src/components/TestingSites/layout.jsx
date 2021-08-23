@@ -13,14 +13,33 @@ import Footer from './footer';
 import ReferrerCookie from '../ReferrerCookie';
 import './styles/_allTesting.scss';
 
-const Layout = ({ children }) => (
-  <div>
-    <Header />
-    <main>{children}</main>
-    <ReferrerCookie />
-    <Footer />
-  </div>
-);
+const delay = 1000;
+
+let throttle;
+
+const Layout = ({ children }) => {
+  if (typeof document === 'object') {
+    window.clearTimeout(throttle);
+
+    throttle = setTimeout(() => {
+      window.pm.scalp(
+        'pm-analytics',
+        'load',
+        'path',
+        document.location.pathname,
+      );
+    }, delay);
+  }
+
+  return (
+    <div>
+      <Header />
+      <main>{children}</main>
+      <ReferrerCookie />
+      <Footer />
+    </div>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

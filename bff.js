@@ -1,9 +1,31 @@
 const fs = require('fs');
 const sh = require('shelljs');
+const crypto = require('crypto');
+
+const runtime = {
+  jq: ['node_modules/jquery/dist/jquery.min.js'],
+  pm: ['node_modules/@postman/pm-tech/index.js'],
+};
 
 sh.exec('mkdir -p public');
-sh.exec('cp node_modules/jquery/dist/jquery.min.js public/jq.js');
-sh.exec('cp node_modules/@postman/pm-tech/index.js public/pm.js');
+
+Object.keys(runtime).forEach((key) => {
+  const fileBuffer = fs.readFileSync(runtime[key][0]);
+  const hashSum = crypto.createHash('sha1');
+  const ext = runtime[key][0]
+    .split('/')
+    .pop()
+    .split('.')
+    .pop();
+
+  hashSum.update(fileBuffer);
+
+  const hex = hashSum.digest('hex');
+
+  runtime[key].push(`_${hex}.${ext}`);
+
+  sh.exec(`cp ${runtime[key][0]} public/${runtime[key][1]}`);
+});
 
 const prefetch = async () => {
   const script = `
@@ -21,15 +43,15 @@ const prefetch = async () => {
       e.onload = cb;
       document.head.appendChild(e);
     }
-        
-    load('/jq.js', function(){
-      load('/pm.js', function(){
-        window.pm.scalp('My Category', 'My Action', 'My Label', 'My Property');
+    
+    if (!window.pm) {
+      load('/${runtime.jq[1]}', function(){
+        load('/${runtime.pm[1]}');
       });
-    });
+    }    
   `;
 
-  fs.writeFile('bff.json', JSON.stringify({ script }), err => {
+  fs.writeFile('bff.json', JSON.stringify({ script }), (err) => {
     if (err) {
       throw err;
     }
