@@ -43,12 +43,12 @@ const prefetch = async () => {
       e.onload = cb;
       document.head.appendChild(e);
     }
-        
-    load('/${runtime.jq[1]}', function(){
-      load('/${runtime.pm[1]}', function(){
-        window.pm.scalp('My Category', 'My Action', 'My Label', 'My Property');
+    
+    if (!window.pm) {
+      load('/${runtime.jq[1]}', function(){
+        load('/${runtime.pm[1]}');
       });
-    });
+    }    
   `;
 
   fs.writeFile('bff.json', JSON.stringify({ script }), (err) => {
