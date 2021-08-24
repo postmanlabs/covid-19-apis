@@ -46,7 +46,11 @@ const prefetch = async () => {
     
     if (!window.pm) {
       load('/${runtime.jq[1]}', function(){
-        load('/${runtime.pm[1]}');
+        load('/${runtime.pm[1]}', function(){
+          window.pm.setScalp({
+            property: 'covid-19-apis'
+          });
+        });
       });
     }    
   `;

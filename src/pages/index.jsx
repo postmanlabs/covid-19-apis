@@ -64,12 +64,16 @@ const IndexPage = () => (
           <Link
             className="btn btn__secondary-light"
             to="/covid-19-testing-locations/"
-            onClick={() => window.pm.scalp(
-              'pm-analytics',
-              'client-event',
-              'click',
-              'See Reference Implementation',
-            )}
+            onClick={() => {
+              if (window.pm) {
+                window.pm.scalp(
+                  'pm-analytics',
+                  'client',
+                  'click',
+                  'See Reference Implementation',
+                );
+              }
+            }}
           >
             See Reference Implementation
           </Link>

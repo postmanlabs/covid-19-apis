@@ -18,6 +18,7 @@ jobs:
         AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
         AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
         DIST_ID: ${{secrets.PROD_DIST_ID}}
+        GATSBY_NEWRELIC_ENV: production
       run: |
         npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm install
