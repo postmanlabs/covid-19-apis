@@ -22,12 +22,14 @@ const Layout = ({ children }) => {
     window.clearTimeout(throttle);
 
     throttle = setTimeout(() => {
-      window.pm.scalp(
-        'pm-analytics',
-        'load',
-        'path',
-        document.location.pathname,
-      );
+      if (window.pm) {
+        window.pm.scalp(
+          'pm-analytics',
+          'load',
+          'path',
+          document.location.pathname,
+        );
+      }
     }, delay);
   }
 
