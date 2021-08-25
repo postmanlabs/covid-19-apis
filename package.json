@@ -49,9 +49,7 @@
   "license": "MIT",
   "scripts": {
     "bff": "node bff.js",
-    "build": "GATSBY_NEWRELIC_ENV=dev GATSBY_ACTIVE_ENV=development gatsby build",
-    "build:dev": "npm run build",
-    "build:prod": "GATSBY_NEWRELIC_ENV=production GATSBY_ACTIVE_ENV=production gatsby build",
+    "build": "gatsby build",
     "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
