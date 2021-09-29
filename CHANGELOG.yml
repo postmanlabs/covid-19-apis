@@ -1,0 +1,32 @@
+5.7.0:
+  date: 2021-09-29
+  items:
+  - '[MARKENG-401] bump pm-tech to v1.1.8 for referrer value'
+5.6.0:
+  date: 2021-09-08
+  items:
+  - '[MARKENG-401] bump pm-tech (^1.1.6)'
+  - '[MARKENG-401] bump pm-tech (^1.1.5)'
+5.5.0:
+  date: 2021-08-24
+  items:
+  - '[MARKENG-401] reconfigure github actions & newrelic'
+  - '[MARKENG-401] updated pm-tech (sdk); reverted to allow valid "beta" value for `env`'
+  - '[MARKENG-401] set SCALP property to covid-19-apis'
+5.4.0:
+  date: 2021-08-23
+  items:
+  - '[MARKENG-401] hash runtime utility names'
+  - '[MARKENG-401] decoupled Postman Analytics'
+5.3.0:
+  date: 2021-08-19
+  items:
+  - '[MARKENG-401] consume (private) pm-tech package for covid-19-api'
+5.2.0:
+  date: 2021-08-18
+  items:
+  - '[MARKENG-400] added NewRelic for monitoring as we test the PostmanAnalytic SDK'
+5.1.0:
+  date: 2021-08-11
+  items:
+  - '[MARKENG-479] node & npm versions; usage documentation to ensure for covid-19-apis web app'
