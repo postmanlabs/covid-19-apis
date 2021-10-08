@@ -1,3 +1,11 @@
+5.8.1:
+  date: 2021-10-07
+  items:
+  - '[MARKENG-401] make pm-tech package an optionalDependency'
+5.8.0:
+  date: 2021-10-07
+  items:
+  - '[MARKENG-401] bump pm-tech to v1.1.9 for native posts (#344)'
 5.7.0:
   date: 2021-09-29
   items:
