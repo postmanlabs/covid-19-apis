@@ -1,6 +1,6 @@
 name: CI
 
-on: 
+on:
   pull_request:
     branches:
     - develop
@@ -9,11 +9,13 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    
+
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@master
     - name: eslint run
+      env:
+        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
       run: |
         npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm install
