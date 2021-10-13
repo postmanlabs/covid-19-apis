@@ -72,6 +72,6 @@
     "node": "12.13.0"
   },
   "optionalDependencies": {
-    "@postman/pm-tech": "1.1.9"
+    "@postman/pm-tech": "1.1.11"
   }
 }
