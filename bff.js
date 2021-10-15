@@ -1,37 +1,42 @@
 const fs = require('fs');
 const sh = require('shelljs');
 const crypto = require('crypto');
+const fetchPmTech = require('./scripts/fetchPmTech');
 
+const delay = 1000;
 const runtime = {
-  pm: ['node_modules/@postman/pm-tech/index.js'],
+  pm: ['bff-data/pmTech.js'],
 };
 
-if (process.env.NPM_TOKEN) {
-  sh.exec('mkdir -p public');
-
-  Object.keys(runtime).forEach(key => {
-    const fileBuffer = fs.readFileSync(runtime[key][0]);
-    const hashSum = crypto.createHash('sha1');
-    const ext = runtime[key][0]
-      .split('/')
-      .pop()
-      .split('.')
-      .pop();
-
-    hashSum.update(fileBuffer);
-
-    const hex = hashSum.digest('hex');
-
-    runtime[key].push(`_${hex}.${ext}`);
-
-    sh.exec(`cp ${runtime[key][0]} public/${runtime[key][1]}`);
-  });
-}
-
 const prefetch = async () => {
-  const script =
-    (process.env.NPM_TOKEN &&
-      `
+  if (process.env.PM_TECH) {
+    await fetchPmTech();
+
+    sh.exec('mkdir -p public');
+
+    Object.keys(runtime).forEach((key) => {
+      const fileBuffer = fs.readFileSync(runtime[key][0]);
+      const hashSum = crypto.createHash('sha1');
+      const ext = runtime[key][0]
+        .split('/')
+        .pop()
+        .split('.')
+        .pop();
+
+      hashSum.update(fileBuffer);
+
+      const hex = hashSum.digest('hex');
+
+      runtime[key].push(`_${hex}.${ext}`);
+
+      setTimeout(() => {
+        sh.exec(`cp ${runtime[key][0]} public/${runtime[key][1]}`);
+      }, delay);
+    });
+  }
+
+  const script = (process.env.PM_TECH
+      && `
       function load(src, cb) {
         var e = document.createElement('script');
         e.src = src;
@@ -54,12 +59,12 @@ const prefetch = async () => {
           });
         });
       }
-    `) ||
-    `
+    `)
+    || `
       console.info('Postman OSS');
     `;
 
-  fs.writeFile('bff.json', JSON.stringify({ script }), err => {
+  fs.writeFile('bff.json', JSON.stringify({ script }), (err) => {
     if (err) {
       throw err;
     }

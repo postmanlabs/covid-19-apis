@@ -1,3 +1,11 @@
+5.10.0:
+  date: 2021-10-15
+  items:
+  - '[MARKENG-856] use the pmTech payload from pm-monitor for analytics SDK'
+5.9.0:
+  date: 2021-10-13
+  items:
+  - '[MARKENG-847] bump pm-tech to v1.1.11 for propertyId (sessionId)'
 5.8.1:
   date: 2021-10-07
   items:
