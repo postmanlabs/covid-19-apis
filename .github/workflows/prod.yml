@@ -23,9 +23,8 @@ jobs:
         RELIC_AGENT_ID: ${{secrets.RELIC_AGENT_ID}}
         RELIC_LICENSE_KEY: ${{secrets.RELIC_LICENSE_KEY}}
         RELIC_APPLICATION_ID: ${{secrets.RELIC_APPLICATION_ID}}
-        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+        PM_TECH: ${{secrets.PM_TECH}}
       run: |
-        npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm install
         GATSBY_NEWRELIC_ENV=production GATSBY_ACTIVE_ENV=production npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-prod --private --deleteRemoved --distId $DIST_ID --invalidate '/*'
 

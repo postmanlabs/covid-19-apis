@@ -72,3 +72,4 @@ node_modules
 # Generated
 .nvmrc
 bff.json
+bff-data
