@@ -15,9 +15,8 @@ jobs:
     - uses: actions/setup-node@master
     - name: eslint run
       env:
-        NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+        PM_TECH: ${{secrets.PM_TECH}}
       run: |
-        npm config set //registry.npmjs.org/:_authToken=${{secrets.NPM_TOKEN}}
         npm install
         npm run test:lint
 
