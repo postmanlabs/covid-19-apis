@@ -1,3 +1,7 @@
+5.11.0:
+  date: 2021-10-28
+  items:
+  - '[MARKENG-927] safe guard pm-tech functions & remove prefixes'
 5.10.0:
   date: 2021-10-15
   items:
