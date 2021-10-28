@@ -35,12 +35,13 @@ const Layout = ({ children }) => {
 
     throttle = setTimeout(() => {
       if (window.pm) {
-        window.pm.scalp(
-          'pm-analytics',
-          'load',
-          'path',
-          document.location.pathname,
-        );
+        if (typeof window.pm.scalp === 'function') {
+          window.pm.scalp(
+            'pm-analytics',
+            'load',
+            document.location.pathname,
+          );
+        }
       }
     }, delay);
   }

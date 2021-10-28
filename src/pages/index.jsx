@@ -66,12 +66,13 @@ const IndexPage = () => (
             to="/covid-19-testing-locations/"
             onClick={() => {
               if (window.pm) {
-                window.pm.scalp(
-                  'pm-analytics',
-                  'client',
-                  'click',
-                  'See Reference Implementation',
-                );
+                if (typeof window.pm.scalp === 'function') {
+                  window.pm.scalp(
+                    'pm-analytics',
+                    'click',
+                    'See Reference Implementation',
+                  );
+                }
               }
             }}
           >

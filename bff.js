@@ -54,9 +54,11 @@ const prefetch = async () => {
 
       if (!window.pm) {
         load('/${runtime.pm[1]}', function(){
-          window.pm.setScalp({
-            property: 'covid-19-apis'
-          });
+          if (typeof window.pm.setScalp === 'function') {
+            window.pm.setScalp({
+              property: 'covid-19-apis'
+            });
+          }
         });
       }
     `)
