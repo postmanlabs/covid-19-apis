@@ -70,7 +70,7 @@ const IndexPage = () => (
                   window.pm.scalp(
                     'pm-analytics',
                     'click',
-                    'See Reference Implementation',
+                    `${document.location.pathname}:See Reference Implementation`,
                   );
                 }
               }

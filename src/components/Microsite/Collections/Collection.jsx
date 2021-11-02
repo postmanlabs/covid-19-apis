@@ -26,7 +26,7 @@ const Collection = () => {
             href={urlDoc}
             onClick={() => {
               if (window.pm) {
-                window.pm.scalp('pm-analytics', 'click', title);
+                window.pm.scalp('pm-analytics', 'click', `${document.location.pathname}:${title}`);
               }
             }}
           >
