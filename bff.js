@@ -1,3 +1,4 @@
+const base64 = require('base-64');
 const fs = require('fs');
 const sh = require('shelljs');
 const crypto = require('crypto');
@@ -9,8 +10,12 @@ const runtime = {
 };
 
 const prefetch = async () => {
+  let pmTech = '';
+
   if (process.env.PM_TECH) {
-    await fetchPmTech();
+    pmTech = await fetchPmTech();
+
+    pmTech = base64.encode(pmTech);
 
     sh.exec('mkdir -p public');
 
@@ -37,29 +42,23 @@ const prefetch = async () => {
 
   const script = (process.env.PM_TECH
       && `
-      function load(src, cb) {
-        var e = document.createElement('script');
-        e.src = src;
-        e.async = true;
-        e.onreadystatechange = function(){
-          if (this.readyState === 'complete' || this.readyState === 'loaded') {
-            if (typeof cb === 'function') {
-              cb();
-            }
-          }
-        };
-        e.onload = cb;
-        document.head.appendChild(e);
-      }
-
+      var delay = 500;
+      var scr = document.createElement('script');
+      var throttle;
+      scr.innerText = atob('${pmTech}');
       if (!window.pm) {
-        load('/${runtime.pm[1]}', function(){
-          if (typeof window.pm.setScalp === 'function') {
-            window.pm.setScalp({
-              property: 'covid-19-apis'
-            });
-          }
-        });
+        throttle = setTimeout(function(){
+          document.head.appendChild(scr);
+          setTimeout(function(){
+            if (window.pm) {
+              window.pm.setScalp({
+                property: 'covid-19-apis'
+              });
+              window.pm.trackClicks();
+            }
+            clearTimeout(throttle);
+          }, delay);
+        }, delay);
       }
     `)
     || `

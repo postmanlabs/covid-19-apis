@@ -64,17 +64,6 @@ const IndexPage = () => (
           <Link
             className="btn btn__secondary-light"
             to="/covid-19-testing-locations/"
-            onClick={() => {
-              if (window.pm) {
-                if (typeof window.pm.scalp === 'function') {
-                  window.pm.scalp(
-                    'pm-analytics',
-                    'click',
-                    `${document.location.pathname}:See Reference Implementation`,
-                  );
-                }
-              }
-            }}
           >
             See Reference Implementation
           </Link>

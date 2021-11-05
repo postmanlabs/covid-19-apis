@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
             document.location.pathname,
           );
         }
+        clearTimeout(throttle);
       }
     }, delay);
   }
