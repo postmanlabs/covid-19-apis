@@ -24,11 +24,6 @@ const Collection = () => {
           <a
             className="landing btn btn__secondary-light"
             href={urlDoc}
-            onClick={() => {
-              if (window.pm) {
-                window.pm.scalp('pm-analytics', 'click', `${document.location.pathname}:${title}`);
-              }
-            }}
           >
             View Collections
           </a>
