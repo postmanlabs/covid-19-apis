@@ -1,3 +1,7 @@
+5.14.0:
+  date: 2021-11-08
+  items:
+  - '[MARKENG-973] remove carets from version numbers in package file to prevent coa package exploit'
 5.13.0:
   date: 2021-11-05
   items:
