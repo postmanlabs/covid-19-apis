@@ -13,6 +13,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - uses: actions/setup-node@master
+      with:
+        node-version: '12'
     - name: eslint run
       env:
         PM_TECH: ${{secrets.PM_TECH}}
