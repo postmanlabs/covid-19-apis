@@ -4,6 +4,13 @@ const path = require('path');
 const fetch = require('node-fetch');
 const sh = require('shelljs');
 const { minify } = require('terser');
+const requestOptions = {
+  method: 'GET',
+  headers: {
+    bff: 'e2e'
+  },
+  redirect: 'follow'
+};
 
 async function compress(t) {
   const result = await minify(t, {});
@@ -14,7 +21,7 @@ async function compress(t) {
 const host = process.env.PM_TECH || '';
 
 const fetchPmTech = () => new Promise((resolve) => {
-  fetch(host).then((resp) => {
+  fetch(host, requestOptions).then((resp) => {
     if (resp) {
       resp.json().then((data) => {
         const tag = data['covid-19-apis'];
