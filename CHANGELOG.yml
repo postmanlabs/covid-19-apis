@@ -1,3 +1,7 @@
+5.16.0:
+  date: 2022-04-07
+  items:
+  - '[MARKENG-1338] additional header for node fetching of bff content'
 5.15.0:
   date: 2021-12-02
   items:
