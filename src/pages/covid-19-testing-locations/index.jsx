@@ -211,9 +211,7 @@ const IndexPage = () => {
     allSitePage {
       edges {
         node {
-          context {
-            state
-          }
+          pageContext 
         }
       }
     }

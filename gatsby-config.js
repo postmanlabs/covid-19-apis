@@ -42,14 +42,13 @@ module.exports = {
     },
     'gatsby-plugin-anchor-links',
     'gatsby-transformer-remark',
-    'gatsby-plugin-meta-redirect',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'postman-covid-19-apis',
-        short_name: 'starter',
+        short_name: 'postman-covid-19-apis',
         start_url: '/',
         background_color: '#663399',
         theme_color: '#663399',
@@ -60,14 +59,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sitemap',
       options: {
-        exclude: ['/thankyou/', '/frontmatter', '/content/*'],
+        excludes: ['/thankyou/', '/frontmatter', '/content/*'],
       },
     },
     {
       resolve: 'gatsby-plugin-newrelic',
       options: {
-        configs: {
-          dev: {
+        config: {
             instrumentationType: 'proAndSPA',
             accountId: process.env.RELIC_ACCOUNT_ID,
             trustKey: process.env.RELIC_TRUST_KEY,
@@ -76,17 +74,6 @@ module.exports = {
             applicationID: process.env.RELIC_APPLICATION_ID,
             beacon: 'bam.nr-data.net',
             errorBeacon: 'bam.nr-data.net'
-          },
-          production: {
-            instrumentationType: 'proAndSPA',
-            accountId: process.env.RELIC_ACCOUNT_ID,
-            trustKey: process.env.RELIC_TRUST_KEY,
-            agentID: process.env.RELIC_AGENT_ID,
-            licenseKey: process.env.RELIC_LICENSE_KEY,
-            applicationID: process.env.RELIC_APPLICATION_ID,
-            beacon: 'bam.nr-data.net',
-            errorBeacon: 'bam.nr-data.net'
-          }
         }
       }
     },
@@ -107,6 +94,7 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    'gatsby-plugin-meta-redirect',
     {
       resolve: 'gatsby-plugin-gdpr-cookies',
       options: {
@@ -117,8 +105,5 @@ module.exports = {
         environments: ['production', 'development'],
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
   ],
 };
