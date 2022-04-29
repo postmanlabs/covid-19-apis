@@ -6,6 +6,8 @@ module.exports = {
   },
   extends: [
     'airbnb',
+    'airbnb/hooks',
+    'eslint:recommended',
   ],
   globals: {
     Atomics: 'readonly',
@@ -21,6 +23,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier'
   ],
   rules: {
     "react/prop-types": "off",
