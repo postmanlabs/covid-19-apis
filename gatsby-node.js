@@ -1,11 +1,11 @@
 const uuid = require('uuid');
-const path = require('path');
+// const path = require('path');
 const HeaderJson = require('./src/components/Microsite/Header/Header.data.json');
 const FooterJson = require('./src/components/Microsite/Footer/Footer.data.json');
 const CollectionJson = require('./src/components/Microsite/Collections/Collection.data.json');
 const ApiJson = require('./src/components/Microsite/Apis/Apis.data.json');
 const CaliforniaJson = require('./src/components/TestingSites/json/California.data.json');
-const redirects = require('./redirects');
+// const redirects = require('./redirects.json');
 
 const { v4 } = uuid;
 
@@ -45,14 +45,11 @@ exports.sourceNodes = async ({
   createNode(prepareNode(CaliforniaJson, 'CaliforniaLinks'));
 };
 
-
 /* create blog posts with template from Markdown
 /************************************************************************************************* */
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
-
-  const blogPostTemplate = path.resolve('src/templates/blogTemplate.jsx');
 
   const result = await graphql(`
     {
@@ -80,17 +77,21 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
-      component: blogPostTemplate,
+      component: require.resolve('./src/templates/blogTemplate.jsx'),
       context: {}, // additional data can be passed via context
     });
   });
 };
 
-
 /* Create testing sites pages with defined slug
 /******************************************************************************************** */
 
-exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
+exports.createPages = async ({
+  actions: {
+  // createRedirect,
+    createPage,
+  },
+}) => {
   const allState = [
     'alabama',
     'alaska',
@@ -128,14 +129,14 @@ exports.createPages = async ({ actions: { createRedirect, createPage } }) => {
     'washington',
   ];
 
-  //redirects.forEach(({ from, to }) => {
-//    createRedirect({
+  // redirects.forEach(({ from, to }) => {
+  //    createRedirect({
   //    fromPath: from,
-      //isPermanent: true,
-      //redirectInBrowser: true,
-      //toPath: to,
-    //});
-  //});
+  // isPermanent: true,
+  // redirectInBrowser: true,
+  // toPath: to,
+  // });
+  // });
 
   // Our index page lists, all page. Keep for future reference for site specific page
   // createPage({

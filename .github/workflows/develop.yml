@@ -28,6 +28,6 @@ jobs:
         PM_TECH: ${{secrets.PM_TECH}}
       run: |
         npm install
-        GATSBY_NEWRELIC_ENV=dev GATSBY_ACTIVE_ENV=development npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved --distId $DIST_ID --invalidate '/*'
+        GATSBY_ACTIVE_ENV=development npm run build && node_modules/s3-deploy/bin/s3-deploy './public/**' --cwd './public/' --bucket postman-covid-19-beta --private --deleteRemoved --distId $DIST_ID --invalidate '/*'
 
 
