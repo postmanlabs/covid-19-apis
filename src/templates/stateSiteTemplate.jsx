@@ -234,6 +234,8 @@ class StateListComponent extends React.Component {
   }
 }
 
-export default ({ pageContext: { state } }) => (
+const StateTemplate = ({ pageContext: { state } }) => (
   <StateListComponent usState={state} />
 );
+
+export default StateTemplate;

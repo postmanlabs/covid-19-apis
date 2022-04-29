@@ -40,7 +40,7 @@ const Footer = () => (
       <div className="row">
         <div className="col-sm-12 copyright">
           <span className="align-middle mb-0">
-            &copy; 2020 Postman, Inc. All rights reserved.
+            &copy; 2022 Postman, Inc. All rights reserved.
           </span>
         </div>
       </div>

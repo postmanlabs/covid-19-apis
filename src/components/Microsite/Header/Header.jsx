@@ -1,22 +1,5 @@
 import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
-// import './Header.scss';
-
-// import DynamicLink from '../Shared/DynamicLink';
-// import postmanLogo from '../../images/postman-logo-horizontal-orange.svg';
-
-// changes button in navbar based on cookie presence
-// const LoginCheck = (props) => {
-//   const { cookie } = props;
-//   if (cookie !== 'yes') {
-//     return (
-//       <a href="https://identity.getpostman.com/login" className="btn btn__primary">Sign In</a>
-//     );
-//   }
-//   return (
-//     <a href="https://app.getpostman.com" className="btn btn__primary">Dashboard</a>
-//   );
-// };
 
 class HeaderComponent extends React.Component {
   constructor(props) {
@@ -87,11 +70,6 @@ class HeaderComponent extends React.Component {
             `}
           id="navbarSupportedContent"
         >
-          {/* {data.links.map((link) => (
-            <div className="nav-item" key={Math.random()}>
-              {link.cta ? <LoginCheck cookie={this.getCookie('getpostmanlogin')} /> : <DynamicLink className="nav-link" url={link.url} name={link.name} />}
-            </div>
-          ))} */}
         </div>
       </header>
     );

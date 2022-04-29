@@ -274,7 +274,6 @@ const State = ({ state }) => (
             />
           </div>
         </div>
-
       </div>
     </div>
   </>
