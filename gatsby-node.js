@@ -1,5 +1,4 @@
 const uuid = require('uuid');
-// const path = require('path');
 const HeaderJson = require('./src/components/Microsite/Header/Header.data.json');
 const FooterJson = require('./src/components/Microsite/Footer/Footer.data.json');
 const CollectionJson = require('./src/components/Microsite/Collections/Collection.data.json');

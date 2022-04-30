@@ -1,7 +1,8 @@
 import React from 'react';
 import Site from './site';
 
-const State = ({ state }) => (
+const State = ({state}) => {
+  return (
   <>
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
@@ -278,5 +279,6 @@ const State = ({ state }) => (
     </div>
   </>
 );
+  }
 
 export default State;

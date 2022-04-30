@@ -21,10 +21,9 @@ class StateListComponent extends React.Component {
   }
 
   componentDidMount() {
-    // eslint-disable-next-line react/destructuring-assignment
-    const state = this.props.usState;
-
-    axios.get(` https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
+    const {usState} = this.props;
+    const state = usState;
+    axios.get(`https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
       this.setState({ data: response.data });
     });
 
@@ -34,7 +33,6 @@ class StateListComponent extends React.Component {
   render() {
     const { data } = this.state;
     const { usState } = this.props;
-
     return (
       <Layout>
         <SEOTS title="State Specific List of testing locations" />
@@ -59,9 +57,9 @@ class StateListComponent extends React.Component {
                           <p>{site.description}</p>
                         </div>
                         <div className="col-sm-4">
-                          <p>
+                     
                             {site.physical_address.map((deets) => (
-                              <div className="ts-state-site__address">
+                              <div className="ts-state-site__address" key={Math.random()}>
                                 <p className="address">
                                   {deets.address_1}
                                   {' '}
@@ -90,7 +88,7 @@ class StateListComponent extends React.Component {
                                 </p>
                               </>
                             ))}
-                          </p>
+                   
                         </div>
                         {site.regular_schedule.map((time) => {
                           // Monday:
