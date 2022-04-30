@@ -23,7 +23,7 @@
     "gatsby-source-filesystem": "4.13.0",
     "gatsby-transformer-remark": "5.13.0",
     "gatsby-transformer-sharp": "4.13.0",
-    "moment": "2.29.1",
+    "moment": "2.29.3",
     "node-fetch": "2.6.1",
     "node-sass": "4.14.1",
     "path-browserify": "^1.0.1",
