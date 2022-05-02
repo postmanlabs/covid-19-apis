@@ -104,7 +104,7 @@ SEOTS.defaultProps = {
 
 SEOTS.propTypes = {
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.arrayOf(PropTypes.shape({})),
 };
 
 export default SEOTS;

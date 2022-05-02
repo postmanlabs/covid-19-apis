@@ -29,7 +29,7 @@ export default function Template({
   );
 }
 
-export const blogTemplate = () => {
+export const BlogTemplate = () => {
   const { site } = useStaticQuery(
     graphql`
     query($path: String!) {

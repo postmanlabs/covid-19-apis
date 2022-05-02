@@ -24,7 +24,7 @@
     "gatsby-transformer-remark": "5.13.0",
     "gatsby-transformer-sharp": "4.13.0",
     "moment": "2.29.3",
-    "node-fetch": "2.6.1",
+    "node-fetch": "2.6.7",
     "node-sass": "4.14.1",
     "path-browserify": "^1.0.1",
     "prop-types": "15.8.1",
@@ -41,6 +41,8 @@
     "crypto": "1.0.1",
     "eslint": "8.14.0",
     "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "7.29.4",
     "jquery": "3.6.0",
     "prettier": "2.6.2"
   },

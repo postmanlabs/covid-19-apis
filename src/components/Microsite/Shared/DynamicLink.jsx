@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 
-const DynamicLink = ({ className, url, name }) => {
+function DynamicLink({ className, url, name }) {
   const classes = className ? ` ${className}` : '';
   if (url.substring(0, 4) === 'http') {
     return (
@@ -11,6 +11,6 @@ const DynamicLink = ({ className, url, name }) => {
   return (
     <Link className={`dynamic-link__internal${classes}`} to={url}>{name}</Link>
   );
-};
+}
 
 export default DynamicLink;

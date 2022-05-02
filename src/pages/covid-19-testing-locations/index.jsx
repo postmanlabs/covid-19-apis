@@ -61,9 +61,8 @@ class IndexPageComponent extends React.Component {
 
     usState.map((data) => {
       if (data.node.pageContext && data.node.pageContext.state !== undefined) {
-        let state = data.node.pageContext.state;
+        const { state } = data.node.pageContext;
         axios.get(`https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
-
           if (state === 'alabama') {
             this.setState({ alabama: response.data });
           }
@@ -201,7 +200,7 @@ class IndexPageComponent extends React.Component {
   }
 }
 
-const IndexPage = () => {
+function IndexPage() {
   const usState = useStaticQuery(graphql`
   {
     allSitePage {
@@ -213,10 +212,8 @@ const IndexPage = () => {
     }
   }`);
   return (
-    <>
-      <IndexPageComponent usState={usState.allSitePage.edges} />
-    </>
+    <IndexPageComponent usState={usState.allSitePage.edges} />
   );
-};
+}
 
 export default IndexPage;

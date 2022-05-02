@@ -61,15 +61,13 @@ class CookieAlert extends React.Component {
       </div>
     );
     return (
-      <>
-        { displayCookieAlert ? (
-          <div id="CookieDiv">
-            {cookieMarkup}
-          </div>
-        ) : (
-          <></>
-        )}
-      </>
+      displayCookieAlert ? (
+        <div id="CookieDiv">
+          {cookieMarkup}
+        </div>
+      ) : (
+        null
+      )
     );
   }
 }

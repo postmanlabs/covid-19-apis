@@ -4,8 +4,6 @@ import React from 'react';
 class HeaderComponent extends React.Component {
   constructor(props) {
     super(props);
-
-    this.getCookie = this.getCookie.bind(this);
     const { data } = this.props;
 
     this.state = {
@@ -14,16 +12,8 @@ class HeaderComponent extends React.Component {
     };
   }
 
-  getCookie = (a) => {
-    if (typeof document !== 'undefined') {
-      const b = document.cookie.match(`(^|;)\\s*${a}\\s*=\\s*([^;]+)`);
-      return b ? b.pop() : '';
-    }
-    return false;
-  };
-
   // toggles the hamburger menu
-  toggleMenu = () => {
+  toggleMenu() {
     this.setState((state) => {
       if (state.isToggledOn === 'unset') {
         return ({
@@ -69,14 +59,13 @@ class HeaderComponent extends React.Component {
             ${isToggledOn === 'unset' ? 'closed' : ''}
             `}
           id="navbarSupportedContent"
-        >
-        </div>
+        />
       </header>
     );
   }
 }
 
-const Header = () => {
+function Header() {
   const data = useStaticQuery(graphql`
     query {
       headerLinks {
@@ -86,6 +75,6 @@ const Header = () => {
   return (
     <HeaderComponent data={data.headerLinks.value} />
   );
-};
+}
 
 export default Header;
