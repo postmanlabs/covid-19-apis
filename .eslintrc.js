@@ -1,17 +1,20 @@
 module.exports = {
   env: {
-    browser: true,
     es6: true,
+    browser: true,
+    es2021: true,
     jest: true,
   },
   extends: [
     'airbnb',
+    'airbnb/hooks',
+    'eslint:recommended',
+    'plugin:react/recommended',
   ],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
-  parser: "babel-eslint",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
@@ -21,6 +24,7 @@ module.exports = {
   },
   plugins: [
     'react',
+    'prettier'
   ],
   rules: {
     "react/prop-types": "off",
@@ -28,6 +32,5 @@ module.exports = {
     "no-underscore-dangle": "off",
     "max-len": "off",
     "no-multiple-empty-lines": "warn",
-  },
-
- };
+  }
+};

@@ -1,7 +1,7 @@
 import React from 'react';
 // import Legal from './legal';
 
-const HeroPage = ({ pageTitle }) => {
+function HeroPage({ pageTitle }) {
   const heroTitle = pageTitle;
 
   return (
@@ -18,6 +18,6 @@ const HeroPage = ({ pageTitle }) => {
       </div>
     </div>
   );
-};
+}
 
 export default HeroPage;

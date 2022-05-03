@@ -6,9 +6,9 @@ import { Link } from 'gatsby';
 import moment from 'moment';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
-const Site = ({
+function Site({
   state, title, abbr, endpoint,
-}) => {
+}) {
   const updated = new Date(Math.max.apply(null, state.map((e) => new Date(e.updated))));
   const now = moment(updated).fromNow();
 
@@ -47,6 +47,6 @@ const Site = ({
       </div>
     </div>
   );
-};
+}
 
 export default Site;

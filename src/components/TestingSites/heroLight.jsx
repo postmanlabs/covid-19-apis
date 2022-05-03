@@ -2,7 +2,7 @@ import React from 'react';
 import Legal from './legal';
 // import { render } from 'node-sass';
 
-const HeroLight = ({ usState }) => {
+function HeroLight({ usState }) {
   const place = usState;
   let capitalize = place.split('-');
   capitalize = capitalize.map((caps) => (
@@ -26,6 +26,6 @@ const HeroLight = ({ usState }) => {
       </div>
     </div>
   );
-};
+}
 
 export default HeroLight;

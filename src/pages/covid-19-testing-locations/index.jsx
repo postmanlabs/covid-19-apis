@@ -59,14 +59,10 @@ class IndexPageComponent extends React.Component {
   componentDidMount() {
     const { usState } = this.props;
 
-    usState.map((node) => {
-      if (node.node.context && node.node.context.state !== null) {
-        // eslint-disable-next-line prefer-const
-        let { state } = node.node.context;
-
+    usState.map((data) => {
+      if (data.node.pageContext && data.node.pageContext.state !== undefined) {
+        const { state } = data.node.pageContext;
         axios.get(`https://covid-19-testing.github.io/locations/${state}/complete.json`).then((response) => {
-          // this.setState({ data: response.data });
-
           if (state === 'alabama') {
             this.setState({ alabama: response.data });
           }
@@ -178,7 +174,6 @@ class IndexPageComponent extends React.Component {
   render() {
     return (
       <Layout>
-
         <SEOTS title="List of APIs and Blueprints" />
         <div className="">
           <Hero />
@@ -205,24 +200,20 @@ class IndexPageComponent extends React.Component {
   }
 }
 
-const IndexPage = () => {
+function IndexPage() {
   const usState = useStaticQuery(graphql`
   {
     allSitePage {
       edges {
         node {
-          context {
-            state
-          }
+          pageContext 
         }
       }
     }
   }`);
   return (
-    <>
-      <IndexPageComponent usState={usState.allSitePage.edges} />
-    </>
+    <IndexPageComponent usState={usState.allSitePage.edges} />
   );
-};
+}
 
 export default IndexPage;
