@@ -66,14 +66,14 @@ module.exports = {
       resolve: 'gatsby-plugin-newrelic',
       options: {
         config: {
-            instrumentationType: 'proAndSPA',
-            accountId: process.env.RELIC_ACCOUNT_ID,
-            trustKey: process.env.RELIC_TRUST_KEY,
-            agentID: process.env.RELIC_AGENT_ID,
-            licenseKey: process.env.RELIC_LICENSE_KEY,
-            applicationID: process.env.RELIC_APPLICATION_ID,
-            beacon: 'bam.nr-data.net',
-            errorBeacon: 'bam.nr-data.net'
+          instrumentationType: 'proAndSPA',
+          accountId: process.env.RELIC_ACCOUNT_ID,
+          trustKey: process.env.RELIC_TRUST_KEY,
+          agentID: process.env.RELIC_AGENT_ID,
+          licenseKey: process.env.RELIC_LICENSE_KEY,
+          applicationID: process.env.RELIC_APPLICATION_ID,
+          beacon: 'bam.nr-data.net',
+          errorBeacon: 'bam.nr-data.net'
         }
       }
     },
