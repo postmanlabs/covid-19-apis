@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
+import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
@@ -115,7 +115,7 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.arrayOf(PropTypes.shape({})),
   title: PropTypes.string.isRequired,
 };
 

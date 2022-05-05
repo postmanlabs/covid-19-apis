@@ -9,9 +9,9 @@ exports.onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) => {
     React.createElement('script', {
       key: 'pm',
       dangerouslySetInnerHTML: {
-        __html: bff.script
-      }
-    })
+        __html: bff.script,
+      },
+    }),
   );
 
   replaceHeadComponents(modifiedComponents);

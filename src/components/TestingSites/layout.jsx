@@ -17,7 +17,7 @@ const delay = 1000;
 
 let throttle;
 
-const Layout = ({ children }) => {
+function Layout({ children }) {
   if (typeof document === 'object') {
     window.clearTimeout(throttle);
 
@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

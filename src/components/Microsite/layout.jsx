@@ -7,9 +7,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-// import { useStaticQuery, graphql } from 'gatsby';
-
-// import Header from './header';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import ReferrerCookie from '../ReferrerCookie';
@@ -19,17 +16,7 @@ const delay = 1000;
 
 let throttle;
 
-const Layout = ({ children }) => {
-  // const data = useStaticQuery(graphql`
-  //   query SiteTitleQuery {
-  //     site {
-  //       siteMetadata {
-  //         title
-  //       }
-  //     }
-  //   }
-  // `);
-
+function Layout({ children }) {
   if (typeof document === 'object') {
     window.clearTimeout(throttle);
 
@@ -55,7 +42,7 @@ const Layout = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

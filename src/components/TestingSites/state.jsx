@@ -1,8 +1,8 @@
 import React from 'react';
 import Site from './site';
 
-const State = ({ state }) => (
-  <>
+function State({ state }) {
+  return (
     <div className="container-fluid ts-main-area ts-section">
       <div className="container">
         <div className="row">
@@ -274,10 +274,9 @@ const State = ({ state }) => (
             />
           </div>
         </div>
-
       </div>
     </div>
-  </>
-);
+  );
+}
 
 export default State;
