@@ -11,7 +11,6 @@
     "gatsby": "4.17.1",
     "gatsby-plugin-anchor-links": "1.2.1",
     "gatsby-plugin-gdpr-cookies": "2.0.9",
-    "gatsby-plugin-google-analytics": "4.17.0",
     "gatsby-plugin-manifest": "4.17.0",
     "gatsby-plugin-meta-redirect": "1.1.1",
     "gatsby-plugin-newrelic": "2.2.2",
