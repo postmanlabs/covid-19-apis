@@ -1,0 +1,56 @@
+name: Deploy to Prod
+
+permissions:
+  id-token: write
+  contents: read
+
+on:
+  workflow_dispatch:
+  push:
+      branches:
+      - 'master'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    environment: Prod
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@master
+        with:
+          node-version: '14'
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-region: ${{ secrets.AWS_REGION }}
+          aws-access-key-id: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
+          
+      - name: set keys and deploy
+        env:
+          AWS_MAX_ATTEMPTS: 10
+          ALGOLIA_ADMIN_KEY: ${{secrets.ALGOLIA_ADMIN_KEY}}
+          DIST_ID: ${{secrets.PROD_DIST_ID}}
+          RELIC_ACCOUNT_ID: ${{secrets.RELIC_ACCOUNT_ID}}
+          RELIC_TRUST_KEY: ${{secrets.RELIC_TRUST_KEY}}
+          RELIC_AGENT_ID: ${{secrets.RELIC_AGENT_ID}}
+          RELIC_LICENSE_KEY: ${{secrets.RELIC_LICENSE_KEY}}
+          RELIC_APPLICATION_ID: ${{secrets.RELIC_APPLICATION_ID}}
+          PM_TECH: ${{secrets.PM_TECH}}
+        run: |
+            npm install
+            GATSBY_ACTIVE_ENV=development && npm run build
+            aws s3 sync ./public/ s3://${{secrets.PROD_BUCKET_NAME}}/ --delete
+        
+      - name: invalidate the CDN
+        uses: chetan/invalidate-cloudfront-action@v2
+        env:
+          PATHS: '/*'
+          AWS_REGION: '${{ secrets.AWS_REGION }}'
+          DISTRIBUTION: ${{ secrets.PROD_DIST_ID }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.PROD_AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.PROD_AWS_SECRET_ACCESS_KEY }}
