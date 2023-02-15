@@ -55,7 +55,7 @@ setTimeout(function(){
     if(!dnt) {
       var id = 'gtm';
       var sitename = 'covid-19-apis.postman.com';
-      var UACode = 'UA-43979731-18';
+      var UACode = 'G-X3S374SEP0';
       if (!document.getElementById(id)) {
         var gtm = document.createElement('script');
         gtm.setAttribute('id', id);
