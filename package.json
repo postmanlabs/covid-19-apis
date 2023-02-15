@@ -30,10 +30,12 @@
     "uuid": "7.0.2"
   },
   "devDependencies": {
+    "crypto": "^1.0.1",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-react": "7.32.2"
+    "eslint-plugin-react": "7.32.2",
+    "jquery": "^3.6.0"
   },
   "keywords": [
     "gatsby"
