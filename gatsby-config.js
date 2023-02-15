@@ -49,21 +49,21 @@ module.exports = {
         excludes: ['/thankyou/', '/frontmatter', '/content/*'],
       },
     },
-    {
-      resolve: 'gatsby-plugin-newrelic',
-      options: {
-        config: {
-          instrumentationType: 'proAndSPA',
-          accountId: process.env.RELIC_ACCOUNT_ID,
-          trustKey: process.env.RELIC_TRUST_KEY,
-          agentID: process.env.RELIC_AGENT_ID,
-          licenseKey: process.env.RELIC_LICENSE_KEY,
-          applicationID: process.env.RELIC_APPLICATION_ID,
-          beacon: 'bam.nr-data.net',
-          errorBeacon: 'bam.nr-data.net'
-        }
-      }
-    },
+    // {
+    //   resolve: 'gatsby-plugin-newrelic',
+    //   options: {
+    //     config: {
+    //       instrumentationType: 'proAndSPA',
+    //       accountId: process.env.RELIC_ACCOUNT_ID,
+    //       trustKey: process.env.RELIC_TRUST_KEY,
+    //       agentID: process.env.RELIC_AGENT_ID,
+    //       licenseKey: process.env.RELIC_LICENSE_KEY,
+    //       applicationID: process.env.RELIC_APPLICATION_ID,
+    //       beacon: 'bam.nr-data.net',
+    //       errorBeacon: 'bam.nr-data.net'
+    //     }
+    //   }
+    // },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -82,15 +82,15 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-meta-redirect',
-    {
-      resolve: 'gatsby-plugin-gdpr-cookies',
-      options: {
-        googleAnalytics: {
-          trackingId: 'UA-43979731-4',
-          anonymize: true,
-        },
-        environments: ['production', 'development'],
-      },
-    },
+    // {
+    //   resolve: 'gatsby-plugin-gdpr-cookies',
+    //   options: {
+    //     googleAnalytics: {
+    //       trackingId: 'UA-43979731-4',
+    //       anonymize: true,
+    //     },
+    //     environments: ['production', 'development'],
+    //   },
+    // },
   ],
 };
