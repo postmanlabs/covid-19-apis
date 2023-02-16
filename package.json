@@ -13,7 +13,7 @@
     "gatsby-plugin-gdpr-cookies": "github:andrezimpel/gatsby-plugin-gdpr-cookies",
     "gatsby-plugin-manifest": "5.6.0",
     "gatsby-plugin-meta-redirect": "1.1.1",
-    "gatsby-plugin-newrelic": "^2.2.3",
+    "gatsby-plugin-newrelic": "2.2.3",
     "gatsby-plugin-react-helmet": "6.6.0",
     "gatsby-plugin-robots-txt": "1.8.0",
     "gatsby-plugin-sass": "6.6.0",
@@ -30,7 +30,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-helmet": "6.1.0",
-    "s3-deploy": "^1.4.0",
+    "s3-deploy": "1.4.0",
     "shelljs": "0.8.5",
     "terser": "5.16.3",
     "uuid": "7.0.2"
