@@ -2,6 +2,7 @@
 /* eslint-disable array-callback-return */
 // lists all States
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import axios from 'axios';
 import moment from 'moment';
 import SEOTS from '../components/TestingSites/seots';
@@ -94,7 +95,7 @@ class StateListComponent extends React.Component {
                           // Monday:
                           if (time.weekday === '1') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Monday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -108,7 +109,7 @@ class StateListComponent extends React.Component {
                           // Tuesday:
                           if (time.weekday === '2') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Tuesday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -122,7 +123,7 @@ class StateListComponent extends React.Component {
                           // Wednesday:
                           if (time.weekday === '3') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Wednesday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -136,7 +137,7 @@ class StateListComponent extends React.Component {
                           // Thursday:
                           if (time.weekday === '4') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Thursday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -150,7 +151,7 @@ class StateListComponent extends React.Component {
                           // Friday:
                           if (time.weekday === '5') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Friday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -164,7 +165,7 @@ class StateListComponent extends React.Component {
                           // Saturday:
                           if (time.weekday === '6') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Saturday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
@@ -178,7 +179,7 @@ class StateListComponent extends React.Component {
                           // Sunday:
                           if (time.weekday === '7') {
                             return (
-                              <div className="col">
+                              <div className="col" key={uuidv4()}>
                                 <strong>Sunday</strong>
                                 <p className="mb-0">
                                   {time.opens_at}
