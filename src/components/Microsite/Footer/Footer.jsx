@@ -63,7 +63,7 @@ function Footer() {
                   </span>
                 </div>
                 {/* Product */}
-                <div className="column col-6 col-md-2 offset-md-1 col-lg-2 offset-lg-2 order-1 order-md-2 mb-5">
+                <div className="column col-2 offset-md-1  offset-lg-2 order-1 order-md-2 mb-5">
                   {columns.slice(0, 1).map((item) => (
                     <nav aria-labelledby={item.arialabelledby} key={uuidv4()}>
                       <h2 className="footer-col-title" id={item.arialabelledby}>
@@ -100,7 +100,7 @@ function Footer() {
                     </nav>
                   ))}
                 </div>
-                <div className="column col-6 col-md-2 order-2 order-md-3">
+                <div className="column col-2 order-2 order-md-3">
                   {/* Company - stacked top */}
                   {columns.slice(1, 2).map((item) => (
                     <div key={uuidv4()}>
@@ -184,8 +184,9 @@ function Footer() {
                   ))}
                 </div>
                 {/* API Categories */}
-                <div className="column col-4 col-md-2 order-3 order-md-4">
+                <div className="column col-2 order-3  order-md-4">
                   {columns.slice(3, 4).map((item) => (
+
                     <nav aria-labelledby={item.arialabelledby} key={uuidv4()}>
                       <h2 className="footer-col-title" id={item.arialabelledby}>
                         {item.title}
@@ -222,13 +223,13 @@ function Footer() {
 
                 </div>
                 {/* Social media icons */}
-                <div className="column__social col-6 col-md-2 order-4 order-md-5">
+                <div className="column__social order-4 col-lg-2 order-md-5">
 
                   {columns.slice(4, 5).map((item) => (
-                    <div className="col-sm-12" key={uuidv4()}>
+                    <div key={uuidv4()}>
                       <nav
                         aria-labelledby={item.arialabelledby}
-                        className="mb-5"
+                        className="mb-5 mr-0"
                       >
                         <h2 className="footer-col-title" id={item.arialabelledby}>
                           {item.title}

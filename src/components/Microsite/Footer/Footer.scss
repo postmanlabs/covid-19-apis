@@ -6,7 +6,7 @@
   font-size: 14px;
   color: $grey_50 !important;
   padding: 80px 0;
-
+  
   .container-footer {
     max-width: 1175px !important;
     justify-content: center;
@@ -16,10 +16,10 @@
 
 
   .footer-col-title {
-    font-size: 16px !important;
     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px !important;
     letter-spacing: 0.48px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.4;
     margin-bottom: 8px;
   }
@@ -27,6 +27,7 @@
 
 
 .copyright {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
   display: block;
   padding-right: 16px;
   font-size: 12px;
@@ -35,12 +36,7 @@
   }
 }
 .column {
-  margin-left: 0px;
-  width: 100%;
-  // display: flex;
-  // flex-direction: row;
-  justify-content: center;
-  padding: 0;
+ 
 
   li {
     list-style-type: none !important;
@@ -48,16 +44,16 @@
   }
   
   a {
-     font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif !important;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
     color: $grey_50;
     text-transform: none;
-    font-weight: 400;
+    font-weight: 300;
     display: block;
     line-height: 1.7;
     padding: 5px 0;
-
-    :hover,
-    :active {
+  }
+    a:hover,
+    a:active {
       color: $blue_50 !important;
       text-decoration: none !important;
     }
@@ -71,9 +67,9 @@
       margin-left: 6px;
     }
   }
-}
+
 .footer-img {
-  width: 95%;
+  width: 99%;
 }
 .FooterImgWrapper {
   @media (min-width: 768px) {
@@ -103,7 +99,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   padding: 0;
 
   @media (min-width: 1200px) {
