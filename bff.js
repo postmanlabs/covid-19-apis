@@ -1,61 +1,38 @@
 const fs = require('fs');
 const sh = require('shelljs');
 const crypto = require('crypto');
-const fetchPmTech = require('./scripts/fetchPmTech');
 
 const delay = 1000;
 const runtime = {
   pm: ['bff-data/pmTech.js'],
 };
+const pmt = sh.exec('cat pmt.js').stdout.split('\n').shift();
+const UACode = 'G-X3S374SEP0';
 
 const prefetch = async () => {
-  let pmTech = '';
-  let pmTechVersion = '';
-
-  if (process.env.PM_TECH) {
-    pmTech = await fetchPmTech();
-
-    pmTechVersion = pmTech.split('ns.version="').pop().split('"').shift();
-
-    sh.exec('mkdir -p public');
-
-    Object.keys(runtime).forEach((key) => {
-      const fileBuffer = fs.readFileSync(runtime[key][0]);
-      const hashSum = crypto.createHash('sha1');
-      const ext = runtime[key][0]
-        .split('/')
-        .pop()
-        .split('.')
-        .pop();
-
-      hashSum.update(fileBuffer);
-
-      const hex = hashSum.digest('hex');
-
-      runtime[key].push(`_${hex}.${ext}`);
-
-      setTimeout(() => {
-        sh.exec(`cp ${runtime[key][0]} public/${runtime[key][1]}`);
-      }, delay);
-    });
-  }
-
-  const script = (process.env.PM_TECH
-      && `
-${pmTech}
+  const script = (`
+${pmt}
 setTimeout(function(){
   var propertyName = 'covid-19-apis';
-  if (typeof window.pm.scalp !== 'function') {
-    window.pm.setScalp({
+  if (window.pmt) {
+    window.pmt('setScalp', [{
       property: propertyName
-    });
-    window.pm.trackClicks();
+    }]);
+    window.pmt('scalp', [
+      'pm-analytics',
+      'load',
+      document.location.pathname
+    ]);
+    window.pmt('trackClicks');
+
     var dnt = (parseInt(navigator.doNotTrack) === 1 || parseInt(window.doNotTrack) === 1 || parseInt(navigator.msDoNotTrack) === 1 || navigator.doNotTrack === "yes");
-    window.pm.log('navigator.doNotTrack: ' + dnt);
+
+    window.pmt('log', ['navigator.doNotTrack: ' + dnt]);
+
     if(!dnt) {
       var id = 'gtm';
       var sitename = 'covid-19-apis.postman.com';
-      var UACode = 'G-X3S374SEP0';
+      var UACode = '${UACode}';
       if (!document.getElementById(id)) {
         var gtm = document.createElement('script');
         gtm.setAttribute('id', id);
@@ -66,11 +43,11 @@ setTimeout(function(){
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', UACode);
-          window.pm.ga('create', UACode, sitename);
-          window.pm.log('initialized GA: ' + sitename);
+          window.pmt('ga', ['${UACode}', sitename]);
+          window.pmt('log', ['initialized GA: ' + sitename + ' (' + '${UACode}' + ')']);
         };
         document.head.appendChild(gtm);
-        window.pm.log('attached googletagmanager: ' + UACode);
+        window.pmt('log', ['attached googletagmanager: ' + '${UACode}']);
       }
     }
   }

@@ -21,14 +21,8 @@ function Layout({ children }) {
     window.clearTimeout(throttle);
 
     throttle = setTimeout(() => {
-      if (window.pm) {
-        if (typeof window.pm.scalp === 'function') {
-          window.pm.scalp(
-            'pm-analytics',
-            'load',
-            document.location.pathname,
-          );
-        }
+      if (window.pmt) {
+        window.pmt('scalp', ['pm-analytics', 'load', document.location.pathname]);
         clearTimeout(throttle);
       }
     }, delay);

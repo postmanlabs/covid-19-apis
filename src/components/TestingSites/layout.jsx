@@ -7,7 +7,6 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Header from './header';
 import Footer from './footer';
 import ReferrerCookie from '../ReferrerCookie';
@@ -22,14 +21,8 @@ function Layout({ children }) {
     window.clearTimeout(throttle);
 
     throttle = setTimeout(() => {
-      if (window.pm) {
-        if (typeof window.pm.scalp === 'function') {
-          window.pm.scalp(
-            'pm-analytics',
-            'load',
-            document.location.pathname,
-          );
-        }
+      if (window.pmt) {
+        window.pmt('scalp', ['pm-analytics', 'load', document.location.pathname]);
         clearTimeout(throttle);
       }
     }, delay);
