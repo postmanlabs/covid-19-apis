@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-// import footerDataLocal from '../../../../build/footerDev.json';
+import footerDataLocal from '../../../../build/footerDev.json';
 import footerData from '../../../../bff-data/footer.json';
 
 const triggerGA = (category, label) => (
@@ -40,10 +40,9 @@ function Footer() {
   useEffect(() => {
     if (footerKeys.every((key) => Object.keys(footerData).includes(key))) {
       setData(footerData);
+    } else {
+      setData(footerDataLocal);
     }
-    // else {
-    //   setData(footerDataLocal);
-    // }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
