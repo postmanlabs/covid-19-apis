@@ -3,6 +3,7 @@ const sh = require('shelljs');
 // eslint-disable-next-line no-unused-vars
 const crypto = require('crypto');
 const fetchFooter = require('./build/fetchFooter');
+
 // eslint-disable-next-line no-unused-vars
 const delay = 1000;
 // eslint-disable-next-line no-unused-vars
