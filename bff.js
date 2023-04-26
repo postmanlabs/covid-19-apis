@@ -6,7 +6,11 @@ const delay = 1000;
 const runtime = {
   pm: ['bff-data/pmTech.js'],
 };
+
+sh.config.silent = true;
 const pmt = sh.exec('cat pmt.js').stdout.split('\n').shift();
+sh.config.silent = false;
+
 const UACode = 'G-X3S374SEP0';
 
 const prefetch = async () => {

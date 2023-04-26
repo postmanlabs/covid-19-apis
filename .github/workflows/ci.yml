@@ -20,5 +20,5 @@ jobs:
         PM_TECH: ${{secrets.PM_TECH}}
       run: |
         npm install
+        npm run test:bff
         npm run test:lint
-
