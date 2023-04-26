@@ -1,8 +1,11 @@
 const fs = require('fs');
 const sh = require('shelljs');
+// eslint-disable-next-line no-unused-vars
 const crypto = require('crypto');
-
+const fetchFooter = require('./build/fetchFooter');
+// eslint-disable-next-line no-unused-vars
 const delay = 1000;
+// eslint-disable-next-line no-unused-vars
 const runtime = {
   pm: ['bff-data/pmTech.js'],
 };
@@ -10,6 +13,7 @@ const pmt = sh.exec('cat pmt.js').stdout.split('\n').shift();
 const UACode = 'G-X3S374SEP0';
 
 const prefetch = async () => {
+  fetchFooter();
   const script = (`
 ${pmt}
 setTimeout(function(){
