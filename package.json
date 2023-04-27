@@ -48,7 +48,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "bff": "node bff.js",
+    "bff": "rm -rf bff-data && npm run bff:data && node bff.js",
+    "bff:data": "node -p \"require('./build/bffData.js')()\"",
     "build": "gatsby build",
     "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
     "dev": "gatsby develop",
@@ -58,6 +59,7 @@
     "clean": "gatsby clean",
     "nvmrc": "echo $(node -p -e 'require(\"./package\").engines.node.split(\">=\").join(\"\")') > .nvmrc",
     "postinstall": "npm run bff",
+    "test:bff": "npm run bff && cat bff-data/footer.json",
     "test:lint": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/",
     "test:lint-fix": "node_modules/eslint/bin/eslint.js -c .eslintrc.js --ext .jsx --ext .js src/ --fix",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
