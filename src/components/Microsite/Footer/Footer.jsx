@@ -45,19 +45,19 @@ function Footer() {
   return (
     <div className="footer">
       <section id="Footer" className="section">
-        <div className="container-footer">
+        <div className="container">
           <div className="row">
             <div className="col-sm-8 offset-sm-2 col-md-12 offset-md-0">
               <div className="row">
                 {/* Copyright */}
                 <div className="FooterImgWrapper col-8 offset-2 col-md-3 offset-md-0 col-lg-2 order-12 order-md-0 pad-md-right align-self-center">
                   <img className="footer-img mb-5" src="https://voyager.postman.com/illustration/postman-footer-rocket-launch.svg" alt="Postman" />
-                  <span className="col-12 d-none d-md-block copyright">
+                  <span className="d-none d-md-block copyright">
                     {data.copyright}
                   </span>
                 </div>
                 {/* Product */}
-                <div className="column col-2 offset-md-1  offset-lg-2 order-1 order-md-2 mb-5">
+                <div className="col-6 col-md-2 offset-md-1 col-lg-2 offset-lg-2 order-1 order-md-2 mb-5">
                   {columns.slice(0, 1).map((item) => (
                     <nav aria-labelledby={item.arialabelledby} key={uuidv4()}>
                       <h2 className="footer-col-title" id={item.arialabelledby}>
@@ -94,7 +94,7 @@ function Footer() {
                     </nav>
                   ))}
                 </div>
-                <div className="column col-2 order-2 order-md-3">
+                <div className="col-6 col-md-2 order-2 order-md-3">
                   {/* Company - stacked top */}
                   {columns.slice(1, 2).map((item) => (
                     <div key={uuidv4()}>
@@ -178,7 +178,7 @@ function Footer() {
                   ))}
                 </div>
                 {/* API Categories */}
-                <div className="column col-2 order-3  order-md-4">
+                <div className="col-6 col-md-2 order-3 order-md-4">
                   {columns.slice(3, 4).map((item) => (
 
                     <nav aria-labelledby={item.arialabelledby} key={uuidv4()}>
@@ -217,7 +217,7 @@ function Footer() {
 
                 </div>
                 {/* Social media icons */}
-                <div className="column__social order-4 col-lg-2 order-md-5">
+                <div className="col-6 col-md-2 order-4 order-md-5">
 
                   {columns.slice(4, 5).map((item) => (
                     <div key={uuidv4()}>
