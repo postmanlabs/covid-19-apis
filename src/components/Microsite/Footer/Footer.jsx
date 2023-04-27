@@ -1,50 +1,44 @@
 /* eslint-disable react/jsx-no-useless-fragment */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
-import footerDataLocal from '../../../../build/footerDev.json';
 import footerData from '../../../../bff-data/footer.json';
 
 const triggerGA = (category, label) => (
   category
-  && label
-  && window.pm
-  && window.pm.ga('send', 'event', category, 'Click', label)
+    && label
+    && window.pmt
+    && window.pmt('ga', ['send', 'event', category, 'Click', label])
 );
 
 // Helper function for rel attribute in link or button
-function relStringGenerator(target) {
-  if (target === '') {
-    return null;
+export function relStringGenerator(target) {
+  if (target === 'new-tab-external-company') {
+    return 'noopener noreferrer';
   }
-  if (target === 'blank') {
+  if (target === 'new-tab-external-nofollow') {
+    return 'noopener noreferrer nofollow';
+  }
+  if (target === 'new-tab-postman') {
     return 'noopener';
   }
   return null;
 }
-// // Helper function for target attribute in link or button
-function targetStringGenerator(target) {
-  if (target === '') {
-    return null;
-  }
-  if (target === 'blank') {
+
+// Helper function for target attribute in link or button
+export function targetStringGenerator(target) {
+  if (
+    target === 'new-tab-external-company'
+    || target === 'new-tab-external-nofollow'
+    || target === 'new-tab-postman'
+  ) {
     return '_blank';
   }
   return null;
 }
 
 function Footer() {
-  const [data, setData] = useState(footerData);
-  // runtime check to switch between prod and local data if API returns malformed
-  const footerKeys = ['alt', 'copyright', 'items', 'src', 'type'];
-  useEffect(() => {
-    if (footerKeys.every((key) => Object.keys(footerData).includes(key))) {
-      setData(footerData);
-    } else {
-      setData(footerDataLocal);
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  const [data] = useState(footerData);
 
   const columns = data.items.slice(0, 5);
 
