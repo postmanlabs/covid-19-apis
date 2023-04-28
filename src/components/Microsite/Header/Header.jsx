@@ -98,11 +98,11 @@ function Header(props) {
     }, waitBeforeShow);
 
     /* Applies styling for sticky nav */
-    $('#secondaryNav').on('click', () => {
-      $('body').toggleClass('menu-open');
-      $('.nav-primary').toggleClass('activeMenu');
-      $('.nav-secondary').toggleClass('activeMenu');
-    });
+    // $('#secondaryNav').on('click', () => {
+    //   $('body').toggleClass('menu-open');
+    //   $('.nav-primary').toggleClass('activeMenu');
+    //   $('.nav-secondary').toggleClass('activeMenu');
+    // });
     // Dropdown Slideup Animation
     function showBsDropdown() {
       $(this)

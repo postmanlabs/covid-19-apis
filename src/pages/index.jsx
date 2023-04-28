@@ -2,16 +2,49 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/Microsite/layout';
 import SEO from '../components/seo';
-import Hero from '../components/Microsite/Shared/Hero';
+import {Hero} from 'aether-marketing'
+// import Hero from '../components/Microsite/Shared/Hero';
 import Welcome from '../components/Microsite/Shared/Welcome';
 import Collection from '../components/Microsite/Collections/Collection';
 import Nonprofit from '../components/Microsite/NonProfits/Nonprofits';
+
+const data = {
+  heroLayout: "sideXSide",
+  sideXSideLayout: "medium",
+  title: ["Postman COVID-19 API Resource Center"],
+  divider: true,
+  backgroundColor: "blue_95",
+  backgroundImage: "X",
+  textColor: "$white",
+  subtitle: [],
+  media: {
+    class: "",
+    src: 'covid19-image-2.png',
+    alt: "Isolated COVID-19 virus in space. Illustration.",
+  },
+};
+
 
 function IndexPage() {
   return (
     <Layout>
       <SEO title="List of APIs and Blueprints" />
-      <Hero />
+      <Hero
+          heroLayout={data.heroLayout}
+          sideXSideLayout={data.sideXSideLayout}
+          divider={data.divider}
+          backgroundColor={data.backgroundColor}
+          backgroundImage={data.backgroundImage}
+          title={data.title}
+          subtitle={data.subtitle}
+          button={data.button || null}
+          media={data.media}
+          backlink={data.backlink}
+          textColor={data.textColor}
+          inputTitle={data.inputTitle}
+          inputQuery={data.inputQuery}
+          buttonText={data.buttonText}
+        />
       <Welcome />
       <div className="collection__wrapper">
         <div className="container">
