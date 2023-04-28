@@ -1,0 +1,157 @@
+{
+    "type": "header",
+    "media": "https://voyager.postman.com/logo/postman-logo-white-horiz.svg",
+    "items": [
+        {
+            "title": "Product",
+            "dropdown": "true",
+            "subItems": [
+                {
+                    "title": "What is Postman?",
+                    "url": "https://www.postman.com/product/what-is-postman/"
+                },
+                {
+                    "title": "API repository",
+                    "url": "https://www.postman.com/product/api-repository/"
+                },
+                {
+                    "title": "Tools",
+                    "url": "https://www.postman.com/product/tools/"
+                },
+                {
+                    "title": "Governance",
+                    "url": "https://www.postman.com/product/governance/"
+                },
+                {
+                    "title": "Workspaces",
+                    "url": "https://www.postman.com/product/workspaces/"
+                },
+                {
+                    "title": "Integrations",
+                    "url": "https://www.postman.com/product/integrations/"
+                },
+                {
+                    "title": "Get started for Free →",
+                    "link": "app-cta",
+                    "url": "https://www.postman.com/downloads/"
+                }
+            ]
+        },
+        {
+            "title": "Pricing",
+            "url": "https://www.postman.com/pricing/"
+        },
+        {
+            "title": "Enterprise",
+            "dropdown": "true",
+            "subItems": [
+                {
+                    "title": "Postman Enterprise",
+                    "url": "https://www.postman.com/postman-enterprise/"
+                },
+                {
+                    "title": "Enterprise case studies",
+                    "url": "https://www.postman.com/case-studies/"
+                },
+                {
+                    "title": "Contact sales",
+                    "url": "https://www.postman.com/company/contact-sales/"
+                }
+            ]
+        },
+        {
+            "title": "Resources and support",
+            "dropdown": "true",
+            "columns": [
+                {
+                    "title": "Learning",
+                    "subItemsCol": [
+                        {
+                            "title": "Docs",
+                            "url": "https://learning.postman.com/docs/getting-started/introduction/"
+                        },
+                        {
+                            "title": "White papers",
+                            "url": "https://www.postman.com/whitepaper/"
+                        },
+                        {
+                            "title": "Breaking changes show",
+                            "url": "https://www.postman.com/events/breaking-changes/"
+                        },
+                        {
+                            "title": "Postman intergalactic",
+                            "url": "https://www.postman.com/events/intergalactic/"
+                        },
+                        {
+                            "title": "Case studies",
+                            "url": "https://www.postman.com/case-studies/"
+                        },
+                        {
+                            "title": "State of the API report",
+                            "url": "https://www.postman.com/state-of-api/"
+                        },
+                        {
+                            "title": "Guide to API-First",
+                            "url": "https://www.postman.com/api-first/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Community and events",
+                    "subItemsCol": [
+                        {
+                            "title": "Blog",
+                            "url": "https://blog.postman.com/"
+                        },
+                        {
+                            "title": "Community",
+                            "url": "https://www.postman.com/community/"
+                        },
+                        {
+                            "title": "Student program",
+                            "url": "https://www.postman.com/student-program/"
+                        },
+                        {
+                            "title": "Postman for Nonprofits",
+                            "url": "https://www.postman.com/company/nonprofit/"
+                        },
+                        {
+                            "title": "Postman swag",
+                            "url": "https://store.postman.com/"
+                        }
+                    ]
+                },
+                {
+                    "title": "Support",
+                    "subItemsCol": [
+                        {
+                            "title": "Support Center",
+                            "url": "https://www.postman.com/support/"
+                        },
+                        {
+                            "title": "Reseller support",
+                            "url": "https://www.postman.com/support/resellers-support/"
+                        },
+                        {
+                            "title": "Postman status",
+                            "url": "https://status.postman.com/"
+                        },
+                        {
+                            "title": "Release notes",
+                            "url": "https://www.postman.com/downloads/release-notes/"
+                        },
+                        {
+                            "title": "Contact us",
+                            "url": "https://www.postman.com/company/contact-us/"
+                        }
+                    ]
+                }
+
+            ]
+        },
+        {
+            "title": "Explore",
+            "url": "https://www.postman.com/explore?utm_source=postman-website&utm_medium=referral"
+        }
+    ]
+}
