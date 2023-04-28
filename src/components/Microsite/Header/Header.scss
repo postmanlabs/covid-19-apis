@@ -45,7 +45,7 @@
       }
     }
 
- 
+
 
     /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
     @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
@@ -292,7 +292,7 @@
 
   }
 
- 
+
   .DropdownStyles {
     /* Individual Dropdown Item */
     line-height: 20px;
@@ -365,6 +365,7 @@
 
 
   .CTAButton {
+
     // Orange Button (Sign Up / Launch Postman)
     a.button__sign-up {
       align-items: center;
@@ -445,21 +446,28 @@
     }
   }
 }
-.NavStyles, .navbar, .navbar-brand, .second-title a {
+
+.NavStyles,
+.navbar,
+.navbar-brand,
+.second-title a {
   font-size: 16px !important;
   color: $grey_90 !important;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
-background-color: $grey_00;
+  background-color: $grey_00;
 }
-.navbar, .nav-secondary {
-  
+
+.navbar,
+.nav-secondary {
   padding: 5px 16px !important;
 }
-.navbar-v6, .SecondaryNavbarV6 {
+
+.navbar-v6,
+.SecondaryNavbarV6 {
   &.sticky {
     position: sticky;
     top: -0.1px;
     z-index: 1020;
     margin: 0px;
-}
+  }
 }
