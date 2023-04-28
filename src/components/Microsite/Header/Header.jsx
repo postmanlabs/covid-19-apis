@@ -350,13 +350,13 @@ function Header(props) {
         <div className="NavStyles navbar navbar-expand-lg navbar-light nav-secondary blurred-container">
           <div className="DropdownStylesSecond dropdown position-static">
             <a
-              className="nav-link navbar-brand"
+              className="navbar-brand second-title"
               href="##"
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-expanded="false"
             >
-              Covid-19-apis
+              Covid-19 API Resource Center
 
             </a>
 
