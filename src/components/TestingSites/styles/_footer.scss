@@ -1,4 +1,4 @@
-@import '../styles/_variables.scss';
+@import '../../Microsite/styles/variables';
 
 .footer {
   border-top: 1px solid $grey_30;
@@ -69,7 +69,10 @@
     }
   }
 
-
+  .footer-img {
+    width: 100%;
+  }
+  
 .FooterImgWrapper {
   @media (min-width: 768px) {
     filter: grayscale(100%);
