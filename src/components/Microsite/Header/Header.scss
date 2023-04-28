@@ -446,10 +446,20 @@
   }
 }
 .NavStyles, .navbar, .navbar-brand, .second-title a {
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
   font-size: 16px !important;
-  color: $grey_90;
+  color: $grey_90 !important;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+background-color: $grey_00;
 }
-.second-title, .nav-secondary {
+.navbar, .nav-secondary {
+  
   padding: 5px 16px !important;
+}
+.navbar-v6, .SecondaryNavbarV6 {
+  &.sticky {
+    position: sticky;
+    top: -0.1px;
+    z-index: 1020;
+    margin: 0px;
+}
 }

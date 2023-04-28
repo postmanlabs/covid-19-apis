@@ -190,26 +190,6 @@ function Header(props) {
     }
   };
 
-  const showTargetElementLC = () => {
-    // LC Mobile Icon Transition
-    const togglerSecondary = document
-      .getElementById('secondaryNav')
-      .getAttribute('aria-expanded');
-    const toggleChevron = document.getElementById('navbar-chevron-icons');
-    if (togglerSecondary === 'true') {
-      toggleChevron.classList.add('open');
-    }
-  };
-
-  const hideTargetElementLC = () => {
-    const toggleChevron = document.getElementById('navbar-chevron-icons');
-    const togglerSecondary = document
-      .getElementById('secondaryNav')
-      .getAttribute('aria-expanded');
-    if (togglerSecondary === 'false') {
-      toggleChevron.classList.remove('open');
-    }
-  };
   /* eslint-enable class-methods-use-this */
 
   return (
