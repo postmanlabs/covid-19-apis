@@ -113,7 +113,6 @@ function Header(props) {
       $(this)
         .find('.arrow-icon')
         .addClass('show');
-        console.log(e.target);
     }
     $('.dropdown').on('show.bs.dropdown', showBsDropdown);
     // Dropdown Slidedown Animation
@@ -247,7 +246,6 @@ function Header(props) {
                     aria-expanded="false"
                     key={item.title}
                   >
-                    {console.log(dropdown)}
                     {item.title}
                     <svg
                       className="arrow-icon"

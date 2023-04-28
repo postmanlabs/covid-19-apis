@@ -4,15 +4,31 @@
 import React from 'react';
 import axios from 'axios';
 import { useStaticQuery, graphql } from 'gatsby';
-
+import { Hero } from 'aether-marketing';
 import SEOTS from '../../components/TestingSites/seots';
 import Layout from '../../components/TestingSites/layout';
 
-import Hero from '../../components/TestingSites/hero';
+// import Hero from '../../components/TestingSites/hero';
 import CallToActionConsumers from '../../components/TestingSites/callToActionConsumers';
 import CallToActionDevs from '../../components/TestingSites/callToActionDevs';
 import State from '../../components/TestingSites/state';
 import Resource from '../../components/TestingSites/resource';
+
+const data = {
+  heroLayout: "sideXSide",
+  sideXSideLayout: "medium",
+  title: ["Postman COVID-19 API Resource Center"],
+  divider: true,
+  backgroundColor: "",
+  textColor: "",
+  subtitle: [],
+  media: {
+    class: "",
+    src: 'https://voyager.postman.com/illustration/api-monitoring-microscope-postman-illustration.svg',
+    alt: "Isolated COVID-19 virus in space. Illustration.",
+  },
+};
+
 
 class IndexPageComponent extends React.Component {
   constructor(props) {
@@ -176,7 +192,15 @@ class IndexPageComponent extends React.Component {
       <Layout>
         <SEOTS title="List of APIs and Blueprints" />
         <div className="">
-          <Hero />
+        <Hero
+          heroLayout={data.heroLayout}
+          sideXSideLayout={data.sideXSideLayout}
+          divider={data.divider}
+          backgroundColor={data.backgroundColor}
+          title={data.title}
+          media={data.media}
+          textColor={data.textColor}
+        />
           <div className="alert_banner">This is an Example Implementation -- Does Not Contain Live Data!</div>
           <State state={this.state} />
           <div className="youmayalsolike">

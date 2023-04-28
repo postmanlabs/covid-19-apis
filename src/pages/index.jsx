@@ -13,13 +13,12 @@ const data = {
   sideXSideLayout: "medium",
   title: ["Postman COVID-19 API Resource Center"],
   divider: true,
-  backgroundColor: "blue_95",
-  backgroundImage: "X",
-  textColor: "$white",
+  backgroundColor: "",
+  textColor: "",
   subtitle: [],
   media: {
     class: "",
-    src: 'covid19-image-2.png',
+    src: 'https://voyager.postman.com/illustration/api-monitoring-microscope-postman-illustration.svg',
     alt: "Isolated COVID-19 virus in space. Illustration.",
   },
 };
@@ -34,16 +33,9 @@ function IndexPage() {
           sideXSideLayout={data.sideXSideLayout}
           divider={data.divider}
           backgroundColor={data.backgroundColor}
-          backgroundImage={data.backgroundImage}
           title={data.title}
-          subtitle={data.subtitle}
-          button={data.button || null}
           media={data.media}
-          backlink={data.backlink}
           textColor={data.textColor}
-          inputTitle={data.inputTitle}
-          inputQuery={data.inputQuery}
-          buttonText={data.buttonText}
         />
       <Welcome />
       <div className="collection__wrapper">
