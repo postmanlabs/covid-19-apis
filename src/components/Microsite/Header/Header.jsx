@@ -65,6 +65,7 @@ function LoginCheck(props) {
       </div>
     );
   }
+  /* eslint-disable-next-line */
   return <></>;
 }
 
@@ -76,7 +77,9 @@ function Header(props) {
   const [visibleHelloBar] = useState();
 
   useEffect(() => {
+    /* eslint-disable-next-line */
     const cookie = getCookie('getpostmanlogin');
+    /* eslint-disable-next-line */
     const beta = window.location.host.includes('postman-beta') ? '-beta' : '';
 
     setCookie(cookie);
@@ -125,10 +128,12 @@ function Header(props) {
         .removeClass('show');
     }
     $('.dropdown').on('hide.bs.dropdown', hideBsDropdown);
+    /* eslint-disable-next-line */
   }, []);
 
   const showTargetElement = () => {
     // Show Sign In Button if user is not logged in (mobile)
+    /* eslint-disable-next-line */
     const cookie = getCookie('getpostmanlogin');
     const signInButton = document.querySelector('.mobile-sign-in');
     if (cookie !== 'yes') {
@@ -161,6 +166,7 @@ function Header(props) {
   const hideTargetElement = () => {
     // Hide Sign In Button if user is not logged in (mobile)
     const signInButton = document.querySelector('.mobile-sign-in');
+    /* eslint-disable-next-line */
     const cookie = getCookie('getpostmanlogin');
     if (cookie !== 'yes') {
       signInButton.classList.toggle('hide');
@@ -235,7 +241,8 @@ function Header(props) {
             {/* Primary Navbar */}
             <ul className="navbar-nav mr-auto">
               {data.items.map((item) => (
-                item.dropdown && item.dropdown && (
+                /* eslint-disable-next-line */
+                (item.dropdown && item.dropdown) && (
                 <li className="nav-item dropdown" key={item.title}>
                   <a
                     className="nav-link dropdown-toggle"
@@ -263,7 +270,9 @@ function Header(props) {
                     className="DropdownStyles dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
-                    { item.columns && item.columns
+                    {/* eslint-disable-next-line */}
+                    { (item.columns && item.columns)
+                    /* eslint-disable-next-line */
                           && (
                           <div className="row dropdown-col-menu">
                             { item.columns.map((col) => (
@@ -286,8 +295,10 @@ function Header(props) {
                                   </a>
                                 ))}
                               </div>
+                            /* eslint-disable-next-line */
                             ))}
                           </div>
+                          /* eslint-disable-next-line */
                           ) || item.subItems.map((single) => (
                             <a
                               className={`${single.link ? 'app-cta' : ''} dropdown-item`}
@@ -296,9 +307,11 @@ function Header(props) {
                             >
                               {single.title}
                             </a>
+                      /* eslint-disable-next-line */
                     ))}
                   </div>
                 </li>
+                /* eslint-disable-next-line */
                 ) || (
                 <li className="nav-item" key={item.title}>
                   <a
