@@ -267,7 +267,7 @@ function Header(props) {
                     </svg>
                   </a>
                   <div
-                    className="DropdownStyles dropdown-menu"
+                    className="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     {/* eslint-disable-next-line */}
