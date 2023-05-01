@@ -57,6 +57,7 @@
   }
 
   .NavStyles {
+
     .navbar-nav .nav-link,
     a {
       font-weight: 600;
@@ -78,7 +79,7 @@
     & .navbar-brand {
       margin-bottom: 0;
       margin-right: 10px !important;
- 
+
 
       /* Container */
       & .navbar-logo-container {
@@ -254,39 +255,39 @@
       &.open {
         right: 0px;
 
-        // span {
-        //   &:nth-child(1) {
-        //     top: 18px;
-        //     left: 50%;
-        //     width: 0%;
-        //     visibility: hidden;
-        //     -webkit-transform: rotate(45deg);
-        //     -ms-transform: rotate(45deg);
-        //     transform: rotate(45deg);
-        //   }
+        span {
+          &:nth-child(1) {
+            top: 18px;
+            left: 50%;
+            width: 0%;
+            visibility: hidden;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
 
-        //   &:nth-child(2) {
-        //     -webkit-transform: rotate(45deg);
-        //     -ms-transform: rotate(45deg);
-        //     transform: rotate(45deg);
-        //   }
+          &:nth-child(2) {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
 
-        //   &:nth-child(3) {
-        //     -webkit-transform: rotate(-45deg);
-        //     -ms-transform: rotate(-45deg);
-        //     transform: rotate(-45deg);
-        //   }
+          &:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
 
-        //   &:nth-child(4) {
-        //     top: 18px;
-        //     width: 0%;
-        //     left: 50%;
-        //     -webkit-transform: rotate(-45deg);
-        //     -ms-transform: rotate(-45deg);
-        //     transform: rotate(-45deg);
-        //     visibility: hidden;
-        //   }
-        // }
+          &:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            visibility: hidden;
+          }
+        }
       }
     }
 
@@ -300,7 +301,8 @@
     padding: 16px;
     border-radius: $medium-border-radius;
     border: 1px solid $grey_20;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;
+    ;
 
     .dropdown-item {
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
@@ -475,6 +477,3 @@
     margin: 0px;
   }
 }
-// .second-title, .nav-brand a {
-  
-// }

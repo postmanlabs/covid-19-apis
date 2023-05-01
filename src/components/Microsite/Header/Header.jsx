@@ -186,13 +186,13 @@ function Header(props) {
       // Remove lock CSS to body to disable scroll
       body.classList.remove('lock');
     }
-    const icon2 = document.getElementById('navbar-chevron-icons');
-    const togglerSecondary = document
-      .getElementById('secondaryNav')
-      .getAttribute('aria-expanded');
-    if (togglerSecondary === 'false') {
-      icon2.classList.remove('open');
-    }
+    // const icon2 = document.getElementById('navbar-chevron-icons');
+    // const togglerSecondary = document
+    //   // .getElementById('secondaryNav')
+    //   .getAttribute('aria-expanded');
+    // if (togglerSecondary === 'false') {
+    //   icon2.classList.remove('open');
+    // }
   };
 
   /* eslint-enable class-methods-use-this */
