@@ -254,39 +254,39 @@
       &.open {
         right: 0px;
 
-        span {
-          &:nth-child(1) {
-            top: 18px;
-            left: 50%;
-            width: 0%;
-            visibility: hidden;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
+        // span {
+        //   &:nth-child(1) {
+        //     top: 18px;
+        //     left: 50%;
+        //     width: 0%;
+        //     visibility: hidden;
+        //     -webkit-transform: rotate(45deg);
+        //     -ms-transform: rotate(45deg);
+        //     transform: rotate(45deg);
+        //   }
 
-          &:nth-child(2) {
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
-          }
+        //   &:nth-child(2) {
+        //     -webkit-transform: rotate(45deg);
+        //     -ms-transform: rotate(45deg);
+        //     transform: rotate(45deg);
+        //   }
 
-          &:nth-child(3) {
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-          }
+        //   &:nth-child(3) {
+        //     -webkit-transform: rotate(-45deg);
+        //     -ms-transform: rotate(-45deg);
+        //     transform: rotate(-45deg);
+        //   }
 
-          &:nth-child(4) {
-            top: 18px;
-            width: 0%;
-            left: 50%;
-            -webkit-transform: rotate(-45deg);
-            -ms-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-            visibility: hidden;
-          }
-        }
+        //   &:nth-child(4) {
+        //     top: 18px;
+        //     width: 0%;
+        //     left: 50%;
+        //     -webkit-transform: rotate(-45deg);
+        //     -ms-transform: rotate(-45deg);
+        //     transform: rotate(-45deg);
+        //     visibility: hidden;
+        //   }
+        // }
       }
     }
 
@@ -300,9 +300,10 @@
     padding: 16px;
     border-radius: $medium-border-radius;
     border: 1px solid $grey_20;
-    box-shadow: 0 16px 24px -8px rgba(0, 0, 0, 24%);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;;
 
     .dropdown-item {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
       padding: 8px 16px;
       font-weight: 400;
       font-size: 14px;
@@ -340,7 +341,7 @@
       width: 100%;
 
       @media screen and (min-width: 992px) {
-        width: 64rem;
+        width: 40.4rem;
       }
     }
 
@@ -355,11 +356,12 @@
     .dropdown-header {
       padding: 5px 15px;
       color: $forms-text;
-      font-size: 1.6rem;
+      font-size: 16px;
       letter-spacing: -0.24px;
       line-height: 1.4;
       font-weight: 600;
       margin-bottom: 0px;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
     }
   }
 

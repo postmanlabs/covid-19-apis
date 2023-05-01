@@ -100,11 +100,11 @@ function Header(props) {
     }, waitBeforeShow);
 
     /* Applies styling for sticky nav */
-    $('#secondaryNav').on('click', () => {
-      $('body').toggleClass('menu-open');
-      $('.nav-primary').toggleClass('activeMenu');
-      $('.nav-secondary').toggleClass('activeMenu');
-    });
+    // $('#secondaryNav').on('click', () => {
+    //   $('body').toggleClass('menu-open');
+    //   $('.nav-primary').toggleClass('activeMenu');
+    //   $('.nav-secondary').toggleClass('activeMenu');
+    // });
     // Dropdown Slideup Animation
     function showBsDropdown() {
       $(this)
@@ -267,7 +267,7 @@ function Header(props) {
                     </svg>
                   </a>
                   <div
-                    className="dropdown-menu"
+                    className="DropdownStyles dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink"
                   >
                     {/* eslint-disable-next-line */}

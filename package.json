@@ -8,6 +8,7 @@
     "aether-marketing": "1.27.8",
     "axios": "0.27.2",
     "base-64": "1.0.0",
+    "bootstrap": "4.5.0",
     "dotenv": "8.2.0",
     "gatsby": "4.13.0",
     "gatsby-plugin-anchor-links": "1.2.1",

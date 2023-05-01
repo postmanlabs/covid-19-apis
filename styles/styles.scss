@@ -1,0 +1,30 @@
+// this file is needed for base 10 spacing
+
+$spacer: 1rem !default;
+
+// $spacers: (
+//     0: 0,
+//     1: ($spacer * .25),    //4px
+//     2: ($spacer * .5),     //8px
+//     3: $spacer,            //16px
+//     4: ($spacer * 1.5),    //24px
+//     5: ($spacer * 3),      //48px
+//     6: ($spacer * 4),      //64px
+//     7: ($spacer * 5),      //80px
+//     8: ($spacer * 6.25),   //100px
+//     9: ($spacer * 7.5),    //120px
+//     10: ($spacer * 9.375)  //150px
+// );
+
+$spacers: (
+    0: 0,
+    1: ($spacer * .5),   // 5px
+    2: ($spacer * 1),          // 10px
+    3: ($spacer * 1.5),  // 15px 
+    4: ($spacer * 2.5),  // 25px
+    5: ($spacer * 5),    // 50px ? 40px
+);
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
