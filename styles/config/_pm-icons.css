@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'pm icons';
+  src: url('../fonts/pm-icons.eot');
+  src: url('../fonts/pm-icons.eot?#iefix') format('embedded-opentype'), url('../fonts/pm-icons.woff') format('woff'), url('../fonts/pm-icons.ttf') format('truetype'), url('../fonts/pm-icons.svg#pm-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+[class*='pm-icon-']:before {
+  display: inline-block;
+  font-family: 'pm icons';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pm-icon-chevron-down:before {
+  content: '\e905';
+}
+.pm-icon-chevron-left:before {
+  content: '\e906';
+}
+.pm-icon-chevron-right:before {
+  content: '\e907';
+}
+.pm-icon-chevron-up:before {
+  content: '\e908';
+}

@@ -1,0 +1,142 @@
+/**
+* Print Stylesheet
+*/
+
+@media print {
+ 
+    /* Setting content width, unsetting floats and margins */
+    /* Attention: the classes and IDs vary from theme to theme. Thus, set own classes here */
+    main {
+        width: 100%; 
+        margin: 0; 
+        float: none;
+    }
+        
+    /** Setting margins */       
+    @page { margin: 2cm }
+
+    /* Set background to white and font to black.*/
+    /* This saves ink */
+    body {
+        line-height: 1.3;
+        background: #ffffff !important;
+        color: #000000;
+    }
+
+    h1 {
+        font-size: 24pt;
+    }
+
+    h2, h3, h4 {
+        font-size: 14pt;
+        margin-top: 25px;
+    }    
+    
+    /* Defining all page breaks */
+    a, blockquote, table, pre {
+        page-break-inside: avoid;
+    }
+    h1, h2, h3, h4, h5, h6 { 
+        page-break-after: avoid; 
+        page-break-inside: avoid
+    }
+    img {
+        page-break-inside: avoid; 
+        page-break-after: avoid;
+    }
+    ul, ol, dl {
+        page-break-before: avoid
+    }
+        
+    /* Displaying link color and link behaviour */
+    a:link, a:visited, a {
+        background: transparent;
+        color: #520;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: left;
+    }
+
+    a {
+        page-break-inside:avoid
+    }
+
+    a[href^=http]:after {
+        content:" <" attr(href) "> ";
+    }
+
+    a:after > img {
+        content: "";
+    }
+
+    article a[href^="#"]:after {
+        content: "";
+    }
+
+    a:not(:local-link):after {
+        content:" <" attr(href) "> ";
+    }
+        
+    /**
+    * Making intergated videos disappear, and removing the iframes' whitespace to zero. 
+    */
+    .entry iframe, ins {
+        display: none;
+        width: 0 !important;
+        height: 0 !important;
+        overflow: hidden !important;
+        line-height: 0pt !important;
+        white-space: nowrap;
+    }
+    .embed-youtube, .embed-responsive {
+        position: absolute;
+        height: 0;
+        overflow: hidden;
+    }
+        
+    /* Hiding unnecessary elements for the print */
+    #header-widgets, nav, aside.mashsb-container, 
+    .sidebar, .mashshare-top, .mashshare-bottom, 
+    .content-ads, .make-comment, .author-bio, 
+    .heading, .related-posts, #decomments-form-add-comment, 
+    #breadcrumbs, footer, .post-byline, .meta-single, 
+    .site-title img, .post-tags, .readability,
+    #onetrust-consent-sdk, .right-column
+    {
+        display: none;
+    }
+    /* Make images half-width to save space */
+    img {
+        width: 50%;
+        height: auto;
+        display: block;
+    }
+    img[src$='#icon'] {
+        margin-bottom: 0;
+        display: inline;
+        width: 18pt;
+        height: auto;
+      }
+        
+    /* Adding custom messages before and after the content */
+    .entry:after {
+        content: "\ All Rights Reserved. © 2022 Postman, Inc.";
+        color: #999 !important;
+        font-size: 1em;
+        padding-top: 30px;
+    }
+
+    /* Wichtige Elemente definieren */    
+    p, address, li, dt, dd, blockquote {
+        font-size: 100%
+    }
+
+    ul, ol {
+        list-style: square; margin-left: 18pt;
+        margin-bottom: 20pt;    
+    }
+
+    li {
+        line-height: 1.6em;
+    }
+}

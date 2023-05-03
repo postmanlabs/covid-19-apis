@@ -1,25 +1,31 @@
 import React from 'react';
-import heroImage from '../../images/covid19-image-2.png';
-import Legal from './legal';
+import { Hero } from 'aether-marketing';
 
-function Hero() {
+const data = {
+  heroLayout: 'sideXSide',
+  sideXSideLayout: 'medium',
+  title: ['Postman COVID-19 API Resource Center'],
+  subtitle: ["This is an API-powered website with a Postman Collection behind it. Feel free to <a href='https://documenter.getpostman.com/view/8854915/SzS7PR3t?version=latest'>use the collection</a> for your COVID-19 applications or web pages. This is a crowdsourced effort and we welcome <a href='https://github.com/postmanlabs/covid-19-apis/tree/develop/src/components/TestingSites'>community contributions</a>. You can read the fine print <a href='/covid-19-testing-locations/legal/'>here</a>."],
+  divider: false,
+  backgroundColor: '',
+  media: {
+    class: 'mt-5 mt-lg-0',
+    src: 'https://voyager.postman.com/illustration/api-monitoring-microscope-postman-illustration.svg',
+    alt: 'API Monitoring. Illustration.',
+  },
+};
+
+function HeroComponent() {
   return (
-    <div className="container-fluid hero ts-hero-background pb-4">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 hero_title">
-            <h1>
-              COVID-19 Testing Locations
-            </h1>
-            <Legal />
-          </div>
-          <div className="col-md-6 hero_image">
-            <img src={heroImage} alt="Isolated COVID-19 virus in space. Illustration." />
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero
+      heroLayout={data.heroLayout}
+      sideXSideLayout={data.sideXSideLayout}
+      divider={data.divider}
+      title={data.title}
+      subtitle={data.subtitle}
+      media={data.media}
+    />
   );
 }
 
-export default Hero;
+export default HeroComponent;

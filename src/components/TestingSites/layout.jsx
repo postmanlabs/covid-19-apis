@@ -7,7 +7,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './header';
+import Header from '../Microsite/Header/Header';
 import Footer from './footer';
 import ReferrerCookie from '../ReferrerCookie';
 import './styles/_allTesting.scss';

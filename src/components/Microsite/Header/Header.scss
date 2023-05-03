@@ -1,100 +1,480 @@
 @import '../styles/_variables.scss';
 
 .header {
-  // box-shadow: 0 5px 16px 0 rgba(0,0,0,.11);
-  background-color: $deep-space-blue;
-  z-index: 1;
-  .header__logo {
-    margin: auto;
-    height: 50px;
+  background-color: $grey_00;
+  z-index: 2147483647;
+  border-bottom: 1px solid $grey_30;
+
+  .activeMenu {
+    background-color: $grey_00;
+    position: relative;
+    border-bottom: 1px solid $grey_30;
+    z-index: 2147483647;
   }
 
-  .header__title {
-    vertical-align: middle;
-    margin-left: 20px;
-    // color: $gray-3;
-    color: white;
-    text-decoration: none;
+  .navbar {
+    padding: 4px 16px;
   }
 
-  .header__right-links {
-    .nav-item {
-      .nav-link {
-        text-decoration: none;
-        // color: $gray-3;
-        color: white; 
-        font-size: 13px;
+  .SecondaryNavbarV6 {
+    background-color: $grey_00;
+    backdrop-filter: blur(64px);
+    top: 100;
+    z-index: 1020;
+    border-bottom: 1px solid $grey_30;
+
+
+    .activeMenu {
+      background-color: $grey_00;
+      z-index: 99;
+      width: 100%;
+      margin-top: -1px;
+    }
+
+    &.sticky {
+      position: sticky;
+      top: -0.1px;
+      z-index: 1020;
+      margin: 0px;
+    }
+
+    @supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+      &.blurred-container {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+    }
+
+
+
+    /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+    @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+      &.blurred-container {
+        background-color: $grey_00;
+      }
+    }
+
+  }
+
+  .NavStyles {
+
+    .navbar-nav .nav-link,
+    a {
+      font-weight: 600;
+    }
+
+    /* Ul */
+    & .navbar-nav {
+      max-height: 100px;
+      margin: 0;
+
+      @media (max-width: 991px) {
+        margin-bottom: 24px;
+        margin: 0;
+        max-height: none;
+        height: 100vh;
+      }
+    }
+
+    /* Postman Logo and Home Logo switching */
+    & .navbar-brand {
+      margin-bottom: 0;
+      margin-right: 10px !important;
+
+
+      /* Container */
+      & .navbar-logo-container {
+        width: 32px;
+        height: 30px;
+        z-index: 9999;
+        position: relative;
+      }
+    }
+
+    /* Second Nav - Learning Center Link */
+    & #learning-center-home-link {
+      color: $grey_90 !important;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: -0.25px;
+      line-height: 1.4;
+      font-weight: 600;
+      padding-left: 0 !important;
+
+      &:hover {
+        border: none;
+        color: $blue_70 !important;
+      }
+    }
+
+    /* Navbar A tag elements */
+    & .nav-link {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+      letter-spacing: normal;
+      color: $forms-text !important;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      -o-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      padding: 6px 16px;
+
+      &:hover {
+        border-bottom: none;
+        color: $grey_50 !important;
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &:link,
+      &:active {
         font-weight: 600;
-        text-transform: uppercase;
-        white-space: nowrap;
-        text-align: left;
-        padding: 16px;
+        padding: 6px 6px 6px 16px;
+
+        /* Learning Center Nav Positioning */
+        &.uber-nav {
+          padding: 6px 16px;
+
+          @media screen and (max-width: 992px) {
+            padding: 6px 0px;
+          }
+        }
       }
-      .nav-link:hover {
-        color: $postman-orange;
+
+      /* Hide Default Arrow */
+      &:after {
+        display: none;
       }
-      .btn {
-        margin-bottom: 0;
+
+      /* SVG Arrow Icon next to Nav Link */
+      >svg {
+        display: inline-block;
+        margin-left: 6px;
+        width: 10px;
+        -webkit-transition: 0.1s ease-in-out;
+        -o-transition: 0.1s ease-in-out;
+        transition: 0.1s ease-in-out;
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+
+        /* Arrow Transitions Up on .show */
+        &.show {
+          display: inline-block;
+          transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -webkit-transform: rotate(180deg);
+          -webkit-transition: 0.1s ease-in-out;
+          -o-transition: 0.1s ease-in-out;
+          transition: 0.1s ease-in-out;
+        }
+
+        @media screen and (max-width: 992px) {
+          float: right;
+          margin-right: 17px;
+          position: relative;
+          top: 8px;
+        }
+
+        &:active,
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      border: none !important;
+      border: 0;
+      font-size: 24px;
+      background: none !important;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .navbar-toggler-icon {
+      width: 24px;
+      margin: auto 0;
+    }
+
+    /* Icon Transition to X */
+    span.navbar-toggler-icon {
+      background-image: none !important;
+    }
+
+    div.icon-bar {
+      position: relative;
+      height: 30px;
+      width: 24px;
+      margin: auto;
+      -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -ms-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+      -o-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+      -webkit-transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+      cursor: pointer;
+
+      span {
+        display: block;
+        position: absolute;
+        height: 2px;
+        width: 24px;
+        background: $grey_50;
+        border-radius: 5px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -ms-transition: all 0.1s ease;
+        -webkit-transition: all 0.1s ease;
+        -o-transition: all 0.1s ease;
+        transition: all 0.1s ease;
+
+        &:nth-child(1) {
+          top: 10px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 18px;
+        }
+
+        &:nth-child(4) {
+          top: 26px;
+        }
+      }
+
+      &.open {
+        right: 0px;
+
+        span {
+          &:nth-child(1) {
+            top: 18px;
+            left: 50%;
+            width: 0%;
+            visibility: hidden;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(2) {
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+
+          &:nth-child(3) {
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+          }
+
+          &:nth-child(4) {
+            top: 18px;
+            width: 0%;
+            left: 50%;
+            -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            visibility: hidden;
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .DropdownStyles {
+    /* Individual Dropdown Item */
+    line-height: 20px;
+    z-index: 2147483650;
+    padding: 16px;
+    border-radius: $medium-border-radius;
+    border: 1px solid $grey_20;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;
+    ;
+
+    .dropdown-item {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+      padding: 8px 16px;
+      font-weight: 400;
+      font-size: 14px;
+
+      &:focus,
+      &:active {
+        background-color: $grey_50;
+        color: $grey_50;
+      }
+
+      /* Get Started for Free link */
+      &.app-cta {
+        color: $blue-60;
+        font-weight: 600;
+      }
+    }
+
+    .dropdown-menu {
+      /* Mobile Dropdown */
+      background-color: $grey_00;
+      border: none;
+      padding: 0 0 16px 24px;
+      line-height: 20px;
+      font-size: 1.4rem;
+
+      /* Web Dropdown */
+      @media screen and (min-width: 992px) {
+        background-color: $grey_00;
+        border-radius: $medium-border-radius;
+        padding: 16px
+      }
+    }
+
+    .dropdown-col-menu {
+      width: 100%;
+
+      @media screen and (min-width: 992px) {
+        width: 40.4rem;
+      }
+    }
+
+    .dropdown-col {
+      padding: 0 12px;
+
+      @media screen and (max-width: 991px) {
+        margin-bottom: 2rem;
+      }
+    }
+
+    .dropdown-header {
+      padding: 5px 15px;
+      color: $forms-text;
+      font-size: 16px;
+      letter-spacing: -0.24px;
+      line-height: 1.4;
+      font-weight: 600;
+      margin-bottom: 0px;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    }
+  }
+
+
+  .CTAButton {
+
+    // Orange Button (Sign Up / Launch Postman)
+    a.button__sign-up {
+      align-items: center;
+      appearance: none;
+      border-radius: $small-border-radius;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 1.75;
+      padding: 4px 12px !important;
+      user-select: none;
+      color: $grey_00;
+      background-color: $orange_50;
+      background-image: none;
+      border: none;
+      box-shadow: none;
+      border-radius: $small-border-radius;
+      transition: 0.2s ease-in-out;
+      white-space: nowrap;
+      outline: 0;
+      text-align: center;
+      margin: 0;
+      transition: background-color 50ms ease-in-out, border-color 50ms ease-in-out;
+
+      &:hover,
+      &:active {
+        background-color: $orange_60;
+        text-decoration: none;
+      }
+
+      &:focus {
+        outline: 0 !important;
+      }
+
+      @media (max-width: 480px) {
+        display: block;
+        margin: 8px 16px;
+      }
+    }
+
+    // Sign In Button
+    a.button__sign-in {
+      align-items: center;
+      appearance: none;
+      border-radius: $small-border-radius;
+      cursor: pointer;
+      display: inline-flex;
+      font-size: 14px !important;
+      font-weight: 600;
+      line-height: 1.75;
+      padding: 4px 12px !important;
+      user-select: none;
+      color: $grey_90;
+      background-color: $grey_00;
+      background-image: none;
+      border: none;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.24) inset !important;
+      outline: 0;
+      text-align: center;
+      margin: 0 8px 0 0;
+
+      &:hover,
+      &:active {
+        background-color: $grey_00;
+        box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, .64) inset !important;
+        ;
+        text-decoration: none;
+      }
+
+      &:focus {
+        outline: 0;
+      }
+
+      @media (max-width: 992px) {
+        margin-left: 16px;
       }
     }
   }
-  @media (max-width: 1200px) {
-    .animate-close {
-      animation-fill-mode: forwards;
-      overflow: hidden;
-      animation-name: closeMenu;
-      animation-duration: 0.5s;  
-    }
-    .closed {
-      overflow: hidden;
-      max-height: 0px;
-    }
-  }
-  .animate-open {
-    overflow: hidden;
-    animation-name: openMenu;
-    animation-duration: 0.5s;  
-  } 
 }
 
-@keyframes openMenu {
-  0%   {max-height: 0px;}
-  100% {max-height: 300px;}
+.NavStyles,
+.navbar,
+.navbar-brand,
+.second-title a {
+  font-size: 16px !important;
+  font-weight: 600;
+  color: $grey_90 !important;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+  background-color: $grey_00;
+  padding-left: 0px !important;
 }
 
-@keyframes closeMenu {
-  0%   {max-height: 300px;}
-  100% {max-height: 0px;}
+.navbar,
+.nav-secondary {
+  padding: 6px 16px !important;
 }
 
-
-.searchbox {
-  input {
-    background-color:#f5f5f5;
-    border: 0;
-    padding: 13px 24px;
-    border-radius: 3px;
-    width: 100%;
-  }
-  ::placeholder {
-    color: #1c272b;
-    font-size: 14px;
-    font-weight: 600;
-  }
-  .ais-SearchBox-submit, .ais-SearchBox-reset {
-    display: none;
+.navbar-v6,
+.SecondaryNavbarV6 {
+  &.sticky {
+    position: sticky;
+    top: -0.1px;
+    z-index: 1020;
+    margin: 0px;
   }
 }
-
-// .algolia-autocomplete {
-//   display: block !important;
-
-//   @media (min-width: 1225px) {
-//     display: inline-block;
-//   }
-
-//   .ds-dropdown-menu {
-//     min-width: 0 !important;
-//     max-width: unset !important;
-//   }
-// }
