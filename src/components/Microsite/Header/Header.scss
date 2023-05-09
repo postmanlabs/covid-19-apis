@@ -59,10 +59,6 @@
   .NavStyles {
 
     .navbar-nav .nav-link,
-    a {
-      font-weight: 600;
-    }
-
     /* Ul */
     & .navbar-nav {
       max-height: 100px;
@@ -94,11 +90,9 @@
     /* Second Nav - Learning Center Link */
     & #learning-center-home-link {
       color: $grey_90 !important;
-      font-weight: 600;
       font-size: 16px;
       letter-spacing: -0.25px;
       line-height: 1.4;
-      font-weight: 600;
       padding-left: 0 !important;
 
       &:hover {
@@ -109,11 +103,12 @@
 
     /* Navbar A tag elements */
     & .nav-link {
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+      font-family: Inter !important;
       letter-spacing: normal;
       color: $forms-text !important;
+
       font-size: 14px;
-      font-weight: 600;
+      // font-weight: 600;
       transition: color 0.2s ease-in-out;
       -webkit-transition: color 0.2s ease-in-out;
       -o-transition: color 0.2s ease-in-out;
@@ -306,7 +301,7 @@
     ;
 
     .dropdown-item {
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+      font-family: Inter !important;
       padding: 8px 16px;
       font-weight: 400;
       font-size: 14px;
@@ -362,24 +357,24 @@
       font-size: 16px;
       letter-spacing: -0.24px;
       line-height: 1.4;
-      font-weight: 600;
+      // font-weight: 600;
       margin-bottom: 0px;
-      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+      font-family: Inter !important;
     }
   }
 
 
   .CTAButton {
-
     // Orange Button (Sign Up / Launch Postman)
     a.button__sign-up {
+      font-family: Inter !important;
       align-items: center;
       appearance: none;
       border-radius: $small-border-radius;
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 1.75;
       padding: 4px 12px !important;
       user-select: none;
@@ -414,13 +409,14 @@
 
     // Sign In Button
     a.button__sign-in {
+      font-family: Inter !important;
       align-items: center;
       appearance: none;
       border-radius: $small-border-radius;
       cursor: pointer;
       display: inline-flex;
       font-size: 14px !important;
-      font-weight: 600;
+      // font-weight: 600;
       line-height: 1.75;
       padding: 4px 12px !important;
       user-select: none;
@@ -457,9 +453,9 @@
 .navbar-brand,
 .second-title a {
   font-size: 16px !important;
-  font-weight: 600;
+  // font-weight: 600;
   color: $grey_90 !important;
-  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+  font-family: Inter !important;
   background-color: $grey_00;
   padding-left: 0px !important;
 }
