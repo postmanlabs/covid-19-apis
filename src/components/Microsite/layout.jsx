@@ -30,8 +30,10 @@ function Layout({ children }) {
 
   return (
     <div>
-      <Header />
-      <main>{children}</main>
+      <main>
+        <Header />
+        {children}
+      </main>
       <ReferrerCookie />
       <Footer />
     </div>

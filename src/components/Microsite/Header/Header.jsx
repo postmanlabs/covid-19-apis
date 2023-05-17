@@ -326,7 +326,7 @@ function Header(props) {
               ))}
             </ul>
             {/* Login Check */}
-            <div className="form-inline my-2 my-lg-0">
+            <div className="form-inline button-box my-lg-0">
               <LoginCheck
                 hidden={hidden}
                 waitBeforeShow={100}
@@ -340,13 +340,12 @@ function Header(props) {
       </div>
       <div className="SecondaryNavbarV6 navbar-v6 sticky ">
         <div className="NavStyles navbar navbar-expand-lg navbar-light nav-secondary blurred-container">
-          <div className="DropdownStylesSecond dropdown position-static">
+          <div className="DropdownStylesSecond position-static">
             <a
               className="nav-link navbar-brand"
-              href="##"
+              href="/"
               id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-expanded="false"
+
             >
               COVID-19 API Resource Center
             </a>

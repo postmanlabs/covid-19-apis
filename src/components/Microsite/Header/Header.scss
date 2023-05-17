@@ -57,23 +57,33 @@
     }
 
   }
-
+  @media (max-width: 991px) {
+#navbarSupportedContent {
+ 
+  margin-top: 16px;
+  height: 100vh;
+  padding-top: 3px;
+  }
+  
+}
   .NavStyles {
-
-    .navbar-nav .nav-link,
     /* Ul */
     & .navbar-nav {
       // max-height: 100px;
       margin: 0;
 
       @media (max-width: 991px) {
+    
         margin-bottom: 24px;
         margin: 0;
         max-height: none;
-        height: 100vh;
+        // height: 100vh;
+        
       }
     }
-
+li.nav-item {
+  margin-bottom: 4px;
+}
     /* Postman Logo and Home Logo switching */
     & .navbar-brand {
       margin-bottom: 0;
@@ -120,7 +130,7 @@
       -o-transition: color 0.2s ease-in-out;
       -ms-transition: color 0.2s ease-in-out;
       padding: 6px 16px;
-      margin-bottom: 4px !important;
+      // margin-bottom: 4px !important;
 
       &:hover {
         border-bottom: none;
@@ -135,6 +145,11 @@
       &:active {
         font-weight: 600;
         padding: 6px 6px 6px 16px;
+        @media screen and (max-width: 992px) {
+          padding-left: 0px;
+          padding-right: 0px;
+          
+        }
 
         /* Learning Center Nav Positioning */
         &.uber-nav {
@@ -176,7 +191,7 @@
 
         @media screen and (max-width: 992px) {
           float: right;
-          margin-right: 17px;
+          margin-right: 7px;
           position: relative;
           top: 8px;
         }
@@ -370,7 +385,11 @@
     }
   }
 
-
+.button-box{
+  @media (max-width: 991px) {
+    margin: 10px 0px;
+  }
+}
   .CTAButton {
 
     // Orange Button (Sign Up / Launch Postman)
@@ -382,7 +401,7 @@
       cursor: pointer;
       display: inline-flex;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 600;
       line-height: 1.75;
       padding: 4px 12px !important;
       user-select: none;
@@ -411,7 +430,7 @@
 
       @media (max-width: 480px) {
         display: block;
-        margin: 8px 16px;
+        margin: 8px 0px;
       }
     }
 
@@ -450,7 +469,7 @@
       }
 
       @media (max-width: 992px) {
-        margin-left: 16px;
+        margin-left: 0px;
       }
     }
   }
