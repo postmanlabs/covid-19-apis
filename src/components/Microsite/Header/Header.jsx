@@ -3,6 +3,7 @@ import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import $ from 'jquery';
 import './Header.scss';
 import { Divider } from 'aether-marketing';
+import { Link } from 'gatsby';
 import navbarData from '../../../../bff-data/navbar.json';
 // For local TOPNAVBAR TESTING
 import navbarDataLocal from '../../../../build/navbarDev.json';
@@ -341,14 +342,14 @@ function Header(props) {
       <div className="SecondaryNavbarV6 navbar-v6 sticky ">
         <div className="NavStyles navbar navbar-expand-lg navbar-light nav-secondary blurred-container">
           <div className="DropdownStylesSecond position-static">
-            <a
+            <Link
               className="nav-link navbar-brand"
-              href="/"
+              to="/"
               id="navbarDropdownMenuLink"
 
             >
               COVID-19 API Resource Center
-            </a>
+            </Link>
           </div>
         </div>
       </div>

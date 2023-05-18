@@ -11,18 +11,18 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="List of APIs and Blueprints" />
-
-      <Hero />
-      <div className="container">
+      <div className="">
+        <Hero />
         <Welcome />
-        <div className="row collection__header text-center">
-          <div className="col-md-12">
-            <h2 className="h1">
-              API Collections to Help in the COVID-19 Fight
-            </h2>
+        <div className="container">
+          <div className="row collection__header text-center">
+            <div className="col-md-12">
+              <h2 className="h1">
+                API Collections to Help in the COVID-19 Fight
+              </h2>
+            </div>
           </div>
-        </div>
-        <div>
+          <div />
           <Collection />
         </div>
         <div className="row">
