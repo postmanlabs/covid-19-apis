@@ -57,33 +57,38 @@
     }
 
   }
+
   @media (max-width: 991px) {
-#navbarSupportedContent {
- 
-  margin-top: 16px;
-  height: 100vh;
-  padding-top: 3px;
+    #navbarSupportedContent {
+
+      margin-top: 16px;
+      height: 100vh;
+      padding-top: 3px;
+    }
+
   }
-  
-}
+
   .NavStyles {
+
     /* Ul */
     & .navbar-nav {
       // max-height: 100px;
       margin: 0;
 
       @media (max-width: 991px) {
-    
+
         margin-bottom: 24px;
         margin: 0;
         max-height: none;
         // height: 100vh;
-        
+
       }
     }
-li.nav-item {
-  margin-bottom: 4px;
-}
+
+    li.nav-item {
+      margin-bottom: 4px;
+    }
+
     /* Postman Logo and Home Logo switching */
     & .navbar-brand {
       margin-bottom: 0;
@@ -134,7 +139,7 @@ li.nav-item {
 
       &:hover {
         border-bottom: none;
-        color: $grey_50 !important;
+        color: $grey_90 !important;
       }
 
       &:focus {
@@ -145,10 +150,11 @@ li.nav-item {
       &:active {
         font-weight: 600;
         padding: 6px 6px 6px 16px;
+
         @media screen and (max-width: 992px) {
           padding-left: 0px;
           padding-right: 0px;
-          
+
         }
 
         /* Learning Center Nav Positioning */
@@ -311,22 +317,36 @@ li.nav-item {
 
   }
 
-
+  .dropdown-toggle, .dropdown-menu  {
+    border: none !important;
+    
+  }
+  .dropdown-menu  {
+    padding: 0 0 16px 11px !important;
+  }
   .DropdownStyles {
     /* Individual Dropdown Item */
     line-height: 20px;
     z-index: 2147483650;
-    padding: 16px;
-    border-radius: $medium-border-radius;
-    border: 1px solid $grey_20;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;
+
+
+    @media screen and (min-width: 992px) {
+      padding: 16px;
+      // border-radius: $medium-border-radius;
+      // border: 1px solid $grey_20;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;
+    }
+
     ;
 
     .dropdown-item {
-      font-family: Inter !important;
-      padding: 8px 16px;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
       font-weight: 400;
       font-size: 14px;
+      font-feature-settings: "calt";
+      letter-spacing: -0.16px;
+      padding: 8px 16px;
+      width: 100%;
 
       &:focus,
       &:active {
@@ -344,8 +364,8 @@ li.nav-item {
     .dropdown-menu {
       /* Mobile Dropdown */
       background-color: $grey_00;
-      border: none;
-      padding: 0 0 16px 24px;
+      border: none !important;
+      // padding: 0 0 16px 24px !important;
       line-height: 20px;
       font-size: 1.4rem;
 
@@ -362,34 +382,37 @@ li.nav-item {
 
       @media screen and (min-width: 992px) {
         width: 40.4rem;
+        
       }
     }
 
     .dropdown-col {
-      padding: 0 12px;
-
+      padding: 0 24px 0 12px !important;
+     
       @media screen and (max-width: 991px) {
         margin-bottom: 2rem;
       }
     }
+    
 
     .dropdown-header {
       padding: 5px 15px;
-      color: $forms-text;
+      color: #5b5b5b;
       font-size: 16px;
       letter-spacing: -0.24px;
       line-height: 1.4;
-      // font-weight: 600;
+      font-weight: 600;
       margin-bottom: 0px;
       font-family: Inter !important;
     }
   }
 
-.button-box{
-  @media (max-width: 991px) {
-    margin: 10px 0px;
+  .button-box {
+    @media (max-width: 991px) {
+      margin: 10px 0px;
+    }
   }
-}
+
   .CTAButton {
 
     // Orange Button (Sign Up / Launch Postman)
