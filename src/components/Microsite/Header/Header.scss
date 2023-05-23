@@ -322,7 +322,11 @@
     
   }
   .dropdown-menu  {
-    padding: 0 0 16px 11px !important;
+    padding: 0 0  16px 0px;
+    width: 100%;
+    @media screen and (min-width: 992px) {
+    padding: 16px  !important;
+    }
   }
   .DropdownStyles {
     /* Individual Dropdown Item */
@@ -336,8 +340,6 @@
       // border: 1px solid $grey_20;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 16px 24px -8px;
     }
-
-    ;
 
     .dropdown-item {
       font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
@@ -387,22 +389,22 @@
     }
 
     .dropdown-col {
-      padding: 0 24px 0 12px !important;
+      padding: 0 10px 0 23px !important;
      
       @media screen and (max-width: 991px) {
-        margin-bottom: 2rem;
+        margin-bottom: 1.25rem;
       }
     }
     
 
     .dropdown-header {
-      padding: 5px 15px;
+      padding: 5px 15px 7px 15px;
       color: #5b5b5b;
       font-size: 16px;
       letter-spacing: -0.24px;
       line-height: 1.4;
       font-weight: 600;
-      margin-bottom: 0px;
+      margin-bottom: 1px;
       font-family: Inter !important;
     }
   }
