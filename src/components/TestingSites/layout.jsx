@@ -10,6 +10,7 @@ import PropTypes from 'prop-types';
 import Header from '../Microsite/Header/Header';
 import Footer from './footer';
 import ReferrerCookie from '../ReferrerCookie';
+import SEO from '../seo';
 import './styles/_allTesting.scss';
 
 const delay = 1000;
@@ -30,6 +31,7 @@ function Layout({ children }) {
 
   return (
     <div>
+      <SEO title="COVID-19 Testing Locations" />
       <Header />
       <main>{children}</main>
       <ReferrerCookie />

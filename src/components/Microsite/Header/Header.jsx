@@ -3,6 +3,7 @@ import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 import $ from 'jquery';
 import './Header.scss';
 import { Divider } from 'aether-marketing';
+import { Link } from 'gatsby';
 import navbarData from '../../../../bff-data/navbar.json';
 // For local TOPNAVBAR TESTING
 import navbarDataLocal from '../../../../build/navbarDev.json';
@@ -186,13 +187,6 @@ function Header(props) {
       // Remove lock CSS to body to disable scroll
       body.classList.remove('lock');
     }
-    // const icon2 = document.getElementById('navbar-chevron-icons');
-    // const togglerSecondary = document
-    //   // .getElementById('secondaryNav')
-    //   .getAttribute('aria-expanded');
-    // if (togglerSecondary === 'false') {
-    //   icon2.classList.remove('open');
-    // }
   };
 
   /* eslint-enable class-methods-use-this */
@@ -326,7 +320,7 @@ function Header(props) {
               ))}
             </ul>
             {/* Login Check */}
-            <div className="form-inline my-2 my-lg-0">
+            <div className="form-inline button-box my-lg-0">
               <LoginCheck
                 hidden={hidden}
                 waitBeforeShow={100}
@@ -340,16 +334,15 @@ function Header(props) {
       </div>
       <div className="SecondaryNavbarV6 navbar-v6 sticky ">
         <div className="NavStyles navbar navbar-expand-lg navbar-light nav-secondary blurred-container">
-          <div className="DropdownStylesSecond dropdown position-static">
-            <a
+          <div className="DropdownStylesSecond position-static">
+            <Link
               className="nav-link navbar-brand"
-              href="##"
+              to="/"
               id="navbarDropdownMenuLink"
-              data-toggle="dropdown"
-              aria-expanded="false"
+
             >
               COVID-19 API Resource Center
-            </a>
+            </Link>
           </div>
         </div>
       </div>

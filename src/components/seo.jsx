@@ -93,6 +93,8 @@ function SEO({
         },
       ].concat(meta)}
     >
+      <link rel="preconnect" href="https://voyager.postman.com" crossOrigin />
+      <link href="https://voyager.postman.com/font/fonts.css" rel="stylesheet" />
       {/* OneTrust */}
       <script type="text/javascript" src="https://cdn.cookielaw.org/consent/1cef3369-6d07-4928-b977-2d877eb670c4/OtAutoBlock.js" />
 
