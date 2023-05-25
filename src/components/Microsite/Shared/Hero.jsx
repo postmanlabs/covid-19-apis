@@ -1,25 +1,29 @@
 import React from 'react';
-// import heroImage from '../../images/hero_BG-asset.svg';
-// import heroPostmanaut from '../../images/hero-postmanaut.svg';
-import heroImage from '../../../images/covid19-image-2.png';
+import { Hero } from 'aether-marketing';
 
-function Hero() {
+const data = {
+  heroLayout: 'sideXSide',
+  sideXSideLayout: 'medium',
+  title: ['Postman COVID-19 API Resource Center'],
+  divider: true,
+  backgroundColor: '',
+  media: {
+    class: 'mt-5 mt-lg-0',
+    src: 'https://voyager.postman.com/illustration/api-monitoring-microscope-postman-illustration.svg',
+    alt: 'API Monitoring. Illustration.',
+  },
+};
+
+function HeroComponent() {
   return (
-    <div className="container-fluid hero v5_starfield-small-night-sky pb-4">
-      <div className="container">
-        <div className="row">
-          <div className="col-md-6 hero_title">
-            <h1>
-              Postman COVID-19 API Resource Center
-            </h1>
-          </div>
-          <div className="col-md-6 hero_image">
-            <img src={heroImage} alt="Isolated COVID-19 virus in space. Illustration." />
-          </div>
-        </div>
-      </div>
-    </div>
+    <Hero
+      heroLayout={data.heroLayout}
+      sideXSideLayout={data.sideXSideLayout}
+      divider={data.divider}
+      title={data.title}
+      media={data.media}
+    />
   );
 }
 
-export default Hero;
+export default HeroComponent;

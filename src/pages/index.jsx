@@ -11,9 +11,9 @@ function IndexPage() {
   return (
     <Layout>
       <SEO title="List of APIs and Blueprints" />
-      <Hero />
-      <Welcome />
-      <div className="collection__wrapper">
+      <div className="">
+        <Hero />
+        <Welcome />
         <div className="container">
           <div className="row collection__header text-center">
             <div className="col-md-12">
@@ -22,36 +22,36 @@ function IndexPage() {
               </h2>
             </div>
           </div>
-          <div>
-            <Collection />
-          </div>
-          <div className="row">
-            <div className="col-md-12">
-              <p className="collection__end">
-                To submit an API to add to the list, please email us at
-                <br />
-                <span>
-                  <a className="link-style" href="mailto:covid-19@postman.com">
-                    {' '}
-                    COVID-19@postman.com
-                  </a>
-                </span>
-                or
-                <span>
-                  <a
-                    href="https://github.com/postman-toolboxes/covid-19/issues"
-                    className="link-style"
-                  >
-                    {' '}
-                    submit an issue on Github
-                  </a>
-                  .
-                </span>
-              </p>
-            </div>
+          <div />
+          <Collection />
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <p className="collection__end">
+              To submit an API to add to the list, please email us at
+              <br />
+              <span>
+                <a className="link-style" href="mailto:covid-19@postman.com">
+                  {' '}
+                  COVID-19@postman.com
+                </a>
+              </span>
+              or
+              <span>
+                <a
+                  href="https://github.com/postman-toolboxes/covid-19/issues"
+                  className="link-style"
+                >
+                  {' '}
+                  submit an issue on Github
+                </a>
+                .
+              </span>
+            </p>
           </div>
         </div>
       </div>
+
       <div className="container-fluid">
         <div className="row blurb text-center">
           <div className="col-md-12">
@@ -72,7 +72,7 @@ function IndexPage() {
         </div>
       </div>
       <Nonprofit />
-      {/* <Link to="/thankyou">Go to page 2</Link> */}
+
     </Layout>
   );
 }

@@ -1,156 +1,100 @@
 @import '../styles/_variables.scss';
 
 .footer {
-  background-color: $deep-space-blue;
-  color: white;
-  list-style-type: none;
-  padding: 80px 40px;
-
-  .footer-column {
-    margin: 0px 0px 8px;
-    padding: 0px 15px;
-   
-    .footer-column__title {
-      font-size: 16px;
-      text-transform: uppercase;
-      padding: 0px 0px 16px;
-      font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
-      font-weight: 700;
-    }
-
-    .footer-column__list {
-      margin: 0 auto 15px;
-      list-style: none;
-      padding-left: 0;
-      margin-left: 0;
-      font-size: 14px;
-
-      .footer-column__link {
-        color: white;
-        font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;
-        padding: 8px 8px 8px 0px;
-        display: inline-block;
-
-        &:hover {
-          color: $bright-orange;
-          // border-bottom: 1px solid;
-        }
-      }
-    }
+  border-top: 1px solid $grey_30;
+  background-color: $grey_00;
+  font-size: 14px;
+  color: $grey_50 !important;
+  padding: 80px 0;
+  
+  .container {
+    padding-right: 24px;
+    padding-left: 24px;
+  @media screen and (max-width: 1199px) {
+    max-width: 1199px !important; /* v5 was 1440px; v6 is 1199px */
+    width: 100%;
   }
-
-  // center in mobile view
-  #footer__social, 
-  #footer__copyright {
-    text-align: center;
+  @media screen and (min-width: 1200px) {
+    max-width: 1224px !important; /* v5 was 1440px; v6 is 1224px */
+    width: 100%;
   }
+}
 
-  #footer__social {
-    ul {
-      margin-left: 0px;
-    }
-    @media (min-width: 992px) {
-      text-align: left;
-    }
+
+  .footer-col-title {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    font-size: 16px !important;
+    letter-spacing: 0.48px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 8px;
   }
+}
 
-  #footer__copyright {
-    li {
-      margin-right: 4px;
-    }
-    @media (min-width: 992px) {
-      text-align: right;
-    }
+
+.copyright {
+  font-size: 12px;
+  margin-left: 12px;
+}
+.column {
+ 
+
+  li {
+    list-style-type: none !important;
+    margin-bottom: 0;
   }
-
-  .footer__copyright {
-    text-align: right;
-  }
-
-  .copyright-notice {
+  
+  a {
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", Helvetica, Arial, sans-serif;
+    color: $grey_50;
+    text-transform: none;
+    font-weight: 300;
     display: block;
-    padding-right: 16px;
+    line-height: 1.7;
+    padding: 5px 0;
+  }
+    a:hover,
+    a:active {
+      color: $blue_50 !important;
+      text-decoration: none !important;
+    }
 
-    @media (min-width: 992px) {
-      display: inline;
+    span {
+      border: 1px solid $blue_10;
+      border-radius: $medium-border-radius;
+      padding: 0 7px 0 4px;
+      display: inline-block;
+      white-space: pre;
+      margin-left: 6px;
     }
   }
 
-  .column__links {
-    list-style-type: none;
-    margin: 0px 0px 16px;
-    padding-left: 0;
-    font-size: 14px;
+  .footer-img {
+    width: 100%;
+  }
 
-    @media (max-width: 576px) {
-      margin: 15px 0;
+.FooterImgWrapper {
+  @media (min-width: 768px) {
+    filter: grayscale(100%);
+    transition: all 0.2s ease-in-out;
 
-      &:first-of-type {
-        margin-top: 0;
-      }
-    }
-
-    a {
-      color: #ffffff;
-      display: block;
-      line-height: 1.6;
-      padding: 8px 8px 8px 0;
-      text-decoration: none;
-
-      &:hover {
-        color: $bright-orange;
-        border-bottom: 1px solid;
-      }
-
-      /* for social icons */
-      svg {
-        &:hover {
-          path {
-            fill: #F99D78;
-          }
-        }
-      }
-
-      &:hover > .link__hover, 
-      &:hover > .link__hover > .highlight-text {
-        color: #F99D78;
-        padding-bottom: 2px;
-        border-bottom: 1px solid;
-      }
-    }
-
-    &.column__social {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 0;
-
-      @media (min-width: 1200px) {
-        width: auto;
-        padding-left: 20px;
-      }
-
-      li {
-        margin: 0 10px;
-
-        &:first-child {
-          margin-left: 0;
-        }
-
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
-
-    li {
-      font-size: 14px;
-      line-height: 1.6;
-      
-      &.column-item--add-bottom-spacer {
-        margin-bottom: 15px;
-      }
+    &:hover {
+      filter: grayscale(0);
+      transition: all 0.2s ease-in-out;
     }
   }
 }
+
+.svg {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+
+  svg {
+    max-height: 100%;
+    width: auto;
+  }
+}
+
+

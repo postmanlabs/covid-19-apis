@@ -7,10 +7,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import Header from './header';
+import Header from '../Microsite/Header/Header';
 import Footer from './footer';
 import ReferrerCookie from '../ReferrerCookie';
+import SEO from '../seo';
 import './styles/_allTesting.scss';
 
 const delay = 1000;
@@ -22,14 +22,8 @@ function Layout({ children }) {
     window.clearTimeout(throttle);
 
     throttle = setTimeout(() => {
-      if (window.pm) {
-        if (typeof window.pm.scalp === 'function') {
-          window.pm.scalp(
-            'pm-analytics',
-            'load',
-            document.location.pathname,
-          );
-        }
+      if (window.pmt) {
+        window.pmt('scalp', ['pm-analytics', 'load', document.location.pathname]);
         clearTimeout(throttle);
       }
     }, delay);
@@ -37,6 +31,7 @@ function Layout({ children }) {
 
   return (
     <div>
+      <SEO title="COVID-19 Testing Locations" />
       <Header />
       <main>{children}</main>
       <ReferrerCookie />
