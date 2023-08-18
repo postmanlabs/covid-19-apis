@@ -1,3 +1,17 @@
+5.18.0:
+  date: 2023-08-18
+  items:
+  - '[MARKENG-2760] trial remove gtm'
+5.17.0:
+  date: 2023-08-17
+  items:
+  - '[MARKENG-2160] Create new develop / beta pipeline to deploy into …'
+  - '[MARKENG-2163] Update PROD pipeline to use new aws infra, use aws cli'
+  - '[MARKENG-2163] Update PROD pipeline to use new aws infra, use aws…'
+  - '[MARKENG-2436] update pmt SDK to latest (2.0.8) & simplify bff consumtion'
+  - '[MARKENG-2436] update pmt SDK to latest (2.0.8) & simplify bff consumption'
+  - '[MARKENG-2440] make available bff data at build time w/ bffData script'
+  - '[MARKENG-2419] pmt.log gtag'
 5.16.0:
   date: 2022-04-07
   items:
