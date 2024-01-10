@@ -6,7 +6,7 @@
   "author": "Postman",
   "dependencies": {
     "aether-marketing": "1.27.10",
-    "axios": "0.27.2",
+    "axios": "1.6.3",
     "base-64": "1.0.0",
     "bootstrap": "4.5.0",
     "dotenv": "8.2.0",
