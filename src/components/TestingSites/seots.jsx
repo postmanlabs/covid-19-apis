@@ -52,7 +52,7 @@ function SEOTS({
         },
         {
           property: 'og:image',
-          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-sites-social-image.jpg',
+          content: 'https://voyager.postman.com/social-preview/postman-covid-19-api-resource-center-social-preview.jpg',
         },
         {
           property: 'og:url',
@@ -68,7 +68,7 @@ function SEOTS({
         },
         {
           property: 'twitter:image',
-          content: 'https://assets.getpostman.com/covid-19/covid-19-testing-sites-social-image.jpg',
+          content: 'https://voyager.postman.com/social-preview/postman-covid-19-api-resource-center-social-preview.jpg',
         },
         {
           name: 'twitter:creator',
