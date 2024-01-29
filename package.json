@@ -60,6 +60,7 @@
     "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "reset": "rm -rf node_modules; npm install; ./node_modules/.bin/gatsby clean",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
