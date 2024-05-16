@@ -316,6 +316,16 @@
     }
 
   }
+  @media (min-width: 992px) { // adjust breakpoint as needed
+    .navbar .dropdown-menu {
+      border: rgb(237, 237, 237) 1px solid !important;
+    }
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  @media (min-width: 992px) {
+      width: calc(100vw - 50rem);
+    }
+  }
 
   .dropdown-toggle, .dropdown-menu  {
     border: none !important;
@@ -328,6 +338,7 @@
     padding: 16px  !important;
     }
   }
+
   .DropdownStyles {
     /* Individual Dropdown Item */
     line-height: 20px;
@@ -370,21 +381,23 @@
       // padding: 0 0 16px 24px !important;
       line-height: 20px;
       font-size: 1.4rem;
+      width: 500px !important;
 
       /* Web Dropdown */
       @media screen and (min-width: 992px) {
         background-color: $grey_00;
         border-radius: $medium-border-radius;
-        padding: 16px
+        padding: 16px;
+       
       }
     }
-
+    
+ 
     .dropdown-col-menu {
       width: 100%;
 
       @media screen and (min-width: 992px) {
         width: 40.4rem;
-        
       }
     }
 
