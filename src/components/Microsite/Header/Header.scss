@@ -424,11 +424,6 @@ border: none;
   }
   .blue-link {
     color: $blue-60;
-    font-weight: 600;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
   }
   .button-box {
     @media (max-width: 991px) {
