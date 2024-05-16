@@ -237,85 +237,95 @@ function Header(props) {
               {data.items.map((item) => (
                 /* eslint-disable-next-line */
                 (item.dropdown && item.dropdown) && (
-                <li className="nav-item dropdown" key={item.title}>
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="##"
-                    id="navbarDropdownMenuLink"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                    key={item.title}
-                  >
-                    {item.title}
-                    <svg
-                      className="arrow-icon"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="#6b6b6b"
+                  <li className="nav-item dropdown" key={item.title}>
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="##"
+                      id="navbarDropdownMenuLink"
+                      data-toggle="dropdown"
+                      aria-expanded="false"
+                      key={item.title}
                     >
-                      <g>
-                        <path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z" />
-                      </g>
-                    </svg>
-                  </a>
-                  <div
-                    className="DropdownStyles dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLink"
-                  >
-                    {/* eslint-disable-next-line */}
-                    { (item.columns && item.columns)
-                    /* eslint-disable-next-line */
-                          && (
+                      {item.title}
+                      <svg
+                        className="arrow-icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="#6b6b6b"
+                      >
+                        <g>
+                          <path d="M10.375,3.219,6,6.719l-4.375-3.5A1,1,0,1,0,.375,4.781l5,4a1,1,0,0,0,1.25,0l5-4a1,1,0,0,0-1.25-1.562Z" />
+                        </g>
+                      </svg>
+                    </a>
+                    <div
+                      className="DropdownStyles dropdown-menu"
+                      aria-labelledby="navbarDropdownMenuLink"
+                    >
+                      {/* eslint-disable-next-line */}
+                      {(item.columns && item.columns)
+                        /* eslint-disable-next-line */
+                        && (
                           <div className="row dropdown-col-menu">
-                            { item.columns.map((col) => (
+                            {item.columns.map((col) => (
                               <div
                                 className={
-                                item.isWidthShort
-                                  ? 'col-sm-6 col-md-6 dropdown-col'
-                                  : 'col-sm-6 col-md-4 dropdown-col'
-                              }
+                                  item.isWidthShort
+                                    ? 'col-sm-6 col-md-6 dropdown-col'
+                                    : 'col-sm-6 col-md-4 dropdown-col'
+                                }
                                 key={col.title}
                               >
                                 <h6 className="dropdown-header">{col.title}</h6>
                                 {col.subItemsCol.map((link) => (
-                                  <a
-                                    className="dropdown-item"
-                                    href={link.url}
-                                    key={link.title}
-                                  >
-                                    {link.title}
-                                  </a>
+                                  <div key={link.title}>
+                                    {link.title === 'Download Postman →' ? (
+                                      <a
+                                        className="dropdown-item blue-link"
+                                        href={link.url}
+                                      >
+                                        {link.title}
+                                      </a>
+                                    ) : (
+                                      <a
+                                        className="dropdown-item"
+                                        href={link.url}
+                                      >
+                                        {link.title}
+                                      </a>
+                                    )}
+                                  </div>
                                 ))}
                               </div>
-                            /* eslint-disable-next-line */
+                              /* eslint-disable-next-line */
                             ))}
                           </div>
                           /* eslint-disable-next-line */
-                          ) || item.subItems.map((single) => (
-                            <a
-                              className={`${single.link ? 'app-cta' : ''} dropdown-item`}
-                              href={single.url}
-                              key={single.title}
-                            >
-                              {single.title}
-                            </a>
-                      /* eslint-disable-next-line */
-                    ))}
-                  </div>
-                </li>
-                /* eslint-disable-next-line */
+                        ) || item.subItems.map((single) => (
+                          <a
+                            className={`${single.link ? 'app-cta' : ''} dropdown-item`}
+                            href={single.url}
+                            key={single.title}
+                          >
+                            {single.title}
+                          </a>
+                          /* eslint-disable-next-line */
+                        ))}
+                    </div>
+                  </li>
+                  /* eslint-disable-next-line */
                 ) || (
-                <li className="nav-item" key={item.title}>
-                  <a
-                    className="nav-link"
-                    href={item.url}
-                    key={item.title}
-                  >
-                    {item.title}
-                  </a>
-                </li>
+                  <li className="nav-item" key={item.title}>
+                    <a
+                      className="nav-link"
+                      href={item.url}
+                      key={item.title}
+                    >
+                      {item.title}
+                    </a>
+                  </li>
                 )
               ))}
             </ul>
