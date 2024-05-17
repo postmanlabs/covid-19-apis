@@ -60,10 +60,10 @@
 
   @media (max-width: 991px) {
     #navbarSupportedContent {
-
-      margin-top: 16px;
+      overflow: hidden auto;
+      top: 16px;
       height: 100vh;
-      padding-top: 3px;
+      // padding-top: 3px;
     }
 
   }
