@@ -27,18 +27,30 @@ const UACode = 'G-X3S374SEP0';
 const prefetch = async () => {
   const script = `
 ${pmt}
+const fpPromise = import('/fp.js')
+  .then(FingerprintJS => FingerprintJS.load());
 setTimeout(function(){
   var propertyName = 'covid-19-apis';
   if (window.pmt) {
     window.pmt('setScalp', [{
       property: propertyName
     }]);
-    window.pmt('scalp', [
-      'pm-analytics',
-      'load',
-      document.location.pathname
-    ]);
-    window.pmt('trackClicks');
+    const initPmt = function() {
+      window.pmt('scalp', [
+        'pm-analytics',
+        'load',
+        document.location.pathname
+      ]);
+      window.pmt('trackClicks');
+    }
+
+    fpPromise
+      .then(fp => fp.get())
+      .then(result => {
+        window.pmt('set', ['user', {fingerprint: result}]);
+        initPmt();
+      })
+      .catch(() => initPmt());
 
     var _ga = (document.cookie.match('(^|;) ?_ga=([^;]*)(;|$)') || [])[2];
     var _PUB_ID = (document.cookie.match('(^|;) ?_PUB_ID=([^;]*)(;|$)') || [])[2];
