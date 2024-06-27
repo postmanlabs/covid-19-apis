@@ -32,30 +32,27 @@ const fpPromise = import('/fp.js')
 setTimeout(function(){
   var propertyName = 'covid-19-apis';
   if (window.pmt) {
-    setTimeout(function(){
-      const initPmt = function() {
-        window.pmt('setScalp', [{
-          property: propertyName
-        }]);
-        window.pmt('scalp', [
-          'pm-analytics',
-          'load',
-          document.location.pathname
-        ]);
-        window.pmt('trackClicks');
-      }
-      fpPromise
-        .then(fp => fp.get())
-        .then(result => {
-          const user = 'fpVisitorId:' + result.visitorId + '|fpRequestId:' + result.requestId + '|fpVisitorFound:' + result.visitorFound + '|fpConfidence:' + result.confidence.score+ '|fpVersion:' + result.meta.version;
-          window.pmt('api').store('user', user);
-          window.pmt('set', ['user', user]);
-          initPmt();
-        })
-        .catch(() => function(){
-          initPmt();
-        });
-    }, 500);
+    const initPmt = function() {
+      window.pmt('setScalp', [{
+        property: propertyName
+      }]);
+      window.pmt('scalp', [
+        'pm-analytics',
+        'load',
+        document.location.pathname
+      ]);
+      window.pmt('trackClicks');
+    }
+
+    fpPromise
+      .then(fp => fp.get())
+      .then(result => {
+        const user = 'fpVisitorId:' + result.visitorId + '|fpRequestId:' + result.requestId + '|fpVisitorFound:' + result.visitorFound + '|fpConfidence:' + result.confidence.score+ '|fpVersion:' + result.meta.version;
+        window.pmt('api').store('user', user);
+        window.pmt('set', ['user', user]);
+        initPmt();
+      })
+      .catch(() => initPmt());
 
     var _ga = (document.cookie.match('(^|;) ?_ga=([^;]*)(;|$)') || [])[2];
     var _PUB_ID = (document.cookie.match('(^|;) ?_PUB_ID=([^;]*)(;|$)') || [])[2];
