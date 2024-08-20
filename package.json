@@ -47,6 +47,7 @@
     "eslint-config-airbnb": "19.0.4",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-react": "7.29.4",
+    "follow-redirects": "1.15.6",
     "prettier": "2.6.2"
   },
   "keywords": [
@@ -57,6 +58,7 @@
     "bff": "rm -rf bff-data && npm run bff:data && node bff.js",
     "bff:data": "node -p \"require('./build/bffData.js')()\"",
     "build": "npm run bff && gatsby build",
+    "change": "git checkout develop; npx change-cli",
     "set-deploy": "gatsby build && rm -f release.zip && zip -r release.zip ./public",
     "dev": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
