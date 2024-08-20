@@ -2,7 +2,7 @@
   "name": "postman-covid-19-apis",
   "private": true,
   "description": "Postman Covid-19 APIs Example",
-  "version": "0.1.1",
+  "version": "5.19.0",
   "author": "Postman",
   "dependencies": {
     "aether-marketing": "1.28.2",
