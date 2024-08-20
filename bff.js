@@ -131,7 +131,7 @@ function load(src, cb) {
     cacheCdn('https://www.googletagmanager.com/gtag/js', '_gtag');
 
     setTimeout(() => {
-      sh.exec('mv _g* public/');
+      sh.exec('cp _g* public/');
     }, 4000);
   });
 };
