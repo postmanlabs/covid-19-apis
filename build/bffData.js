@@ -10,8 +10,6 @@ const TIME = (new Date()).getTime();
 const api = 'https://www.postman.com/mkapi';
 const url = `${api}/worker.json?${TIME}`;
 
-cacheCdn('https://fpjscdn.net/v3/vytU6aPKbOCzx72ch0fn', 'fp');
-
 const bffData = () => new Promise((resolve) => {
   fetch(url).then((res) => {
     res.text().then((resp) => {
