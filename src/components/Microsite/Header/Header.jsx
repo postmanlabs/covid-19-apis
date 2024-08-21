@@ -25,7 +25,7 @@ function LoginCheck(props) {
     return (
       <div className="CTAButton">
         <a
-          href={`https://go.postman${beta}.co/build`}
+          href={`https://identity.getpostman${beta}.com/login?continue=https%3A%2F%2Fgo.postman.co%2Fhome`}
           className={
             cookie !== 'yes'
               ? 'button__sign-in pingdom-transactional-check__sign-in-button'

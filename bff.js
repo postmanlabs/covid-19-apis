@@ -27,32 +27,18 @@ const UACode = 'G-X3S374SEP0';
 const prefetch = async () => {
   const script = `
 ${pmt}
-const fpPromise = import('/fp.js')
-  .then(FingerprintJS => FingerprintJS.load());
 setTimeout(function(){
   var propertyName = 'covid-19-apis';
   if (window.pmt) {
-    const initPmt = function() {
-      window.pmt('setScalp', [{
-        property: propertyName
-      }]);
-      window.pmt('scalp', [
-        'pm-analytics',
-        'load',
-        document.location.pathname
-      ]);
-      window.pmt('trackClicks');
-    }
-
-    fpPromise
-      .then(fp => fp.get())
-      .then(result => {
-        const user = 'fpVisitorId:' + result.visitorId + '|fpRequestId:' + result.requestId + '|fpVisitorFound:' + result.visitorFound + '|fpConfidence:' + result.confidence.score+ '|fpVersion:' + result.meta.version;
-        window.pmt('api').store('user', user);
-        window.pmt('set', ['user', user]);
-        initPmt();
-      })
-      .catch(() => initPmt());
+    window.pmt('setScalp', [{
+      property: propertyName
+    }]);
+    window.pmt('scalp', [
+      'pm-analytics',
+      'load',
+      document.location.pathname
+    ]);
+    window.pmt('trackClicks');
 
     var _ga = (document.cookie.match('(^|;) ?_ga=([^;]*)(;|$)') || [])[2];
     var _PUB_ID = (document.cookie.match('(^|;) ?_PUB_ID=([^;]*)(;|$)') || [])[2];
@@ -131,7 +117,7 @@ function load(src, cb) {
     cacheCdn('https://www.googletagmanager.com/gtag/js', '_gtag');
 
     setTimeout(() => {
-      sh.exec('mv _g* public/');
+      sh.exec('cp _g* public/');
     }, 4000);
   });
 };

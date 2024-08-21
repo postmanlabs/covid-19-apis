@@ -70,6 +70,9 @@ yarn-error.log
 node_modules
 
 # Generated
+_ga.js
+_gtag.js
 .nvmrc
 bff.json
 bff-data
+pmt.js

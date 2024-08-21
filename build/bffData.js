@@ -1,3 +1,5 @@
+require('./getPmt');
+
 const fs = require('fs');
 const fetch = require('node-fetch');
 const path = require('path');
@@ -7,8 +9,6 @@ const cacheCdn = require('./cacheCdn');
 const TIME = (new Date()).getTime();
 const api = 'https://www.postman.com/mkapi';
 const url = `${api}/worker.json?${TIME}`;
-
-cacheCdn('https://fpjscdn.net/v3/vytU6aPKbOCzx72ch0fn', 'fp');
 
 const bffData = () => new Promise((resolve) => {
   fetch(url).then((res) => {
