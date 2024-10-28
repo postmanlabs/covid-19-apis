@@ -12,7 +12,7 @@ const TIME = new Date().getTime();
 const options = {
   method: 'GET',
   hostname: 'www.postman.com',
-  path: `/mkapi/pmt.js?${TIME}`,
+  path: `/mkapi/pmt3.js?${TIME}`,
   maxRedirects: 20,
 };
 
