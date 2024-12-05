@@ -100,8 +100,8 @@ These are some collections being developed to help make the deployment of data A
 ## Proof of Concepts
 These are some proof of concepts being worked on when it comes to COVID-19, showing what is possible with collections.
 
-- **Volunteer Opportunities** ([GitHub](https://github.com/postman-data-api-templates/volunteer-opportunities)) ([Website](https://postman-data-api-templates.github.io/volunteer-opportunities/)) - An API and listing page of COVID-19 testing location across all 50 states.
-- **COVID-19 Testing Locations** ([GitHub](https://github.com/covid-19-testing/locations)) ([Website](https://covid-19-testing.github.io/locations/)) - An API and listing page of COVID-19 testing location across all 50 states.
+- **Volunteer Opportunities** ([GitHub](https://github.com/postman-data-api-templates/volunteer-opportunities)) - An API and listing page of COVID-19 testing location across all 50 states.
+- **COVID-19 Testing Locations** ([GitHub](https://github.com/covid-19-testing/locations)) - An API and listing page of COVID-19 testing location across all 50 states.
 
 ## Existing API Standards
 If you are building a COVID-19 related APIs we recommend using some existing API and schema standards.
