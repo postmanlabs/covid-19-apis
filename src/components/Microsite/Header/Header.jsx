@@ -4,7 +4,7 @@ import $ from 'jquery';
 import './Header.scss';
 import { Divider } from 'aether-marketing';
 import { Link } from 'gatsby';
-import navbarData from '../../../../bff-data/navbar.json';
+// import navbarData from '../../../../bff-data/navbar.json';
 // For local TOPNAVBAR TESTING
 import navbarDataLocal from '../../../../build/navbarDev.json';
 
@@ -74,7 +74,7 @@ function Header(props) {
   const [beta, setBeta] = useState('');
   const [cookie, setCookie] = useState('');
   const [hidden, setHidden] = useState(true);
-  const [data, setData] = useState(navbarData);
+  const [data, setData] = useState(navbarDataLocal);
   const [visibleHelloBar] = useState();
 
   useEffect(() => {
@@ -88,8 +88,8 @@ function Header(props) {
 
     const navbarKeys = ['items', 'media', 'type'];
 
-    if (navbarKeys.every((key) => Object.keys(navbarData).includes(key))) {
-      setData(navbarData);
+    if (navbarKeys.every((key) => Object.keys(navbarDataLocal).includes(key))) {
+      setData(navbarDataLocal);
     } else {
       setData(navbarDataLocal);
     }

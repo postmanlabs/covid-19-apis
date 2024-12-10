@@ -328,7 +328,7 @@
     }
     
   @media (min-width: 1024px) {
-      width: calc(100vw - 50rem);
+      width: 510px;
     }
   }
 
@@ -397,9 +397,9 @@ border: none;
     .dropdown-col-menu {
       width: 100%;
 
-      @media screen and (min-width: 992px) {
-        width: 40.4rem;
-      }
+      // @media screen and (min-width: 992px) {
+      //   width: 40.4rem;
+      // }
     }
 
     .dropdown-col {
